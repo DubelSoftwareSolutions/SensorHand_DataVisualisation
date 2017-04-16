@@ -12,6 +12,7 @@
 using namespace std;
 
 #include "euclideanvector.h"
+#include "translationevector.h"
 #include "matrix.h"
 #include "rotationmatrix.h"
 

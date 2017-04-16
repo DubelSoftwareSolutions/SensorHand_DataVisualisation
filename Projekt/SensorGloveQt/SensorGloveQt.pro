@@ -27,12 +27,14 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     euclideanvector.cpp \
     matrix.cpp \
-    rotationmatrix.cpp
+    rotationmatrix.cpp \
+    translationevector.cpp
 
 HEADERS  += mainwindow.h \
     euclideanvector.h \
     includes.h \
     matrix.h \
-    rotationmatrix.h
+    rotationmatrix.h \
+    translationevector.h
 
 FORMS    += mainwindow.ui
