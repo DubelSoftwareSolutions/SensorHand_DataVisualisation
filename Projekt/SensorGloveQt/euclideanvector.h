@@ -5,6 +5,7 @@
 
 class EuclideanVector
 {
+protected:
     std::vector<double> m_elements;
 public:
     EuclideanVector(double p_v1=0, double p_v2=0, double p_v3=0);

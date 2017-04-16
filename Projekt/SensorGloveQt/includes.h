@@ -13,5 +13,6 @@ using namespace std;
 
 #include "euclideanvector.h"
 #include "matrix.h"
+#include "rotationmatrix.h"
 
 #endif // INCLUDES_H

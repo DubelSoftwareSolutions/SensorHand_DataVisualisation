@@ -3,6 +3,7 @@
 
 class Matrix
 {
+protected:
     std::vector<EuclideanVector> m_elements;
 public:
     Matrix(vector<EuclideanVector> p_vectors=vector<EuclideanVector>());

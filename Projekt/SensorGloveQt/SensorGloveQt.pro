@@ -26,11 +26,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += main.cpp\
         mainwindow.cpp \
     euclideanvector.cpp \
-    matrix.cpp
+    matrix.cpp \
+    rotationmatrix.cpp
 
 HEADERS  += mainwindow.h \
     euclideanvector.h \
     includes.h \
-    matrix.h
+    matrix.h \
+    rotationmatrix.h
 
 FORMS    += mainwindow.ui

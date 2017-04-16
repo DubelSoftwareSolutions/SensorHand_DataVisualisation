@@ -1,5 +1,6 @@
 #include "includes.h"
 
+
 Matrix::Matrix(vector<EuclideanVector> p_vectors):m_elements(p_vectors)
 {}
 
