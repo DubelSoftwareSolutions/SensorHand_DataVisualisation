@@ -1,4 +1,7 @@
-
+*.obj
+*.exe
+*.ilk
+*.pdb
 *.doc
 *.docx
 *.aux

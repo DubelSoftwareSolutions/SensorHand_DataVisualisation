@@ -24,8 +24,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    euclideanvector.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    euclideanvector.h \
+    includes.h
 
 FORMS    += mainwindow.ui
