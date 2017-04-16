@@ -38,7 +38,7 @@ EuclideanVector EuclideanVector::operator +(const EuclideanVector & p_evector) c
 {
     EuclideanVector OutputEVector;
     for(int i=0;i<EVECTOR_DIMENSION_COUNT;++i)
-        OutputEVector[i] = this->m_elements[i]+p_evector.m_elements[i];
+        OutputEVector.m_elements[i] = this->m_elements[i]+p_evector.m_elements[i];
     return OutputEVector;
 }
 
@@ -46,7 +46,7 @@ EuclideanVector EuclideanVector::operator -(const EuclideanVector &p_evector) co
 {
     EuclideanVector OutputEVector;
     for(int i=0;i<EVECTOR_DIMENSION_COUNT;++i)
-        OutputEVector[i] = this->m_elements[i]-p_evector.m_elements[i];
+        OutputEVector.m_elements[i] = this->m_elements[i]-p_evector.m_elements[i];
     return OutputEVector;
 }
 
@@ -54,7 +54,7 @@ EuclideanVector EuclideanVector::operator -() const
 {
     EuclideanVector OutputEVector;
     for(int i=0;i<EVECTOR_DIMENSION_COUNT;++i)
-        OutputEVector[i] = -this->m_elements[i];
+        OutputEVector.m_elements[i] = -this->m_elements[i];
     return OutputEVector;
 }
 
@@ -89,7 +89,7 @@ double &EuclideanVector::operator [](int p_index)
 
 double EuclideanVector::Norm() const
 {
-    double OutputValue;
+    double OutputValue=0;
     for(auto currentElement: this->m_elements)
         OutputValue+=pow(currentElement,2);
     return sqrt(OutputValue);
@@ -106,7 +106,7 @@ void EuclideanVector::display() const
 
 double dotProduct(const EuclideanVector &p_evector1, const EuclideanVector &p_evector2)
 {
-    double OutputValue;
+    double OutputValue=0;
     for(int i=0;i<EVECTOR_DIMENSION_COUNT;++i)
         OutputValue += p_evector1[i] * p_evector2[i];
     return OutputValue;
