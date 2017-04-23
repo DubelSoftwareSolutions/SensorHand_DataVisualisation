@@ -25,16 +25,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    euclideanvector.cpp \
-    matrix.cpp \
     rotationmatrix.cpp \
     joint.cpp \
     manipulatorrotational.cpp
 
 HEADERS  += mainwindow.h \
-    euclideanvector.h \
     includes.h \
-    matrix.h \
     rotationmatrix.h \
     joint.h \
     manipulatorrotational.h

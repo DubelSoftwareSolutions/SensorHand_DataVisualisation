@@ -12,6 +12,7 @@
 #include <QMatrix4x4>
 #include <QQuaternion>
 #include <QtGlobal>
+#include <QDataStream>
 
 using namespace std;
 

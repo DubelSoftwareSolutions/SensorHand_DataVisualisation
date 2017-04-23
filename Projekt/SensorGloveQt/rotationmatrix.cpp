@@ -42,3 +42,17 @@ RotationMatrix::RotationMatrix(const float *p_values):QGenericMatrix(p_values)
 {
 
 }
+
+QVector3D RotationMatrix::operator *(const QVector3D &p_Vector3D)
+{
+    QVector3D OutputVector;
+    const float *MatrixData=this->constData();
+    for(int i=0;i<3;++i)
+    {
+        for(int j=0;j<3;++j)
+            OutputVector[j]+=p_Vector3D[i]*MatrixData[i*3+j];
+    }
+    return OutputVector;
+}
+
+

@@ -9,6 +9,8 @@ public:
     RotationMatrix();
     RotationMatrix(char p_Axis, double p_Angle);
     RotationMatrix(const float* p_values);
+
+    QVector3D operator *(const QVector3D & p_Vector3D);
 };
 
 #endif // ROTATIONMATRIX_H
