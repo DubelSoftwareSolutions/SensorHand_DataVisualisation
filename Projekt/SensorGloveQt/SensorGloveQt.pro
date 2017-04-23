@@ -28,13 +28,15 @@ SOURCES += main.cpp\
     euclideanvector.cpp \
     matrix.cpp \
     rotationmatrix.cpp \
-    translationevector.cpp
+    joint.cpp \
+    manipulatorrotational.cpp
 
 HEADERS  += mainwindow.h \
     euclideanvector.h \
     includes.h \
     matrix.h \
     rotationmatrix.h \
-    translationevector.h
+    joint.h \
+    manipulatorrotational.h
 
 FORMS    += mainwindow.ui

@@ -8,12 +8,15 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QApplication>
+#include <QVector3D>
+#include <QMatrix3x3>
+#include <QMatrix4x4>
+#include <QQuaternion>
 
 using namespace std;
 
-#include "euclideanvector.h"
-#include "translationevector.h"
-#include "matrix.h"
 #include "rotationmatrix.h"
+#include "joint.h"
+#include "manipulatorrotational.h"
 
 #endif // INCLUDES_H

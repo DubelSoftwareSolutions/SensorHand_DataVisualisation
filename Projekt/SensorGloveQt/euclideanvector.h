@@ -6,7 +6,7 @@
 class EuclideanVector
 {
 protected:
-    std::vector<double> m_elements;
+    QVector<double> m_elements;
 public:
     EuclideanVector(double p_v1=0, double p_v2=0, double p_v3=0);
     double get_v1() const;

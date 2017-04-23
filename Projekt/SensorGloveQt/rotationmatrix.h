@@ -1,9 +1,7 @@
 #ifndef ROTATIONMATRIX_H
 #define ROTATIONMATRIX_H
 
-#define ROTATION_MATRIX_DIMENSIONS 3
-
-class RotationMatrix: public Matrix
+class RotationMatrix: public QMatrix3x3
 {
 public:
     RotationMatrix(char p_Axis, double p_Angle);
