@@ -5,7 +5,7 @@ RotationMatrix::RotationMatrix():QGenericMatrix()
 
 }
 
-RotationMatrix::RotationMatrix(char p_Axis, double p_Angle)
+RotationMatrix::RotationMatrix(double p_Angle, char p_Axis)
 {
     p_Angle= p_Angle*M_PI/180;
     switch (p_Axis)
