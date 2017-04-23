@@ -2,7 +2,6 @@
 #define INCLUDES_H
 
 #include <iostream>
-#include <vector>
 #include <cmath>
 
 #include "mainwindow.h"
@@ -12,6 +11,7 @@
 #include <QMatrix3x3>
 #include <QMatrix4x4>
 #include <QQuaternion>
+#include <QtGlobal>
 
 using namespace std;
 

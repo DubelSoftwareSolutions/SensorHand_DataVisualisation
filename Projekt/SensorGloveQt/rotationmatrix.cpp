@@ -1,5 +1,10 @@
 #include "includes.h"
 
+RotationMatrix::RotationMatrix():QGenericMatrix()
+{
+
+}
+
 RotationMatrix::RotationMatrix(char p_Axis, double p_Angle)
 {
     p_Angle= p_Angle*M_PI/180;
@@ -7,27 +12,33 @@ RotationMatrix::RotationMatrix(char p_Axis, double p_Angle)
       {
       case 'x':
         {
-        this->m_elements[0] = QVector3D(1,0,0);
-        this->m_elements[1] = QVector3D(0, cos(p_Angle),-sin(p_Angle));
-        this->m_elements[2] = QVector3D(0, sin(p_Angle), cos(p_Angle));
+        float Values[9]={1,0,0,
+                         0,cos(p_Angle),-sin(p_Angle),
+                         0, sin(p_Angle), cos(p_Angle)};
+        *this=RotationMatrix(Values);
         } break;
       case 'y':
         {
-        this->m_elements[0] = QVector3D(cos(p_Angle),  0, sin(p_Angle));
-        this->m_elements[1] = QVector3D(0, 1, 0);
-        this->m_elements[2] = QVector3D(-sin(p_Angle), 0, cos(p_Angle));
+        float Values[9]={cos(p_Angle), 0, sin(p_Angle),
+                         0, 1, 0,
+                         -sin(p_Angle), 0, cos(p_Angle)};
+        *this=RotationMatrix(Values);
         } break;
       case 'z':
         {
-        this->m_elements[0] = QVector3D(cos(p_Angle), -sin(p_Angle), 0);
-        this->m_elements[1] = QVector3D(sin(p_Angle), cos(p_Angle),  0);
-        this->m_elements[2] = QVector3D(0, 0, 1);
+        float Values[9]={cos(p_Angle), -sin(p_Angle), 0,
+                         sin(p_Angle), cos(p_Angle),  0,
+                         0, 0, 1};
+        *this=RotationMatrix(Values);
         } break;
       default:
         {
-        this->m_elements[0] = QVector3D(1, 0, 0);
-        this->m_elements[1] = QVector3D(0, 1, 0);
-        this->m_elements[2] = QVector3D(0, 0, 1);
+        RotationMatrix();
         }
-      }
+    }
+}
+
+RotationMatrix::RotationMatrix(const float *p_values):QGenericMatrix(p_values)
+{
+
 }
