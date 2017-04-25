@@ -41,6 +41,8 @@ public:
            FingerType_t p_fingerType);
 
     void SetInternalCoordinates(QVector<double> p_angles);
+    int GetFingertipValue() const;
+    void SetFingertipValue(int p_NewFingertipValue);
 };
 
 #endif // FINGER_H

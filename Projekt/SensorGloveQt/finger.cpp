@@ -51,3 +51,13 @@ void Finger::SetInternalCoordinates(QVector<double> p_angles)
         m_joints[i].angle()=p_angles[i];
     }
 }
+
+int Finger::GetFingertipValue() const
+{
+    return m_fingertipValue;
+}
+
+void Finger::SetFingertipValue(int p_NewFingertipValue)
+{
+    m_fingertipValue = p_NewFingertipValue;
+}
