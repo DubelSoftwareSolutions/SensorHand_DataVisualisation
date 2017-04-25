@@ -3,6 +3,7 @@
 
 class Joint
 {
+protected:
     double m_length;
     double m_angle;
 public:

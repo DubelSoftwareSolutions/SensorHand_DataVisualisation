@@ -13,11 +13,12 @@
 #include <QQuaternion>
 #include <QtGlobal>
 #include <QDataStream>
+#include <QtDataVisualization>
 
-using namespace std;
-
+#include "errorhandler.h"
 #include "rotationmatrix.h"
 #include "joint.h"
 #include "manipulatorrotational.h"
+#include "finger.h"
 
 #endif // INCLUDES_H

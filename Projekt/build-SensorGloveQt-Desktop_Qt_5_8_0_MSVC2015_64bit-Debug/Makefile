@@ -246,6 +246,7 @@ Makefile: ..\SensorGloveQt\SensorGloveQt.pro E:\programs\Qt\5.8\msvc2015_64\mksp
 		E:\programs\Qt\5.8\msvc2015_64\mkspecs\features\lex.prf \
 		..\SensorGloveQt\SensorGloveQt.pro \
 		E:\programs\Qt\5.8\msvc2015_64\lib\qtmaind.prl \
+		E:\programs\Qt\5.8\msvc2015_64\lib\Qt5DataVisualization.prl \
 		E:\programs\Qt\5.8\msvc2015_64\lib\Qt5Widgets.prl \
 		E:\programs\Qt\5.8\msvc2015_64\lib\Qt5Gui.prl \
 		E:\programs\Qt\5.8\msvc2015_64\lib\Qt5Core.prl
@@ -423,6 +424,7 @@ E:\programs\Qt\5.8\msvc2015_64\mkspecs\features\yacc.prf:
 E:\programs\Qt\5.8\msvc2015_64\mkspecs\features\lex.prf:
 ..\SensorGloveQt\SensorGloveQt.pro:
 E:\programs\Qt\5.8\msvc2015_64\lib\qtmaind.prl:
+E:\programs\Qt\5.8\msvc2015_64\lib\Qt5DataVisualization.prl:
 E:\programs\Qt\5.8\msvc2015_64\lib\Qt5Widgets.prl:
 E:\programs\Qt\5.8\msvc2015_64\lib\Qt5Gui.prl:
 E:\programs\Qt\5.8\msvc2015_64\lib\Qt5Core.prl:

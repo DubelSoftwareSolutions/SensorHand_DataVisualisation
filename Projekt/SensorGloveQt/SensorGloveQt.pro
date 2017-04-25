@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += datavisualization
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -27,12 +28,16 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     rotationmatrix.cpp \
     joint.cpp \
-    manipulatorrotational.cpp
+    manipulatorrotational.cpp \
+    finger.cpp \
+    errorhandler.cpp
 
 HEADERS  += mainwindow.h \
     includes.h \
     rotationmatrix.h \
     joint.h \
-    manipulatorrotational.h
+    manipulatorrotational.h \
+    finger.h \
+    errorhandler.h
 
 FORMS    += mainwindow.ui
