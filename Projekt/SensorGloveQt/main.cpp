@@ -8,20 +8,9 @@ int main(int argc, char *argv[])
     /*MainWindow w;
     w.show();*/
 
-    QVector<Joint> joints;
-    for(int i=0;i<3;++i)
-        joints.push_back(Joint(12));
+    Hand hand;
 
-    ManipulatorRotational man(joints);
-
-    QVector<double> coords=QVector<double>(3);
-    coords[0]=90;
-    coords[1]=0;
-    coords[2]=0;
-
-    man.SetInternalCoordinates(coords);
-
-    QVector<QVector3D> vec=man.GetPointsInGlobal();
+    QVector<QVector3D> vec=hand.GetJointPoints();
     for(auto Current: vec)
         std::cout<<Current.x()<<'|'<<Current.y()<<'|'<<Current.z()<<std::endl;
 

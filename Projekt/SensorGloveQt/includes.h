@@ -13,6 +13,8 @@
 #include <QQuaternion>
 #include <QtGlobal>
 #include <QDataStream>
+#include <QtBluetooth>
+#include <QtSerialPort>
 #include <QtDataVisualization>
 
 #include "errorhandler.h"
@@ -20,5 +22,8 @@
 #include "joint.h"
 #include "manipulatorrotational.h"
 #include "finger.h"
+#include "hand.h"
+#include "input.h"
+#include "sensordatavisualization.h"
 
 #endif // INCLUDES_H

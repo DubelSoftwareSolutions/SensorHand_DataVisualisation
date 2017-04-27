@@ -35,10 +35,11 @@ public:
 
     enum FingerType_t {Thumb,IndexFinger,MiddleFinger,RingFinger,Pinky};
 
-    Finger(QVector3D p_position=QVector3D(),
-           double p_rotation=double(),
-           int p_fingertipValue,
-           FingerType_t p_fingerType);
+    Finger(FingerType_t p_fingerType = IndexFinger,
+           int p_fingertipValue=0,
+           QVector3D p_position=QVector3D(),
+           double p_rotation=double());
+
 
     void SetInternalCoordinates(QVector<double> p_angles);
     int GetFingertipValue() const;

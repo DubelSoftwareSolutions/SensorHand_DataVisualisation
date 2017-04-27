@@ -42,8 +42,3 @@ QVector3D ManipulatorRotational::ForwardKinematics()
 {
     return m_position+ (RotationMatrix(m_rotation,'z') * GetPointInSystem(m_joints.size()));
 }
-
-void ManipulatorRotational::BackwardKinematics(QVector3D p_EffectorPosition)
-{
-
-}

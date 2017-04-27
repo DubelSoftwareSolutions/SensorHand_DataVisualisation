@@ -18,8 +18,6 @@ public:
     QVector3D GetPointInSystem(int p_point, int p_system=0);
     QVector<QVector3D> GetPointsInGlobal();
     QVector3D ForwardKinematics();
-    void BackwardKinematics(QVector3D p_EffectorPosition);
-
 };
 
 #endif // MANIPULATORROTATIONAL_H

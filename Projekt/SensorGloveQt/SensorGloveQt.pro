@@ -6,6 +6,8 @@
 
 QT       += core gui
 QT       += datavisualization
+QT       += bluetooth
+QT       += serialport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -30,7 +32,10 @@ SOURCES += main.cpp\
     joint.cpp \
     manipulatorrotational.cpp \
     finger.cpp \
-    errorhandler.cpp
+    errorhandler.cpp \
+    hand.cpp \
+    input.cpp \
+    sensordatavisualization.cpp
 
 HEADERS  += mainwindow.h \
     includes.h \
@@ -38,6 +43,9 @@ HEADERS  += mainwindow.h \
     joint.h \
     manipulatorrotational.h \
     finger.h \
-    errorhandler.h
+    errorhandler.h \
+    hand.h \
+    input.h \
+    sensordatavisualization.h
 
 FORMS    += mainwindow.ui

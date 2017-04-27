@@ -249,6 +249,8 @@ Makefile: ..\SensorGloveQt\SensorGloveQt.pro E:\programs\Qt\5.8\msvc2015_64\mksp
 		E:\programs\Qt\5.8\msvc2015_64\lib\Qt5DataVisualization.prl \
 		E:\programs\Qt\5.8\msvc2015_64\lib\Qt5Widgets.prl \
 		E:\programs\Qt\5.8\msvc2015_64\lib\Qt5Gui.prl \
+		E:\programs\Qt\5.8\msvc2015_64\lib\Qt5Bluetooth.prl \
+		E:\programs\Qt\5.8\msvc2015_64\lib\Qt5SerialPort.prl \
 		E:\programs\Qt\5.8\msvc2015_64\lib\Qt5Core.prl
 	$(QMAKE) -o Makefile ..\SensorGloveQt\SensorGloveQt.pro -spec win32-msvc2015 "CONFIG+=debug" "CONFIG+=qml_debug"
 E:\programs\Qt\5.8\msvc2015_64\mkspecs\features\spec_pre.prf:
@@ -427,6 +429,8 @@ E:\programs\Qt\5.8\msvc2015_64\lib\qtmaind.prl:
 E:\programs\Qt\5.8\msvc2015_64\lib\Qt5DataVisualization.prl:
 E:\programs\Qt\5.8\msvc2015_64\lib\Qt5Widgets.prl:
 E:\programs\Qt\5.8\msvc2015_64\lib\Qt5Gui.prl:
+E:\programs\Qt\5.8\msvc2015_64\lib\Qt5Bluetooth.prl:
+E:\programs\Qt\5.8\msvc2015_64\lib\Qt5SerialPort.prl:
 E:\programs\Qt\5.8\msvc2015_64\lib\Qt5Core.prl:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\SensorGloveQt\SensorGloveQt.pro -spec win32-msvc2015 "CONFIG+=debug" "CONFIG+=qml_debug"

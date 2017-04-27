@@ -1,9 +1,9 @@
 #include "includes.h"
 
-Finger::Finger(QVector3D p_position,
-               double p_rotation,
+Finger::Finger(FingerType_t p_fingerType,
                int p_fingertipValue,
-               FingerType_t p_fingerType):
+               QVector3D p_position,
+               double p_rotation):
     ManipulatorRotational(QVector<Joint>(FINGER_JOINTS_COUNT),p_position,p_rotation),
     m_fingertipValue(p_fingertipValue)
 {
