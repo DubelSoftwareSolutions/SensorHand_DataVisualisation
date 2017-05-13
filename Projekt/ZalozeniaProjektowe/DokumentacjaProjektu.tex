@@ -30,17 +30,15 @@
 \vspace{5 mm}
 
 \section{Opis projektu} \normalsize
+\subsection{Cele projektu}
 Celem jest wizualizacja uproszczonego modelu dłoni na podstawie danych z rękawicy sensorycznej. 
 Efektem końcowym jest przedstawienie orientacji dłoni oraz zgięcia palców w przestrzeni trójwymiarowej. \\
 
 \subsection{Problem projektu}
-Wizualizacja danych z elementów pomiarowych umieszczonych na ludzkiej dłoni, za pomocą uproszczonego modelu 3D przypominającego dłoń, w celu ukazania poruszania się elementów ręki podczas wykonywania określonych czynności motorycznych.
-
-\subsection{Projekt skupia się na ukazaniu}
 \begin{itemize}
-\item Zgięcia pięciu palców przez zmianę konfiguracji przegubów modelu
-\item Siły nacisku opuszków na powierzchnię poprzez zmianę koloru i/lub rozmiaru obiektów sferycznych, umieszczonych na zakończeniach skrajnych przegubów modelu
-\item Orientacji dłoni względem wektora grawitacji
+\item Ukazanie zgięcia pięciu palców przez zmianę konfiguracji przegubów modelu
+\item Ukazanie siły nacisku opuszków na powierzchnię poprzez zmianę koloru i/lub rozmiaru obiektów sferycznych, umieszczonych na zakończeniach skrajnych przegubów modelu
+\item Ukazanie orientacji dłoni względem wektora grawitacji
 \end{itemize}
 
 Projekt zostanie połączony z innym realizowanym w ramach kursu Roboty Mobilne 1. Dane do wizualizacji będą wysyłane przez płytkę wykonanej rękawicy sensorycznej.
@@ -50,13 +48,12 @@ Projekt zostanie połączony z innym realizowanym w ramach kursu Roboty Mobilne 
 \subsection{Funkcjonalności aplikacji}
 Zostanie stworzona aplikacja okienkowa do wizualizacji napisana w języku C++ z użyciem biblioteki Qt.\\
 \begin{itemize}
-\item W aplikacji zostanie stworzony uproszczony model dłoni ludzkiej, przedstawiony przegubami manipulatorów (zrealizowane).
-\item Poruszanie modelem odbywać się będzie na podstawie danych z akcelerometru oraz współrzędnych wewnętrznych manipulatorów.
-\item Połączenie z rękawicą sensoryczną za pomocą wybranego portu magistrali szeregowej komputera.
-\item Połączenie z rękawicą sensoryczną przez Bluetooth.
-\item Kalibracja i skalowanie modelu dłoni.
+\item Wizualizacja poruszania modelem dłoni na podstawie odczytów z czujników i akcelerometru.
+\item Wybór opcji połączenia z rękawicą sensoryczną (Bluetooth, USB)
 \item Uruchomienie i zatrzymanie pomiarów, wykonanie pojedynczego pomiaru.
+\item Skalowanie modelu dłoni poprzez wpisanie rozmiarów przegubów.
 \item Wyświetlanie liczbowo wyników pomiarów i możliwość zapisania ich do pliku.
+\item Wyświetlenie wykresu odczytu nacisku wybranego palca w czasie.
 \end{itemize}
 \subsection{Szkic interfejsu graficznego}
 Schematyczny szkic interfejsu graficznego został przedstawiony na rysunku \ref{fig:interface}.
@@ -75,7 +72,7 @@ Diagram klas przetwarzających dane i obliczeniowych w aplikacji, przedstawiony 
 \caption{Diagram klas części aplikacji odpowiedzialnej za przetwarzanie danych\label{fig:classdiagram}}
 \end{figure}
 
-\subsection{Schemat blokowy}
+\subsection{Diagram czynności}
 \begin{figure}[!htb]
 \centering
 \includegraphics[height=0.8\textheight]{./Diagram_przeplywu_sterowania.png}
@@ -86,13 +83,14 @@ Diagram klas przetwarzających dane i obliczeniowych w aplikacji, przedstawiony 
 
 \subsection{Opis ogólny}
 \begin{itemize}
-\item Na opuszkach palców zamontowane zostaną czujniki siły nacisku FSR-400. Spadek rezystancji przy przyłożonej sile pozwala zmierzyć siłę nacisku.
-\item Do wykrycia zgięcia stawów międzypaliczkowych bliższych oraz stawu międzypaliczkowego kciuka zastosowane zostaną czujniki ugięcia - flexsensory firmy Sparkfun. Zgięcie tych sensorów powoduje wzrost rezystancji.
+\item Na opuszkach palców zamontowane zostaną czujniki siły nacisku FSR--400. Spadek rezystancji przy przyłożonej sile pozwala zmierzyć siłę nacisku.
+\item Do wykrycia zgięcia stawów międzypaliczkowych bliższych oraz stawu międzypaliczkowego kciuka zastosowane zostaną czujniki ugięcia -- flexsensory firmy Sparkfun. Zgięcie tych sensorów powoduje wzrost rezystancji.
 \item Akcelerometr LSM303DLHC, znajdujący się na płytce Discovery zostanie użyty do określenia orientacji rękawicy względem wektora grawitacji.
 \item Powyższe elementy nie zapewniają bardzo precyzyjnych pomiarów, ale zostały wybrane ze względu na cenę i charakter projektu, w którym zostaną zastosowane.
-\item Jako urządzenie nadawcze Bluetooth posłuży moduł HC-06 z interfejsem UART podłączony do płytki Discovery.
+\item Jako urządzenie nadawcze Bluetooth posłuży moduł HC--06 z interfejsem UART podłączony do płytki Discovery.
 \end{itemize}
 
+\newpage
 \subsection{Schemat układu elektronicznego}
 Ideowy schemat połączeń urządzenia pomiarowego, współpracującego z aplikacją został przedstawiony na rysunku \ref{fig:ideascheme}
 \begin{figure}[!htb]
@@ -105,31 +103,25 @@ Ideowy schemat połączeń urządzenia pomiarowego, współpracującego z aplika
 \subsubsection{Konfiguracja przetwornika pomiarowego}
 \begin{itemize}
 \item Rozdzielczość przetwornika: 12 bitów
-\item Zakres pomiarowy: (0 - 4095: int), (0 - 3.3 V)
+\item Zakres pomiarowy: (0 -- 4095: int), (0 -- 3.3 V)
 \item Pomiar ciągły z wykorzystaniem DMA
 \item Czas próbkowania: 19.5 Cykli
 \item Częstotliwość zegara: 32 MHz
 \end{itemize}
 
 \newpage
-\subsubsection{Opis czujników}
-\begin{itemize}
-\item Na opuszkach palców zamontowane zostaną czujniki siły nacisku FSR-400. Spadek rezystancji przy przyłożonej sile pozwala zmierzyć siłę nacisku.
-\item Do wykrycia zgięcia stawów międzypaliczkowych i śródręczno-paliczkowych oraz stawów kciuka zastosowane zostaną czujniki ugięcia - flexsensory firmy Sparkfun. Zgięcie tych sensorów powoduje wzrost rezystancji.
-\item Akcelerometr LSM303DLHC, znajdujący się na płytce Discovery zostanie użyty do określenia orientacji rękawicy względem wektora grawitacji.
-\end{itemize}
 \subsubsection{Dane czujnika ugięcia}
 \begin{itemize}
 \item Długość powierzchni czynnej: 55.37 mm
-\item Zakres rezystancji: 25 kOhm - 125 kOhm
-\item Rezystor pomiarowy do dzielnika: 62 kOhm
+\item Zakres rezystancji: 25 k$\Omega$ -- 125 k$\Omega$
+\item Rezystor pomiarowy do dzielnika: 62 k$\Omega$
 \end{itemize}
 \subsubsection{Dane czujnika nacisku}
 \begin{itemize}
 \item Średnica powierzchni czynnej: 5 mm
-\item Zakres pomiarowy nacisku: 0.2 - 20 N
-\item Zakres rezystancji: 150 Ohm - 10 MOhm
-\item Rezystor pomiarowy do dzielnika: 3 kOhm
+\item Zakres pomiarowy nacisku: 0.2 -- 20 N
+\item Zakres rezystancji: 150 $\Omega$ -- 10 M$\Omega$
+\item Rezystor pomiarowy do dzielnika: 3 k$\Omega$
 \end{itemize}
 \subsubsection{Dane z akcelerometru}
 \begin{itemize}
@@ -140,10 +132,25 @@ Ideowy schemat połączeń urządzenia pomiarowego, współpracującego z aplika
 \end{itemize}
 
 \subsection{Opis protokołu komunikacji}
-Wykorzystano dwa sposoby komunikacji z urządzeniem pomiarowym. Możliwość przełączania między urządzeniami została przewidziana w aplikacji. Część danych odbieranych z rękawicy zostanie wstępnie przetworzona przez urządzenie pomiarowe.
+Wykorzystano dwa sposoby komunikacji z urządzeniem pomiarowym. Możliwość przełączania między urządzeniami została przewidziana w aplikacji. Część danych odbieranych z rękawicy zostanie wstępnie przetworzona przez urządzenie pomiarowe.\\
+\subsection{Ramka danych}
+\begin{itemize}
+\item Typ danych: float
+\item Sposób odbierania danych: COM Port
+\item Sposób kodowania wiadomości: ANSI
+\item Suma kontrolna: brak
+\item Struktura wiadomości: 7 linii danych
+\begin{itemize}
+\item Linie 1 -- 5: 3x float -- kąty obrotu przegubów palca
+\item Linia 6: 5x float -- dane z czujników nacisku
+\item Linia 7: 3x float -- dane z akcelerometru (zagregowane do $m/s^2$)
+\item Każda linia zakończona znakami \textbackslash r \textbackslash n
+\end{itemize}
+\item Zrezygnowano ze szczegółowego opisu niskopoziomowego ramki danych, gdyż jest on obsługiwany przez dostępne biblioteki
+\end{itemize}
 \subsubsection{Bluetooth}
 \begin{itemize}
-\item Nazwa modułu komunikacyjnego: HC-06
+\item Nazwa modułu komunikacyjnego: HC--06
 \item Interfejs komunikacyjny ze strony urządzenia: UART
 \item Interfejs komunikacyjny ze strony aplikacji: Serial COM Port / moduł QtBluetooth
 \item Baud Rate: 9600 b/s
@@ -153,7 +160,7 @@ Wykorzystano dwa sposoby komunikacji z urządzeniem pomiarowym. Możliwość prz
 \item Nadpróbkowanie: 16 próbek
 \item Wykorzystanie przerwań i/lub DMA
 \end{itemize}
-\subsubsection{USB - Serial Port}
+\subsubsection{USB -- Serial Port}
 \begin{itemize}
 \item Nazwa modułu komunikacyjnego: Wbudowany
 \item Interfejs komunikacyjny ze strony urządzenia: USB Device (FS)
