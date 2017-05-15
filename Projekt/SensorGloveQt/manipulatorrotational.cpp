@@ -1,20 +1,27 @@
 #include "includes.h"
 
 
-ManipulatorRotational::ManipulatorRotational(QVector<Joint> p_joints, QVector3D p_position, double p_rotation):
-    m_joints(p_joints),m_position(p_position),m_rotation(p_rotation)
+ManipulatorRotational::ManipulatorRotational(QVector<Joint*> p_joints, QVector3D p_position, double p_rotation,Qt3DCore::QEntity *p_rootEntity):
+    m_joints(p_joints),m_position(p_position),m_rotation(p_rotation),m_rootEntity(p_rootEntity)
 {
-    m_joints.push_front(Joint(0,0));
+}
+
+ManipulatorRotational::ManipulatorRotational(const ManipulatorRotational &p_manipulator)
+{
+    m_rootEntity = p_manipulator.m_rootEntity;
+    m_joints = p_manipulator.m_joints;
+    m_position = p_manipulator.m_position;
+    m_rotation = p_manipulator.m_rotation;
 }
 
 void ManipulatorRotational::SetInternalCoordinates(QVector<double> p_angles)
-{
+{/*
     for(int i=0;i<m_joints.size()-1;++i)
-        m_joints[i].angle()=p_angles[i];
+        m_joints[i].angle()=p_angles[i];*/
 }
 
 QVector3D ManipulatorRotational::GetPointInSystem(int p_point, int p_system)
-{
+{/*
     if(p_point==p_system)
         return QVector3D();
     else
@@ -23,11 +30,12 @@ QVector3D ManipulatorRotational::GetPointInSystem(int p_point, int p_system)
         return Matrix*
                 (this->GetPointInSystem(p_point,p_system+1)+
                  QVector3D(m_joints[p_point].length(),0,0));
-    }
+    }*/
+    return QVector3D();
 }
 
 QVector<QVector3D> ManipulatorRotational::GetPointsInGlobal()
-{
+{/*
     QVector<QVector3D> OutputPoints;
     QVector3D TempVector;
     for(int i=0;i<m_joints.size();++i)
@@ -35,10 +43,13 @@ QVector<QVector3D> ManipulatorRotational::GetPointsInGlobal()
         TempVector=m_position+ (RotationMatrix(m_rotation,'z') * GetPointInSystem(i));
         OutputPoints.push_back(TempVector);
     }
-    return OutputPoints;
+    return OutputPoints;*/
+    return QVector<QVector3D>();
 }
 
 QVector3D ManipulatorRotational::ForwardKinematics()
-{
+{/*
     return m_position+ (RotationMatrix(m_rotation,'z') * GetPointInSystem(m_joints.size()));
+*/
+    return QVector3D();
 }

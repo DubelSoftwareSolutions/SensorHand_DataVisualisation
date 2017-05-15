@@ -1,17 +1,22 @@
 #include "includes.h"
 
-Hand::Hand()
+Hand::Hand(Qt3DCore::QEntity *p_rootEntity,QColor p_HandColor):m_rootEntity(p_rootEntity)
 {
-    Finger thumb(Finger::Thumb,0,
-                          QVector3D(0,THUMB_FINGER_OFFSET,0),THUMB_FINGER_ROTATION);
-    Finger index(Finger::IndexFinger,0,
-                          QVector3D(0,INDEX_FINGER_OFFSET,0),INDEX_FINGER_ROTATION);
-    Finger middle(Finger::MiddleFinger,0,
-                           QVector3D(0,MIDDLE_FINGER_OFFSET,0),MIDDLE_FINGER_ROTATION);
-    Finger ring(Finger::RingFinger,0,
-                         QVector3D(0,RING_FINGER_OFFSET,0),RING_FINGER_ROTATION);
-    Finger pinky(Finger::Pinky,0,
-                          QVector3D(0,PINKY_FINGER_OFFSET,0),PINKY_FINGER_ROTATION);
+    Finger thumb(Finger::Thumb,
+                 0, QVector3D(THUMB_FINGER_OFFSET,0,0),
+                 THUMB_FINGER_ROTATION,m_rootEntity,p_HandColor);
+    Finger index(Finger::IndexFinger,
+                 0, QVector3D(INDEX_FINGER_OFFSET,0,0),
+                 INDEX_FINGER_ROTATION,m_rootEntity,p_HandColor);
+    Finger middle(Finger::MiddleFinger,
+                  0, QVector3D(MIDDLE_FINGER_OFFSET,0,0),
+                  MIDDLE_FINGER_ROTATION,m_rootEntity,p_HandColor);
+    Finger ring(Finger::RingFinger,
+                0, QVector3D(RING_FINGER_OFFSET,0,0),
+                RING_FINGER_ROTATION,m_rootEntity,p_HandColor);
+    Finger pinky(Finger::Pinky,
+                 0, QVector3D(PINKY_FINGER_OFFSET,0,0),
+                 PINKY_FINGER_ROTATION,m_rootEntity,p_HandColor);
     m_fingers.push_back(thumb);
     m_fingers.push_back(index);
     m_fingers.push_back(middle);
@@ -20,13 +25,14 @@ Hand::Hand()
 }
 
 QVector<QVector3D> Hand::GetJointPoints()
-{
+{/*
     QVector<QVector3D> jointPoints;
 
     for(Finger currentFinger : m_fingers)
         jointPoints.append(currentFinger.GetPointsInGlobal());
 
-    return jointPoints;
+    return jointPoints;*/
+    return QVector<QVector3D>();
 }
 
 QVector<int> Hand::GetFingertipValues()
@@ -40,9 +46,9 @@ QVector<int> Hand::GetFingertipValues()
 }
 
 void Hand::SetFingerJoints(QVector<QVector<double> > p_JointAngles)
-{
+{/*
     for(unsigned int i=0; i<FINGER_COUNT; ++i)
-        m_fingers[i].SetInternalCoordinates(p_JointAngles[i]);
+        m_fingers[i].SetInternalCoordinates(p_JointAngles[i]);*/
 }
 
 void Hand::SetFingertipValues(QVector<int> p_FingertipValues)

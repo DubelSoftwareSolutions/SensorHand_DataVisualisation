@@ -5,6 +5,8 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += widgets
+QT       += 3dcore 3drender 3dinput 3dextras
 QT       += datavisualization
 QT       += bluetooth
 QT       += serialport
@@ -35,7 +37,7 @@ SOURCES += main.cpp\
     errorhandler.cpp \
     hand.cpp \
     input.cpp \
-    sensordatavisualization.cpp
+    scene.cpp
 
 HEADERS  += mainwindow.h \
     includes.h \
@@ -46,6 +48,6 @@ HEADERS  += mainwindow.h \
     errorhandler.h \
     hand.h \
     input.h \
-    sensordatavisualization.h
+    scene.h
 
 FORMS    += mainwindow.ui
