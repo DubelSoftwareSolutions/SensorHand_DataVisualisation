@@ -72,6 +72,11 @@ double Joint::angle() const
     return m_angle;
 }
 
+QMatrix4x4 Joint::TransformMatrix() const
+{
+    return m_TransformMatrix;
+}
+
 Joint &Joint::operator =(const Joint &p_joint)
 {
     m_radius = p_joint.m_radius;

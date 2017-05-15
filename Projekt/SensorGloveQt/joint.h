@@ -32,6 +32,7 @@ public:
     double &length();
     double &angle();
     double angle() const;
+    QMatrix4x4 TransformMatrix() const;
 
     Joint &operator = (const Joint& p_joint);
 };

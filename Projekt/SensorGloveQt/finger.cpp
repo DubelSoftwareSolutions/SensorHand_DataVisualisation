@@ -1,13 +1,14 @@
 #include "includes.h"
 
 Finger::Finger(FingerType_t p_fingerType,
-               int p_fingertipValue,
+               float p_fingertipValue,
                QVector3D p_position,
                double p_rotation,
                Qt3DCore::QEntity *p_rootEntity,
                QColor p_fingerColor):
-    m_fingertipValue(p_fingertipValue),m_rootEntity(p_rootEntity)
+    m_rootEntity(p_rootEntity)
 {
+
     QVector<Joint*> joints;
     switch(p_fingerType)
     {
@@ -75,18 +76,19 @@ Finger::Finger(FingerType_t p_fingerType,
     }
         break;
     }
+    m_fingertip = new Fingertip(p_fingertipValue,m_rootEntity,joints.last());
 }
 
 Finger::Finger(const Finger &p_finger)
 {
-    m_fingertipValue = p_finger.m_fingertipValue;
+    m_fingertip = p_finger.m_fingertip;
     m_rootEntity = p_finger.m_rootEntity;
     m_manipulator = p_finger.m_manipulator;
 }
 
 Finger &Finger::operator =(const Finger &p_finger)
 {
-    m_fingertipValue = p_finger.m_fingertipValue;
+    m_fingertip = p_finger.m_fingertip;
     m_rootEntity = p_finger.m_rootEntity;
     m_manipulator = p_finger.m_manipulator;
     return *this;
@@ -104,10 +106,11 @@ void Finger::SetInternalCoordinates(QVector<double> p_angles)
 
 int Finger::GetFingertipValue() const
 {
-    return m_fingertipValue;
+    //return m_fingertip;
+    return int();
 }
 
 void Finger::SetFingertipValue(int p_NewFingertipValue)
 {
-    m_fingertipValue = p_NewFingertipValue;
+    //m_fingertip = p_NewFingertipValue;
 }

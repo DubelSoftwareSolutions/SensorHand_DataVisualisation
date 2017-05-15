@@ -3,19 +3,19 @@
 Hand::Hand(Qt3DCore::QEntity *p_rootEntity,QColor p_HandColor):m_rootEntity(p_rootEntity)
 {
     Finger thumb(Finger::Thumb,
-                 0, QVector3D(THUMB_FINGER_OFFSET,0,0),
+                 1.5, QVector3D(THUMB_FINGER_OFFSET,0,0),
                  THUMB_FINGER_ROTATION,m_rootEntity,p_HandColor);
     Finger index(Finger::IndexFinger,
-                 0, QVector3D(INDEX_FINGER_OFFSET,0,0),
+                 1.5, QVector3D(INDEX_FINGER_OFFSET,0,0),
                  INDEX_FINGER_ROTATION,m_rootEntity,p_HandColor);
     Finger middle(Finger::MiddleFinger,
-                  0, QVector3D(MIDDLE_FINGER_OFFSET,0,0),
+                  1.5, QVector3D(MIDDLE_FINGER_OFFSET,0,0),
                   MIDDLE_FINGER_ROTATION,m_rootEntity,p_HandColor);
     Finger ring(Finger::RingFinger,
-                0, QVector3D(RING_FINGER_OFFSET,0,0),
+                1.5, QVector3D(RING_FINGER_OFFSET,0,0),
                 RING_FINGER_ROTATION,m_rootEntity,p_HandColor);
     Finger pinky(Finger::Pinky,
-                 0, QVector3D(PINKY_FINGER_OFFSET,0,0),
+                 1.5, QVector3D(PINKY_FINGER_OFFSET,0,0),
                  PINKY_FINGER_ROTATION,m_rootEntity,p_HandColor);
     m_fingers.push_back(thumb);
     m_fingers.push_back(index);

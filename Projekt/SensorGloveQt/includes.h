@@ -48,11 +48,13 @@
 
 #include <Qt3DExtras/QPhongMaterial>
 #include <Qt3DExtras/QCylinderMesh>
+#include <Qt3DExtras/QSphereMesh>
 
 #include "errorhandler.h"
 #include "rotationmatrix.h"
 #include "joint.h"
 #include "manipulatorrotational.h"
+#include "fingertip.h"
 #include "finger.h"
 #include "hand.h"
 #include "scene.h"

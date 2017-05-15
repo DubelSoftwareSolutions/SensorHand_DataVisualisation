@@ -20,6 +20,7 @@
 
 #include"joint.h"
 #include"manipulatorrotational.h"
+#include"fingertip.h"
 #include"finger.h"
 
 class Hand: public QObject

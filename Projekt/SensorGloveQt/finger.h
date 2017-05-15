@@ -30,15 +30,18 @@
 
 #include<QObject>
 #include<Qt3DCore/QEntity>
+#include<QMatrix4x4>
+#include<QColor>
 
 #include"joint.h"
 #include"manipulatorrotational.h"
+#include"fingertip.h"
 
 class Finger : public QObject
 {
     Q_OBJECT
 protected:
-    int m_fingertipValue;
+    Fingertip *m_fingertip;
 
     Qt3DCore::QEntity *m_rootEntity;
     ManipulatorRotational *m_manipulator;
@@ -47,7 +50,7 @@ public:
     enum FingerType_t {Thumb,IndexFinger,MiddleFinger,RingFinger,Pinky};
 
     Finger(FingerType_t p_fingerType = IndexFinger,
-           int p_fingertipValue=0,
+           float p_fingertipValue=0,
            QVector3D p_position=QVector3D(),
            double p_rotation=double(),
            Qt3DCore::QEntity *p_rootEntity=nullptr,
