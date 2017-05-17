@@ -3,8 +3,8 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    /*MainWindow w;
-    w.show();*/
+    MainWindow w;
+    w.show();
 
     /*To jest do zmiany*/
     Qt3DExtras::Qt3DWindow *view = new Qt3DExtras::Qt3DWindow();
@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
     hLayout->addLayout(vLayout);
 
     widget->setWindowTitle(QString("QBasic Shapes Test"));
+    w.AddWidgetToGlove3DLayout(widget);
 
     Qt3DInput::QInputAspect *input = new Qt3DInput::QInputAspect;
     view->registerAspect(input);
@@ -60,9 +61,6 @@ int main(int argc, char *argv[])
 
     Scene *scene3D = new Scene(rootEntity);
     view->setRootEntity(rootEntity);
-
-    widget->show();
-    widget->resize(1200,800);
 
     QVector<double> thumbAngles(2,60);
     QVector<double> indexAngles(3,10);
