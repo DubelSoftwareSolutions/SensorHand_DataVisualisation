@@ -33,6 +33,7 @@ private:
     Qt3DCore::QTransform *lightTransform;
     Qt3DCore::QEntity *lightEntity2;
     Qt3DRender::QPointLight *light2;
+    Qt3DCore::QTransform *lightTransform2;
 
 public:
     explicit Scene(Qt3DCore::QEntity *rootEntity, MainWindow& p_mainWindow);
