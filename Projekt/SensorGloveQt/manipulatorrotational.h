@@ -13,18 +13,18 @@ protected:
     Qt3DCore::QEntity *m_rootEntity;
     QVector<Joint*> m_joints;
     QVector3D m_position;
-    double m_rotation;
+    float m_rotation;
 public:
     ManipulatorRotational(QVector<Joint*> p_joints,
                           QVector3D p_position=QVector3D(),
-                          double p_rotation=double(),
+                          float p_rotation=float(),
                           Qt3DCore::QEntity *p_rootEntity=nullptr);
 
     ManipulatorRotational(const ManipulatorRotational& p_manipulator);
 
-    void TransformJointAngles(QVector<double> p_jointAngles);
+    void TransformJointAngles(QVector<float> p_jointAngles);
     Joint *getLastJoint();
-    virtual void SetInternalCoordinates(QVector<double> p_angles);
+    virtual void SetInternalCoordinates(QVector<float> p_angles);
 
     QVector3D GetPointInSystem(int p_point, int p_system=0);
     QVector<QVector3D> GetPointsInGlobal();

@@ -61,12 +61,12 @@ Scene::~Scene()
 
 }
 
-void Scene::SetHandTransformation(QVector<QVector<double> > p_FingerAngles)
+void Scene::SetHandTransformation(QVector<QVector<float> > p_FingerAngles)
 {
     m_Hand3DModel.TransformFingerAngles(p_FingerAngles);
 }
 
-void Scene::SetHandFingertipValues(QVector<float> p_NewValues)
+void Scene::SetHandFingertipValues(QVector<int> p_NewValues)
 {
     m_Hand3DModel.SetFingertipValues(p_NewValues);
 }

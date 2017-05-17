@@ -1,6 +1,6 @@
 #include "includes.h"
 
-Joint::Joint(Qt3DCore::QEntity *p_rootEntity, double p_radius, double p_length, double p_angle, double p_tilt, double p_rotation, QVector3D p_position,
+Joint::Joint(Qt3DCore::QEntity *p_rootEntity, float p_radius, float p_length, float p_angle, float p_tilt, float p_rotation, QVector3D p_position,
              Joint *p_PrevJoint, QColor p_color):
     m_radius(p_radius),m_length(p_length),m_angle(p_angle),m_tilt(p_tilt),m_position(p_position),m_rotation(p_rotation),
     m_rootEntity(p_rootEntity)
@@ -54,17 +54,17 @@ Joint::Joint(const Joint &p_joint)
     m_TransformMatrix = p_joint.m_TransformMatrix;
 }
 
-double Joint::length() const
+float Joint::length() const
 {
     return m_length;
 }
 
-double &Joint::length()
+float &Joint::length()
 {
     return m_length;
 }
 
-double Joint::angle() const
+float Joint::angle() const
 {
     return m_angle;
 }
@@ -74,7 +74,7 @@ QMatrix4x4 Joint::TransformMatrix() const
     return m_TransformMatrix;
 }
 
-void Joint::TransformAngle(double p_newAngle, Joint *p_PrevJoint)
+void Joint::TransformAngle(float p_newAngle, Joint *p_PrevJoint)
 {
     if(p_PrevJoint == nullptr)
     {

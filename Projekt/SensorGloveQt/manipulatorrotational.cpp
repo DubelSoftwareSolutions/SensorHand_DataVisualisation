@@ -1,7 +1,7 @@
 #include "includes.h"
 
 
-ManipulatorRotational::ManipulatorRotational(QVector<Joint*> p_joints, QVector3D p_position, double p_rotation,Qt3DCore::QEntity *p_rootEntity):
+ManipulatorRotational::ManipulatorRotational(QVector<Joint*> p_joints, QVector3D p_position, float p_rotation,Qt3DCore::QEntity *p_rootEntity):
     m_joints(p_joints),m_position(p_position),m_rotation(p_rotation),m_rootEntity(p_rootEntity)
 {
 }
@@ -14,9 +14,9 @@ ManipulatorRotational::ManipulatorRotational(const ManipulatorRotational &p_mani
     m_rotation = p_manipulator.m_rotation;
 }
 
-void ManipulatorRotational::TransformJointAngles(QVector<double> p_jointAngles)
+void ManipulatorRotational::TransformJointAngles(QVector<float> p_jointAngles)
 {
-    unsigned int i;
+    int i;
     for(i=1; i<m_joints.size() && i-1<p_jointAngles.size(); ++i)
         m_joints[i]->TransformAngle(p_jointAngles[i-1],m_joints[i-1]);
     for(;i<m_joints.size();++i)
@@ -28,7 +28,7 @@ Joint *ManipulatorRotational::getLastJoint()
     return m_joints.last();
 }
 
-void ManipulatorRotational::SetInternalCoordinates(QVector<double> p_angles)
+void ManipulatorRotational::SetInternalCoordinates(QVector<float> p_angles)
 {/*
     for(int i=0;i<m_joints.size()-1;++i)
         m_joints[i].angle()=p_angles[i];*/

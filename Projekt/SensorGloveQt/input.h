@@ -6,9 +6,9 @@ class Input: QBluetoothTransferManager, QSerialPort
 {
     enum ConnectionType_t {BluetoothConnection, USBConnection};
 
-    QVector<double> m_JointAngles;
-    QVector<double> m_TensionSensorValues;
-    QVector<double> m_AccelerometerValues;
+    QVector<float> m_JointAngles;
+    QVector<float> m_TensionSensorValues;
+    QVector<float> m_AccelerometerValues;
     ConnectionType_t m_ConnectionType;
 public:
     Input();

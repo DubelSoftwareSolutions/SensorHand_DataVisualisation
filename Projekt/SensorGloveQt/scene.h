@@ -39,8 +39,8 @@ public:
     explicit Scene(Qt3DCore::QEntity *rootEntity, MainWindow& p_mainWindow);
     ~Scene();
 
-    void SetHandTransformation(QVector<QVector<double>> p_FingerAngles);
-    void SetHandFingertipValues(QVector<float> p_NewValues);
+    void SetHandTransformation(QVector<QVector<float>> p_FingerAngles);
+    void SetHandFingertipValues(QVector<int> p_NewValues);
 signals:
 
 public slots:

@@ -2,7 +2,6 @@
 #define HAND_H
 
 #define FINGER_COUNT 5
-#define FINGERTIP_RADIUS 1.5
 
 #define THUMB_FINGER_OFFSET 2.0
 #define INDEX_FINGER_OFFSET 1.0
@@ -33,12 +32,12 @@ protected:
 public:
     Hand(Qt3DCore::QEntity *p_rootEntity = nullptr,QColor p_HandColor = QColor(255,173,96));
 
-    void TransformFingerAngles(QVector<QVector<double>> p_FingerAngles);
+    void TransformFingerAngles(QVector<QVector<float>> p_FingerAngles);
 
     QVector<QVector3D> GetJointPoints();
     QVector<float> GetFingertipValues() const;
-    void SetFingerJoints(QVector<QVector<double>> p_JointAngles);
-    void SetFingertipValues(QVector<float> p_FingertipValues);
+    void SetFingerJoints(QVector<QVector<float>> p_JointAngles);
+    void SetFingertipValues(QVector<int> p_FingertipValues);
 };
 
 #endif // HAND_H
