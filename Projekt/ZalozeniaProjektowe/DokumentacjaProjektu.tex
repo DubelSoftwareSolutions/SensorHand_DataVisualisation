@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{article}
+\documentclass[10pt,a4paper]{article}
 \usepackage[utf8x]{inputenc}
 \usepackage{ucs}
 \usepackage[MeX]{polski}
@@ -51,34 +51,45 @@ Zostanie stworzona aplikacja okienkowa do wizualizacji napisana w języku C++ z 
 \item Wizualizacja poruszania modelem dłoni na podstawie odczytów z czujników i akcelerometru.
 \item Wybór opcji połączenia z rękawicą sensoryczną (Bluetooth, USB)
 \item Uruchomienie i zatrzymanie pomiarów, wykonanie pojedynczego pomiaru.
-\item Skalowanie modelu dłoni poprzez wpisanie rozmiarów przegubów.
+\item Skalowanie modelu dłoni poprzez wpisanie rozmiarów przegubów oraz suwaki.
+\item Zmiana położenia i orientacji kamery z poziomu interfejsu graficznego.
 \item Wyświetlanie liczbowo wyników pomiarów i możliwość zapisania ich do pliku.
 \item Wyświetlenie wykresu odczytu nacisku wybranego palca w czasie.
 \end{itemize}
-\subsection{Szkic interfejsu graficznego}
+Żadna z funkcjonalności nie została jeszcze dokończona.
+
+\newpage
+\subsection{Interfejs graficzny}
 Schematyczny szkic interfejsu graficznego został przedstawiony na rysunku \ref{fig:interface}.
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=\textwidth]{./WDS_schemat_ideowy_okna_programu.png}
+\includegraphics[width=0.9\textwidth]{./WDS_schemat_ideowy_okna_programu.png}
 \caption{Planowany interfejs graficzny aplikacji\label{fig:interface}}
+\end{figure}\\
+Aktualny wygląd interfejsu graficznego został przedstawiony na rysunku \ref{fig:currentInt}.
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\textwidth]{./AktualnyInterfejsGraficzny.png}
+\caption{Aktualny wygląd interfejsu graficznego aplikacji\label{fig:currentInt}}
 \end{figure}
 
 \newpage
-\subsection{Diagramy klas}
+\subsection{Diagram klas}
 Diagram klas przetwarzających dane i obliczeniowych w aplikacji, przedstawiony na rysunku \ref{fig:classdiagram} wykonany został w języku UML.\\
 \begin{figure}[!htb]
 \centering
 \includegraphics[angle=90,height=0.8\textheight]{./ClassDiagram.png}
 \caption{Diagram klas części aplikacji odpowiedzialnej za przetwarzanie danych\label{fig:classdiagram}}
 \end{figure}
-
+\newpage
 \subsection{Diagram czynności}
 \begin{figure}[!htb]
 \centering
 \includegraphics[height=0.8\textheight]{./Diagram_przeplywu_sterowania.png}
-\caption{Diagram przepływu sterowania}
+\caption{Diagram czynności}
 \end{figure}
 
+\newpage
 \section{Specyfikacja urządzenia}
 
 \subsection{Opis ogólny}
@@ -86,16 +97,27 @@ Diagram klas przetwarzających dane i obliczeniowych w aplikacji, przedstawiony 
 \item Na opuszkach palców zamontowane zostaną czujniki siły nacisku FSR--400. Spadek rezystancji przy przyłożonej sile pozwala zmierzyć siłę nacisku.
 \item Do wykrycia zgięcia stawów międzypaliczkowych bliższych oraz stawu międzypaliczkowego kciuka zastosowane zostaną czujniki ugięcia -- flexsensory firmy Sparkfun. Zgięcie tych sensorów powoduje wzrost rezystancji.
 \item Akcelerometr LSM303DLHC, znajdujący się na płytce Discovery zostanie użyty do określenia orientacji rękawicy względem wektora grawitacji.
-\item Powyższe elementy nie zapewniają bardzo precyzyjnych pomiarów, ale zostały wybrane ze względu na cenę i charakter projektu, w którym zostaną zastosowane.
+\item Powyższe elementy nie zapewniają precyzyjnych pomiarów, ale zostały wybrane ze względu na cenę i charakter projektu, w którym zostaną zastosowane.
 \item Jako urządzenie nadawcze Bluetooth posłuży moduł HC--06 z interfejsem UART podłączony do płytki Discovery.
+\end{itemize}
+Rękawica sensoryczna tworzona w ramach projektu Roboty Mobilne nie została jeszcze zbudowana.
+
+\subsection{Funkcjonalności urządzenia}
+\begin{itemize}
+\item Pobieranie danych o nacisku opuszków palców na powierzchnię.
+\item Pobieranie danych o zgięciu palców dłoni.
+\item Pobieranie danych o orientacji względem wektora grawitacji.
+\item Agregacja danych oraz wysyłanie ich za pomocą Bluetooth i USB.
+\item Wizualizacja nacisku opuszków palców na powierzchnię za pomocą LEDów RGB.
 \end{itemize}
 
 \newpage
 \subsection{Schematy układu elektronicznego}
-Ideowy schemat połączeń urządzenia pomiarowego, współpracującego z aplikacją został przedstawiony na rysunku \ref{fig:ideascheme}
+W ramach projektów Wizualizacja Danych Sensorycznych oraz Roboty Mobilne, nie jest przygotowywany własny układ elektroniczny. Połączenia za pomocą przewodów z płytką sterującą oddaje schemat ideowy.
+Ideowy schemat połączeń urządzenia pomiarowego, współpracującego z aplikacją został przedstawiony na rysunku \ref{fig:ideascheme}.
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=\textwidth]{./SchematIdeowy.png}
+\includegraphics[width=0.9\textwidth]{./SchematIdeowy.png}
 \caption{Ideowy schemat połączeń rękawicy sensorycznej\label{fig:ideascheme}}
 \end{figure}
 Schematy elektroniki głównej płytki z mikrokontrolerem urządzenia pomiarowego można znaleźć na stronie producenta. Rysunek ułożenia elementów na płytce został ukazany na rysunku \ref{fig:layout}
@@ -117,24 +139,23 @@ Schematy elektroniki głównej płytki z mikrokontrolerem urządzenia pomiaroweg
 \subsubsection{Konfiguracja przetwornika pomiarowego}
 \begin{itemize}
 \item Rozdzielczość przetwornika: 12 bitów
-\item Zakres pomiarowy: (0 -- 4095: int), (0 -- 3.3 V)
+\item Zakres pomiarowy: (0 -- 4095: int), (0 -- 3,3 V)
 \item Pomiar ciągły z wykorzystaniem DMA
-\item Czas próbkowania: 19.5 Cykli
+\item Czas próbkowania: 181,5 Cykli
 \item Częstotliwość zegara: 32 MHz
 \end{itemize}
 
-\newpage
 \subsubsection{Dane czujnika ugięcia}
 \begin{itemize}
-\item Długość powierzchni czynnej: 55.37 mm
-\item Zakres rezystancji: 25 k$\Omega$ -- 125 k$\Omega$
+\item Długość powierzchni czynnej: 55,37 mm
+\item Zakres rezystancji: 25 -- 125 k$\Omega$
 \item Rezystor pomiarowy do dzielnika: 62 k$\Omega$
 \end{itemize}
 \subsubsection{Dane czujnika nacisku}
 \begin{itemize}
 \item Średnica powierzchni czynnej: 5 mm
-\item Zakres pomiarowy nacisku: 0.2 -- 20 N
-\item Zakres rezystancji: 150 $\Omega$ -- 10 M$\Omega$
+\item Zakres pomiarowy nacisku: 0,2 -- 20 N
+\item Zakres rezystancji: 150 -- 10 M$\Omega$
 \item Rezystor pomiarowy do dzielnika: 3 k$\Omega$
 \end{itemize}
 \subsubsection{Dane z akcelerometru}
@@ -155,8 +176,8 @@ Wykorzystano dwa sposoby komunikacji z urządzeniem pomiarowym. Możliwość prz
 \item Suma kontrolna: brak
 \item Struktura wiadomości: 7 linii danych
 \begin{itemize}
-\item Linie 1 -- 5: 3x float -- kąty obrotu przegubów palca
-\item Linia 6: 5x float -- dane z czujników nacisku
+\item Linie 1 -- 5: 3x float -- kąty obrotu przegubów palca (0,0 - 100,0 $^\circ$)
+\item Linia 6: 5x int -- dane z czujników nacisku (0 - 4095)
 \item Linia 7: 3x float -- dane z akcelerometru (zagregowane do $m/s^2$)
 \item Każda linia zakończona znakami \textbackslash r \textbackslash n
 \end{itemize}
@@ -164,7 +185,7 @@ Wykorzystano dwa sposoby komunikacji z urządzeniem pomiarowym. Możliwość prz
 \end{itemize}
 \subsubsection{Bluetooth}
 \begin{itemize}
-\item Nazwa modułu komunikacyjnego: HC--06
+\item Nazwa modułu komunikacyjnego: HC -- 06
 \item Interfejs komunikacyjny ze strony urządzenia: UART
 \item Interfejs komunikacyjny ze strony aplikacji: Serial COM Port / moduł QtBluetooth
 \item Baud Rate: 9600 b/s
@@ -187,22 +208,23 @@ Wykorzystano dwa sposoby komunikacji z urządzeniem pomiarowym. Możliwość prz
 %Rozpisać na kolejne tygodnie
 \section{Harmonogram}
 \begin{itemize}
-\item (31.03.2017) Uruchomienie i przetestowanie pętli USB$\rightarrow $UART$\rightarrow $USB w celu symulacji danych sensorycznych \textbf{(Wykonane)}
-\item (14.04.2017) Stworzenie struktur danych wykorzystywanych w aplikacji (przeguby, manipulatory, scena) \textbf{(Wykonane)}
-\item (14.04.2017) Stworzenie projektu okna programu \textbf{(Wykonane)}
-\item (23.04.2017) Wczytywanie i dekodowanie danych z rękawicy sensorycznej
+\item (31.03.2017) \textbf{(Wykonane)} Uruchomienie i przetestowanie pętli USB$\rightarrow $UART$\rightarrow $USB w celu symulacji danych sensorycznych. 
+\item (14.04.2017) \textbf{(Wykonane)} Stworzenie struktur danych wykorzystywanych w aplikacji (przeguby, manipulatory, scena).
+\item (14.04.2017) \textbf{(Wykonane)} Stworzenie projektu okna programu.
 % Wstępne rezultaty
-\item (05.05.2017) Stworzenie uproszczonego modelu kośćca dłoni \textbf{(Wykonane)}
-\item (14.05.2017) Stworzenie elementów wizualizacji nacisku \textbf{(Wykonane)}
-\item (18.05.2017) Stworzenie okna programu
-\item (18.05.2017) Zmiana koloru i/lub wielkości sfer na podstawie odczytów z czujników nacisku
+\item (05.05.2017) \textbf{(Wykonane)} Stworzenie uproszczonego modelu kośćca dłoni.
+\item (14.05.2017) \textbf{(Wykonane)} Stworzenie elementów wizualizacji nacisku.
+\item (18.05.2017) \textbf{(Wykonane)} Zmiana koloru i/lub wielkości sfer na podstawie odczytów z czujników nacisku.
 %Rezultaty prawie końcowe
-\item (26.05.2017) Komunikacja przez Bluetooth
-\item (5.06.2017) Poruszanie przegubami na podstawie odczytów z tensorów i kinematyki prostej manipulatorów
-\item (5.06.2017) Obrót modelu na podstawie akcelerometru
-\item (11.06.2017) Testy aplikacji
-\item (15.06.2017) Naprawianie błędów
-\item (15.06.2017) Wizualne ulepszenie aplikacji
+\item (26.05.2017) Komunikacja przez Bluetooth.
+\item (26.05.2017) Komunikacja przez USB.
+\item (01.06.2017) \textbf{(Rozpoczęte)} Stworzenie okna programu.
+\item (01.06.2017) Wczytywanie i dekodowanie danych z rękawicy sensorycznej.
+\item (05.06.2017) \textbf{(Rozpoczęte)} Poruszanie przegubami na podstawie odczytów z tensorów.
+\item (05.06.2017) Obrót modelu na podstawie akcelerometru.
+\item (11.06.2017) Testy aplikacji.
+\item (15.06.2017) Naprawianie błędów.
+\item (15.06.2017) Poprawianie funkcjonalności i optymalizacja kodu.
 %Rezultaty końcowe
 \end{itemize}
 
