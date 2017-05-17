@@ -24,11 +24,6 @@ public:
 
     void TransformJointAngles(QVector<float> p_jointAngles);
     Joint *getLastJoint();
-    virtual void SetInternalCoordinates(QVector<float> p_angles);
-
-    QVector3D GetPointInSystem(int p_point, int p_system=0);
-    QVector<QVector3D> GetPointsInGlobal();
-    QVector3D ForwardKinematics();
 };
 
 #endif // MANIPULATORROTATIONAL_H

@@ -65,10 +65,8 @@ public:
     Finger &operator = (const Finger& p_finger);
 
     void TransformJointAngles(QVector<float> p_angles);
-    void TransformFingertipPosition();
 
-    void SetInternalCoordinates(QVector<float> p_angles);
-    float GetFingertipValue() const;
+    int GetFingertipValue() const;
     void SetFingertipValue(int p_NewFingertipValue);
 };
 

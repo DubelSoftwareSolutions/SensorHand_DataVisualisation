@@ -24,40 +24,20 @@ Hand::Hand(Qt3DCore::QEntity *p_rootEntity,QColor p_HandColor):m_rootEntity(p_ro
     m_fingers.push_back(pinky);
 }
 
-void Hand::TransformFingerAngles(QVector<QVector<float> > p_FingerAngles)
+QVector<int> Hand::GetFingertipValues() const
 {
-    for(int i=0; i<m_fingers.size(); ++i)
-    {
-        m_fingers[i].TransformJointAngles(p_FingerAngles[i]);
-        m_fingers[i].TransformFingertipPosition();
-    }
-}
-
-QVector<QVector3D> Hand::GetJointPoints()
-{/*
-    QVector<QVector3D> jointPoints;
-
-    for(Finger currentFinger : m_fingers)
-        jointPoints.append(currentFinger.GetPointsInGlobal());
-
-    return jointPoints;*/
-    return QVector<QVector3D>();
-}
-
-QVector<float> Hand::GetFingertipValues() const
-{
-    QVector<float> FingertipValues;
-
+    QVector<int> FingertipValues;
     for(Finger currentFinger : m_fingers)
         FingertipValues.push_back(currentFinger.GetFingertipValue());
-
     return FingertipValues;
 }
 
 void Hand::SetFingerJoints(QVector<QVector<float> > p_JointAngles)
-{/*
-    for(unsigned int i=0; i<FINGER_COUNT; ++i)
-        m_fingers[i].SetInternalCoordinates(p_JointAngles[i]);*/
+{
+    for(int i=0; i<m_fingers.size(); ++i)
+    {
+        m_fingers[i].TransformJointAngles(p_JointAngles[i]);
+    }
 }
 
 void Hand::SetFingertipValues(QVector<int> p_FingertipValues)

@@ -82,6 +82,7 @@ Finger::Finger(const Finger &p_finger)
     m_fingertip = p_finger.m_fingertip;
     m_rootEntity = p_finger.m_rootEntity;
     m_manipulator = p_finger.m_manipulator;
+    m_fingerType = p_finger.m_fingerType;
 }
 
 Finger &Finger::operator =(const Finger &p_finger)
@@ -89,6 +90,7 @@ Finger &Finger::operator =(const Finger &p_finger)
     m_fingertip = p_finger.m_fingertip;
     m_rootEntity = p_finger.m_rootEntity;
     m_manipulator = p_finger.m_manipulator;
+    m_fingerType = p_finger.m_fingerType;
     return *this;
 }
 
@@ -105,24 +107,10 @@ void Finger::TransformJointAngles(QVector<float> p_angles)
         break;
     }
     m_manipulator->TransformJointAngles(p_angles);
-}
-
-void Finger::TransformFingertipPosition()
-{
     m_fingertip->TransformFingertip(m_manipulator->getLastJoint());
 }
 
-void Finger::SetInternalCoordinates(QVector<float> p_angles)
-{
-    /*for(int i=0;i<m_joints.size()-1 && i<p_angles.size();++i)
-    {
-        if(p_angles[i]<0)
-            throw (ErrorHandler::ErrorType_t::NegativeAngle);
-        m_joints[i].angle()=p_angles[i];
-    }*/
-}
-
-float Finger::GetFingertipValue() const
+int Finger::GetFingertipValue() const
 {
     return m_fingertip->getFingertipValue();
 }

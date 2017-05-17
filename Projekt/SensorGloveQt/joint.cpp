@@ -51,15 +51,11 @@ Joint::Joint(const Joint &p_joint)
     m_position = p_joint.m_position;
     m_rootEntity = p_joint.m_rootEntity;
     m_CylinderEntity = p_joint.m_CylinderEntity;
+    m_CylinderTransform = p_joint.m_CylinderTransform;
     m_TransformMatrix = p_joint.m_TransformMatrix;
 }
 
 float Joint::length() const
-{
-    return m_length;
-}
-
-float &Joint::length()
 {
     return m_length;
 }
@@ -105,6 +101,7 @@ Joint &Joint::operator =(const Joint &p_joint)
     m_position = p_joint.m_position;
     m_rootEntity = p_joint.m_rootEntity;
     m_CylinderEntity = p_joint.m_CylinderEntity;
+    m_CylinderTransform = p_joint.m_CylinderTransform;
     m_TransformMatrix = p_joint.m_TransformMatrix;
     return *this;
 }

@@ -52,7 +52,6 @@
 
 #include "errorhandler.h"
 #include "mainwindow.h"
-#include "rotationmatrix.h"
 #include "joint.h"
 #include "manipulatorrotational.h"
 #include "fingertip.h"

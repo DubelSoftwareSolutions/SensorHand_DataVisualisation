@@ -30,7 +30,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    rotationmatrix.cpp \
     joint.cpp \
     manipulatorrotational.cpp \
     finger.cpp \
@@ -42,7 +41,6 @@ SOURCES += main.cpp\
 
 HEADERS  += mainwindow.h \
     includes.h \
-    rotationmatrix.h \
     joint.h \
     manipulatorrotational.h \
     finger.h \

@@ -32,10 +32,7 @@ protected:
 public:
     Hand(Qt3DCore::QEntity *p_rootEntity = nullptr,QColor p_HandColor = QColor(255,173,96));
 
-    void TransformFingerAngles(QVector<QVector<float>> p_FingerAngles);
-
-    QVector<QVector3D> GetJointPoints();
-    QVector<float> GetFingertipValues() const;
+    QVector<int> GetFingertipValues() const;
     void SetFingerJoints(QVector<QVector<float>> p_JointAngles);
     void SetFingertipValues(QVector<int> p_FingertipValues);
 };

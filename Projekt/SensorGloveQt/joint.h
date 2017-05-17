@@ -32,7 +32,6 @@ public:
     Joint(const Joint& p_joint);
 
     float length() const;
-    float &length();
     float angle() const;
     QMatrix4x4 TransformMatrix() const;
     void TransformAngle(float p_newAngle, Joint *p_PrevJoint=nullptr);
