@@ -48,6 +48,9 @@ Scene::Scene(Qt3DCore::QEntity *rootEntity) : m_rootEntity(rootEntity)
     m_Cylinder2Entity->addComponent(cylinder2);
     m_Cylinder2Entity->addComponent(cylinderMaterial);
     m_Cylinder2Entity->addComponent(cylinderTransform2);
+
+    matrix.translate(QVector3D(1,0,1));
+    cylinderTransform2->setMatrix(matrix);
 /*
     matrix.translate(QVector3D(0,cylinder->length()/2,0));
     matrix.rotate(45,QVector3D(0,0,1));

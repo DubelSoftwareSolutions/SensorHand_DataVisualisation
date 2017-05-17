@@ -22,6 +22,8 @@ public:
 
     ManipulatorRotational(const ManipulatorRotational& p_manipulator);
 
+    void TransformJointAngles(QVector<double> p_jointAngles);
+    Joint *getLastJoint();
     virtual void SetInternalCoordinates(QVector<double> p_angles);
 
     QVector3D GetPointInSystem(int p_point, int p_system=0);

@@ -10,10 +10,10 @@
 #define PINKY_FINGER_OFFSET -2.0
 
 #define THUMB_FINGER_ROTATION -30
-#define INDEX_FINGER_ROTATION -5
+#define INDEX_FINGER_ROTATION -10
 #define MIDDLE_FINGER_ROTATION 0.0
-#define RING_FINGER_ROTATION 5
-#define PINKY_FINGER_ROTATION 10
+#define RING_FINGER_ROTATION 10
+#define PINKY_FINGER_ROTATION 20
 
 #include<QObject>
 #include<Qt3DCore/QEntity>
@@ -32,10 +32,12 @@ protected:
 public:
     Hand(Qt3DCore::QEntity *p_rootEntity = nullptr,QColor p_HandColor = QColor(255,173,96));
 
+    void TransformFingerAngles(QVector<QVector<double>> p_FingerAngles);
+
     QVector<QVector3D> GetJointPoints();
-    QVector<int> GetFingertipValues();
+    QVector<float> GetFingertipValues() const;
     void SetFingerJoints(QVector<QVector<double>> p_JointAngles);
-    void SetFingertipValues(QVector<int> p_FingertipValues);
+    void SetFingertipValues(QVector<float> p_FingertipValues);
 };
 
 #endif // HAND_H
