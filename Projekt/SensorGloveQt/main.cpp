@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
     Angles.push_back(ringAngles);
     Angles.push_back(pinkyAngles);
 
-    QVector<int> fingertips(5,2700);
+    QVector<int> fingertips(5,4095);
 
     //scene3D->SetHandTransformation(Angles);
     //scene3D->SetHandFingertipValues(fingertips);
