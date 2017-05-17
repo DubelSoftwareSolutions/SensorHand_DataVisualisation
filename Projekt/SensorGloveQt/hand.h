@@ -2,6 +2,7 @@
 #define HAND_H
 
 #define FINGER_COUNT 5
+#define FINGERTIP_RADIUS 1.5
 
 #define THUMB_FINGER_OFFSET 2.0
 #define INDEX_FINGER_OFFSET 1.0
