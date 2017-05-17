@@ -1,9 +1,8 @@
 #include "includes.h"
 
 Finger::Finger(Qt3DCore::QEntity *p_rootEntity, FingerType_t p_fingerType,
-               float p_fingertipValue,
                QVector3D p_position,
-               double p_rotation,
+               float p_rotation,
                QColor p_fingerColor):
     m_rootEntity(p_rootEntity),m_fingerType(p_fingerType)
 {
@@ -75,7 +74,7 @@ Finger::Finger(Qt3DCore::QEntity *p_rootEntity, FingerType_t p_fingerType,
     }
         break;
     }
-    m_fingertip = new Fingertip(p_fingertipValue,m_rootEntity,joints.last());
+    m_fingertip = new Fingertip(m_rootEntity,joints.last());
 }
 
 Finger::Finger(const Finger &p_finger)
@@ -93,7 +92,7 @@ Finger &Finger::operator =(const Finger &p_finger)
     return *this;
 }
 
-void Finger::TransformJointAngles(QVector<double> p_angles)
+void Finger::TransformJointAngles(QVector<float> p_angles)
 {
     int FingerJointCount;
     switch(m_fingerType)
@@ -113,7 +112,7 @@ void Finger::TransformFingertipPosition()
     m_fingertip->TransformFingertip(m_manipulator->getLastJoint());
 }
 
-void Finger::SetInternalCoordinates(QVector<double> p_angles)
+void Finger::SetInternalCoordinates(QVector<float> p_angles)
 {
     /*for(int i=0;i<m_joints.size()-1 && i<p_angles.size();++i)
     {

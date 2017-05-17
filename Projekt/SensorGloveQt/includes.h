@@ -4,7 +4,7 @@
 #include <iostream>
 #include <cmath>
 
-
+#include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QWidget>
@@ -51,6 +51,7 @@
 #include <Qt3DExtras/QSphereMesh>
 
 #include "errorhandler.h"
+#include "mainwindow.h"
 #include "rotationmatrix.h"
 #include "joint.h"
 #include "manipulatorrotational.h"
@@ -59,5 +60,5 @@
 #include "hand.h"
 #include "scene.h"
 #include "input.h"
-#include "mainwindow.h"
+
 #endif // INCLUDES_H
