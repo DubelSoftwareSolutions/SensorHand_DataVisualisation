@@ -198,22 +198,6 @@
      </property>
     </item>
    </widget>
-   <widget class="QSlider" name="GloveSizeSlider">
-    <property name="geometry">
-     <rect>
-      <x>640</x>
-      <y>30</y>
-      <width>160</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <property name="value">
-     <number>50</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
    <widget class="QLabel" name="CommunicationLabel">
     <property name="geometry">
      <rect>
@@ -225,19 +209,6 @@
     </property>
     <property name="text">
      <string>Communicaion through</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="GloveSizeLabel">
-    <property name="geometry">
-     <rect>
-      <x>650</x>
-      <y>10</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Glove Size</string>
     </property>
    </widget>
    <widget class="QWidget" name="gridLayoutWidget">
@@ -321,72 +292,89 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QSlider" name="CameraOrientationSlider">
+   <widget class="QWidget" name="formLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>640</x>
-      <y>80</y>
+      <x>630</x>
+      <y>30</y>
       <width>160</width>
-      <height>22</height>
+      <height>104</height>
      </rect>
     </property>
-    <property name="maximum">
-     <number>360</number>
-    </property>
-    <property name="value">
-     <number>180</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QLabel" name="CameraOrientationLabel">
-    <property name="geometry">
-     <rect>
-      <x>650</x>
-      <y>60</y>
-      <width>91</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Camera orientation:</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="CameraOrientationLineEdit">
-    <property name="geometry">
-     <rect>
-      <x>750</x>
-      <y>60</y>
-      <width>41</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>180</string>
-    </property>
-    <property name="maxLength">
-     <number>3</number>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="GloveSizeLineEdit">
-    <property name="geometry">
-     <rect>
-      <x>750</x>
-      <y>10</y>
-      <width>41</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>50</string>
-    </property>
-    <property name="maxLength">
-     <number>3</number>
-    </property>
-    <property name="cursorMoveStyle">
-     <enum>Qt::LogicalMoveStyle</enum>
-    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="GloveSizeLabel">
+       <property name="text">
+        <string>Glove Size</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="GloveSizeLineEdit">
+       <property name="maximumSize">
+        <size>
+         <width>30</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>50</string>
+       </property>
+       <property name="maxLength">
+        <number>3</number>
+       </property>
+       <property name="cursorMoveStyle">
+        <enum>Qt::LogicalMoveStyle</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QSlider" name="GloveSizeSlider">
+       <property name="value">
+        <number>50</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="CameraOrientationLabel">
+       <property name="text">
+        <string>Camera orientation:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="CameraOrientationLineEdit">
+       <property name="maximumSize">
+        <size>
+         <width>30</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>180</string>
+       </property>
+       <property name="maxLength">
+        <number>3</number>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="2">
+      <widget class="QSlider" name="CameraOrientationSlider">
+       <property name="maximum">
+        <number>360</number>
+       </property>
+       <property name="value">
+        <number>180</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -402,6 +390,7 @@
     <property name="title">
      <string>File</string>
     </property>
+    <addaction name="actionExport_data"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
     <property name="title">
@@ -412,10 +401,24 @@
     <property name="title">
      <string>View</string>
     </property>
+    <addaction name="actionConfiguration"/>
+    <addaction name="actionMeasurements"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
    <addaction name="menuView"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuHelp"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -426,6 +429,21 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionExport_data">
+   <property name="text">
+    <string>Export data</string>
+   </property>
+  </action>
+  <action name="actionMeasurements">
+   <property name="text">
+    <string>Measurements</string>
+   </property>
+  </action>
+  <action name="actionConfiguration">
+   <property name="text">
+    <string>Configuration</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

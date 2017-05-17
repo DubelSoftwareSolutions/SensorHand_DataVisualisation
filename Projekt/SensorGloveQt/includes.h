@@ -4,7 +4,7 @@
 #include <iostream>
 #include <cmath>
 
-#include "mainwindow.h"
+
 #include "ui_mainwindow.h"
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QWidget>
@@ -59,5 +59,5 @@
 #include "hand.h"
 #include "scene.h"
 #include "input.h"
-
+#include "mainwindow.h"
 #endif // INCLUDES_H

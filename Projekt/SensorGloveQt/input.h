@@ -1,6 +1,10 @@
 #ifndef INPUT_H
 #define INPUT_H
-
+/*
+namespace Id {
+class Input;
+}
+*/
 
 class Input: QBluetoothTransferManager, QSerialPort
 {

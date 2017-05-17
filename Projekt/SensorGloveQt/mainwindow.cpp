@@ -20,6 +20,11 @@ void MainWindow::AddWidgetToGlove3DLayout(QWidget *widget)
      ui->Glove3DLayout->addWidget(widget);
  }
 
+void MainWindow::InitInputData(Input & data)
+{
+    InputData = data;
+}
+
 void MainWindow::on_StartStopButton_clicked()
 {
     if(ui->StartStopButton->text() == "Start")
