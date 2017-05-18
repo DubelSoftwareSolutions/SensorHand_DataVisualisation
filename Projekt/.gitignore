@@ -9,3 +9,4 @@
 *.gz
 *.xlsx
 build-SensorGloveQt-Desktop_Qt_5_8_0_MSVC2015_64bit-Debug/*
+SensorGloveQt/SensorGloveQt.pro.user

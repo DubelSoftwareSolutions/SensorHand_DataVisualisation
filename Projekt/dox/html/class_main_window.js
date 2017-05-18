@@ -3,6 +3,7 @@ var class_main_window =
     [ "MainWindow", "class_main_window.html#a8b244be8b7b7db1b08de2a2acb9409db", null ],
     [ "~MainWindow", "class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7", null ],
     [ "AddWidgetToGlove3DLayout", "class_main_window.html#ad1878f043e440b2917d12ed59caaca0c", null ],
+    [ "InitInputData", "class_main_window.html#abd0772bfb398165834c0693627603b0f", null ],
     [ "on_CameraOrientationLineEdit_editingFinished", "class_main_window.html#aeaf68d64561b179222fffc59bbd36e1e", null ],
     [ "on_CameraOrientationLineEdit_textEdited", "class_main_window.html#aab13b3768743e30605d2f7be38011d6b", null ],
     [ "on_CameraOrientationSlider_valueChanged", "class_main_window.html#a08d7ab803fa7f4432ab79dd562547018", null ],

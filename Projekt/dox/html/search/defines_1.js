@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['evector_5fdimension_5fcount',['EVECTOR_DIMENSION_COUNT',['../euclideanvector_8h.html#ae64fe7e5942ad7de895b9e6f358a56b9',1,'euclideanvector.h']]]
+  ['finger_5fcount',['FINGER_COUNT',['../hand_8h.html#acc11b84e9aa32ceb64b9339032d9ae2e',1,'hand.h']]],
+  ['finger_5fjoints_5fcount',['FINGER_JOINTS_COUNT',['../finger_8h.html#a885bf63c93171052fae8cb96bb3c4d78',1,'finger.h']]],
+  ['finger_5fradius',['FINGER_RADIUS',['../finger_8h.html#a2b2006272771cc32df872c49ba12a43f',1,'finger.h']]]
 ];

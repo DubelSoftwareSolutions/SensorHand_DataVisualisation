@@ -9,6 +9,7 @@ var searchData=
   ['index_5ffinger_5frotation',['INDEX_FINGER_ROTATION',['../hand_8h.html#ab5d6f2b2b689793c9e456518f53008da',1,'hand.h']]],
   ['index_5fjoint_5fcount',['INDEX_JOINT_COUNT',['../finger_8h.html#ad44635d4519f0d322165eaecb3786fe4',1,'finger.h']]],
   ['indexfinger',['IndexFinger',['../class_finger.html#a365e6bba2e4877decf3c7641d29838c3a12cc2d85dc9a1a57ae93f22c1a8b94b4',1,'Finger']]],
+  ['initinputdata',['InitInputData',['../class_main_window.html#abd0772bfb398165834c0693627603b0f',1,'MainWindow']]],
   ['input',['Input',['../class_input.html',1,'Input'],['../class_input.html#abae3f379d3f157cf42dc857309832dba',1,'Input::Input()'],['../class_scene.html#aa17e5d3b3393d6ea4cbbf7ab981b5b62',1,'Scene::input()']]],
   ['input_2ecpp',['input.cpp',['../input_8cpp.html',1,'']]],
   ['input_2eh',['input.h',['../input_8h.html',1,'']]],

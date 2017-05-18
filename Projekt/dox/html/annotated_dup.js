@@ -1,7 +1,6 @@
 var annotated_dup =
 [
     [ "ErrorHandler", "class_error_handler.html", "class_error_handler" ],
-    [ "EuclideanVector", "class_euclidean_vector.html", "class_euclidean_vector" ],
     [ "Finger", "class_finger.html", "class_finger" ],
     [ "Fingertip", "class_fingertip.html", "class_fingertip" ],
     [ "Hand", "class_hand.html", "class_hand" ],

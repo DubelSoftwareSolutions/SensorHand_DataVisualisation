@@ -36,7 +36,7 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 void AddWidgetToGlove3DLayout(QWidget *widget);
-//void InitInputData(Input & data);
+void InitInputData(Input *data);
 
 private slots:
 void on_StartStopButton_clicked();

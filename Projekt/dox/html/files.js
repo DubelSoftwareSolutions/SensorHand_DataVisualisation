@@ -5,8 +5,6 @@ var files =
     [ "errorhandler.h", "errorhandler_8h.html", [
       [ "ErrorHandler", "class_error_handler.html", "class_error_handler" ]
     ] ],
-    [ "euclideanvector.cpp", "euclideanvector_8cpp.html", "euclideanvector_8cpp" ],
-    [ "euclideanvector.h", "euclideanvector_8h.html", "euclideanvector_8h" ],
     [ "finger.cpp", "finger_8cpp.html", null ],
     [ "finger.h", "finger_8h.html", "finger_8h" ],
     [ "fingertip.cpp", "fingertip_8cpp.html", null ],

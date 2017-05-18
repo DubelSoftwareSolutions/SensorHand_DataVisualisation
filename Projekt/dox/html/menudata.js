@@ -42,7 +42,6 @@ var menudata={children:[
 {text:"j",url:"functions_func.html#index_j"},
 {text:"l",url:"functions_func.html#index_l"},
 {text:"m",url:"functions_func.html#index_m"},
-{text:"n",url:"functions_func.html#index_n"},
 {text:"o",url:"functions_func.html#index_o"},
 {text:"s",url:"functions_func.html#index_s"},
 {text:"t",url:"functions_func.html#index_t"},
@@ -64,12 +63,9 @@ var menudata={children:[
 {text:"Składowe plików",url:"globals.html",children:[
 {text:"Wszystko",url:"globals.html",children:[
 {text:"c",url:"globals.html#index_c"},
-{text:"d",url:"globals.html#index_d"},
-{text:"e",url:"globals.html#index_e"},
 {text:"f",url:"globals.html#index_f"},
 {text:"i",url:"globals.html#index_i"},
 {text:"m",url:"globals.html#index_m"},
-{text:"o",url:"globals.html#index_o"},
 {text:"p",url:"globals.html#index_p"},
 {text:"r",url:"globals.html#index_r"},
 {text:"s",url:"globals.html#index_s"},
@@ -77,7 +73,6 @@ var menudata={children:[
 {text:"Funkcje",url:"globals_func.html"},
 {text:"Definicje",url:"globals_defs.html",children:[
 {text:"c",url:"globals_defs.html#index_c"},
-{text:"e",url:"globals_defs.html#index_e"},
 {text:"f",url:"globals_defs.html#index_f"},
 {text:"i",url:"globals_defs.html#index_i"},
 {text:"m",url:"globals_defs.html#index_m"},

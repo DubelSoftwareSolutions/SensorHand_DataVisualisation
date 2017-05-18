@@ -19,6 +19,12 @@
 #include "finger.h"
 #include "hand.h"
 
+/*!
+ * \brief Modeluje pojecie sceny z elementami 3D
+ * Inicjuje trójwymiatowy model ręki zdefioniowany klasą Hand,
+ * za pomocą biblioteki Qt3D, a także inicjalizuje widok, widget,
+ * rozmiar okna, układ, wejście danych, kontroler perspektywy i oświetlenie
+ */
 class Scene : public QObject
 {
     Q_OBJECT

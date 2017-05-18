@@ -1,6 +1,14 @@
 #ifndef INCLUDES_H
 #define INCLUDES_H
 
+/*!
+ * \file
+ * \brief Dołączenie bibliotek
+ *
+ * Plik zwiera biblioteki dołączone do projektu
+ *
+ */
+
 #include <iostream>
 #include <cmath>
 

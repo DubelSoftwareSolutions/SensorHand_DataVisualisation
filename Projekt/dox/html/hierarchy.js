@@ -1,7 +1,6 @@
 var hierarchy =
 [
     [ "ErrorHandler", "class_error_handler.html", null ],
-    [ "EuclideanVector", "class_euclidean_vector.html", null ],
     [ "Matrix", "class_matrix.html", null ],
     [ "QBluetoothTransferManager", null, [
       [ "Input", "class_input.html", null ]

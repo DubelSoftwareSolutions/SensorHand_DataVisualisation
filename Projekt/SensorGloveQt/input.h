@@ -7,6 +7,7 @@
  *
  * Plik zwiera definicję klasy Input, jest klasą pochodną
  * klas QBluetoothTransferManager oraz QSerialPort
+ *
  */
 
 #include <QtBluetooth>

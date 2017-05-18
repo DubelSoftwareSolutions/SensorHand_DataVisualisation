@@ -5,7 +5,7 @@ var searchData=
   ['m_5fconnectiontype',['m_ConnectionType',['../class_input.html#aeccfe44263c5985405f94c5feb0ed0aa',1,'Input']]],
   ['m_5fcylinderentity',['m_CylinderEntity',['../class_joint.html#a0862c4b658d00415ae4952e43af4931b',1,'Joint']]],
   ['m_5fcylindertransform',['m_CylinderTransform',['../class_joint.html#af86be64ec4dfe808d941a322867ee984',1,'Joint']]],
-  ['m_5felements',['m_elements',['../class_euclidean_vector.html#a9e2eea847504bab04531e2295cfc32e7',1,'EuclideanVector::m_elements()'],['../class_matrix.html#a679cfa3ccc32962d3273227de75e52a2',1,'Matrix::m_elements()']]],
+  ['m_5felements',['m_elements',['../class_matrix.html#a679cfa3ccc32962d3273227de75e52a2',1,'Matrix']]],
   ['m_5ffingers',['m_fingers',['../class_hand.html#a303c056fb939dde0845a69720c15e4f8',1,'Hand']]],
   ['m_5ffingertip',['m_fingertip',['../class_finger.html#a50801f15bfee4cb547fa5062f6a57d78',1,'Finger']]],
   ['m_5ffingertipvalue',['m_fingertipValue',['../class_fingertip.html#a905ac81dfaa6237a3bf0bd799edee5ed',1,'Fingertip']]],
