@@ -220,6 +220,7 @@ Makefile: ..\SensorGloveQt\SensorGloveQt.pro D:\ProgramFiles\Qt5.8.0\5.8\msvc201
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\qt_config.prf \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\mkspecs\win32-msvc2015\qmake.conf \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\spec_post.prf \
+		.qmake.stash \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\exclusive_builds.prf \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\toolchain.prf \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\default_pre.prf \
@@ -406,6 +407,7 @@ D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\qt_functions.prf:
 D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\qt_config.prf:
 D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\mkspecs\win32-msvc2015\qmake.conf:
 D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\spec_post.prf:
+.qmake.stash:
 D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\exclusive_builds.prf:
 D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\toolchain.prf:
 D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\default_pre.prf:

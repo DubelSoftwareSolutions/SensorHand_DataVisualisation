@@ -1416,7 +1416,12 @@ debug\moc_scene.cpp: D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QObj
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qt3dinput_global.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractphysicaldevice.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qaction.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qaction.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtwidgetsglobal.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtwidgets-config.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qwidget.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qsizepolicy.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qactiongroup.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qactioninput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qanalogaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\QAbstractAxisInput \
@@ -1478,13 +1483,9 @@ debug\moc_scene.cpp: D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QObj
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qt3dextrasversion.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHBoxLayout \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qboxlayout.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtwidgetsglobal.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtwidgets-config.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayoutitem.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qsizepolicy.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qgridlayout.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qwidget.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QVBoxLayout \
 		..\SensorGloveQt\mainwindow.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMainWindow \
@@ -1958,17 +1959,67 @@ debug\main.obj: ..\SensorGloveQt\main.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtSerialPort\qserialportinfo.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtSerialPort\qtserialportversion.h \
 		ui_mainwindow.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QAction \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qaction.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qactiongroup.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QApplication \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qapplication.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdesktopwidget.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qguiapplication.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qinputmethod.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHBoxLayout \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qboxlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QButtonGroup \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qbuttongroup.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QComboBox \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qcombobox.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemdelegate.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyleoption.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractspinbox.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvalidator.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qslider.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractslider.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyle.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtabbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qrubberband.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qframe.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QFormLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qformlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLayout \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayoutitem.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qboxlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qgridlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QGridLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHeaderView \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qheaderview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractscrollarea.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLabel \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlabel.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLineEdit \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlineedit.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextcursor.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextformat.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpen.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextoption.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenu \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenu.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenuBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenubar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QPushButton \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qpushbutton.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractbutton.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QSlider \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QStatusBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstatusbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTabWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTableWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtablewidget.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtableview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QToolBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtoolbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QVBoxLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHBoxLayout \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QScreen \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qscreen.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QRect \
@@ -2074,13 +2125,9 @@ debug\main.obj: ..\SensorGloveQt\main.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QtGuiDepends \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qabstracttextdocumentlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextlayout.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextformat.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpen.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextoption.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qglyphrun.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qrawfont.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qfontdatabase.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextcursor.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextdocument.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qaccessible.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qaccessiblebridge.h \
@@ -2140,7 +2187,6 @@ debug\main.obj: ..\SensorGloveQt\main.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextdocumentwriter.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextlist.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtexttable.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvalidator.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtguiversion.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork\QtNetwork \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork\QtNetworkDepends \
@@ -2282,7 +2328,6 @@ debug\main.obj: ..\SensorGloveQt\main.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractactioninput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractphysicaldevice.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qaction.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qactioninput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qanalogaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\QAbstractAxisInput \
@@ -2331,8 +2376,7 @@ debug\main.obj: ..\SensorGloveQt\main.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qspheregeometry.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qtorusgeometry.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qtorusmesh.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qt3dextrasversion.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QVBoxLayout
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qt3dextrasversion.h
 
 debug\mainwindow.obj: ..\SensorGloveQt\mainwindow.cpp ../SensorGloveQt/includes.h \
 		../SensorGloveQt/mainwindow.h \
@@ -2615,17 +2659,67 @@ debug\mainwindow.obj: ..\SensorGloveQt\mainwindow.cpp ../SensorGloveQt/includes.
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtSerialPort\qserialportinfo.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtSerialPort\qtserialportversion.h \
 		ui_mainwindow.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QAction \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qaction.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qactiongroup.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QApplication \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qapplication.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdesktopwidget.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qguiapplication.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qinputmethod.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHBoxLayout \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qboxlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QButtonGroup \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qbuttongroup.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QComboBox \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qcombobox.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemdelegate.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyleoption.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractspinbox.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvalidator.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qslider.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractslider.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyle.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtabbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qrubberband.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qframe.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QFormLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qformlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLayout \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayoutitem.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qboxlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qgridlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QGridLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHeaderView \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qheaderview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractscrollarea.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLabel \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlabel.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLineEdit \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlineedit.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextcursor.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextformat.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpen.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextoption.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenu \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenu.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenuBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenubar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QPushButton \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qpushbutton.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractbutton.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QSlider \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QStatusBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstatusbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTabWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTableWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtablewidget.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtableview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QToolBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtoolbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QVBoxLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHBoxLayout \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QScreen \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qscreen.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QRect \
@@ -2731,13 +2825,9 @@ debug\mainwindow.obj: ..\SensorGloveQt\mainwindow.cpp ../SensorGloveQt/includes.
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QtGuiDepends \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qabstracttextdocumentlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextlayout.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextformat.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpen.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextoption.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qglyphrun.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qrawfont.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qfontdatabase.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextcursor.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextdocument.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qaccessible.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qaccessiblebridge.h \
@@ -2797,7 +2887,6 @@ debug\mainwindow.obj: ..\SensorGloveQt\mainwindow.cpp ../SensorGloveQt/includes.
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextdocumentwriter.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextlist.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtexttable.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvalidator.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtguiversion.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork\QtNetwork \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork\QtNetworkDepends \
@@ -2939,7 +3028,6 @@ debug\mainwindow.obj: ..\SensorGloveQt\mainwindow.cpp ../SensorGloveQt/includes.
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractactioninput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractphysicaldevice.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qaction.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qactioninput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qanalogaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\QAbstractAxisInput \
@@ -2988,8 +3076,7 @@ debug\mainwindow.obj: ..\SensorGloveQt\mainwindow.cpp ../SensorGloveQt/includes.
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qspheregeometry.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qtorusgeometry.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qtorusmesh.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qt3dextrasversion.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QVBoxLayout
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qt3dextrasversion.h
 
 debug\joint.obj: ..\SensorGloveQt\joint.cpp ../SensorGloveQt/includes.h \
 		../SensorGloveQt/mainwindow.h \
@@ -3272,17 +3359,67 @@ debug\joint.obj: ..\SensorGloveQt\joint.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtSerialPort\qserialportinfo.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtSerialPort\qtserialportversion.h \
 		ui_mainwindow.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QAction \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qaction.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qactiongroup.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QApplication \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qapplication.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdesktopwidget.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qguiapplication.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qinputmethod.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHBoxLayout \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qboxlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QButtonGroup \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qbuttongroup.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QComboBox \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qcombobox.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemdelegate.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyleoption.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractspinbox.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvalidator.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qslider.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractslider.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyle.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtabbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qrubberband.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qframe.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QFormLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qformlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLayout \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayoutitem.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qboxlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qgridlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QGridLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHeaderView \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qheaderview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractscrollarea.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLabel \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlabel.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLineEdit \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlineedit.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextcursor.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextformat.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpen.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextoption.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenu \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenu.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenuBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenubar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QPushButton \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qpushbutton.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractbutton.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QSlider \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QStatusBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstatusbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTabWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTableWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtablewidget.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtableview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QToolBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtoolbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QVBoxLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHBoxLayout \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QScreen \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qscreen.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QRect \
@@ -3388,13 +3525,9 @@ debug\joint.obj: ..\SensorGloveQt\joint.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QtGuiDepends \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qabstracttextdocumentlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextlayout.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextformat.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpen.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextoption.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qglyphrun.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qrawfont.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qfontdatabase.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextcursor.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextdocument.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qaccessible.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qaccessiblebridge.h \
@@ -3454,7 +3587,6 @@ debug\joint.obj: ..\SensorGloveQt\joint.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextdocumentwriter.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextlist.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtexttable.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvalidator.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtguiversion.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork\QtNetwork \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork\QtNetworkDepends \
@@ -3596,7 +3728,6 @@ debug\joint.obj: ..\SensorGloveQt\joint.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractactioninput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractphysicaldevice.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qaction.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qactioninput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qanalogaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\QAbstractAxisInput \
@@ -3645,8 +3776,7 @@ debug\joint.obj: ..\SensorGloveQt\joint.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qspheregeometry.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qtorusgeometry.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qtorusmesh.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qt3dextrasversion.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QVBoxLayout
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qt3dextrasversion.h
 
 debug\manipulatorrotational.obj: ..\SensorGloveQt\manipulatorrotational.cpp ../SensorGloveQt/includes.h \
 		../SensorGloveQt/mainwindow.h \
@@ -3929,17 +4059,67 @@ debug\manipulatorrotational.obj: ..\SensorGloveQt\manipulatorrotational.cpp ../S
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtSerialPort\qserialportinfo.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtSerialPort\qtserialportversion.h \
 		ui_mainwindow.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QAction \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qaction.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qactiongroup.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QApplication \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qapplication.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdesktopwidget.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qguiapplication.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qinputmethod.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHBoxLayout \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qboxlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QButtonGroup \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qbuttongroup.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QComboBox \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qcombobox.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemdelegate.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyleoption.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractspinbox.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvalidator.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qslider.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractslider.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyle.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtabbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qrubberband.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qframe.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QFormLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qformlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLayout \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayoutitem.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qboxlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qgridlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QGridLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHeaderView \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qheaderview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractscrollarea.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLabel \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlabel.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLineEdit \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlineedit.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextcursor.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextformat.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpen.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextoption.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenu \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenu.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenuBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenubar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QPushButton \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qpushbutton.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractbutton.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QSlider \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QStatusBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstatusbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTabWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTableWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtablewidget.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtableview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QToolBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtoolbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QVBoxLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHBoxLayout \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QScreen \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qscreen.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QRect \
@@ -4045,13 +4225,9 @@ debug\manipulatorrotational.obj: ..\SensorGloveQt\manipulatorrotational.cpp ../S
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QtGuiDepends \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qabstracttextdocumentlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextlayout.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextformat.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpen.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextoption.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qglyphrun.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qrawfont.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qfontdatabase.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextcursor.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextdocument.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qaccessible.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qaccessiblebridge.h \
@@ -4111,7 +4287,6 @@ debug\manipulatorrotational.obj: ..\SensorGloveQt\manipulatorrotational.cpp ../S
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextdocumentwriter.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextlist.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtexttable.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvalidator.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtguiversion.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork\QtNetwork \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork\QtNetworkDepends \
@@ -4253,7 +4428,6 @@ debug\manipulatorrotational.obj: ..\SensorGloveQt\manipulatorrotational.cpp ../S
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractactioninput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractphysicaldevice.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qaction.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qactioninput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qanalogaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\QAbstractAxisInput \
@@ -4302,8 +4476,7 @@ debug\manipulatorrotational.obj: ..\SensorGloveQt\manipulatorrotational.cpp ../S
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qspheregeometry.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qtorusgeometry.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qtorusmesh.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qt3dextrasversion.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QVBoxLayout
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qt3dextrasversion.h
 
 debug\finger.obj: ..\SensorGloveQt\finger.cpp ../SensorGloveQt/includes.h \
 		../SensorGloveQt/mainwindow.h \
@@ -4586,17 +4759,67 @@ debug\finger.obj: ..\SensorGloveQt\finger.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtSerialPort\qserialportinfo.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtSerialPort\qtserialportversion.h \
 		ui_mainwindow.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QAction \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qaction.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qactiongroup.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QApplication \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qapplication.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdesktopwidget.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qguiapplication.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qinputmethod.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHBoxLayout \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qboxlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QButtonGroup \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qbuttongroup.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QComboBox \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qcombobox.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemdelegate.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyleoption.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractspinbox.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvalidator.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qslider.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractslider.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyle.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtabbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qrubberband.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qframe.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QFormLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qformlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLayout \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayoutitem.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qboxlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qgridlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QGridLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHeaderView \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qheaderview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractscrollarea.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLabel \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlabel.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLineEdit \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlineedit.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextcursor.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextformat.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpen.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextoption.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenu \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenu.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenuBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenubar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QPushButton \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qpushbutton.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractbutton.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QSlider \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QStatusBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstatusbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTabWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTableWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtablewidget.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtableview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QToolBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtoolbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QVBoxLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHBoxLayout \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QScreen \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qscreen.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QRect \
@@ -4702,13 +4925,9 @@ debug\finger.obj: ..\SensorGloveQt\finger.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QtGuiDepends \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qabstracttextdocumentlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextlayout.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextformat.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpen.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextoption.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qglyphrun.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qrawfont.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qfontdatabase.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextcursor.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextdocument.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qaccessible.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qaccessiblebridge.h \
@@ -4768,7 +4987,6 @@ debug\finger.obj: ..\SensorGloveQt\finger.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextdocumentwriter.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextlist.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtexttable.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvalidator.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtguiversion.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork\QtNetwork \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork\QtNetworkDepends \
@@ -4910,7 +5128,6 @@ debug\finger.obj: ..\SensorGloveQt\finger.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractactioninput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractphysicaldevice.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qaction.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qactioninput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qanalogaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\QAbstractAxisInput \
@@ -4959,8 +5176,7 @@ debug\finger.obj: ..\SensorGloveQt\finger.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qspheregeometry.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qtorusgeometry.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qtorusmesh.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qt3dextrasversion.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QVBoxLayout
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qt3dextrasversion.h
 
 debug\errorhandler.obj: ..\SensorGloveQt\errorhandler.cpp ../SensorGloveQt/includes.h \
 		../SensorGloveQt/mainwindow.h \
@@ -5243,17 +5459,67 @@ debug\errorhandler.obj: ..\SensorGloveQt\errorhandler.cpp ../SensorGloveQt/inclu
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtSerialPort\qserialportinfo.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtSerialPort\qtserialportversion.h \
 		ui_mainwindow.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QAction \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qaction.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qactiongroup.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QApplication \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qapplication.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdesktopwidget.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qguiapplication.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qinputmethod.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHBoxLayout \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qboxlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QButtonGroup \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qbuttongroup.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QComboBox \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qcombobox.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemdelegate.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyleoption.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractspinbox.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvalidator.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qslider.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractslider.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyle.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtabbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qrubberband.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qframe.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QFormLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qformlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLayout \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayoutitem.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qboxlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qgridlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QGridLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHeaderView \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qheaderview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractscrollarea.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLabel \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlabel.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLineEdit \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlineedit.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextcursor.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextformat.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpen.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextoption.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenu \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenu.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenuBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenubar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QPushButton \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qpushbutton.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractbutton.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QSlider \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QStatusBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstatusbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTabWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTableWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtablewidget.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtableview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QToolBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtoolbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QVBoxLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHBoxLayout \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QScreen \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qscreen.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QRect \
@@ -5359,13 +5625,9 @@ debug\errorhandler.obj: ..\SensorGloveQt\errorhandler.cpp ../SensorGloveQt/inclu
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QtGuiDepends \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qabstracttextdocumentlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextlayout.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextformat.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpen.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextoption.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qglyphrun.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qrawfont.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qfontdatabase.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextcursor.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextdocument.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qaccessible.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qaccessiblebridge.h \
@@ -5425,7 +5687,6 @@ debug\errorhandler.obj: ..\SensorGloveQt\errorhandler.cpp ../SensorGloveQt/inclu
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextdocumentwriter.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextlist.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtexttable.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvalidator.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtguiversion.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork\QtNetwork \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork\QtNetworkDepends \
@@ -5567,7 +5828,6 @@ debug\errorhandler.obj: ..\SensorGloveQt\errorhandler.cpp ../SensorGloveQt/inclu
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractactioninput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractphysicaldevice.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qaction.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qactioninput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qanalogaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\QAbstractAxisInput \
@@ -5616,8 +5876,7 @@ debug\errorhandler.obj: ..\SensorGloveQt\errorhandler.cpp ../SensorGloveQt/inclu
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qspheregeometry.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qtorusgeometry.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qtorusmesh.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qt3dextrasversion.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QVBoxLayout
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qt3dextrasversion.h
 
 debug\hand.obj: ..\SensorGloveQt\hand.cpp ../SensorGloveQt/includes.h \
 		../SensorGloveQt/mainwindow.h \
@@ -5900,17 +6159,67 @@ debug\hand.obj: ..\SensorGloveQt\hand.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtSerialPort\qserialportinfo.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtSerialPort\qtserialportversion.h \
 		ui_mainwindow.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QAction \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qaction.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qactiongroup.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QApplication \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qapplication.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdesktopwidget.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qguiapplication.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qinputmethod.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHBoxLayout \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qboxlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QButtonGroup \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qbuttongroup.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QComboBox \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qcombobox.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemdelegate.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyleoption.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractspinbox.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvalidator.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qslider.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractslider.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyle.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtabbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qrubberband.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qframe.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QFormLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qformlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLayout \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayoutitem.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qboxlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qgridlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QGridLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHeaderView \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qheaderview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractscrollarea.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLabel \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlabel.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLineEdit \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlineedit.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextcursor.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextformat.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpen.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextoption.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenu \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenu.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenuBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenubar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QPushButton \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qpushbutton.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractbutton.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QSlider \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QStatusBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstatusbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTabWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTableWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtablewidget.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtableview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QToolBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtoolbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QVBoxLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHBoxLayout \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QScreen \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qscreen.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QRect \
@@ -6016,13 +6325,9 @@ debug\hand.obj: ..\SensorGloveQt\hand.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QtGuiDepends \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qabstracttextdocumentlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextlayout.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextformat.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpen.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextoption.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qglyphrun.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qrawfont.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qfontdatabase.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextcursor.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextdocument.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qaccessible.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qaccessiblebridge.h \
@@ -6082,7 +6387,6 @@ debug\hand.obj: ..\SensorGloveQt\hand.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextdocumentwriter.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextlist.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtexttable.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvalidator.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtguiversion.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork\QtNetwork \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork\QtNetworkDepends \
@@ -6224,7 +6528,6 @@ debug\hand.obj: ..\SensorGloveQt\hand.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractactioninput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractphysicaldevice.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qaction.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qactioninput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qanalogaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\QAbstractAxisInput \
@@ -6273,8 +6576,7 @@ debug\hand.obj: ..\SensorGloveQt\hand.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qspheregeometry.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qtorusgeometry.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qtorusmesh.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qt3dextrasversion.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QVBoxLayout
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qt3dextrasversion.h
 
 debug\input.obj: ..\SensorGloveQt\input.cpp ../SensorGloveQt/includes.h \
 		../SensorGloveQt/mainwindow.h \
@@ -6557,17 +6859,67 @@ debug\input.obj: ..\SensorGloveQt\input.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtSerialPort\qserialportinfo.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtSerialPort\qtserialportversion.h \
 		ui_mainwindow.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QAction \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qaction.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qactiongroup.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QApplication \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qapplication.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdesktopwidget.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qguiapplication.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qinputmethod.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHBoxLayout \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qboxlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QButtonGroup \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qbuttongroup.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QComboBox \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qcombobox.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemdelegate.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyleoption.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractspinbox.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvalidator.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qslider.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractslider.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyle.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtabbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qrubberband.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qframe.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QFormLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qformlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLayout \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayoutitem.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qboxlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qgridlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QGridLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHeaderView \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qheaderview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractscrollarea.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLabel \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlabel.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLineEdit \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlineedit.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextcursor.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextformat.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpen.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextoption.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenu \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenu.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenuBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenubar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QPushButton \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qpushbutton.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractbutton.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QSlider \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QStatusBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstatusbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTabWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTableWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtablewidget.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtableview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QToolBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtoolbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QVBoxLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHBoxLayout \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QScreen \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qscreen.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QRect \
@@ -6673,13 +7025,9 @@ debug\input.obj: ..\SensorGloveQt\input.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QtGuiDepends \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qabstracttextdocumentlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextlayout.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextformat.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpen.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextoption.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qglyphrun.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qrawfont.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qfontdatabase.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextcursor.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextdocument.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qaccessible.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qaccessiblebridge.h \
@@ -6739,7 +7087,6 @@ debug\input.obj: ..\SensorGloveQt\input.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextdocumentwriter.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextlist.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtexttable.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvalidator.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtguiversion.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork\QtNetwork \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork\QtNetworkDepends \
@@ -6881,7 +7228,6 @@ debug\input.obj: ..\SensorGloveQt\input.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractactioninput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractphysicaldevice.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qaction.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qactioninput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qanalogaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\QAbstractAxisInput \
@@ -6930,8 +7276,7 @@ debug\input.obj: ..\SensorGloveQt\input.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qspheregeometry.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qtorusgeometry.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qtorusmesh.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qt3dextrasversion.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QVBoxLayout
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qt3dextrasversion.h
 
 debug\scene.obj: ..\SensorGloveQt\scene.cpp ../SensorGloveQt/includes.h \
 		../SensorGloveQt/mainwindow.h \
@@ -7214,17 +7559,67 @@ debug\scene.obj: ..\SensorGloveQt\scene.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtSerialPort\qserialportinfo.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtSerialPort\qtserialportversion.h \
 		ui_mainwindow.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QAction \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qaction.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qactiongroup.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QApplication \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qapplication.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdesktopwidget.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qguiapplication.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qinputmethod.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHBoxLayout \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qboxlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QButtonGroup \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qbuttongroup.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QComboBox \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qcombobox.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemdelegate.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyleoption.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractspinbox.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvalidator.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qslider.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractslider.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyle.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtabbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qrubberband.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qframe.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QFormLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qformlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLayout \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayoutitem.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qboxlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qgridlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QGridLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHeaderView \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qheaderview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractscrollarea.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLabel \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlabel.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLineEdit \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlineedit.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextcursor.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextformat.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpen.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextoption.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenu \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenu.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenuBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenubar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QPushButton \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qpushbutton.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractbutton.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QSlider \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QStatusBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstatusbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTabWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTableWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtablewidget.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtableview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QToolBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtoolbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QVBoxLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHBoxLayout \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QScreen \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qscreen.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QRect \
@@ -7330,13 +7725,9 @@ debug\scene.obj: ..\SensorGloveQt\scene.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QtGuiDepends \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qabstracttextdocumentlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextlayout.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextformat.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpen.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextoption.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qglyphrun.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qrawfont.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qfontdatabase.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextcursor.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextdocument.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qaccessible.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qaccessiblebridge.h \
@@ -7396,7 +7787,6 @@ debug\scene.obj: ..\SensorGloveQt\scene.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextdocumentwriter.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextlist.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtexttable.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvalidator.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtguiversion.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork\QtNetwork \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork\QtNetworkDepends \
@@ -7538,7 +7928,6 @@ debug\scene.obj: ..\SensorGloveQt\scene.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractactioninput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractphysicaldevice.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qaction.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qactioninput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qanalogaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\QAbstractAxisInput \
@@ -7587,8 +7976,7 @@ debug\scene.obj: ..\SensorGloveQt\scene.cpp ../SensorGloveQt/includes.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qspheregeometry.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qtorusgeometry.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qtorusmesh.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qt3dextrasversion.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QVBoxLayout
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qt3dextrasversion.h
 
 debug\fingertip.obj: ..\SensorGloveQt\fingertip.cpp ../SensorGloveQt/includes.h \
 		../SensorGloveQt/mainwindow.h \
@@ -7871,17 +8259,67 @@ debug\fingertip.obj: ..\SensorGloveQt\fingertip.cpp ../SensorGloveQt/includes.h 
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtSerialPort\qserialportinfo.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtSerialPort\qtserialportversion.h \
 		ui_mainwindow.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QAction \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qaction.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qactiongroup.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QApplication \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qapplication.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qdesktopwidget.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qguiapplication.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qinputmethod.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHBoxLayout \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qboxlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QButtonGroup \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qbuttongroup.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QComboBox \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qcombobox.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemdelegate.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyleoption.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractspinbox.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvalidator.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qslider.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractslider.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstyle.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtabbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qrubberband.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qframe.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QFormLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qformlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLayout \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlayoutitem.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qboxlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qgridlayout.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QGridLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHeaderView \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qheaderview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractitemview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractscrollarea.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLabel \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlabel.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QLineEdit \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qlineedit.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextcursor.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextformat.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpen.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextoption.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenu \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenu.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QMenuBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qmenubar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QPushButton \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qpushbutton.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qabstractbutton.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QSlider \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QStatusBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qstatusbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTabWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QTableWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtablewidget.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtableview.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QToolBar \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\qtoolbar.h \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QVBoxLayout \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QWidget \
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QHBoxLayout \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QScreen \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qscreen.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtCore\QRect \
@@ -7987,13 +8425,9 @@ debug\fingertip.obj: ..\SensorGloveQt\fingertip.cpp ../SensorGloveQt/includes.h 
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\QtGuiDepends \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qabstracttextdocumentlayout.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextlayout.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextformat.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qpen.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextoption.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qglyphrun.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qrawfont.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qfontdatabase.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextcursor.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextdocument.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qaccessible.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qaccessiblebridge.h \
@@ -8053,7 +8487,6 @@ debug\fingertip.obj: ..\SensorGloveQt\fingertip.cpp ../SensorGloveQt/includes.h 
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextdocumentwriter.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtextlist.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtexttable.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qvalidator.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtGui\qtguiversion.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork\QtNetwork \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork\QtNetworkDepends \
@@ -8195,7 +8628,6 @@ debug\fingertip.obj: ..\SensorGloveQt\fingertip.cpp ../SensorGloveQt/includes.h 
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractactioninput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qabstractphysicaldevice.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qaction.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qactioninput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\qanalogaxisinput.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DInput\QAbstractAxisInput \
@@ -8244,8 +8676,7 @@ debug\fingertip.obj: ..\SensorGloveQt\fingertip.cpp ../SensorGloveQt/includes.h 
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qspheregeometry.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qtorusgeometry.h \
 		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qtorusmesh.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qt3dextrasversion.h \
-		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets\QVBoxLayout
+		D:\ProgramFiles\Qt5.8.0\5.8\msvc2015_64\include\Qt3DExtras\qt3dextrasversion.h
 
 debug\moc_mainwindow.obj: debug\moc_mainwindow.cpp 
 

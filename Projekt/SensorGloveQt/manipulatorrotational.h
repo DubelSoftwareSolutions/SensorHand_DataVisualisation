@@ -1,11 +1,24 @@
 #ifndef MANIPULATORROTATIONAL_H
 #define MANIPULATORROTATIONAL_H
 
+/*!
+ * \file
+ * \brief Definicja klasy ManipulatorRotational
+ *
+ * Plik zawiera definicję klasy ManipulatorRotational, która
+ * jest klasą pochodną klasy QObject
+ */
+
 #include<QObject>
 #include<Qt3DCore/QEntity>
 
 #include"joint.h"
 
+/*!
+ * \brief Definiuje pojęcie manipulatora rotacyjnego
+ *
+ *
+ */
 class ManipulatorRotational: public QObject
 {
     Q_OBJECT
