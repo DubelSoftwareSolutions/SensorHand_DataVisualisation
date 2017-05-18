@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SensorGloveQt: Plik źródłowy input.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SensorGloveQt
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('input_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">input.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="input_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INPUT_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define INPUT_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QtBluetooth&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QtSerialPort&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">namespace Id {</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">class Input;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">}</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_input.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_input.html">Input</a>: QBluetoothTransferManager, QSerialPort</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_input.html#a3be20be9b454515798ecd3370f4e36fdaf2a909e54a7c789666bc3bebb2a67370">   29</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_input.html#a3be20be9b454515798ecd3370f4e36fd">ConnectionType_t</a> {<a class="code" href="class_input.html#a3be20be9b454515798ecd3370f4e36fda6046a4f4c91eb7a02b26c594c36b9374">BluetoothConnection</a>, <a class="code" href="class_input.html#a3be20be9b454515798ecd3370f4e36fdaf2a909e54a7c789666bc3bebb2a67370">USBConnection</a>};</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_input.html#a5d17336e82b13b4a5416ea0bf197c5ba">   31</a></span>&#160;    QVector&lt;float&gt; <a class="code" href="class_input.html#a5d17336e82b13b4a5416ea0bf197c5ba">m_JointAngles</a>;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_input.html#a1ce9ef99c48ee1e7adee67ecadd161c6">   32</a></span>&#160;    QVector&lt;int&gt; <a class="code" href="class_input.html#a1ce9ef99c48ee1e7adee67ecadd161c6">m_TensionSensorValues</a>;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_input.html#ab2572d4f32d4a82f4023277b24a4b0a4">   33</a></span>&#160;    QVector&lt;float&gt; <a class="code" href="class_input.html#ab2572d4f32d4a82f4023277b24a4b0a4">m_AccelerometerValues</a>;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_input.html#aeccfe44263c5985405f94c5feb0ed0aa">   34</a></span>&#160;    <a class="code" href="class_input.html#a3be20be9b454515798ecd3370f4e36fd">ConnectionType_t</a> <a class="code" href="class_input.html#aeccfe44263c5985405f94c5feb0ed0aa">m_ConnectionType</a>;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_input.html#abae3f379d3f157cf42dc857309832dba">Input</a>();</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_input.html#a76cacaeadb1ceed7f3f9585220e906c8">ChangeConnectionType</a>(<a class="code" href="class_input.html#a3be20be9b454515798ecd3370f4e36fd">ConnectionType_t</a> p_ConnecitonType);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_input.html#a7f95fd4a76826d4a28b25e32e6c7244c">ConfigureInput</a>();</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif // INPUT_H</span></div><div class="ttc" id="class_input_html_abae3f379d3f157cf42dc857309832dba"><div class="ttname"><a href="class_input.html#abae3f379d3f157cf42dc857309832dba">Input::Input</a></div><div class="ttdeci">Input()</div><div class="ttdef"><b>Definition:</b> <a href="input_8cpp_source.html#l00003">input.cpp:3</a></div></div>
+<div class="ttc" id="class_input_html_ab2572d4f32d4a82f4023277b24a4b0a4"><div class="ttname"><a href="class_input.html#ab2572d4f32d4a82f4023277b24a4b0a4">Input::m_AccelerometerValues</a></div><div class="ttdeci">QVector&lt; float &gt; m_AccelerometerValues</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00033">input.h:33</a></div></div>
+<div class="ttc" id="class_input_html_a7f95fd4a76826d4a28b25e32e6c7244c"><div class="ttname"><a href="class_input.html#a7f95fd4a76826d4a28b25e32e6c7244c">Input::ConfigureInput</a></div><div class="ttdeci">void ConfigureInput()</div></div>
+<div class="ttc" id="class_input_html_a3be20be9b454515798ecd3370f4e36fd"><div class="ttname"><a href="class_input.html#a3be20be9b454515798ecd3370f4e36fd">Input::ConnectionType_t</a></div><div class="ttdeci">ConnectionType_t</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00029">input.h:29</a></div></div>
+<div class="ttc" id="class_input_html_aeccfe44263c5985405f94c5feb0ed0aa"><div class="ttname"><a href="class_input.html#aeccfe44263c5985405f94c5feb0ed0aa">Input::m_ConnectionType</a></div><div class="ttdeci">ConnectionType_t m_ConnectionType</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00034">input.h:34</a></div></div>
+<div class="ttc" id="class_input_html_a5d17336e82b13b4a5416ea0bf197c5ba"><div class="ttname"><a href="class_input.html#a5d17336e82b13b4a5416ea0bf197c5ba">Input::m_JointAngles</a></div><div class="ttdeci">QVector&lt; float &gt; m_JointAngles</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00031">input.h:31</a></div></div>
+<div class="ttc" id="class_input_html"><div class="ttname"><a href="class_input.html">Input</a></div><div class="ttdoc">Klasa jest narzędziem do pobierania danych Inicjalizuje kąty między stawami, wskazania czujników tens...</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00027">input.h:27</a></div></div>
+<div class="ttc" id="class_input_html_a3be20be9b454515798ecd3370f4e36fda6046a4f4c91eb7a02b26c594c36b9374"><div class="ttname"><a href="class_input.html#a3be20be9b454515798ecd3370f4e36fda6046a4f4c91eb7a02b26c594c36b9374">Input::BluetoothConnection</a></div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00029">input.h:29</a></div></div>
+<div class="ttc" id="class_input_html_a3be20be9b454515798ecd3370f4e36fdaf2a909e54a7c789666bc3bebb2a67370"><div class="ttname"><a href="class_input.html#a3be20be9b454515798ecd3370f4e36fdaf2a909e54a7c789666bc3bebb2a67370">Input::USBConnection</a></div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00029">input.h:29</a></div></div>
+<div class="ttc" id="class_input_html_a76cacaeadb1ceed7f3f9585220e906c8"><div class="ttname"><a href="class_input.html#a76cacaeadb1ceed7f3f9585220e906c8">Input::ChangeConnectionType</a></div><div class="ttdeci">void ChangeConnectionType(ConnectionType_t p_ConnecitonType)</div><div class="ttdef"><b>Definition:</b> <a href="input_8cpp_source.html#l00008">input.cpp:8</a></div></div>
+<div class="ttc" id="class_input_html_a1ce9ef99c48ee1e7adee67ecadd161c6"><div class="ttname"><a href="class_input.html#a1ce9ef99c48ee1e7adee67ecadd161c6">Input::m_TensionSensorValues</a></div><div class="ttdeci">QVector&lt; int &gt; m_TensionSensorValues</div><div class="ttdef"><b>Definition:</b> <a href="input_8h_source.html#l00032">input.h:32</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_0bd3749520e6828b2aa12bb97df2bee3.html">SensorGloveQt</a></li><li class="navelem"><a class="el" href="input_8h.html">input.h</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

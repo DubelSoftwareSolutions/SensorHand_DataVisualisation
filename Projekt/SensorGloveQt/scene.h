@@ -1,6 +1,13 @@
 #ifndef SCENE_H
 #define SCENE_H
 
+/*!
+ * \file
+ * \brief Definicja klasy Scene
+ * Plik zawiera definicję klasy Scene, która
+ * jest klasą pochodną klasy QObject
+ */
+
 #include <QObject>
 #include <Qt3DCore>
 #include <Qt3DExtras>

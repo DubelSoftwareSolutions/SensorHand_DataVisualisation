@@ -1,6 +1,13 @@
 #ifndef FINGERTIP_H
 #define FINGERTIP_H
 
+/*!
+ * \file
+ * \brief Definicja klasy Fingertip
+ * Plik zawiera definicję klasy Fingertip, która
+ * jest klasą pochodną klasy QObject
+ */
+
 #include <QObject>
 #include <Qt3DCore/QEntity>
 #include <Qt3DCore/QTransform>
@@ -14,6 +21,14 @@
 #define SPHERE_SLICES_COUNT 20
 #define SPHERE_SCALE 0.05
 
+/*!
+ * \brief Opisuje opuszki palców
+ *
+ * Reprezentuje trojwymiarową wizualizację opuszków palców
+ * w postaci obiektow sferycznych. Słuzy do wizualizacji odczytów z
+ * czujników nacisku umieszczonych na opuszkach palców rękawicy sensorycznej.
+ * Inicjalizuje rozmiar sfery i położenie w przedtrzeni trówymiarowej.
+ */
 class Fingertip : public QObject
 {
     Q_OBJECT

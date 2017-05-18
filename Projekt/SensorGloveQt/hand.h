@@ -1,6 +1,13 @@
 #ifndef HAND_H
 #define HAND_H
 
+/*!
+ * \file
+ * \brief Definicja klasy Hand
+ *
+ * Plik zwiera definicję klasy Hand, która składa się z elementów klasy Finger
+ */
+
 #define FINGER_COUNT 5
 
 #define THUMB_FINGER_OFFSET 2.0
@@ -22,6 +29,12 @@
 #include"manipulatorrotational.h"
 #include"fingertip.h"
 #include"finger.h"
+
+/*!
+ * \brief Modeluje pojęcie dłoni
+ *
+ * Klasa składa się z elementow palców, rozmieszczonych w przestrzeni trójwymiarowej
+ */
 
 class Hand: public QObject
 {

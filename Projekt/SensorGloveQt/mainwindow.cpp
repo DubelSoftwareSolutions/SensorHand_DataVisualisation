@@ -62,12 +62,12 @@ void MainWindow::on_CameraOrientationLineEdit_editingFinished()
     ui->CameraOrientationSlider->setValue(arg.toInt());
 }
 
-void MainWindow::on_GloveSizeSlider_valueChanged(int value)
+void MainWindow::on_GloveZoomSlider_valueChanged(int value)
 {
-    ui->GloveSizeLineEdit->setText(QString::number(value));
+    ui->GloveZoomLineEdit->setText(QString::number(value));
 }
 
-void MainWindow::on_GloveSizeLineEdit_textEdited(const QString &arg1)
+void MainWindow::on_GloveZoomLineEdit_textEdited(const QString &arg1)
 {
     bool isDgt = true;
     for (int i = 0; i < arg1.length(); ++i) {
@@ -75,11 +75,11 @@ void MainWindow::on_GloveSizeLineEdit_textEdited(const QString &arg1)
         isDgt = arg1.at(i).isDigit() && isDgt;
     }
     if (!isDgt)
-        ui->GloveSizeLineEdit->setText(QString::number(ui->GloveSizeSlider->value()));
+        ui->GloveZoomLineEdit->setText(QString::number(ui->GloveZoomSlider->value()));
 }
 
-void MainWindow::on_GloveSizeLineEdit_editingFinished()
+void MainWindow::on_GloveZoomLineEdit_editingFinished()
 {
-    QString arg = ui->GloveSizeLineEdit->text();
-    ui->GloveSizeSlider->setValue(arg.toInt());
+    QString arg = ui->GloveZoomLineEdit->text();
+    ui->GloveZoomSlider->setValue(arg.toInt());
 }

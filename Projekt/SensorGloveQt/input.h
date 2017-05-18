@@ -1,13 +1,29 @@
 #ifndef INPUT_H
 #define INPUT_H
+
+/*!
+ * \file
+ * \brief Definicja klasy Input
+ *
+ * Plik zwiera definicję klasy Input, jest klasą pochodną
+ * klas QBluetoothTransferManager oraz QSerialPort
+ */
+
 #include <QtBluetooth>
 #include <QtSerialPort>
+
 /*
 namespace Id {
 class Input;
 }
 */
 
+/*!
+ * \brief Klasa jest narzędziem do pobierania danych
+ * Inicjalizuje kąty między stawami, wskazania czujników tensometrycznych,
+ * wskazania akcelerometru i typ połączenia z rękawicą sensoryczną
+ *
+ */
 class Input: QBluetoothTransferManager, QSerialPort
 {
     enum ConnectionType_t {BluetoothConnection, USBConnection};

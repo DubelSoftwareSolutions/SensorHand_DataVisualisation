@@ -33,6 +33,12 @@
 #define PINKY_JOINT2_LENGTH 2.0f
 #define PINKY_JOINT3_LENGTH 2.3f
 
+/*!
+ * \file
+ * \brief Plik zawiera definicję klasy finger, która
+ * jest klasą pochodną klasy QObject
+ */
+
 #include<QObject>
 #include<Qt3DCore/QEntity>
 #include<QMatrix4x4>
@@ -41,6 +47,15 @@
 #include"joint.h"
 #include"manipulatorrotational.h"
 #include"fingertip.h"
+
+/*!
+ * \brief Modeluje pojęcie palca w przestrzeni trójwymiarowej
+ *
+ * Inicjalizuje identyfikatow właściwy dla danego typu palca,
+ * położenie w przestrzeni 3D, kąd nachylenia i kolor trójwymiarowego modelu.
+ *
+ *
+ */
 
 class Finger : public QObject
 {

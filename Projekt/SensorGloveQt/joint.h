@@ -1,6 +1,14 @@
 #ifndef JOINT_H
 #define JOINT_H
 
+/*!
+ * \file
+ * \brief Definicja klasy Joint
+ *
+ * Plik zawiera definicję klasy Joint, która
+ * jest klasą pochodną klasy QObject
+ */
+
 #define CYLINDER_RINGS_COUNT 100
 #define CYLINDER_SLICES_COUNT 20
 #include<QObject>
@@ -8,6 +16,12 @@
 #include<Qt3DCore/QTransform>
 #include<QMatrix4x4>
 #include<QColor>
+
+/*!
+ * \brief Modeluje pojęcie stawu
+ * Inicjalizuje długość stawu, kąt nachylenia względem poprzedniego stawu
+ *
+ */
 
 class Joint: public QObject
 {
