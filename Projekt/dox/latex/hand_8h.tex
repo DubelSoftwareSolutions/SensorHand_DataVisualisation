@@ -1,0 +1,159 @@
+\hypertarget{hand_8h}{}\section{Dokumentacja pliku hand.\+h}
+\label{hand_8h}\index{hand.\+h@{hand.\+h}}
+
+
+Definicja klasy \hyperlink{class_hand}{Hand}.  
+
+
+{\ttfamily \#include $<$Q\+Object$>$}\newline
+{\ttfamily \#include $<$Qt3\+D\+Core/\+Q\+Entity$>$}\newline
+{\ttfamily \#include \char`\"{}joint.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}manipulatorrotational.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}fingertip.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}finger.\+h\char`\"{}}\newline
+\subsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_hand}{Hand}
+\begin{DoxyCompactList}\small\item\em Modeluje pojęcie dłoni. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Definicje}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{hand_8h_acc11b84e9aa32ceb64b9339032d9ae2e}{F\+I\+N\+G\+E\+R\+\_\+\+C\+O\+U\+NT}~5
+\item 
+\#define \hyperlink{hand_8h_a075255274bca1c08d0957ba8d2d01181}{T\+H\+U\+M\+B\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET}~2.\+0
+\item 
+\#define \hyperlink{hand_8h_a98c6623205a02791a76616ead4a0f267}{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET}~1.\+0
+\item 
+\#define \hyperlink{hand_8h_a1648a6d9ac0c1e78f34d7ae7289e106e}{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET}~0.\+0
+\item 
+\#define \hyperlink{hand_8h_a0e4be29f8f52d554aa9e3ab1cde6ab42}{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET}~-\/1.\+0
+\item 
+\#define \hyperlink{hand_8h_afc732dafebf3fd3bdb80b85990ed1508}{P\+I\+N\+K\+Y\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET}~-\/2.\+0
+\item 
+\#define \hyperlink{hand_8h_a488752b12013e6c7453c31cde826bb87}{T\+H\+U\+M\+B\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON}~-\/30
+\item 
+\#define \hyperlink{hand_8h_ab5d6f2b2b689793c9e456518f53008da}{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON}~-\/10
+\item 
+\#define \hyperlink{hand_8h_a10a1da6a7fbd0c9dcc0eae858748b158}{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON}~0.\+0
+\item 
+\#define \hyperlink{hand_8h_afa8899525d12bdd2bd6bdda44fb9ffab}{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON}~10
+\item 
+\#define \hyperlink{hand_8h_a013a117b9b62570c47d6a493bb14e0ed}{P\+I\+N\+K\+Y\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON}~20
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Plik zwiera definicję klasy \hyperlink{class_hand}{Hand}, która składa się z elementów klasy \hyperlink{class_finger}{Finger} 
+
+\subsection{Dokumentacja definicji}
+\mbox{\Hypertarget{hand_8h_acc11b84e9aa32ceb64b9339032d9ae2e}\label{hand_8h_acc11b84e9aa32ceb64b9339032d9ae2e}} 
+\index{hand.\+h@{hand.\+h}!F\+I\+N\+G\+E\+R\+\_\+\+C\+O\+U\+NT@{F\+I\+N\+G\+E\+R\+\_\+\+C\+O\+U\+NT}}
+\index{F\+I\+N\+G\+E\+R\+\_\+\+C\+O\+U\+NT@{F\+I\+N\+G\+E\+R\+\_\+\+C\+O\+U\+NT}!hand.\+h@{hand.\+h}}
+\subsubsection{\texorpdfstring{F\+I\+N\+G\+E\+R\+\_\+\+C\+O\+U\+NT}{FINGER\_COUNT}}
+{\footnotesize\ttfamily \#define F\+I\+N\+G\+E\+R\+\_\+\+C\+O\+U\+NT~5}
+
+
+
+Definicja w linii 11 pliku hand.\+h.
+
+\mbox{\Hypertarget{hand_8h_a98c6623205a02791a76616ead4a0f267}\label{hand_8h_a98c6623205a02791a76616ead4a0f267}} 
+\index{hand.\+h@{hand.\+h}!I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET@{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET}}
+\index{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET@{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET}!hand.\+h@{hand.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET}{INDEX\_FINGER\_OFFSET}}
+{\footnotesize\ttfamily \#define I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET~1.\+0}
+
+
+
+Definicja w linii 14 pliku hand.\+h.
+
+\mbox{\Hypertarget{hand_8h_ab5d6f2b2b689793c9e456518f53008da}\label{hand_8h_ab5d6f2b2b689793c9e456518f53008da}} 
+\index{hand.\+h@{hand.\+h}!I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON@{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON}}
+\index{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON@{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON}!hand.\+h@{hand.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON}{INDEX\_FINGER\_ROTATION}}
+{\footnotesize\ttfamily \#define I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON~-\/10}
+
+
+
+Definicja w linii 20 pliku hand.\+h.
+
+\mbox{\Hypertarget{hand_8h_a1648a6d9ac0c1e78f34d7ae7289e106e}\label{hand_8h_a1648a6d9ac0c1e78f34d7ae7289e106e}} 
+\index{hand.\+h@{hand.\+h}!M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET@{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET}}
+\index{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET@{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET}!hand.\+h@{hand.\+h}}
+\subsubsection{\texorpdfstring{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET}{MIDDLE\_FINGER\_OFFSET}}
+{\footnotesize\ttfamily \#define M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET~0.\+0}
+
+
+
+Definicja w linii 15 pliku hand.\+h.
+
+\mbox{\Hypertarget{hand_8h_a10a1da6a7fbd0c9dcc0eae858748b158}\label{hand_8h_a10a1da6a7fbd0c9dcc0eae858748b158}} 
+\index{hand.\+h@{hand.\+h}!M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON@{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON}}
+\index{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON@{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON}!hand.\+h@{hand.\+h}}
+\subsubsection{\texorpdfstring{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON}{MIDDLE\_FINGER\_ROTATION}}
+{\footnotesize\ttfamily \#define M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON~0.\+0}
+
+
+
+Definicja w linii 21 pliku hand.\+h.
+
+\mbox{\Hypertarget{hand_8h_afc732dafebf3fd3bdb80b85990ed1508}\label{hand_8h_afc732dafebf3fd3bdb80b85990ed1508}} 
+\index{hand.\+h@{hand.\+h}!P\+I\+N\+K\+Y\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET@{P\+I\+N\+K\+Y\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET}}
+\index{P\+I\+N\+K\+Y\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET@{P\+I\+N\+K\+Y\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET}!hand.\+h@{hand.\+h}}
+\subsubsection{\texorpdfstring{P\+I\+N\+K\+Y\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET}{PINKY\_FINGER\_OFFSET}}
+{\footnotesize\ttfamily \#define P\+I\+N\+K\+Y\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET~-\/2.\+0}
+
+
+
+Definicja w linii 17 pliku hand.\+h.
+
+\mbox{\Hypertarget{hand_8h_a013a117b9b62570c47d6a493bb14e0ed}\label{hand_8h_a013a117b9b62570c47d6a493bb14e0ed}} 
+\index{hand.\+h@{hand.\+h}!P\+I\+N\+K\+Y\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON@{P\+I\+N\+K\+Y\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON}}
+\index{P\+I\+N\+K\+Y\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON@{P\+I\+N\+K\+Y\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON}!hand.\+h@{hand.\+h}}
+\subsubsection{\texorpdfstring{P\+I\+N\+K\+Y\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON}{PINKY\_FINGER\_ROTATION}}
+{\footnotesize\ttfamily \#define P\+I\+N\+K\+Y\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON~20}
+
+
+
+Definicja w linii 23 pliku hand.\+h.
+
+\mbox{\Hypertarget{hand_8h_a0e4be29f8f52d554aa9e3ab1cde6ab42}\label{hand_8h_a0e4be29f8f52d554aa9e3ab1cde6ab42}} 
+\index{hand.\+h@{hand.\+h}!R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET@{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET}}
+\index{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET@{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET}!hand.\+h@{hand.\+h}}
+\subsubsection{\texorpdfstring{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET}{RING\_FINGER\_OFFSET}}
+{\footnotesize\ttfamily \#define R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET~-\/1.\+0}
+
+
+
+Definicja w linii 16 pliku hand.\+h.
+
+\mbox{\Hypertarget{hand_8h_afa8899525d12bdd2bd6bdda44fb9ffab}\label{hand_8h_afa8899525d12bdd2bd6bdda44fb9ffab}} 
+\index{hand.\+h@{hand.\+h}!R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON@{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON}}
+\index{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON@{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON}!hand.\+h@{hand.\+h}}
+\subsubsection{\texorpdfstring{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON}{RING\_FINGER\_ROTATION}}
+{\footnotesize\ttfamily \#define R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON~10}
+
+
+
+Definicja w linii 22 pliku hand.\+h.
+
+\mbox{\Hypertarget{hand_8h_a075255274bca1c08d0957ba8d2d01181}\label{hand_8h_a075255274bca1c08d0957ba8d2d01181}} 
+\index{hand.\+h@{hand.\+h}!T\+H\+U\+M\+B\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET@{T\+H\+U\+M\+B\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET}}
+\index{T\+H\+U\+M\+B\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET@{T\+H\+U\+M\+B\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET}!hand.\+h@{hand.\+h}}
+\subsubsection{\texorpdfstring{T\+H\+U\+M\+B\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET}{THUMB\_FINGER\_OFFSET}}
+{\footnotesize\ttfamily \#define T\+H\+U\+M\+B\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+O\+F\+F\+S\+ET~2.\+0}
+
+
+
+Definicja w linii 13 pliku hand.\+h.
+
+\mbox{\Hypertarget{hand_8h_a488752b12013e6c7453c31cde826bb87}\label{hand_8h_a488752b12013e6c7453c31cde826bb87}} 
+\index{hand.\+h@{hand.\+h}!T\+H\+U\+M\+B\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON@{T\+H\+U\+M\+B\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON}}
+\index{T\+H\+U\+M\+B\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON@{T\+H\+U\+M\+B\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON}!hand.\+h@{hand.\+h}}
+\subsubsection{\texorpdfstring{T\+H\+U\+M\+B\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON}{THUMB\_FINGER\_ROTATION}}
+{\footnotesize\ttfamily \#define T\+H\+U\+M\+B\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+R\+O\+T\+A\+T\+I\+ON~-\/30}
+
+
+
+Definicja w linii 19 pliku hand.\+h.
+

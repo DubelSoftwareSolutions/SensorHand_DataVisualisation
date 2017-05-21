@@ -1,0 +1,141 @@
+\hypertarget{class_manipulator_rotational}{}\section{Dokumentacja klasy Manipulator\+Rotational}
+\label{class_manipulator_rotational}\index{Manipulator\+Rotational@{Manipulator\+Rotational}}
+
+
+Definiuje pojęcie manipulatora rotacyjnego.  
+
+
+
+
+{\ttfamily \#include $<$manipulatorrotational.\+h$>$}
+
+Diagram dziedziczenia dla Manipulator\+Rotational\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_manipulator_rotational}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_manipulator_rotational_adb9a71718449baa93992784d56cf86d7}{Manipulator\+Rotational} (Q\+Vector$<$ \hyperlink{class_joint}{Joint} $\ast$$>$ p\+\_\+joints, Q\+Vector3D p\+\_\+position=Q\+Vector3D(), float p\+\_\+rotation=float(), Qt3\+D\+Core\+::\+Q\+Entity $\ast$p\+\_\+root\+Entity=nullptr)
+\item 
+\hyperlink{class_manipulator_rotational_acb63f74aed0760ae5cdef17da2369e05}{Manipulator\+Rotational} (const \hyperlink{class_manipulator_rotational}{Manipulator\+Rotational} \&p\+\_\+manipulator)
+\item 
+void \hyperlink{class_manipulator_rotational_ab782bff373e4b6c7b2f75bd5dbfd2435}{Transform\+Joint\+Angles} (Q\+Vector$<$ float $>$ p\+\_\+joint\+Angles)
+\item 
+\hyperlink{class_joint}{Joint} $\ast$ \hyperlink{class_manipulator_rotational_a568eefeea1d7f4748655d3682e738ad5}{get\+Last\+Joint} ()
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+Qt3\+D\+Core\+::\+Q\+Entity $\ast$ \hyperlink{class_manipulator_rotational_a826543721395f9b5b7faa57caebe9a08}{m\+\_\+root\+Entity}
+\item 
+Q\+Vector$<$ \hyperlink{class_joint}{Joint} $\ast$ $>$ \hyperlink{class_manipulator_rotational_a31303c0a6c8a03f3cd0754aec802a808}{m\+\_\+joints}
+\item 
+Q\+Vector3D \hyperlink{class_manipulator_rotational_a18221f06199833851af9eebd9a6ca438}{m\+\_\+position}
+\item 
+float \hyperlink{class_manipulator_rotational_a6edaea6ee8740b4a517f49f65ddf229d}{m\+\_\+rotation}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Inicjuje pozycję stawow w przestrzeni trójwymiarowej 
+
+Definicja w linii 22 pliku manipulatorrotational.\+h.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_manipulator_rotational_adb9a71718449baa93992784d56cf86d7}\label{class_manipulator_rotational_adb9a71718449baa93992784d56cf86d7}} 
+\index{Manipulator\+Rotational@{Manipulator\+Rotational}!Manipulator\+Rotational@{Manipulator\+Rotational}}
+\index{Manipulator\+Rotational@{Manipulator\+Rotational}!Manipulator\+Rotational@{Manipulator\+Rotational}}
+\subsubsection{\texorpdfstring{Manipulator\+Rotational()}{ManipulatorRotational()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Manipulator\+Rotational\+::\+Manipulator\+Rotational (\begin{DoxyParamCaption}\item[{Q\+Vector$<$ \hyperlink{class_joint}{Joint} $\ast$$>$}]{p\+\_\+joints,  }\item[{Q\+Vector3D}]{p\+\_\+position = {\ttfamily QVector3D()},  }\item[{float}]{p\+\_\+rotation = {\ttfamily float()},  }\item[{Qt3\+D\+Core\+::\+Q\+Entity $\ast$}]{p\+\_\+root\+Entity = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 4 pliku manipulatorrotational.\+cpp.
+
+\mbox{\Hypertarget{class_manipulator_rotational_acb63f74aed0760ae5cdef17da2369e05}\label{class_manipulator_rotational_acb63f74aed0760ae5cdef17da2369e05}} 
+\index{Manipulator\+Rotational@{Manipulator\+Rotational}!Manipulator\+Rotational@{Manipulator\+Rotational}}
+\index{Manipulator\+Rotational@{Manipulator\+Rotational}!Manipulator\+Rotational@{Manipulator\+Rotational}}
+\subsubsection{\texorpdfstring{Manipulator\+Rotational()}{ManipulatorRotational()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Manipulator\+Rotational\+::\+Manipulator\+Rotational (\begin{DoxyParamCaption}\item[{const \hyperlink{class_manipulator_rotational}{Manipulator\+Rotational} \&}]{p\+\_\+manipulator }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 9 pliku manipulatorrotational.\+cpp.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_manipulator_rotational_a568eefeea1d7f4748655d3682e738ad5}\label{class_manipulator_rotational_a568eefeea1d7f4748655d3682e738ad5}} 
+\index{Manipulator\+Rotational@{Manipulator\+Rotational}!get\+Last\+Joint@{get\+Last\+Joint}}
+\index{get\+Last\+Joint@{get\+Last\+Joint}!Manipulator\+Rotational@{Manipulator\+Rotational}}
+\subsubsection{\texorpdfstring{get\+Last\+Joint()}{getLastJoint()}}
+{\footnotesize\ttfamily \hyperlink{class_joint}{Joint} $\ast$ Manipulator\+Rotational\+::get\+Last\+Joint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 26 pliku manipulatorrotational.\+cpp.
+
+\mbox{\Hypertarget{class_manipulator_rotational_ab782bff373e4b6c7b2f75bd5dbfd2435}\label{class_manipulator_rotational_ab782bff373e4b6c7b2f75bd5dbfd2435}} 
+\index{Manipulator\+Rotational@{Manipulator\+Rotational}!Transform\+Joint\+Angles@{Transform\+Joint\+Angles}}
+\index{Transform\+Joint\+Angles@{Transform\+Joint\+Angles}!Manipulator\+Rotational@{Manipulator\+Rotational}}
+\subsubsection{\texorpdfstring{Transform\+Joint\+Angles()}{TransformJointAngles()}}
+{\footnotesize\ttfamily void Manipulator\+Rotational\+::\+Transform\+Joint\+Angles (\begin{DoxyParamCaption}\item[{Q\+Vector$<$ float $>$}]{p\+\_\+joint\+Angles }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 17 pliku manipulatorrotational.\+cpp.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_manipulator_rotational_a31303c0a6c8a03f3cd0754aec802a808}\label{class_manipulator_rotational_a31303c0a6c8a03f3cd0754aec802a808}} 
+\index{Manipulator\+Rotational@{Manipulator\+Rotational}!m\+\_\+joints@{m\+\_\+joints}}
+\index{m\+\_\+joints@{m\+\_\+joints}!Manipulator\+Rotational@{Manipulator\+Rotational}}
+\subsubsection{\texorpdfstring{m\+\_\+joints}{m\_joints}}
+{\footnotesize\ttfamily Q\+Vector$<$\hyperlink{class_joint}{Joint}$\ast$$>$ Manipulator\+Rotational\+::m\+\_\+joints\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 27 pliku manipulatorrotational.\+h.
+
+\mbox{\Hypertarget{class_manipulator_rotational_a18221f06199833851af9eebd9a6ca438}\label{class_manipulator_rotational_a18221f06199833851af9eebd9a6ca438}} 
+\index{Manipulator\+Rotational@{Manipulator\+Rotational}!m\+\_\+position@{m\+\_\+position}}
+\index{m\+\_\+position@{m\+\_\+position}!Manipulator\+Rotational@{Manipulator\+Rotational}}
+\subsubsection{\texorpdfstring{m\+\_\+position}{m\_position}}
+{\footnotesize\ttfamily Q\+Vector3D Manipulator\+Rotational\+::m\+\_\+position\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 28 pliku manipulatorrotational.\+h.
+
+\mbox{\Hypertarget{class_manipulator_rotational_a826543721395f9b5b7faa57caebe9a08}\label{class_manipulator_rotational_a826543721395f9b5b7faa57caebe9a08}} 
+\index{Manipulator\+Rotational@{Manipulator\+Rotational}!m\+\_\+root\+Entity@{m\+\_\+root\+Entity}}
+\index{m\+\_\+root\+Entity@{m\+\_\+root\+Entity}!Manipulator\+Rotational@{Manipulator\+Rotational}}
+\subsubsection{\texorpdfstring{m\+\_\+root\+Entity}{m\_rootEntity}}
+{\footnotesize\ttfamily Qt3\+D\+Core\+::\+Q\+Entity$\ast$ Manipulator\+Rotational\+::m\+\_\+root\+Entity\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 26 pliku manipulatorrotational.\+h.
+
+\mbox{\Hypertarget{class_manipulator_rotational_a6edaea6ee8740b4a517f49f65ddf229d}\label{class_manipulator_rotational_a6edaea6ee8740b4a517f49f65ddf229d}} 
+\index{Manipulator\+Rotational@{Manipulator\+Rotational}!m\+\_\+rotation@{m\+\_\+rotation}}
+\index{m\+\_\+rotation@{m\+\_\+rotation}!Manipulator\+Rotational@{Manipulator\+Rotational}}
+\subsubsection{\texorpdfstring{m\+\_\+rotation}{m\_rotation}}
+{\footnotesize\ttfamily float Manipulator\+Rotational\+::m\+\_\+rotation\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 29 pliku manipulatorrotational.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{manipulatorrotational_8h}{manipulatorrotational.\+h}\item 
+\hyperlink{manipulatorrotational_8cpp}{manipulatorrotational.\+cpp}\end{DoxyCompactItemize}

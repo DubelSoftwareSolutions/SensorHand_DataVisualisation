@@ -1,0 +1,155 @@
+\hypertarget{class_input}{}\section{Dokumentacja klasy Input}
+\label{class_input}\index{Input@{Input}}
+
+
+Klasa jest narzędziem do pobierania danych.  
+
+
+
+
+{\ttfamily \#include $<$input.\+h$>$}
+
+Diagram dziedziczenia dla Input\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_input}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_input_abae3f379d3f157cf42dc857309832dba}{Input} ()
+\item 
+void \hyperlink{class_input_a76cacaeadb1ceed7f3f9585220e906c8}{Change\+Connection\+Type} (\hyperlink{class_input_a3be20be9b454515798ecd3370f4e36fd}{Connection\+Type\+\_\+t} p\+\_\+\+Conneciton\+Type)
+\item 
+void \hyperlink{class_input_a7f95fd4a76826d4a28b25e32e6c7244c}{Configure\+Input} ()
+\end{DoxyCompactItemize}
+\subsection*{Typy prywatne}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_input_a3be20be9b454515798ecd3370f4e36fd}{Connection\+Type\+\_\+t} \{ \hyperlink{class_input_a3be20be9b454515798ecd3370f4e36fda6046a4f4c91eb7a02b26c594c36b9374}{Bluetooth\+Connection}, 
+\hyperlink{class_input_a3be20be9b454515798ecd3370f4e36fdaf2a909e54a7c789666bc3bebb2a67370}{U\+S\+B\+Connection}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Vector$<$ float $>$ \hyperlink{class_input_a5d17336e82b13b4a5416ea0bf197c5ba}{m\+\_\+\+Joint\+Angles}
+\item 
+Q\+Vector$<$ int $>$ \hyperlink{class_input_a1ce9ef99c48ee1e7adee67ecadd161c6}{m\+\_\+\+Tension\+Sensor\+Values}
+\item 
+Q\+Vector$<$ float $>$ \hyperlink{class_input_ab2572d4f32d4a82f4023277b24a4b0a4}{m\+\_\+\+Accelerometer\+Values}
+\item 
+\hyperlink{class_input_a3be20be9b454515798ecd3370f4e36fd}{Connection\+Type\+\_\+t} \hyperlink{class_input_aeccfe44263c5985405f94c5feb0ed0aa}{m\+\_\+\+Connection\+Type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Inicjalizuje kąty między stawami, wskazania czujników tensometrycznych, wskazania akcelerometru i typ połączenia z rękawicą sensoryczną 
+
+Definicja w linii 29 pliku input.\+h.
+
+
+
+\subsection{Dokumentacja składowych wyliczanych}
+\mbox{\Hypertarget{class_input_a3be20be9b454515798ecd3370f4e36fd}\label{class_input_a3be20be9b454515798ecd3370f4e36fd}} 
+\index{Input@{Input}!Connection\+Type\+\_\+t@{Connection\+Type\+\_\+t}}
+\index{Connection\+Type\+\_\+t@{Connection\+Type\+\_\+t}!Input@{Input}}
+\subsubsection{\texorpdfstring{Connection\+Type\+\_\+t}{ConnectionType\_t}}
+{\footnotesize\ttfamily enum \hyperlink{class_input_a3be20be9b454515798ecd3370f4e36fd}{Input\+::\+Connection\+Type\+\_\+t}\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{Wartości wyliczeń}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Bluetooth\+Connection@{Bluetooth\+Connection}!Input@{Input}}\index{Input@{Input}!Bluetooth\+Connection@{Bluetooth\+Connection}}}\mbox{\Hypertarget{class_input_a3be20be9b454515798ecd3370f4e36fda6046a4f4c91eb7a02b26c594c36b9374}\label{class_input_a3be20be9b454515798ecd3370f4e36fda6046a4f4c91eb7a02b26c594c36b9374}} 
+Bluetooth\+Connection&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{U\+S\+B\+Connection@{U\+S\+B\+Connection}!Input@{Input}}\index{Input@{Input}!U\+S\+B\+Connection@{U\+S\+B\+Connection}}}\mbox{\Hypertarget{class_input_a3be20be9b454515798ecd3370f4e36fdaf2a909e54a7c789666bc3bebb2a67370}\label{class_input_a3be20be9b454515798ecd3370f4e36fdaf2a909e54a7c789666bc3bebb2a67370}} 
+U\+S\+B\+Connection&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definicja w linii 31 pliku input.\+h.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_input_abae3f379d3f157cf42dc857309832dba}\label{class_input_abae3f379d3f157cf42dc857309832dba}} 
+\index{Input@{Input}!Input@{Input}}
+\index{Input@{Input}!Input@{Input}}
+\subsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily Input\+::\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 3 pliku input.\+cpp.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_input_a76cacaeadb1ceed7f3f9585220e906c8}\label{class_input_a76cacaeadb1ceed7f3f9585220e906c8}} 
+\index{Input@{Input}!Change\+Connection\+Type@{Change\+Connection\+Type}}
+\index{Change\+Connection\+Type@{Change\+Connection\+Type}!Input@{Input}}
+\subsubsection{\texorpdfstring{Change\+Connection\+Type()}{ChangeConnectionType()}}
+{\footnotesize\ttfamily void Input\+::\+Change\+Connection\+Type (\begin{DoxyParamCaption}\item[{\hyperlink{class_input_a3be20be9b454515798ecd3370f4e36fd}{Input\+::\+Connection\+Type\+\_\+t}}]{p\+\_\+\+Conneciton\+Type }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 8 pliku input.\+cpp.
+
+\mbox{\Hypertarget{class_input_a7f95fd4a76826d4a28b25e32e6c7244c}\label{class_input_a7f95fd4a76826d4a28b25e32e6c7244c}} 
+\index{Input@{Input}!Configure\+Input@{Configure\+Input}}
+\index{Configure\+Input@{Configure\+Input}!Input@{Input}}
+\subsubsection{\texorpdfstring{Configure\+Input()}{ConfigureInput()}}
+{\footnotesize\ttfamily void Input\+::\+Configure\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_input_ab2572d4f32d4a82f4023277b24a4b0a4}\label{class_input_ab2572d4f32d4a82f4023277b24a4b0a4}} 
+\index{Input@{Input}!m\+\_\+\+Accelerometer\+Values@{m\+\_\+\+Accelerometer\+Values}}
+\index{m\+\_\+\+Accelerometer\+Values@{m\+\_\+\+Accelerometer\+Values}!Input@{Input}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Accelerometer\+Values}{m\_AccelerometerValues}}
+{\footnotesize\ttfamily Q\+Vector$<$float$>$ Input\+::m\+\_\+\+Accelerometer\+Values\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 35 pliku input.\+h.
+
+\mbox{\Hypertarget{class_input_aeccfe44263c5985405f94c5feb0ed0aa}\label{class_input_aeccfe44263c5985405f94c5feb0ed0aa}} 
+\index{Input@{Input}!m\+\_\+\+Connection\+Type@{m\+\_\+\+Connection\+Type}}
+\index{m\+\_\+\+Connection\+Type@{m\+\_\+\+Connection\+Type}!Input@{Input}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Connection\+Type}{m\_ConnectionType}}
+{\footnotesize\ttfamily \hyperlink{class_input_a3be20be9b454515798ecd3370f4e36fd}{Connection\+Type\+\_\+t} Input\+::m\+\_\+\+Connection\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 36 pliku input.\+h.
+
+\mbox{\Hypertarget{class_input_a5d17336e82b13b4a5416ea0bf197c5ba}\label{class_input_a5d17336e82b13b4a5416ea0bf197c5ba}} 
+\index{Input@{Input}!m\+\_\+\+Joint\+Angles@{m\+\_\+\+Joint\+Angles}}
+\index{m\+\_\+\+Joint\+Angles@{m\+\_\+\+Joint\+Angles}!Input@{Input}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Joint\+Angles}{m\_JointAngles}}
+{\footnotesize\ttfamily Q\+Vector$<$float$>$ Input\+::m\+\_\+\+Joint\+Angles\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 33 pliku input.\+h.
+
+\mbox{\Hypertarget{class_input_a1ce9ef99c48ee1e7adee67ecadd161c6}\label{class_input_a1ce9ef99c48ee1e7adee67ecadd161c6}} 
+\index{Input@{Input}!m\+\_\+\+Tension\+Sensor\+Values@{m\+\_\+\+Tension\+Sensor\+Values}}
+\index{m\+\_\+\+Tension\+Sensor\+Values@{m\+\_\+\+Tension\+Sensor\+Values}!Input@{Input}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Tension\+Sensor\+Values}{m\_TensionSensorValues}}
+{\footnotesize\ttfamily Q\+Vector$<$int$>$ Input\+::m\+\_\+\+Tension\+Sensor\+Values\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 34 pliku input.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{input_8h}{input.\+h}\item 
+\hyperlink{input_8cpp}{input.\+cpp}\end{DoxyCompactItemize}

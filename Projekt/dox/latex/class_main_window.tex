@@ -1,0 +1,204 @@
+\hypertarget{class_main_window}{}\section{Dokumentacja klasy Main\+Window}
+\label{class_main_window}\index{Main\+Window@{Main\+Window}}
+
+
+Modeluje strukturę G\+UI programu.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+Diagram dziedziczenia dla Main\+Window\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{Main\+Window} (Q\+Widget $\ast$parent=0)
+\item 
+\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window} ()
+\item 
+void \hyperlink{class_main_window_ad1878f043e440b2917d12ed59caaca0c}{Add\+Widget\+To\+Glove3\+D\+Layout} (Q\+Widget $\ast$widget)
+\item 
+void \hyperlink{class_main_window_abd0772bfb398165834c0693627603b0f}{Init\+Input\+Data} (\hyperlink{class_input}{Input} $\ast$data)
+\end{DoxyCompactItemize}
+\subsection*{Sloty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_window_a0975a297069f8f0cbbd8e7acfc7d85ba}{on\+\_\+\+Start\+Stop\+Button\+\_\+clicked} ()
+\item 
+void \hyperlink{class_main_window_a08d7ab803fa7f4432ab79dd562547018}{on\+\_\+\+Camera\+Orientation\+Slider\+\_\+value\+Changed} (int value)
+\item 
+void \hyperlink{class_main_window_aab13b3768743e30605d2f7be38011d6b}{on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+text\+Edited} (const Q\+String \&arg1)
+\item 
+void \hyperlink{class_main_window_aeaf68d64561b179222fffc59bbd36e1e}{on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+editing\+Finished} ()
+\item 
+void \hyperlink{class_main_window_a1d8082f8507bb23824db76cca6a047a3}{on\+\_\+\+Glove\+Zoom\+Slider\+\_\+value\+Changed} (int value)
+\item 
+void \hyperlink{class_main_window_a03fd5ea60139a3735a590af735e9d35f}{on\+\_\+\+Glove\+Zoom\+Line\+Edit\+\_\+text\+Edited} (const Q\+String \&arg1)
+\item 
+void \hyperlink{class_main_window_a128cb9982a50c3802c80acf388cf5916}{on\+\_\+\+Glove\+Zoom\+Line\+Edit\+\_\+editing\+Finished} ()
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Main\+Window $\ast$ \hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}
+\item 
+\hyperlink{class_input}{Input} $\ast$ \hyperlink{class_main_window_aa4484150b90e4d13bb42316d12c34650}{Input\+Data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Inicjalizuje głowne okno programu, jego elementy składowe w postaci wdgetów oraz wczytuje zewnętrzny widget trójwymiarowej wizualizacji dłoni. Klasa pobiera dane z obiektu typu \hyperlink{class_input}{Input}, aktualizeje dane w modelu dłoni typy \hyperlink{class_hand}{Hand} i na ich podstawie wyświetla aktualne informacje dotyczące położenia stawów, nacisku i wskazania akcelerometru. Pozwala na zmianę perspektywy widoku na model trójwymiarowy, uruchomienie i zatrzymanie pomiarów 
+
+Definicja w linii 34 pliku mainwindow.\+h.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}} 
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\index{Main\+Window@{Main\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Main\+Window()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Definicja w linii 3 pliku mainwindow.\+cpp.
+
+\mbox{\Hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}} 
+\index{Main\+Window@{Main\+Window}!````~Main\+Window@{$\sim$\+Main\+Window}}
+\index{````~Main\+Window@{$\sim$\+Main\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{$\sim$\+Main\+Window()}{~MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::$\sim$\+Main\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 11 pliku mainwindow.\+cpp.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_main_window_ad1878f043e440b2917d12ed59caaca0c}\label{class_main_window_ad1878f043e440b2917d12ed59caaca0c}} 
+\index{Main\+Window@{Main\+Window}!Add\+Widget\+To\+Glove3\+D\+Layout@{Add\+Widget\+To\+Glove3\+D\+Layout}}
+\index{Add\+Widget\+To\+Glove3\+D\+Layout@{Add\+Widget\+To\+Glove3\+D\+Layout}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Add\+Widget\+To\+Glove3\+D\+Layout()}{AddWidgetToGlove3DLayout()}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Add\+Widget\+To\+Glove3\+D\+Layout (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{widget }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 16 pliku mainwindow.\+cpp.
+
+\mbox{\Hypertarget{class_main_window_abd0772bfb398165834c0693627603b0f}\label{class_main_window_abd0772bfb398165834c0693627603b0f}} 
+\index{Main\+Window@{Main\+Window}!Init\+Input\+Data@{Init\+Input\+Data}}
+\index{Init\+Input\+Data@{Init\+Input\+Data}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Init\+Input\+Data()}{InitInputData()}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Init\+Input\+Data (\begin{DoxyParamCaption}\item[{\hyperlink{class_input}{Input} $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 23 pliku mainwindow.\+cpp.
+
+\mbox{\Hypertarget{class_main_window_aeaf68d64561b179222fffc59bbd36e1e}\label{class_main_window_aeaf68d64561b179222fffc59bbd36e1e}} 
+\index{Main\+Window@{Main\+Window}!on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+editing\+Finished@{on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+editing\+Finished}}
+\index{on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+editing\+Finished@{on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+editing\+Finished}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+editing\+Finished}{on\_CameraOrientationLineEdit\_editingFinished}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+editing\+Finished (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definicja w linii 59 pliku mainwindow.\+cpp.
+
+\mbox{\Hypertarget{class_main_window_aab13b3768743e30605d2f7be38011d6b}\label{class_main_window_aab13b3768743e30605d2f7be38011d6b}} 
+\index{Main\+Window@{Main\+Window}!on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+text\+Edited@{on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+text\+Edited}}
+\index{on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+text\+Edited@{on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+text\+Edited}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+text\+Edited}{on\_CameraOrientationLineEdit\_textEdited}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+text\+Edited (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{arg1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definicja w linii 48 pliku mainwindow.\+cpp.
+
+\mbox{\Hypertarget{class_main_window_a08d7ab803fa7f4432ab79dd562547018}\label{class_main_window_a08d7ab803fa7f4432ab79dd562547018}} 
+\index{Main\+Window@{Main\+Window}!on\+\_\+\+Camera\+Orientation\+Slider\+\_\+value\+Changed@{on\+\_\+\+Camera\+Orientation\+Slider\+\_\+value\+Changed}}
+\index{on\+\_\+\+Camera\+Orientation\+Slider\+\_\+value\+Changed@{on\+\_\+\+Camera\+Orientation\+Slider\+\_\+value\+Changed}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{on\+\_\+\+Camera\+Orientation\+Slider\+\_\+value\+Changed}{on\_CameraOrientationSlider\_valueChanged}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+\+Camera\+Orientation\+Slider\+\_\+value\+Changed (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definicja w linii 43 pliku mainwindow.\+cpp.
+
+\mbox{\Hypertarget{class_main_window_a128cb9982a50c3802c80acf388cf5916}\label{class_main_window_a128cb9982a50c3802c80acf388cf5916}} 
+\index{Main\+Window@{Main\+Window}!on\+\_\+\+Glove\+Zoom\+Line\+Edit\+\_\+editing\+Finished@{on\+\_\+\+Glove\+Zoom\+Line\+Edit\+\_\+editing\+Finished}}
+\index{on\+\_\+\+Glove\+Zoom\+Line\+Edit\+\_\+editing\+Finished@{on\+\_\+\+Glove\+Zoom\+Line\+Edit\+\_\+editing\+Finished}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{on\+\_\+\+Glove\+Zoom\+Line\+Edit\+\_\+editing\+Finished}{on\_GloveZoomLineEdit\_editingFinished}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+\+Glove\+Zoom\+Line\+Edit\+\_\+editing\+Finished (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definicja w linii 81 pliku mainwindow.\+cpp.
+
+\mbox{\Hypertarget{class_main_window_a03fd5ea60139a3735a590af735e9d35f}\label{class_main_window_a03fd5ea60139a3735a590af735e9d35f}} 
+\index{Main\+Window@{Main\+Window}!on\+\_\+\+Glove\+Zoom\+Line\+Edit\+\_\+text\+Edited@{on\+\_\+\+Glove\+Zoom\+Line\+Edit\+\_\+text\+Edited}}
+\index{on\+\_\+\+Glove\+Zoom\+Line\+Edit\+\_\+text\+Edited@{on\+\_\+\+Glove\+Zoom\+Line\+Edit\+\_\+text\+Edited}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{on\+\_\+\+Glove\+Zoom\+Line\+Edit\+\_\+text\+Edited}{on\_GloveZoomLineEdit\_textEdited}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+\+Glove\+Zoom\+Line\+Edit\+\_\+text\+Edited (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{arg1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definicja w linii 70 pliku mainwindow.\+cpp.
+
+\mbox{\Hypertarget{class_main_window_a1d8082f8507bb23824db76cca6a047a3}\label{class_main_window_a1d8082f8507bb23824db76cca6a047a3}} 
+\index{Main\+Window@{Main\+Window}!on\+\_\+\+Glove\+Zoom\+Slider\+\_\+value\+Changed@{on\+\_\+\+Glove\+Zoom\+Slider\+\_\+value\+Changed}}
+\index{on\+\_\+\+Glove\+Zoom\+Slider\+\_\+value\+Changed@{on\+\_\+\+Glove\+Zoom\+Slider\+\_\+value\+Changed}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{on\+\_\+\+Glove\+Zoom\+Slider\+\_\+value\+Changed}{on\_GloveZoomSlider\_valueChanged}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+\+Glove\+Zoom\+Slider\+\_\+value\+Changed (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definicja w linii 65 pliku mainwindow.\+cpp.
+
+\mbox{\Hypertarget{class_main_window_a0975a297069f8f0cbbd8e7acfc7d85ba}\label{class_main_window_a0975a297069f8f0cbbd8e7acfc7d85ba}} 
+\index{Main\+Window@{Main\+Window}!on\+\_\+\+Start\+Stop\+Button\+\_\+clicked@{on\+\_\+\+Start\+Stop\+Button\+\_\+clicked}}
+\index{on\+\_\+\+Start\+Stop\+Button\+\_\+clicked@{on\+\_\+\+Start\+Stop\+Button\+\_\+clicked}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{on\+\_\+\+Start\+Stop\+Button\+\_\+clicked}{on\_StartStopButton\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+\+Start\+Stop\+Button\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definicja w linii 28 pliku mainwindow.\+cpp.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_main_window_aa4484150b90e4d13bb42316d12c34650}\label{class_main_window_aa4484150b90e4d13bb42316d12c34650}} 
+\index{Main\+Window@{Main\+Window}!Input\+Data@{Input\+Data}}
+\index{Input\+Data@{Input\+Data}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Input\+Data}{InputData}}
+{\footnotesize\ttfamily \hyperlink{class_input}{Input}$\ast$ Main\+Window\+::\+Input\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 57 pliku mainwindow.\+h.
+
+\mbox{\Hypertarget{class_main_window_a35466a70ed47252a0191168126a352a5}\label{class_main_window_a35466a70ed47252a0191168126a352a5}} 
+\index{Main\+Window@{Main\+Window}!ui@{ui}}
+\index{ui@{ui}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Main\+Window$\ast$ Main\+Window\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 56 pliku mainwindow.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mainwindow_8h}{mainwindow.\+h}\item 
+\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,249 @@
+\hypertarget{class_joint}{}\section{Dokumentacja klasy Joint}
+\label{class_joint}\index{Joint@{Joint}}
+
+
+Modeluje pojęcie stawu.  
+
+
+
+
+{\ttfamily \#include $<$joint.\+h$>$}
+
+Diagram dziedziczenia dla Joint\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_joint}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_joint_a0a60e63cceeb93ef8a308ebf2eaa8d68}{Joint} (Qt3\+D\+Core\+::\+Q\+Entity $\ast$p\+\_\+root\+Entity=nullptr, float p\+\_\+radius=1, float p\+\_\+length=1, float p\+\_\+angle=0, float p\+\_\+tilt=0, float p\+\_\+rotation=0, Q\+Vector3D p\+\_\+position=Q\+Vector3D(), \hyperlink{class_joint}{Joint} $\ast$p\+\_\+\+Prev\+Joint=nullptr, Q\+Color p\+\_\+color=Q\+Color(255, 173, 96))
+\item 
+\hyperlink{class_joint_a9652fa723eed6fe31e1ab4adccbb9c44}{Joint} (const \hyperlink{class_joint}{Joint} \&p\+\_\+joint)
+\item 
+float \hyperlink{class_joint_acf30d550f5ca1e0e5eb60dafdc83d202}{length} () const
+\item 
+float \hyperlink{class_joint_a305d99fa57d07d8ed3b478931e4e86e5}{angle} () const
+\item 
+Q\+Matrix4x4 \hyperlink{class_joint_a0bf632e9b7a8de79429be16f963e81f7}{Transform\+Matrix} () const
+\item 
+void \hyperlink{class_joint_ad2529cc3d781c18ead369c0ea42b700b}{Transform\+Angle} (float p\+\_\+new\+Angle, \hyperlink{class_joint}{Joint} $\ast$p\+\_\+\+Prev\+Joint=nullptr)
+\item 
+\hyperlink{class_joint}{Joint} \& \hyperlink{class_joint_a3cd9a9a2dc9226b2588c6ddab9659bed}{operator=} (const \hyperlink{class_joint}{Joint} \&p\+\_\+joint)
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_joint_a0badff470b9c02646557b848b12157bb}{m\+\_\+radius}
+\item 
+float \hyperlink{class_joint_a0aaf98e796494a327371cc5530172432}{m\+\_\+length}
+\item 
+float \hyperlink{class_joint_a293274b0f6de50fb79f532f64af9a048}{m\+\_\+angle}
+\item 
+float \hyperlink{class_joint_abe644639021eba36f36ec04a90d13af4}{m\+\_\+tilt}
+\item 
+float \hyperlink{class_joint_a60e475f7439a1bae1ce859de007d3e84}{m\+\_\+rotation}
+\item 
+Q\+Vector3D \hyperlink{class_joint_a2fd3f63f13b42041f7b40511e7075061}{m\+\_\+position}
+\item 
+Qt3\+D\+Core\+::\+Q\+Entity $\ast$ \hyperlink{class_joint_aee7172c3678a1cb2fb916f5cd3768a9b}{m\+\_\+root\+Entity}
+\item 
+Qt3\+D\+Core\+::\+Q\+Entity $\ast$ \hyperlink{class_joint_a0862c4b658d00415ae4952e43af4931b}{m\+\_\+\+Cylinder\+Entity}
+\item 
+Qt3\+D\+Core\+::\+Q\+Transform $\ast$ \hyperlink{class_joint_af86be64ec4dfe808d941a322867ee984}{m\+\_\+\+Cylinder\+Transform}
+\item 
+Q\+Matrix4x4 \hyperlink{class_joint_adc692e48ac1dc140134627aa445dc160}{m\+\_\+\+Transform\+Matrix}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Inicjalizuje długość stawu, kąt nachylenia względem poprzedniego stawu 
+
+Definicja w linii 27 pliku joint.\+h.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_joint_a0a60e63cceeb93ef8a308ebf2eaa8d68}\label{class_joint_a0a60e63cceeb93ef8a308ebf2eaa8d68}} 
+\index{Joint@{Joint}!Joint@{Joint}}
+\index{Joint@{Joint}!Joint@{Joint}}
+\subsubsection{\texorpdfstring{Joint()}{Joint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Joint\+::\+Joint (\begin{DoxyParamCaption}\item[{Qt3\+D\+Core\+::\+Q\+Entity $\ast$}]{p\+\_\+root\+Entity = {\ttfamily nullptr},  }\item[{float}]{p\+\_\+radius = {\ttfamily 1},  }\item[{float}]{p\+\_\+length = {\ttfamily 1},  }\item[{float}]{p\+\_\+angle = {\ttfamily 0},  }\item[{float}]{p\+\_\+tilt = {\ttfamily 0},  }\item[{float}]{p\+\_\+rotation = {\ttfamily 0},  }\item[{Q\+Vector3D}]{p\+\_\+position = {\ttfamily QVector3D()},  }\item[{\hyperlink{class_joint}{Joint} $\ast$}]{p\+\_\+\+Prev\+Joint = {\ttfamily nullptr},  }\item[{Q\+Color}]{p\+\_\+color = {\ttfamily QColor(255,173,96)} }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 3 pliku joint.\+cpp.
+
+\mbox{\Hypertarget{class_joint_a9652fa723eed6fe31e1ab4adccbb9c44}\label{class_joint_a9652fa723eed6fe31e1ab4adccbb9c44}} 
+\index{Joint@{Joint}!Joint@{Joint}}
+\index{Joint@{Joint}!Joint@{Joint}}
+\subsubsection{\texorpdfstring{Joint()}{Joint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Joint\+::\+Joint (\begin{DoxyParamCaption}\item[{const \hyperlink{class_joint}{Joint} \&}]{p\+\_\+joint }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 44 pliku joint.\+cpp.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_joint_a305d99fa57d07d8ed3b478931e4e86e5}\label{class_joint_a305d99fa57d07d8ed3b478931e4e86e5}} 
+\index{Joint@{Joint}!angle@{angle}}
+\index{angle@{angle}!Joint@{Joint}}
+\subsubsection{\texorpdfstring{angle()}{angle()}}
+{\footnotesize\ttfamily float Joint\+::angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 63 pliku joint.\+cpp.
+
+\mbox{\Hypertarget{class_joint_acf30d550f5ca1e0e5eb60dafdc83d202}\label{class_joint_acf30d550f5ca1e0e5eb60dafdc83d202}} 
+\index{Joint@{Joint}!length@{length}}
+\index{length@{length}!Joint@{Joint}}
+\subsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily float Joint\+::length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 58 pliku joint.\+cpp.
+
+\mbox{\Hypertarget{class_joint_a3cd9a9a2dc9226b2588c6ddab9659bed}\label{class_joint_a3cd9a9a2dc9226b2588c6ddab9659bed}} 
+\index{Joint@{Joint}!operator=@{operator=}}
+\index{operator=@{operator=}!Joint@{Joint}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{class_joint}{Joint} \& Joint\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_joint}{Joint} \&}]{p\+\_\+joint }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 94 pliku joint.\+cpp.
+
+\mbox{\Hypertarget{class_joint_ad2529cc3d781c18ead369c0ea42b700b}\label{class_joint_ad2529cc3d781c18ead369c0ea42b700b}} 
+\index{Joint@{Joint}!Transform\+Angle@{Transform\+Angle}}
+\index{Transform\+Angle@{Transform\+Angle}!Joint@{Joint}}
+\subsubsection{\texorpdfstring{Transform\+Angle()}{TransformAngle()}}
+{\footnotesize\ttfamily void Joint\+::\+Transform\+Angle (\begin{DoxyParamCaption}\item[{float}]{p\+\_\+new\+Angle,  }\item[{\hyperlink{class_joint}{Joint} $\ast$}]{p\+\_\+\+Prev\+Joint = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 73 pliku joint.\+cpp.
+
+\mbox{\Hypertarget{class_joint_a0bf632e9b7a8de79429be16f963e81f7}\label{class_joint_a0bf632e9b7a8de79429be16f963e81f7}} 
+\index{Joint@{Joint}!Transform\+Matrix@{Transform\+Matrix}}
+\index{Transform\+Matrix@{Transform\+Matrix}!Joint@{Joint}}
+\subsubsection{\texorpdfstring{Transform\+Matrix()}{TransformMatrix()}}
+{\footnotesize\ttfamily Q\+Matrix4x4 Joint\+::\+Transform\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 68 pliku joint.\+cpp.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_joint_a293274b0f6de50fb79f532f64af9a048}\label{class_joint_a293274b0f6de50fb79f532f64af9a048}} 
+\index{Joint@{Joint}!m\+\_\+angle@{m\+\_\+angle}}
+\index{m\+\_\+angle@{m\+\_\+angle}!Joint@{Joint}}
+\subsubsection{\texorpdfstring{m\+\_\+angle}{m\_angle}}
+{\footnotesize\ttfamily float Joint\+::m\+\_\+angle\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 33 pliku joint.\+h.
+
+\mbox{\Hypertarget{class_joint_a0862c4b658d00415ae4952e43af4931b}\label{class_joint_a0862c4b658d00415ae4952e43af4931b}} 
+\index{Joint@{Joint}!m\+\_\+\+Cylinder\+Entity@{m\+\_\+\+Cylinder\+Entity}}
+\index{m\+\_\+\+Cylinder\+Entity@{m\+\_\+\+Cylinder\+Entity}!Joint@{Joint}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Cylinder\+Entity}{m\_CylinderEntity}}
+{\footnotesize\ttfamily Qt3\+D\+Core\+::\+Q\+Entity$\ast$ Joint\+::m\+\_\+\+Cylinder\+Entity\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 38 pliku joint.\+h.
+
+\mbox{\Hypertarget{class_joint_af86be64ec4dfe808d941a322867ee984}\label{class_joint_af86be64ec4dfe808d941a322867ee984}} 
+\index{Joint@{Joint}!m\+\_\+\+Cylinder\+Transform@{m\+\_\+\+Cylinder\+Transform}}
+\index{m\+\_\+\+Cylinder\+Transform@{m\+\_\+\+Cylinder\+Transform}!Joint@{Joint}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Cylinder\+Transform}{m\_CylinderTransform}}
+{\footnotesize\ttfamily Qt3\+D\+Core\+::\+Q\+Transform$\ast$ Joint\+::m\+\_\+\+Cylinder\+Transform\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 39 pliku joint.\+h.
+
+\mbox{\Hypertarget{class_joint_a0aaf98e796494a327371cc5530172432}\label{class_joint_a0aaf98e796494a327371cc5530172432}} 
+\index{Joint@{Joint}!m\+\_\+length@{m\+\_\+length}}
+\index{m\+\_\+length@{m\+\_\+length}!Joint@{Joint}}
+\subsubsection{\texorpdfstring{m\+\_\+length}{m\_length}}
+{\footnotesize\ttfamily float Joint\+::m\+\_\+length\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 32 pliku joint.\+h.
+
+\mbox{\Hypertarget{class_joint_a2fd3f63f13b42041f7b40511e7075061}\label{class_joint_a2fd3f63f13b42041f7b40511e7075061}} 
+\index{Joint@{Joint}!m\+\_\+position@{m\+\_\+position}}
+\index{m\+\_\+position@{m\+\_\+position}!Joint@{Joint}}
+\subsubsection{\texorpdfstring{m\+\_\+position}{m\_position}}
+{\footnotesize\ttfamily Q\+Vector3D Joint\+::m\+\_\+position\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 36 pliku joint.\+h.
+
+\mbox{\Hypertarget{class_joint_a0badff470b9c02646557b848b12157bb}\label{class_joint_a0badff470b9c02646557b848b12157bb}} 
+\index{Joint@{Joint}!m\+\_\+radius@{m\+\_\+radius}}
+\index{m\+\_\+radius@{m\+\_\+radius}!Joint@{Joint}}
+\subsubsection{\texorpdfstring{m\+\_\+radius}{m\_radius}}
+{\footnotesize\ttfamily float Joint\+::m\+\_\+radius\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 31 pliku joint.\+h.
+
+\mbox{\Hypertarget{class_joint_aee7172c3678a1cb2fb916f5cd3768a9b}\label{class_joint_aee7172c3678a1cb2fb916f5cd3768a9b}} 
+\index{Joint@{Joint}!m\+\_\+root\+Entity@{m\+\_\+root\+Entity}}
+\index{m\+\_\+root\+Entity@{m\+\_\+root\+Entity}!Joint@{Joint}}
+\subsubsection{\texorpdfstring{m\+\_\+root\+Entity}{m\_rootEntity}}
+{\footnotesize\ttfamily Qt3\+D\+Core\+::\+Q\+Entity$\ast$ Joint\+::m\+\_\+root\+Entity\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 37 pliku joint.\+h.
+
+\mbox{\Hypertarget{class_joint_a60e475f7439a1bae1ce859de007d3e84}\label{class_joint_a60e475f7439a1bae1ce859de007d3e84}} 
+\index{Joint@{Joint}!m\+\_\+rotation@{m\+\_\+rotation}}
+\index{m\+\_\+rotation@{m\+\_\+rotation}!Joint@{Joint}}
+\subsubsection{\texorpdfstring{m\+\_\+rotation}{m\_rotation}}
+{\footnotesize\ttfamily float Joint\+::m\+\_\+rotation\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 35 pliku joint.\+h.
+
+\mbox{\Hypertarget{class_joint_abe644639021eba36f36ec04a90d13af4}\label{class_joint_abe644639021eba36f36ec04a90d13af4}} 
+\index{Joint@{Joint}!m\+\_\+tilt@{m\+\_\+tilt}}
+\index{m\+\_\+tilt@{m\+\_\+tilt}!Joint@{Joint}}
+\subsubsection{\texorpdfstring{m\+\_\+tilt}{m\_tilt}}
+{\footnotesize\ttfamily float Joint\+::m\+\_\+tilt\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 34 pliku joint.\+h.
+
+\mbox{\Hypertarget{class_joint_adc692e48ac1dc140134627aa445dc160}\label{class_joint_adc692e48ac1dc140134627aa445dc160}} 
+\index{Joint@{Joint}!m\+\_\+\+Transform\+Matrix@{m\+\_\+\+Transform\+Matrix}}
+\index{m\+\_\+\+Transform\+Matrix@{m\+\_\+\+Transform\+Matrix}!Joint@{Joint}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Transform\+Matrix}{m\_TransformMatrix}}
+{\footnotesize\ttfamily Q\+Matrix4x4 Joint\+::m\+\_\+\+Transform\+Matrix\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 40 pliku joint.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{joint_8h}{joint.\+h}\item 
+\hyperlink{joint_8cpp}{joint.\+cpp}\end{DoxyCompactItemize}

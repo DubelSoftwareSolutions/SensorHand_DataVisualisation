@@ -25,11 +25,32 @@ void MainWindow::AddWidgetToGlove3DLayout(QWidget *widget)
      widget->resize(600,400);
      ui->centralWidget->width();
      ui->Glove3DLayout->addWidget(widget);
+     Glove3DLayoutWidgetIsSet = true;
+
  }
 
 void MainWindow::InitInputData(Input * data)
 {
     InputData = data;
+}
+// ********************************************************************
+// ***************************   private    ***************************   private
+
+void MainWindow::resizeEvent(QResizeEvent *event)
+{
+    QMainWindow::resizeEvent(event);
+    int width = ui->centralWidget->width() - ui->MeasurementLayout->geometry().width();
+    int height = ui->centralWidget->height() - ui->GyroTable->height();
+    ui->GyroTable->item(0,0)->setText(QString::number(width));
+    if (Glove3DLayoutWidgetIsSet)
+    {
+        scene3D->widget->resize(width, height);
+        ui->MeasurementLayout->geometry().setLeft(width);
+        ui->GyroTable->move(MARGIN, height);
+        ui->FingersTab->move(ui->GyroTable->width() + MARGIN, height);
+        ui->ConfigurationWidget->move(width, MARGIN);
+        ui->MeasurementWidget->move(MARGIN+width, MARGIN*2 + ui->ConfigurationWidget->height());
+    }
 }
 
 void MainWindow::on_StartStopButton_clicked()
@@ -50,9 +71,9 @@ void MainWindow::on_StartStopButton_clicked()
 void MainWindow::on_CameraOrientationSlider_valueChanged(int value)
 {
     ui->CameraOrientationLineEdit->setText(QString::number(value));
-    //scene3D->cameraEntity->setPosition(QVector3D(10,10,value));
+
     int r = 50*ui->GloveZoomSlider->value() / 100 + 10;
-    scene3D->cameraEntity->setPosition(QVector3D(sin(M_PI*value/180)*r, 10, cos(M_PI*value/180)*r));
+    scene3D->cameraEntity->setPosition(QVector3D(-sin(M_PI*value/180)*r, 10, -cos(M_PI*value/180)*r));
 
     scene3D->camController->setCamera(scene3D->cameraEntity);
 
@@ -81,7 +102,7 @@ void MainWindow::on_GloveZoomSlider_valueChanged(int value)
 
     int r = 50*value / 100 + 10;
     int angle = ui->CameraOrientationSlider->value();
-    scene3D->cameraEntity->setPosition(QVector3D(sin(M_PI*angle/180)*r, 10, cos(M_PI*angle/180)*r));
+    scene3D->cameraEntity->setPosition(QVector3D(-sin(M_PI*angle/180)*r, 10, -cos(M_PI*angle/180)*r));
 
     scene3D->camController->setCamera(scene3D->cameraEntity);
 }
@@ -103,21 +124,3 @@ void MainWindow::on_GloveZoomLineEdit_editingFinished()
     ui->GloveZoomSlider->setValue(arg.toInt());
 }
 
-void MainWindow::on_par1_valueChanged(int value)
-{
-    scene3D->cameraEntity->setPosition(QVector3D(value,ui->par2->value(),ui->par3->value()));
-    scene3D->camController->setCamera(scene3D->cameraEntity);
-}
-
-void MainWindow::on_par2_valueChanged(int value)
-{
-    scene3D->cameraEntity->setPosition(QVector3D(ui->par1->value(),value,ui->par3->value()));
-    scene3D->camController->setCamera(scene3D->cameraEntity);
-}
-
-void MainWindow::on_par3_valueChanged(int value)
-{
-    //scene3D->cameraEntity->setPosition(QVector3D(ui->par1->value(),ui->par2->value(),value));
-    //scene3D->camController->setCamera(scene3D->cameraEntity);
-//    scene3D->camController->
-}

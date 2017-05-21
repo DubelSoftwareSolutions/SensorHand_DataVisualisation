@@ -1,0 +1,117 @@
+\hypertarget{class_hand}{}\section{Dokumentacja klasy Hand}
+\label{class_hand}\index{Hand@{Hand}}
+
+
+Modeluje pojęcie dłoni.  
+
+
+
+
+{\ttfamily \#include $<$hand.\+h$>$}
+
+Diagram dziedziczenia dla Hand\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hand}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_hand_a4a21ef8143e36ab41a5afbd7b292b14c}{Hand} (Qt3\+D\+Core\+::\+Q\+Entity $\ast$p\+\_\+root\+Entity=nullptr, Q\+Color p\+\_\+\+Hand\+Color=Q\+Color(255, 173, 96))
+\item 
+Q\+Vector$<$ int $>$ \hyperlink{class_hand_ab886f121780eb05a17fdbabd04442d78}{Get\+Fingertip\+Values} () const
+\item 
+void \hyperlink{class_hand_a52749a0d5baeb2bbd4f133020a5181f1}{Set\+Finger\+Joints} (Q\+Vector$<$ Q\+Vector$<$ float $>$$>$ p\+\_\+\+Joint\+Angles)
+\item 
+void \hyperlink{class_hand_a6fcc256397062529e6fd41d0554bee06}{Set\+Fingertip\+Values} (Q\+Vector$<$ int $>$ p\+\_\+\+Fingertip\+Values)
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+Qt3\+D\+Core\+::\+Q\+Entity $\ast$ \hyperlink{class_hand_a27c80e86783b9066e5aff6b357dc9d78}{m\+\_\+root\+Entity}
+\item 
+Q\+Vector$<$ \hyperlink{class_finger}{Finger} $>$ \hyperlink{class_hand_a303c056fb939dde0845a69720c15e4f8}{m\+\_\+fingers}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa składa się z elementow palców, rozmieszczonych w przestrzeni trójwymiarowej 
+
+Definicja w linii 39 pliku hand.\+h.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_hand_a4a21ef8143e36ab41a5afbd7b292b14c}\label{class_hand_a4a21ef8143e36ab41a5afbd7b292b14c}} 
+\index{Hand@{Hand}!Hand@{Hand}}
+\index{Hand@{Hand}!Hand@{Hand}}
+\subsubsection{\texorpdfstring{Hand()}{Hand()}}
+{\footnotesize\ttfamily Hand\+::\+Hand (\begin{DoxyParamCaption}\item[{Qt3\+D\+Core\+::\+Q\+Entity $\ast$}]{p\+\_\+root\+Entity = {\ttfamily nullptr},  }\item[{Q\+Color}]{p\+\_\+\+Hand\+Color = {\ttfamily QColor(255,173,96)} }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 3 pliku hand.\+cpp.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_hand_ab886f121780eb05a17fdbabd04442d78}\label{class_hand_ab886f121780eb05a17fdbabd04442d78}} 
+\index{Hand@{Hand}!Get\+Fingertip\+Values@{Get\+Fingertip\+Values}}
+\index{Get\+Fingertip\+Values@{Get\+Fingertip\+Values}!Hand@{Hand}}
+\subsubsection{\texorpdfstring{Get\+Fingertip\+Values()}{GetFingertipValues()}}
+{\footnotesize\ttfamily Q\+Vector$<$ int $>$ Hand\+::\+Get\+Fingertip\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 27 pliku hand.\+cpp.
+
+\mbox{\Hypertarget{class_hand_a52749a0d5baeb2bbd4f133020a5181f1}\label{class_hand_a52749a0d5baeb2bbd4f133020a5181f1}} 
+\index{Hand@{Hand}!Set\+Finger\+Joints@{Set\+Finger\+Joints}}
+\index{Set\+Finger\+Joints@{Set\+Finger\+Joints}!Hand@{Hand}}
+\subsubsection{\texorpdfstring{Set\+Finger\+Joints()}{SetFingerJoints()}}
+{\footnotesize\ttfamily void Hand\+::\+Set\+Finger\+Joints (\begin{DoxyParamCaption}\item[{Q\+Vector$<$ Q\+Vector$<$ float $>$$>$}]{p\+\_\+\+Joint\+Angles }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 35 pliku hand.\+cpp.
+
+\mbox{\Hypertarget{class_hand_a6fcc256397062529e6fd41d0554bee06}\label{class_hand_a6fcc256397062529e6fd41d0554bee06}} 
+\index{Hand@{Hand}!Set\+Fingertip\+Values@{Set\+Fingertip\+Values}}
+\index{Set\+Fingertip\+Values@{Set\+Fingertip\+Values}!Hand@{Hand}}
+\subsubsection{\texorpdfstring{Set\+Fingertip\+Values()}{SetFingertipValues()}}
+{\footnotesize\ttfamily void Hand\+::\+Set\+Fingertip\+Values (\begin{DoxyParamCaption}\item[{Q\+Vector$<$ int $>$}]{p\+\_\+\+Fingertip\+Values }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 43 pliku hand.\+cpp.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_hand_a303c056fb939dde0845a69720c15e4f8}\label{class_hand_a303c056fb939dde0845a69720c15e4f8}} 
+\index{Hand@{Hand}!m\+\_\+fingers@{m\+\_\+fingers}}
+\index{m\+\_\+fingers@{m\+\_\+fingers}!Hand@{Hand}}
+\subsubsection{\texorpdfstring{m\+\_\+fingers}{m\_fingers}}
+{\footnotesize\ttfamily Q\+Vector$<$\hyperlink{class_finger}{Finger}$>$ Hand\+::m\+\_\+fingers\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 44 pliku hand.\+h.
+
+\mbox{\Hypertarget{class_hand_a27c80e86783b9066e5aff6b357dc9d78}\label{class_hand_a27c80e86783b9066e5aff6b357dc9d78}} 
+\index{Hand@{Hand}!m\+\_\+root\+Entity@{m\+\_\+root\+Entity}}
+\index{m\+\_\+root\+Entity@{m\+\_\+root\+Entity}!Hand@{Hand}}
+\subsubsection{\texorpdfstring{m\+\_\+root\+Entity}{m\_rootEntity}}
+{\footnotesize\ttfamily Qt3\+D\+Core\+::\+Q\+Entity$\ast$ Hand\+::m\+\_\+root\+Entity\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 43 pliku hand.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{hand_8h}{hand.\+h}\item 
+\hyperlink{hand_8cpp}{hand.\+cpp}\end{DoxyCompactItemize}

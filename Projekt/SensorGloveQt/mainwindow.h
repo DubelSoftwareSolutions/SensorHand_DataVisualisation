@@ -1,7 +1,14 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-
+#define MARGIN 10
+/*!
+ * \file
+ * \brief Definicja klasy MainWindow
+ *
+ * Plik zawiera definicję klasy MainWindow, która
+ * jest klasą pochodną klasy QMainWindow
+ */
 
 #include <QMainWindow>
 #include "scene.h"
@@ -10,14 +17,6 @@
 namespace Ui {
 class MainWindow;
 }
-
-/*!
- * \file
- * \brief Definicja klasy MainWindow
- *
- * Plik zawiera definicję klasy MainWindow, która
- * jest klasą pochodną klasy QMainWindow
- */
 
 /*!
  * \brief Modeluje strukturę GUI programu
@@ -44,6 +43,7 @@ void getScene(Scene *p_scene);
 void InitInputData(Input *data);
 
 private slots:
+void resizeEvent(QResizeEvent *event);
 void on_StartStopButton_clicked();
 
 void on_CameraOrientationSlider_valueChanged(int value);
@@ -54,14 +54,12 @@ void on_GloveZoomSlider_valueChanged(int value);
 void on_GloveZoomLineEdit_textEdited(const QString &arg1);
 void on_GloveZoomLineEdit_editingFinished();
 
-void on_par1_valueChanged(int value);
-void on_par2_valueChanged(int value);
-void on_par3_valueChanged(int value);
 
 private:
     Ui::MainWindow *ui;
     Input *InputData;
     Scene *scene3D;
+    bool Glove3DLayoutWidgetIsSet = false;
 };
 
 #endif // MAINWINDOW_H

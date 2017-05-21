@@ -1,0 +1,165 @@
+\hypertarget{class_fingertip}{}\section{Dokumentacja klasy Fingertip}
+\label{class_fingertip}\index{Fingertip@{Fingertip}}
+
+
+Opisuje opuszki palców.  
+
+
+
+
+{\ttfamily \#include $<$fingertip.\+h$>$}
+
+Diagram dziedziczenia dla Fingertip\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_fingertip}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_fingertip_a532cc6d9478ba3e1e0d8024ad7773141}{Fingertip} (Qt3\+D\+Core\+::\+Q\+Entity $\ast$p\+\_\+root\+Entity=nullptr, \hyperlink{class_joint}{Joint} $\ast$p\+\_\+\+Prev\+Joint=nullptr, int p\+\_\+fingertip\+Value=int())
+\item 
+void \hyperlink{class_fingertip_aeecbae45b84b2ab9840df15b6541a21d}{Transform\+Fingertip} (\hyperlink{class_joint}{Joint} $\ast$p\+\_\+prev\+Joint)
+\item 
+void \hyperlink{class_fingertip_aa2823945458eb8a97f9568934bfcc1d5}{set\+Fingertip\+Value} (int p\+\_\+new\+Value)
+\item 
+float \hyperlink{class_fingertip_a3ec55016e28f9fbce847baa668c44868}{get\+Fingertip\+Value} () const
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_fingertip_a905ac81dfaa6237a3bf0bd799edee5ed}{m\+\_\+fingertip\+Value}
+\item 
+Qt3\+D\+Core\+::\+Q\+Entity $\ast$ \hyperlink{class_fingertip_aab2e37584c9728063525485253a8292e}{m\+\_\+root\+Entity}
+\item 
+Qt3\+D\+Core\+::\+Q\+Entity $\ast$ \hyperlink{class_fingertip_a48394c9bf6bbcef4e6b9fab82b561c61}{m\+\_\+sphere\+Entity}
+\item 
+Qt3\+D\+Core\+::\+Q\+Transform $\ast$ \hyperlink{class_fingertip_a0827f0c8eee7e8327d5ad8f74a2bc321}{m\+\_\+sphere\+Transform}
+\item 
+Qt3\+D\+Extras\+::\+Q\+Phong\+Material $\ast$ \hyperlink{class_fingertip_a58602637fb13017b27b8c635e614d1f5}{m\+\_\+sphere\+Material}
+\item 
+Q\+Matrix4x4 \hyperlink{class_fingertip_aeb9e6a84d8edba93cabbddafbcba04b2}{m\+\_\+\+Transform\+Matrix}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Reprezentuje trojwymiarową wizualizację opuszków palców w postaci obiektow sferycznych. Słuzy do wizualizacji odczytów z czujników nacisku umieszczonych na opuszkach palców rękawicy sensorycznej. Inicjalizuje rozmiar sfery i położenie w przedtrzeni trówymiarowej. 
+
+Definicja w linii 33 pliku fingertip.\+h.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_fingertip_a532cc6d9478ba3e1e0d8024ad7773141}\label{class_fingertip_a532cc6d9478ba3e1e0d8024ad7773141}} 
+\index{Fingertip@{Fingertip}!Fingertip@{Fingertip}}
+\index{Fingertip@{Fingertip}!Fingertip@{Fingertip}}
+\subsubsection{\texorpdfstring{Fingertip()}{Fingertip()}}
+{\footnotesize\ttfamily Fingertip\+::\+Fingertip (\begin{DoxyParamCaption}\item[{Qt3\+D\+Core\+::\+Q\+Entity $\ast$}]{p\+\_\+root\+Entity = {\ttfamily nullptr},  }\item[{\hyperlink{class_joint}{Joint} $\ast$}]{p\+\_\+\+Prev\+Joint = {\ttfamily nullptr},  }\item[{int}]{p\+\_\+fingertip\+Value = {\ttfamily int()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Definicja w linii 3 pliku fingertip.\+cpp.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_fingertip_a3ec55016e28f9fbce847baa668c44868}\label{class_fingertip_a3ec55016e28f9fbce847baa668c44868}} 
+\index{Fingertip@{Fingertip}!get\+Fingertip\+Value@{get\+Fingertip\+Value}}
+\index{get\+Fingertip\+Value@{get\+Fingertip\+Value}!Fingertip@{Fingertip}}
+\subsubsection{\texorpdfstring{get\+Fingertip\+Value()}{getFingertipValue()}}
+{\footnotesize\ttfamily float Fingertip\+::get\+Fingertip\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definicja w linii 49 pliku fingertip.\+cpp.
+
+\mbox{\Hypertarget{class_fingertip_aa2823945458eb8a97f9568934bfcc1d5}\label{class_fingertip_aa2823945458eb8a97f9568934bfcc1d5}} 
+\index{Fingertip@{Fingertip}!set\+Fingertip\+Value@{set\+Fingertip\+Value}}
+\index{set\+Fingertip\+Value@{set\+Fingertip\+Value}!Fingertip@{Fingertip}}
+\subsubsection{\texorpdfstring{set\+Fingertip\+Value()}{setFingertipValue()}}
+{\footnotesize\ttfamily void Fingertip\+::set\+Fingertip\+Value (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+new\+Value }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 40 pliku fingertip.\+cpp.
+
+\mbox{\Hypertarget{class_fingertip_aeecbae45b84b2ab9840df15b6541a21d}\label{class_fingertip_aeecbae45b84b2ab9840df15b6541a21d}} 
+\index{Fingertip@{Fingertip}!Transform\+Fingertip@{Transform\+Fingertip}}
+\index{Transform\+Fingertip@{Transform\+Fingertip}!Fingertip@{Fingertip}}
+\subsubsection{\texorpdfstring{Transform\+Fingertip()}{TransformFingertip()}}
+{\footnotesize\ttfamily void Fingertip\+::\+Transform\+Fingertip (\begin{DoxyParamCaption}\item[{\hyperlink{class_joint}{Joint} $\ast$}]{p\+\_\+prev\+Joint }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 33 pliku fingertip.\+cpp.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_fingertip_a905ac81dfaa6237a3bf0bd799edee5ed}\label{class_fingertip_a905ac81dfaa6237a3bf0bd799edee5ed}} 
+\index{Fingertip@{Fingertip}!m\+\_\+fingertip\+Value@{m\+\_\+fingertip\+Value}}
+\index{m\+\_\+fingertip\+Value@{m\+\_\+fingertip\+Value}!Fingertip@{Fingertip}}
+\subsubsection{\texorpdfstring{m\+\_\+fingertip\+Value}{m\_fingertipValue}}
+{\footnotesize\ttfamily int Fingertip\+::m\+\_\+fingertip\+Value\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 37 pliku fingertip.\+h.
+
+\mbox{\Hypertarget{class_fingertip_aab2e37584c9728063525485253a8292e}\label{class_fingertip_aab2e37584c9728063525485253a8292e}} 
+\index{Fingertip@{Fingertip}!m\+\_\+root\+Entity@{m\+\_\+root\+Entity}}
+\index{m\+\_\+root\+Entity@{m\+\_\+root\+Entity}!Fingertip@{Fingertip}}
+\subsubsection{\texorpdfstring{m\+\_\+root\+Entity}{m\_rootEntity}}
+{\footnotesize\ttfamily Qt3\+D\+Core\+::\+Q\+Entity$\ast$ Fingertip\+::m\+\_\+root\+Entity\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 38 pliku fingertip.\+h.
+
+\mbox{\Hypertarget{class_fingertip_a48394c9bf6bbcef4e6b9fab82b561c61}\label{class_fingertip_a48394c9bf6bbcef4e6b9fab82b561c61}} 
+\index{Fingertip@{Fingertip}!m\+\_\+sphere\+Entity@{m\+\_\+sphere\+Entity}}
+\index{m\+\_\+sphere\+Entity@{m\+\_\+sphere\+Entity}!Fingertip@{Fingertip}}
+\subsubsection{\texorpdfstring{m\+\_\+sphere\+Entity}{m\_sphereEntity}}
+{\footnotesize\ttfamily Qt3\+D\+Core\+::\+Q\+Entity$\ast$ Fingertip\+::m\+\_\+sphere\+Entity\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 39 pliku fingertip.\+h.
+
+\mbox{\Hypertarget{class_fingertip_a58602637fb13017b27b8c635e614d1f5}\label{class_fingertip_a58602637fb13017b27b8c635e614d1f5}} 
+\index{Fingertip@{Fingertip}!m\+\_\+sphere\+Material@{m\+\_\+sphere\+Material}}
+\index{m\+\_\+sphere\+Material@{m\+\_\+sphere\+Material}!Fingertip@{Fingertip}}
+\subsubsection{\texorpdfstring{m\+\_\+sphere\+Material}{m\_sphereMaterial}}
+{\footnotesize\ttfamily Qt3\+D\+Extras\+::\+Q\+Phong\+Material$\ast$ Fingertip\+::m\+\_\+sphere\+Material\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 41 pliku fingertip.\+h.
+
+\mbox{\Hypertarget{class_fingertip_a0827f0c8eee7e8327d5ad8f74a2bc321}\label{class_fingertip_a0827f0c8eee7e8327d5ad8f74a2bc321}} 
+\index{Fingertip@{Fingertip}!m\+\_\+sphere\+Transform@{m\+\_\+sphere\+Transform}}
+\index{m\+\_\+sphere\+Transform@{m\+\_\+sphere\+Transform}!Fingertip@{Fingertip}}
+\subsubsection{\texorpdfstring{m\+\_\+sphere\+Transform}{m\_sphereTransform}}
+{\footnotesize\ttfamily Qt3\+D\+Core\+::\+Q\+Transform$\ast$ Fingertip\+::m\+\_\+sphere\+Transform\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 40 pliku fingertip.\+h.
+
+\mbox{\Hypertarget{class_fingertip_aeb9e6a84d8edba93cabbddafbcba04b2}\label{class_fingertip_aeb9e6a84d8edba93cabbddafbcba04b2}} 
+\index{Fingertip@{Fingertip}!m\+\_\+\+Transform\+Matrix@{m\+\_\+\+Transform\+Matrix}}
+\index{m\+\_\+\+Transform\+Matrix@{m\+\_\+\+Transform\+Matrix}!Fingertip@{Fingertip}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Transform\+Matrix}{m\_TransformMatrix}}
+{\footnotesize\ttfamily Q\+Matrix4x4 Fingertip\+::m\+\_\+\+Transform\+Matrix\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definicja w linii 42 pliku fingertip.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{fingertip_8h}{fingertip.\+h}\item 
+\hyperlink{fingertip_8cpp}{fingertip.\+cpp}\end{DoxyCompactItemize}

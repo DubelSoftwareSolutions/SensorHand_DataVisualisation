@@ -1,0 +1,340 @@
+\hypertarget{finger_8h}{}\section{Dokumentacja pliku finger.\+h}
+\label{finger_8h}\index{finger.\+h@{finger.\+h}}
+
+
+Definicja klasy kwadrat.  
+
+
+{\ttfamily \#include $<$Q\+Object$>$}\newline
+{\ttfamily \#include $<$Qt3\+D\+Core/\+Q\+Entity$>$}\newline
+{\ttfamily \#include $<$Q\+Matrix4x4$>$}\newline
+{\ttfamily \#include $<$Q\+Color$>$}\newline
+{\ttfamily \#include \char`\"{}joint.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}manipulatorrotational.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}fingertip.\+h\char`\"{}}\newline
+\subsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_finger}{Finger}
+\begin{DoxyCompactList}\small\item\em Modeluje pojęcie palca w przestrzeni trójwymiarowej. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Definicje}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{finger_8h_a885bf63c93171052fae8cb96bb3c4d78}{F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T\+S\+\_\+\+C\+O\+U\+NT}~4
+\item 
+\#define \hyperlink{finger_8h_a2b2006272771cc32df872c49ba12a43f}{F\+I\+N\+G\+E\+R\+\_\+\+R\+A\+D\+I\+US}~1
+\item 
+\#define \hyperlink{finger_8h_a9f085e9238de631a39b4b79cf0892bb4}{T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT}~2
+\item 
+\#define \hyperlink{finger_8h_ac940f3dadb20642eeac53feae2ac9830}{T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH}~7.\+0f
+\item 
+\#define \hyperlink{finger_8h_a10c449518b45d30ce155406d78b83749}{T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH}~3.\+0f
+\item 
+\#define \hyperlink{finger_8h_abfa4f762bf7dc4fc68bb7dde44287ffe}{T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH}~3.\+0f
+\item 
+\#define \hyperlink{finger_8h_ad44635d4519f0d322165eaecb3786fe4}{I\+N\+D\+E\+X\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT}~3
+\item 
+\#define \hyperlink{finger_8h_a01ea2dfbaeaafda37463b3c0aaf92f35}{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH}~8.\+5f
+\item 
+\#define \hyperlink{finger_8h_a2102aab8492130fb106606d00eaab723}{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH}~5.\+0f
+\item 
+\#define \hyperlink{finger_8h_a97b53ffbe1104c263ab89133b6732cdf}{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH}~2.\+5f
+\item 
+\#define \hyperlink{finger_8h_acdaafe23520fd16a305355215bed3749}{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH}~2.\+0f
+\item 
+\#define \hyperlink{finger_8h_a06307b66501338bd67a38aef261dfcd9}{M\+I\+D\+D\+L\+E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT}~3
+\item 
+\#define \hyperlink{finger_8h_ab6e8df5ebfd06d0d229bf14a9823d2c1}{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH}~8.\+0f
+\item 
+\#define \hyperlink{finger_8h_a26b41c3705e53f7fbe8dea13c0af1147}{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH}~5.\+3f
+\item 
+\#define \hyperlink{finger_8h_a8db82d8dc98e7d04e28964c08c0d434b}{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH}~2.\+8f
+\item 
+\#define \hyperlink{finger_8h_a0fce84d70985373ac978ebf601e39e49}{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH}~2.\+3f
+\item 
+\#define \hyperlink{finger_8h_ac41bcba256383547e600eb73d983a853}{R\+I\+N\+G\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT}~3
+\item 
+\#define \hyperlink{finger_8h_ad3103c1b2dc6dfa368a7e30871db3052}{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH}~7.\+5f
+\item 
+\#define \hyperlink{finger_8h_a31f1e18033c92678ccd6efbe6e638b12}{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH}~4.\+5f
+\item 
+\#define \hyperlink{finger_8h_af17312bf7e290e1a4d0debf530c63453}{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH}~2.\+8f
+\item 
+\#define \hyperlink{finger_8h_ae0b222cd8298fcfb0cf06b50313e6db8}{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH}~2.\+4f
+\item 
+\#define \hyperlink{finger_8h_aa552bc1ad566696421ddf748dd65c2ce}{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT}~3
+\item 
+\#define \hyperlink{finger_8h_af6a038b34388ad3a97e7ed26e2729c06}{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH}~6.\+3f
+\item 
+\#define \hyperlink{finger_8h_a5c52f20a1e362e43f5277c05204b04e7}{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH}~3.\+3f
+\item 
+\#define \hyperlink{finger_8h_a4a82cdb558799dbc92cfb55a97b2cda5}{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH}~2.\+0f
+\item 
+\#define \hyperlink{finger_8h_a58094f7e0358c5ab3ffacfd21a71955a}{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH}~2.\+3f
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Plik zawiera definicję klasy finger, która jest klasą pochodną klasy Q\+Object 
+
+\subsection{Dokumentacja definicji}
+\mbox{\Hypertarget{finger_8h_a885bf63c93171052fae8cb96bb3c4d78}\label{finger_8h_a885bf63c93171052fae8cb96bb3c4d78}} 
+\index{finger.\+h@{finger.\+h}!F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T\+S\+\_\+\+C\+O\+U\+NT@{F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T\+S\+\_\+\+C\+O\+U\+NT}}
+\index{F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T\+S\+\_\+\+C\+O\+U\+NT@{F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T\+S\+\_\+\+C\+O\+U\+NT}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T\+S\+\_\+\+C\+O\+U\+NT}{FINGER\_JOINTS\_COUNT}}
+{\footnotesize\ttfamily \#define F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T\+S\+\_\+\+C\+O\+U\+NT~4}
+
+
+
+Definicja w linii 12 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_a2b2006272771cc32df872c49ba12a43f}\label{finger_8h_a2b2006272771cc32df872c49ba12a43f}} 
+\index{finger.\+h@{finger.\+h}!F\+I\+N\+G\+E\+R\+\_\+\+R\+A\+D\+I\+US@{F\+I\+N\+G\+E\+R\+\_\+\+R\+A\+D\+I\+US}}
+\index{F\+I\+N\+G\+E\+R\+\_\+\+R\+A\+D\+I\+US@{F\+I\+N\+G\+E\+R\+\_\+\+R\+A\+D\+I\+US}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{F\+I\+N\+G\+E\+R\+\_\+\+R\+A\+D\+I\+US}{FINGER\_RADIUS}}
+{\footnotesize\ttfamily \#define F\+I\+N\+G\+E\+R\+\_\+\+R\+A\+D\+I\+US~1}
+
+
+
+Definicja w linii 13 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_a01ea2dfbaeaafda37463b3c0aaf92f35}\label{finger_8h_a01ea2dfbaeaafda37463b3c0aaf92f35}} 
+\index{finger.\+h@{finger.\+h}!I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH@{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH}}
+\index{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH@{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH}{INDEX\_FINGER\_JOINT0\_LENGTH}}
+{\footnotesize\ttfamily \#define I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH~8.\+5f}
+
+
+
+Definicja w linii 21 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_a2102aab8492130fb106606d00eaab723}\label{finger_8h_a2102aab8492130fb106606d00eaab723}} 
+\index{finger.\+h@{finger.\+h}!I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH@{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH}}
+\index{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH@{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH}{INDEX\_FINGER\_JOINT1\_LENGTH}}
+{\footnotesize\ttfamily \#define I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH~5.\+0f}
+
+
+
+Definicja w linii 22 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_a97b53ffbe1104c263ab89133b6732cdf}\label{finger_8h_a97b53ffbe1104c263ab89133b6732cdf}} 
+\index{finger.\+h@{finger.\+h}!I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH@{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH}}
+\index{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH@{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH}{INDEX\_FINGER\_JOINT2\_LENGTH}}
+{\footnotesize\ttfamily \#define I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH~2.\+5f}
+
+
+
+Definicja w linii 23 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_acdaafe23520fd16a305355215bed3749}\label{finger_8h_acdaafe23520fd16a305355215bed3749}} 
+\index{finger.\+h@{finger.\+h}!I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH@{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH}}
+\index{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH@{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH}{INDEX\_FINGER\_JOINT3\_LENGTH}}
+{\footnotesize\ttfamily \#define I\+N\+D\+E\+X\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH~2.\+0f}
+
+
+
+Definicja w linii 24 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_ad44635d4519f0d322165eaecb3786fe4}\label{finger_8h_ad44635d4519f0d322165eaecb3786fe4}} 
+\index{finger.\+h@{finger.\+h}!I\+N\+D\+E\+X\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT@{I\+N\+D\+E\+X\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT}}
+\index{I\+N\+D\+E\+X\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT@{I\+N\+D\+E\+X\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+D\+E\+X\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT}{INDEX\_JOINT\_COUNT}}
+{\footnotesize\ttfamily \#define I\+N\+D\+E\+X\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT~3}
+
+
+
+Definicja w linii 20 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_ab6e8df5ebfd06d0d229bf14a9823d2c1}\label{finger_8h_ab6e8df5ebfd06d0d229bf14a9823d2c1}} 
+\index{finger.\+h@{finger.\+h}!M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH@{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH}}
+\index{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH@{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH}{MIDDLE\_FINGER\_JOINT0\_LENGTH}}
+{\footnotesize\ttfamily \#define M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH~8.\+0f}
+
+
+
+Definicja w linii 27 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_a26b41c3705e53f7fbe8dea13c0af1147}\label{finger_8h_a26b41c3705e53f7fbe8dea13c0af1147}} 
+\index{finger.\+h@{finger.\+h}!M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH@{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH}}
+\index{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH@{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH}{MIDDLE\_FINGER\_JOINT1\_LENGTH}}
+{\footnotesize\ttfamily \#define M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH~5.\+3f}
+
+
+
+Definicja w linii 28 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_a8db82d8dc98e7d04e28964c08c0d434b}\label{finger_8h_a8db82d8dc98e7d04e28964c08c0d434b}} 
+\index{finger.\+h@{finger.\+h}!M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH@{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH}}
+\index{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH@{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH}{MIDDLE\_FINGER\_JOINT2\_LENGTH}}
+{\footnotesize\ttfamily \#define M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH~2.\+8f}
+
+
+
+Definicja w linii 29 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_a0fce84d70985373ac978ebf601e39e49}\label{finger_8h_a0fce84d70985373ac978ebf601e39e49}} 
+\index{finger.\+h@{finger.\+h}!M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH@{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH}}
+\index{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH@{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH}{MIDDLE\_FINGER\_JOINT3\_LENGTH}}
+{\footnotesize\ttfamily \#define M\+I\+D\+D\+L\+E\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH~2.\+3f}
+
+
+
+Definicja w linii 30 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_a06307b66501338bd67a38aef261dfcd9}\label{finger_8h_a06307b66501338bd67a38aef261dfcd9}} 
+\index{finger.\+h@{finger.\+h}!M\+I\+D\+D\+L\+E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT@{M\+I\+D\+D\+L\+E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT}}
+\index{M\+I\+D\+D\+L\+E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT@{M\+I\+D\+D\+L\+E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{M\+I\+D\+D\+L\+E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT}{MIDDLE\_JOINT\_COUNT}}
+{\footnotesize\ttfamily \#define M\+I\+D\+D\+L\+E\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT~3}
+
+
+
+Definicja w linii 26 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_af6a038b34388ad3a97e7ed26e2729c06}\label{finger_8h_af6a038b34388ad3a97e7ed26e2729c06}} 
+\index{finger.\+h@{finger.\+h}!P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH@{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH}}
+\index{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH@{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH}{PINKY\_JOINT0\_LENGTH}}
+{\footnotesize\ttfamily \#define P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH~6.\+3f}
+
+
+
+Definicja w linii 39 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_a5c52f20a1e362e43f5277c05204b04e7}\label{finger_8h_a5c52f20a1e362e43f5277c05204b04e7}} 
+\index{finger.\+h@{finger.\+h}!P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH@{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH}}
+\index{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH@{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH}{PINKY\_JOINT1\_LENGTH}}
+{\footnotesize\ttfamily \#define P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH~3.\+3f}
+
+
+
+Definicja w linii 40 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_a4a82cdb558799dbc92cfb55a97b2cda5}\label{finger_8h_a4a82cdb558799dbc92cfb55a97b2cda5}} 
+\index{finger.\+h@{finger.\+h}!P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH@{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH}}
+\index{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH@{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH}{PINKY\_JOINT2\_LENGTH}}
+{\footnotesize\ttfamily \#define P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH~2.\+0f}
+
+
+
+Definicja w linii 41 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_a58094f7e0358c5ab3ffacfd21a71955a}\label{finger_8h_a58094f7e0358c5ab3ffacfd21a71955a}} 
+\index{finger.\+h@{finger.\+h}!P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH@{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH}}
+\index{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH@{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH}{PINKY\_JOINT3\_LENGTH}}
+{\footnotesize\ttfamily \#define P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH~2.\+3f}
+
+
+
+Definicja w linii 42 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_aa552bc1ad566696421ddf748dd65c2ce}\label{finger_8h_aa552bc1ad566696421ddf748dd65c2ce}} 
+\index{finger.\+h@{finger.\+h}!P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT@{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT}}
+\index{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT@{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT}{PINKY\_JOINT\_COUNT}}
+{\footnotesize\ttfamily \#define P\+I\+N\+K\+Y\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT~3}
+
+
+
+Definicja w linii 38 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_ad3103c1b2dc6dfa368a7e30871db3052}\label{finger_8h_ad3103c1b2dc6dfa368a7e30871db3052}} 
+\index{finger.\+h@{finger.\+h}!R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH@{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH}}
+\index{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH@{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH}{RING\_FINGER\_JOINT0\_LENGTH}}
+{\footnotesize\ttfamily \#define R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH~7.\+5f}
+
+
+
+Definicja w linii 33 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_a31f1e18033c92678ccd6efbe6e638b12}\label{finger_8h_a31f1e18033c92678ccd6efbe6e638b12}} 
+\index{finger.\+h@{finger.\+h}!R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH@{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH}}
+\index{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH@{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH}{RING\_FINGER\_JOINT1\_LENGTH}}
+{\footnotesize\ttfamily \#define R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH~4.\+5f}
+
+
+
+Definicja w linii 34 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_af17312bf7e290e1a4d0debf530c63453}\label{finger_8h_af17312bf7e290e1a4d0debf530c63453}} 
+\index{finger.\+h@{finger.\+h}!R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH@{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH}}
+\index{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH@{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH}{RING\_FINGER\_JOINT2\_LENGTH}}
+{\footnotesize\ttfamily \#define R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH~2.\+8f}
+
+
+
+Definicja w linii 35 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_ae0b222cd8298fcfb0cf06b50313e6db8}\label{finger_8h_ae0b222cd8298fcfb0cf06b50313e6db8}} 
+\index{finger.\+h@{finger.\+h}!R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH@{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH}}
+\index{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH@{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH}{RING\_FINGER\_JOINT3\_LENGTH}}
+{\footnotesize\ttfamily \#define R\+I\+N\+G\+\_\+\+F\+I\+N\+G\+E\+R\+\_\+\+J\+O\+I\+N\+T3\+\_\+\+L\+E\+N\+G\+TH~2.\+4f}
+
+
+
+Definicja w linii 36 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_ac41bcba256383547e600eb73d983a853}\label{finger_8h_ac41bcba256383547e600eb73d983a853}} 
+\index{finger.\+h@{finger.\+h}!R\+I\+N\+G\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT@{R\+I\+N\+G\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT}}
+\index{R\+I\+N\+G\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT@{R\+I\+N\+G\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{R\+I\+N\+G\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT}{RING\_JOINT\_COUNT}}
+{\footnotesize\ttfamily \#define R\+I\+N\+G\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT~3}
+
+
+
+Definicja w linii 32 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_ac940f3dadb20642eeac53feae2ac9830}\label{finger_8h_ac940f3dadb20642eeac53feae2ac9830}} 
+\index{finger.\+h@{finger.\+h}!T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH@{T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH}}
+\index{T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH@{T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH}{THUMB\_JOINT0\_LENGTH}}
+{\footnotesize\ttfamily \#define T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T0\+\_\+\+L\+E\+N\+G\+TH~7.\+0f}
+
+
+
+Definicja w linii 16 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_a10c449518b45d30ce155406d78b83749}\label{finger_8h_a10c449518b45d30ce155406d78b83749}} 
+\index{finger.\+h@{finger.\+h}!T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH@{T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH}}
+\index{T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH@{T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH}{THUMB\_JOINT1\_LENGTH}}
+{\footnotesize\ttfamily \#define T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T1\+\_\+\+L\+E\+N\+G\+TH~3.\+0f}
+
+
+
+Definicja w linii 17 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_abfa4f762bf7dc4fc68bb7dde44287ffe}\label{finger_8h_abfa4f762bf7dc4fc68bb7dde44287ffe}} 
+\index{finger.\+h@{finger.\+h}!T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH@{T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH}}
+\index{T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH@{T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH}{THUMB\_JOINT2\_LENGTH}}
+{\footnotesize\ttfamily \#define T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T2\+\_\+\+L\+E\+N\+G\+TH~3.\+0f}
+
+
+
+Definicja w linii 18 pliku finger.\+h.
+
+\mbox{\Hypertarget{finger_8h_a9f085e9238de631a39b4b79cf0892bb4}\label{finger_8h_a9f085e9238de631a39b4b79cf0892bb4}} 
+\index{finger.\+h@{finger.\+h}!T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT@{T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT}}
+\index{T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT@{T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT}!finger.\+h@{finger.\+h}}
+\subsubsection{\texorpdfstring{T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT}{THUMB\_JOINT\_COUNT}}
+{\footnotesize\ttfamily \#define T\+H\+U\+M\+B\+\_\+\+J\+O\+I\+N\+T\+\_\+\+C\+O\+U\+NT~2}
+
+
+
+Definicja w linii 15 pliku finger.\+h.
+
