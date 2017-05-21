@@ -17,7 +17,7 @@
 /*!
  * \brief Definiuje pojęcie manipulatora rotacyjnego
  *
- *
+ * Inicjuje pozycję stawow w przestrzeni trójwymiarowej
  */
 class ManipulatorRotational: public QObject
 {

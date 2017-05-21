@@ -1,6 +1,14 @@
 #ifndef FINGER_H
 #define FINGER_H
 
+/*!
+ * \file
+ * \brief Definicja klasy kwadrat
+ *
+ * Plik zawiera definicję klasy finger, która
+ * jest klasą pochodną klasy QObject
+ */
+
 #define FINGER_JOINTS_COUNT 4
 #define FINGER_RADIUS 1
 
@@ -32,12 +40,6 @@
 #define PINKY_JOINT1_LENGTH 3.3f
 #define PINKY_JOINT2_LENGTH 2.0f
 #define PINKY_JOINT3_LENGTH 2.3f
-
-/*!
- * \file
- * \brief Plik zawiera definicję klasy finger, która
- * jest klasą pochodną klasy QObject
- */
 
 #include<QObject>
 #include<Qt3DCore/QEntity>

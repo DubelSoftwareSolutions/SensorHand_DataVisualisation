@@ -4,6 +4,7 @@
 /*!
  * \file
  * \brief Definicja klasy Fingertip
+ *
  * Plik zawiera definicję klasy Fingertip, która
  * jest klasą pochodną klasy QObject
  */

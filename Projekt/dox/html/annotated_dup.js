@@ -8,6 +8,5 @@ var annotated_dup =
     [ "Joint", "class_joint.html", "class_joint" ],
     [ "MainWindow", "class_main_window.html", "class_main_window" ],
     [ "ManipulatorRotational", "class_manipulator_rotational.html", "class_manipulator_rotational" ],
-    [ "Matrix", "class_matrix.html", "class_matrix" ],
     [ "Scene", "class_scene.html", "class_scene" ]
 ];

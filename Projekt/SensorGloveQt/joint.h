@@ -19,6 +19,7 @@
 
 /*!
  * \brief Modeluje pojęcie stawu
+ *
  * Inicjalizuje długość stawu, kąt nachylenia względem poprzedniego stawu
  *
  */

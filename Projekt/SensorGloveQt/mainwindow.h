@@ -1,6 +1,16 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+
+
+#include <QMainWindow>
+#include "scene.h"
+#include "input.h"
+
+namespace Ui {
+class MainWindow;
+}
+
 /*!
  * \file
  * \brief Definicja klasy MainWindow
@@ -9,15 +19,9 @@
  * jest klasą pochodną klasy QMainWindow
  */
 
-#include <QMainWindow>
-#include "input.h"
-
-namespace Ui {
-class MainWindow;
-}
-
 /*!
  * \brief Modeluje strukturę GUI programu
+ *
  * Inicjalizuje głowne okno programu, jego elementy składowe
  * w postaci wdgetów oraz wczytuje zewnętrzny widget trójwymiarowej wizualizacji
  * dłoni. Klasa pobiera dane z obiektu typu Input, aktualizeje dane w modelu
@@ -36,6 +40,7 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 void AddWidgetToGlove3DLayout(QWidget *widget);
+void getScene(Scene *p_scene);
 void InitInputData(Input *data);
 
 private slots:
@@ -49,9 +54,14 @@ void on_GloveZoomSlider_valueChanged(int value);
 void on_GloveZoomLineEdit_textEdited(const QString &arg1);
 void on_GloveZoomLineEdit_editingFinished();
 
+void on_par1_valueChanged(int value);
+void on_par2_valueChanged(int value);
+void on_par3_valueChanged(int value);
+
 private:
     Ui::MainWindow *ui;
     Input *InputData;
+    Scene *scene3D;
 };
 
 #endif // MAINWINDOW_H

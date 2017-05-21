@@ -7,8 +7,8 @@ int main(int argc, char *argv[])
     w.show();
 
     Qt3DCore::QEntity *rootEntity = new Qt3DCore::QEntity();
-    Scene *scene3D = new Scene(rootEntity,w);
-
+    Scene *scene3D = new Scene(rootEntity);
+    w.getScene(scene3D);
     QVector<float> thumbAngles(2,60);
     QVector<float> indexAngles(3,10);
     QVector<float> middleAngles(3,90);

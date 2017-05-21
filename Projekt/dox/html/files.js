@@ -27,10 +27,6 @@ var files =
     [ "manipulatorrotational.h", "manipulatorrotational_8h.html", [
       [ "ManipulatorRotational", "class_manipulator_rotational.html", "class_manipulator_rotational" ]
     ] ],
-    [ "matrix.cpp", "matrix_8cpp.html", null ],
-    [ "matrix.h", "matrix_8h.html", [
-      [ "Matrix", "class_matrix.html", "class_matrix" ]
-    ] ],
     [ "scene.cpp", "scene_8cpp.html", null ],
     [ "scene.h", "scene_8h.html", [
       [ "Scene", "class_scene.html", "class_scene" ]

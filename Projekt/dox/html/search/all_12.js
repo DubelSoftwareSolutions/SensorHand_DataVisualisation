@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['ui',['Ui',['../namespace_ui.html',1,'Ui'],['../class_main_window.html#a35466a70ed47252a0191168126a352a5',1,'MainWindow::ui()']]],
-  ['usbconnection',['USBConnection',['../class_input.html#a3be20be9b454515798ecd3370f4e36fdaf2a909e54a7c789666bc3bebb2a67370',1,'Input']]]
+  ['view',['view',['../class_scene.html#a3b76fefe111a22aa56f066783fa76bc1',1,'Scene']]],
+  ['vlayout',['vLayout',['../class_scene.html#adae30f81725ed3f2258bee8fe5e90c5d',1,'Scene']]]
 ];

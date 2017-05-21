@@ -1,6 +1,7 @@
 #include "includes.h"
 
-Scene::Scene(Qt3DCore::QEntity *rootEntity,MainWindow& p_mainWindow):
+//Scene::Scene(Qt3DCore::QEntity *rootEntity,MainWindow& p_mainWindow):
+Scene::Scene(Qt3DCore::QEntity *rootEntity):
     m_rootEntity(rootEntity), m_Hand3DModel(rootEntity)
 {
     view = new Qt3DExtras::Qt3DWindow();
@@ -18,7 +19,7 @@ Scene::Scene(Qt3DCore::QEntity *rootEntity,MainWindow& p_mainWindow):
     hLayout->addLayout(vLayout);
 
     widget->setWindowTitle(QString("SensorGloveQt"));
-    p_mainWindow.AddWidgetToGlove3DLayout(widget);
+    //p_mainWindow.AddWidgetToGlove3DLayout(widget);
 
     input = new Qt3DInput::QInputAspect;
     view->registerAspect(input);
@@ -26,7 +27,7 @@ Scene::Scene(Qt3DCore::QEntity *rootEntity,MainWindow& p_mainWindow):
     //Camera
     cameraEntity = view->camera();
     cameraEntity->lens()->setPerspectiveProjection(45.0f, 16.0f/9.0f, 0.1f, 1000.0f);
-    cameraEntity->setPosition(QVector3D(10,10,25));
+    cameraEntity->setPosition(QVector3D(10,10,25)); //10,10,25
     cameraEntity->setUpVector(QVector3D(0,1,0));
     cameraEntity->setViewCenter(QVector3D(0,10,0));
 

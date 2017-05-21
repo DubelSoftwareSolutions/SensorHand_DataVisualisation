@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['view',['view',['../class_scene.html#a3b76fefe111a22aa56f066783fa76bc1',1,'Scene']]],
-  ['vlayout',['vLayout',['../class_scene.html#adae30f81725ed3f2258bee8fe5e90c5d',1,'Scene']]]
+  ['widget',['widget',['../class_scene.html#aa6f9d0915a83b6d5e5083c439627ff06',1,'Scene']]]
 ];

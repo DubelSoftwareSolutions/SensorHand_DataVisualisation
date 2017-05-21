@@ -4,6 +4,7 @@
 /*!
  * \file
  * \brief Definicja klasy Scene
+ *
  * Plik zawiera definicję klasy Scene, która
  * jest klasą pochodną klasy QObject
  */
@@ -14,13 +15,14 @@
 #include <Qt3DRender>
 #include <QHBoxLayout>
 #include <QVBoxLayout>
-#include "mainwindow.h"
+//#include "mainwindow.h"
 #include "joint.h"
 #include "finger.h"
 #include "hand.h"
 
 /*!
  * \brief Modeluje pojecie sceny z elementami 3D
+ *
  * Inicjuje trójwymiatowy model ręki zdefioniowany klasą Hand,
  * za pomocą biblioteki Qt3D, a także inicjalizuje widok, widget,
  * rozmiar okna, układ, wejście danych, kontroler perspektywy i oświetlenie
@@ -29,6 +31,9 @@ class Scene : public QObject
 {
     Q_OBJECT
 private:
+
+
+public:
     Qt3DCore::QEntity *m_rootEntity;
     Hand m_Hand3DModel;
 
@@ -48,8 +53,8 @@ private:
     Qt3DRender::QPointLight *light2;
     Qt3DCore::QTransform *lightTransform2;
 
-public:
-    explicit Scene(Qt3DCore::QEntity *rootEntity, MainWindow& p_mainWindow);
+    //explicit Scene(Qt3DCore::QEntity *rootEntity, MainWindow& p_mainWindow);
+    explicit Scene(Qt3DCore::QEntity *rootEntity);
     ~Scene();
 
     void SetHandTransformation(QVector<QVector<float>> p_FingerAngles);

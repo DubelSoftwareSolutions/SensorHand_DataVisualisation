@@ -1,11 +1,16 @@
 var searchData=
 [
-  ['ring_5ffinger_5fjoint0_5flength',['RING_FINGER_JOINT0_LENGTH',['../finger_8h.html#ad3103c1b2dc6dfa368a7e30871db3052',1,'finger.h']]],
-  ['ring_5ffinger_5fjoint1_5flength',['RING_FINGER_JOINT1_LENGTH',['../finger_8h.html#a31f1e18033c92678ccd6efbe6e638b12',1,'finger.h']]],
-  ['ring_5ffinger_5fjoint2_5flength',['RING_FINGER_JOINT2_LENGTH',['../finger_8h.html#af17312bf7e290e1a4d0debf530c63453',1,'finger.h']]],
-  ['ring_5ffinger_5fjoint3_5flength',['RING_FINGER_JOINT3_LENGTH',['../finger_8h.html#ae0b222cd8298fcfb0cf06b50313e6db8',1,'finger.h']]],
-  ['ring_5ffinger_5foffset',['RING_FINGER_OFFSET',['../hand_8h.html#a0e4be29f8f52d554aa9e3ab1cde6ab42',1,'hand.h']]],
-  ['ring_5ffinger_5frotation',['RING_FINGER_ROTATION',['../hand_8h.html#afa8899525d12bdd2bd6bdda44fb9ffab',1,'hand.h']]],
-  ['ring_5fjoint_5fcount',['RING_JOINT_COUNT',['../finger_8h.html#ac41bcba256383547e600eb73d983a853',1,'finger.h']]],
-  ['ringfinger',['RingFinger',['../class_finger.html#a365e6bba2e4877decf3c7641d29838c3ab7e2faab0ba9830e3b7cd0b52c30e8fe',1,'Finger']]]
+  ['scene',['Scene',['../class_scene.html',1,'Scene'],['../class_scene.html#aa138923bf1d204f6cadbefbe7398d599',1,'Scene::Scene()']]],
+  ['scene_2ecpp',['scene.cpp',['../scene_8cpp.html',1,'']]],
+  ['scene_2eh',['scene.h',['../scene_8h.html',1,'']]],
+  ['screensize',['screenSize',['../class_scene.html#a2bb58c1253bd4d64781a2b9e25604060',1,'Scene']]],
+  ['setfingerjoints',['SetFingerJoints',['../class_hand.html#a52749a0d5baeb2bbd4f133020a5181f1',1,'Hand']]],
+  ['setfingertipvalue',['setFingertipValue',['../class_fingertip.html#aa2823945458eb8a97f9568934bfcc1d5',1,'Fingertip::setFingertipValue()'],['../class_finger.html#acb60693c51df450dc51796ec235894f9',1,'Finger::SetFingertipValue()']]],
+  ['setfingertipvalues',['SetFingertipValues',['../class_hand.html#a6fcc256397062529e6fd41d0554bee06',1,'Hand']]],
+  ['sethandfingertipvalues',['SetHandFingertipValues',['../class_scene.html#a4dcd24690f433927c6ca75e9980afd53',1,'Scene']]],
+  ['sethandtransformation',['SetHandTransformation',['../class_scene.html#ae58cf344ad78420d37acde7984c9a4e8',1,'Scene']]],
+  ['sphere_5fradius',['SPHERE_RADIUS',['../fingertip_8h.html#a06cbc978d899ab7e6f6dfc6c6b54da2e',1,'fingertip.h']]],
+  ['sphere_5frings_5fcount',['SPHERE_RINGS_COUNT',['../fingertip_8h.html#a54fad94ec5eb5036cf3416ea05ab777b',1,'fingertip.h']]],
+  ['sphere_5fscale',['SPHERE_SCALE',['../fingertip_8h.html#ad02d07b7eee81915cd8c4abc7652fba9',1,'fingertip.h']]],
+  ['sphere_5fslices_5fcount',['SPHERE_SLICES_COUNT',['../fingertip_8h.html#a0b5e23df9340f2db21ecfee1b60af69b',1,'fingertip.h']]]
 ];

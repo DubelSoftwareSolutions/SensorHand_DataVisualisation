@@ -21,6 +21,7 @@ class Input;
 
 /*!
  * \brief Klasa jest narzędziem do pobierania danych
+ *
  * Inicjalizuje kąty między stawami, wskazania czujników tensometrycznych,
  * wskazania akcelerometru i typ połączenia z rękawicą sensoryczną
  *
