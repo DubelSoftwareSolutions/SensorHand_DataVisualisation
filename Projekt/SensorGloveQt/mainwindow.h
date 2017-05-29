@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #define MARGIN 10
+
 /*!
  * \file
  * \brief Definicja klasy MainWindow
@@ -11,8 +12,12 @@
  */
 
 #include <QMainWindow>
+#include <QtCharts/qchartview.h>
+#include <cmath>
 #include "scene.h"
 #include "input.h"
+
+
 
 namespace Ui {
 class MainWindow;
@@ -60,6 +65,7 @@ private:
     Input *InputData;
     Scene *scene3D;
     bool Glove3DLayoutWidgetIsSet = false;
+
 };
 
 #endif // MAINWINDOW_H

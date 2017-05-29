@@ -1,5 +1,4 @@
 #include "includes.h"
-#include "cmath"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -7,6 +6,10 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->StartStopButton->setStyleSheet("background-color: rgb(225,240,80)");
+    this->setMinimumHeight(ui->ConfigurationWidget->height() + ui->MeasurementWidget->height()
+                           +ui->GyroTable->height() + MARGIN*3);
+    this->setMinimumWidth(ui->GyroTable->width()+ui->FingersTab->width()+MARGIN*3);
+
 }
 
 MainWindow::~MainWindow()
@@ -49,7 +52,7 @@ void MainWindow::resizeEvent(QResizeEvent *event)
         ui->GyroTable->move(MARGIN, height);
         ui->FingersTab->move(ui->GyroTable->width() + MARGIN, height);
         ui->ConfigurationWidget->move(width, MARGIN);
-        ui->MeasurementWidget->move(MARGIN+width, MARGIN*2 + ui->ConfigurationWidget->height());
+        ui->MeasurementWidget->move(width, MARGIN*2 + ui->ConfigurationWidget->height());
     }
 }
 
