@@ -71,7 +71,7 @@ void MainWindow::on_StartStopButton_clicked()
             ui->StartStopButton->setText("Stop");
             ui->StartStopButton->setStyleSheet("background-color: rgb(240,125,70)");
             m_statusLabel->setText("Serial Open: "+InputData->getPortName());
-            ui->actionConfiguration->setDisabled(true);
+            ui->CommunicationBox->setDisabled(true);
         }
         else
         {
@@ -85,7 +85,7 @@ void MainWindow::on_StartStopButton_clicked()
         ui->StartStopButton->setText("Start");
         ui->StartStopButton->setStyleSheet("background-color: rgb(225,240,80)");
         m_statusLabel->setText("Serial Closed");
-        ui->actionConfiguration->setEnabled(true);
+        ui->CommunicationBox->setEnabled(true);
     }
 }
 
@@ -145,6 +145,22 @@ void MainWindow::on_GloveZoomLineEdit_editingFinished()
     ui->GloveZoomSlider->setValue(arg.toInt());
 }
 
+void MainWindow::on_CommunicationBox_currentIndexChanged(int index)
+{
+    switch(index)
+    {
+    case 0: //USB
+        InputData->ChangeConnectionType(Input::ConnectionType_t::USBConnection);
+        break;
+    case 1: //UART
+        InputData->ChangeConnectionType(Input::ConnectionType_t::UARTConnection);
+        break;
+    case 2: //BLT
+        InputData->ChangeConnectionType(Input::ConnectionType_t::BluetoothConnection);
+        break;
+    }
+}
+
 void MainWindow::updateRecievedValues()
 {
     ui->Angle1ValLabel->setText(QString::number(InputData->getData().m_JointAngles[0]));
@@ -164,7 +180,7 @@ void MainWindow::SerialPortErrorHandler(QSerialPort::SerialPortError error)
         ui->StartStopButton->setText("Start");
         ui->StartStopButton->setStyleSheet("background-color: rgb(225,240,80)");
         m_statusLabel->setText("Serial Closed");
-        ui->actionConfiguration->setEnabled(true);
+        ui->CommunicationBox->setEnabled(true);
     }
 }
 

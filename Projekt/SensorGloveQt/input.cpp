@@ -1,7 +1,7 @@
 #include "includes.h"
 
 Input::Input(QWidget *parent):QObject(parent),
-    m_ConnectionType(UARTConnection),
+    m_ConnectionType(USBConnection),
     m_RowTransferStarted(),
     m_SingleDataRow(),
     m_PortName(),

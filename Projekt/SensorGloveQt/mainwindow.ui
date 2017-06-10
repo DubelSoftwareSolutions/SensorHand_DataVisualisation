@@ -982,9 +982,17 @@
          <height>16777215</height>
         </size>
        </property>
+       <property name="currentText">
+        <string>USB</string>
+       </property>
        <item>
         <property name="text">
          <string>USB</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>UART</string>
         </property>
        </item>
        <item>

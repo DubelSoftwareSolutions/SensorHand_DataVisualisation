@@ -43,7 +43,7 @@ protected:
 public:
     explicit Fingertip(Qt3DCore::QEntity *p_rootEntity=nullptr,
                        Joint *p_PrevJoint=nullptr,
-                       int p_fingertipValue = int());
+                       int p_fingertipValue = 255);
 
     void TransformFingertip(Joint *p_prevJoint);
     void setFingertipValue(int p_newValue);

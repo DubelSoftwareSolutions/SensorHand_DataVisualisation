@@ -14,7 +14,7 @@
 #include <QtSerialPort>
 #include "errorhandler.h"
 
-#define BLUETOOTH_MANUFACTURER ""
+#define BLUETOOTH_MANUFACTURER "Unknown"
 #define UART_MANUFACTURER "Prolific"
 #define USB_MANUFACTURER "STMicroelectronics."
 
@@ -40,9 +40,9 @@ class Input;
 class Input: public QObject
 {
     Q_OBJECT
-private:
+public:
     enum ConnectionType_t {BluetoothConnection, UARTConnection, USBConnection};
-
+private:
     struct DataValues_t
     {
         QVector<float> m_JointAngles;

@@ -9,9 +9,8 @@ Fingertip::Fingertip(Qt3DCore::QEntity *p_rootEntity,
     sphereMesh->setSlices(SPHERE_SLICES_COUNT);
     sphereMesh->setRadius(SPHERE_RADIUS);
 
-    int ScaledFingertipValue = 255-m_fingertipValue*255/4095;
     QColor newColor;
-    newColor.setHsv(ScaledFingertipValue,255,255);
+    newColor.setHsv(m_fingertipValue,255,255);
     m_sphereMaterial = new Qt3DExtras::QPhongMaterial();
     m_sphereMaterial->setDiffuse(newColor);
 
@@ -19,7 +18,7 @@ Fingertip::Fingertip(Qt3DCore::QEntity *p_rootEntity,
     m_sphereTransform = new Qt3DCore::QTransform();
 
     m_sphereTransform->setScale(1);
-    m_TransformMatrix.translate(QVector3D(0,p_PrevJoint->length()/2+p_fingertipValue/2,0));
+    m_TransformMatrix.translate(QVector3D(0,p_PrevJoint->length()/2+SPHERE_RADIUS,0));
 
     m_sphereTransform->setMatrix(m_TransformMatrix);
 
@@ -40,7 +39,6 @@ void Fingertip::TransformFingertip(Joint *p_prevJoint)
 void Fingertip::setFingertipValue(int p_newValue)
 {
     m_fingertipValue = p_newValue;
-    p_newValue=255-p_newValue*255/4095;
     QColor newColor;
     newColor.setHsv(p_newValue,255,255);
     m_sphereMaterial->setDiffuse(newColor);
