@@ -156,13 +156,13 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tabThumb">
      <attribute name="title">
       <string>Thumb</string>
      </attribute>
-     <widget class="QLabel" name="label_2">
+     <widget class="QLabel" name="Angle1Label">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -172,10 +172,10 @@
        </rect>
       </property>
       <property name="text">
-       <string>angle 1</string>
+       <string>Angle 1:</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="Angle2Label">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -185,10 +185,10 @@
        </rect>
       </property>
       <property name="text">
-       <string>angle 2</string>
+       <string>Angle 2:</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_4">
+     <widget class="QLabel" name="Angle3Label">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -198,7 +198,124 @@
        </rect>
       </property>
       <property name="text">
-       <string>angle 3</string>
+       <string>Angle 3:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle2ValLabel">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ang 2 val</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle1ValLabel">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ang 1 val</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle3ValLabel">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>60</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ang 3 val</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="StrainGauge1Label">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Strain gauge 1:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="StrainGauge2Label">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Strain gauge 2:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="StrainGauge1ValLabel">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>20</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>StrGau1Val</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="StrainGauge2ValLabel">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>50</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>StrGau2Val</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PressureLabel">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>36</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Pressure:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PressureValLabel">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>36</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PressVal</string>
       </property>
      </widget>
     </widget>
@@ -206,33 +323,33 @@
      <attribute name="title">
       <string>Index</string>
      </attribute>
-     <widget class="QLabel" name="label_5">
+     <widget class="QLabel" name="StrainGauge2Label_2">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>20</y>
-        <width>47</width>
-        <height>13</height>
+        <x>160</x>
+        <y>50</y>
+        <width>81</width>
+        <height>16</height>
        </rect>
       </property>
       <property name="text">
-       <string>angle 1</string>
+       <string>Strain gauge 2:</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_6">
+     <widget class="QLabel" name="PressureLabel_2">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>60</y>
-        <width>47</width>
-        <height>13</height>
+        <x>340</x>
+        <y>36</y>
+        <width>51</width>
+        <height>16</height>
        </rect>
       </property>
       <property name="text">
-       <string>angle 3</string>
+       <string>Pressure:</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_7">
+     <widget class="QLabel" name="Angle2Label_2">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -242,7 +359,124 @@
        </rect>
       </property>
       <property name="text">
-       <string>angle 2</string>
+       <string>Angle 2:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle3ValLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>60</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ang 3 val</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="StrainGauge2ValLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>50</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>StrGau2Val</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PressureValLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>36</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PressVal</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle3Label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Angle 3:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="StrainGauge1Label_2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Strain gauge 1:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle2ValLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ang 2 val</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle1Label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Angle 1:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="StrainGauge1ValLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>20</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>StrGau1Val</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle1ValLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ang 1 val</string>
       </property>
      </widget>
     </widget>
@@ -250,33 +484,33 @@
      <attribute name="title">
       <string>Middle</string>
      </attribute>
-     <widget class="QLabel" name="label_8">
+     <widget class="QLabel" name="StrainGauge2Label_3">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>20</y>
-        <width>47</width>
-        <height>13</height>
+        <x>160</x>
+        <y>50</y>
+        <width>81</width>
+        <height>16</height>
        </rect>
       </property>
       <property name="text">
-       <string>angle 1</string>
+       <string>Strain gauge 2:</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_9">
+     <widget class="QLabel" name="PressureLabel_3">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>60</y>
-        <width>47</width>
-        <height>13</height>
+        <x>340</x>
+        <y>36</y>
+        <width>51</width>
+        <height>16</height>
        </rect>
       </property>
       <property name="text">
-       <string>angle 3</string>
+       <string>Pressure:</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_10">
+     <widget class="QLabel" name="Angle2Label_3">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -286,7 +520,124 @@
        </rect>
       </property>
       <property name="text">
-       <string>angle 2</string>
+       <string>Angle 2:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle3ValLabel_3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>60</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ang 3 val</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="StrainGauge2ValLabel_3">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>50</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>StrGau2Val</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PressureValLabel_3">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>36</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PressVal</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle3Label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Angle 3:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="StrainGauge1Label_3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Strain gauge 1:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle2ValLabel_3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ang 2 val</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle1Label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Angle 1:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="StrainGauge1ValLabel_3">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>20</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>StrGau1Val</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle1ValLabel_3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ang 1 val</string>
       </property>
      </widget>
     </widget>
@@ -294,33 +645,33 @@
      <attribute name="title">
       <string>Ring</string>
      </attribute>
-     <widget class="QLabel" name="label_11">
+     <widget class="QLabel" name="StrainGauge2Label_4">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>20</y>
-        <width>47</width>
-        <height>13</height>
+        <x>160</x>
+        <y>50</y>
+        <width>81</width>
+        <height>16</height>
        </rect>
       </property>
       <property name="text">
-       <string>angle 1</string>
+       <string>Strain gauge 2:</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_12">
+     <widget class="QLabel" name="PressureLabel_4">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>60</y>
-        <width>47</width>
-        <height>13</height>
+        <x>340</x>
+        <y>36</y>
+        <width>51</width>
+        <height>16</height>
        </rect>
       </property>
       <property name="text">
-       <string>angle 3</string>
+       <string>Pressure:</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_13">
+     <widget class="QLabel" name="Angle2Label_4">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -330,7 +681,124 @@
        </rect>
       </property>
       <property name="text">
-       <string>angle 2</string>
+       <string>Angle 2:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle3ValLabel_4">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>60</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ang 3 val</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="StrainGauge2ValLabel_4">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>50</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>StrGau2Val</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PressureValLabel_4">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>36</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PressVal</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle3Label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Angle 3:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="StrainGauge1Label_4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Strain gauge 1:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle2ValLabel_4">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ang 2 val</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle1Label_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Angle 1:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="StrainGauge1ValLabel_4">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>20</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>StrGau1Val</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle1ValLabel_4">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ang 1 val</string>
       </property>
      </widget>
     </widget>
@@ -338,33 +806,59 @@
      <attribute name="title">
       <string>Pinky</string>
      </attribute>
-     <widget class="QLabel" name="label_14">
+     <widget class="QLabel" name="Angle1ValLabel_5">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>60</x>
         <y>20</y>
         <width>47</width>
         <height>13</height>
        </rect>
       </property>
       <property name="text">
-       <string>angle 1</string>
+       <string>ang 1 val</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_15">
+     <widget class="QLabel" name="StrainGauge2ValLabel_5">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>260</x>
+        <y>50</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>StrGau2Val</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="StrainGauge1ValLabel_5">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>20</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>StrGau1Val</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle3ValLabel_5">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
         <y>60</y>
         <width>47</width>
         <height>13</height>
        </rect>
       </property>
       <property name="text">
-       <string>angle 3</string>
+       <string>ang 3 val</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_16">
+     <widget class="QLabel" name="Angle2Label_5">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -374,7 +868,98 @@
        </rect>
       </property>
       <property name="text">
-       <string>angle 2</string>
+       <string>Angle 2:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle2ValLabel_5">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ang 2 val</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="StrainGauge1Label_5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Strain gauge 1:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PressureLabel_5">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>36</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Pressure:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle3Label_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Angle 3:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="StrainGauge2Label_5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Strain gauge 2:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PressureValLabel_5">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>36</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PressVal</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Angle1Label_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Angle 1:</string>
       </property>
      </widget>
     </widget>
