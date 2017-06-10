@@ -41,6 +41,9 @@ class Input: public QObject
 {
     Q_OBJECT
 private:
+
+public:
+
     enum ConnectionType_t {BluetoothConnection, UARTConnection, USBConnection};
 
     QSerialPort *SerialPort;
@@ -56,8 +59,7 @@ private:
     QVector<int> m_TensionSensorValues;
     QVector<float> m_AccelerometerValues;
     ConnectionType_t m_ConnectionType;
-public:
-
+   //public
     explicit Input(QWidget *parent = nullptr);
 
     void ChangeConnectionType(ConnectionType_t p_ConnecitonType);
@@ -68,6 +70,9 @@ private:
 public slots:
     void OpenCloseSPort();
     void ReadData();
+signals:
+    void dataRecieved();
+    void connectionTypeChanged();
 };
 
 #endif // INPUT_H

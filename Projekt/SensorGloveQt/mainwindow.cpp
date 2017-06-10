@@ -11,6 +11,8 @@ MainWindow::MainWindow(QWidget *parent) :
                            +ui->GyroTable->height() + MARGIN*3);
     this->setMinimumWidth(ui->GyroTable->width()+ui->FingersTab->width()+MARGIN*3);
 
+    //**************   ERROR   ***************************************************************************  ERROR
+    //connect(InputData, SIGNAL( dataRecieved() ), this, SLOT( updateRecievedValues() ) );
 }
 
 MainWindow::~MainWindow()
@@ -127,3 +129,10 @@ void MainWindow::on_GloveZoomLineEdit_editingFinished()
     ui->GloveZoomSlider->setValue(arg.toInt());
 }
 
+void MainWindow::updateRecievedValues()
+{
+    ui->GyroTable->item(0,0)->setText(QString::number(InputData->m_AccelerometerValues[0]));
+    //ui->GyroTable->item(0,1)->setText(QString::number(InputData->m_AccelerometerValues[1]));
+    //ui->GyroTable->item(0,2)->setText(QString::number(InputData->m_AccelerometerValues[2]));
+    //TODO
+}

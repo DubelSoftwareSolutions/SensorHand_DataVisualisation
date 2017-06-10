@@ -64,6 +64,10 @@ private:
     Input *InputData;
     Scene *scene3D;
     bool Glove3DLayoutWidgetIsSet = false;
+//signals:
+
+public slots:
+    void updateRecievedValues();
 
 };
 

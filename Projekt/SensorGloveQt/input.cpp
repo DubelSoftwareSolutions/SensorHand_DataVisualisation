@@ -21,6 +21,7 @@ void Input::ChangeConnectionType(Input::ConnectionType_t p_ConnecitonType)
 {
     m_ConnectionType=p_ConnecitonType;
     FindCOMport();
+    emit connectionTypeChanged();
 }
 
 QSerialPort* Input::getSerialPort() const
@@ -117,6 +118,8 @@ void Input::ReadData()
                 std::cout<<var<<' ';
             std::cout<<std::endl;
             m_RowTransferStarted=false;
+            //*******************************                  otutaj robi emit       *********
+            emit dataRecieved();
         }
         else
             m_SingleDataRow.append(ReceivedData);
