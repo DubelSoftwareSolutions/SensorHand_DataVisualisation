@@ -59,7 +59,6 @@
 #include <Qt3DExtras/QSphereMesh>
 
 #include "errorhandler.h"
-#include "mainwindow.h"
 #include "joint.h"
 #include "manipulatorrotational.h"
 #include "fingertip.h"
@@ -67,5 +66,6 @@
 #include "hand.h"
 #include "scene.h"
 #include "input.h"
+#include "mainwindow.h"
 
 #endif // INCLUDES_H

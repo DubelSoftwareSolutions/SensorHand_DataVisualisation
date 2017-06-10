@@ -6,6 +6,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->StartStopButton->setStyleSheet("background-color: rgb(225,240,80)");
+    this->setWindowTitle("Sensor Glove Visualization");
     this->setMinimumHeight(ui->ConfigurationWidget->height() + ui->MeasurementWidget->height()
                            +ui->GyroTable->height() + MARGIN*3);
     this->setMinimumWidth(ui->GyroTable->width()+ui->FingersTab->width()+MARGIN*3);
@@ -29,12 +30,12 @@ void MainWindow::AddWidgetToGlove3DLayout(QWidget *widget)
      ui->centralWidget->width();
      ui->Glove3DLayout->addWidget(widget);
      Glove3DLayoutWidgetIsSet = true;
-
  }
 
 void MainWindow::InitInputData(Input * data)
 {
     InputData = data;
+    connect(ui->StartStopButton, &QPushButton::clicked,InputData, &Input::OpenCloseSPort);
 }
 // ********************************************************************
 // ***************************   private    ***************************   private
@@ -62,7 +63,6 @@ void MainWindow::on_StartStopButton_clicked()
     {
         ui->StartStopButton->setText("Stop");
         ui->StartStopButton->setStyleSheet("background-color: rgb(240,125,70)");
-
     }
     else
     {

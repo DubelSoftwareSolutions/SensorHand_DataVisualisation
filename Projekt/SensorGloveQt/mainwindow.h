@@ -59,7 +59,6 @@ void on_GloveZoomSlider_valueChanged(int value);
 void on_GloveZoomLineEdit_textEdited(const QString &arg1);
 void on_GloveZoomLineEdit_editingFinished();
 
-
 private:
     Ui::MainWindow *ui;
     Input *InputData;

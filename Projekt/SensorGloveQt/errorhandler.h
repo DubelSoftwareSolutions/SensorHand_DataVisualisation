@@ -18,12 +18,13 @@ class ErrorHandler
 public:
     enum ErrorType_t
     {
-        NegativeAngle=0
+        NegativeAngle=0,
+        SerialPortError=1
     };
-
     ErrorHandler();
 
     void ExceptionHandler(ErrorType_t p_errorType);
+signals:
 };
 
 #endif // ERRORHANDLER_H
