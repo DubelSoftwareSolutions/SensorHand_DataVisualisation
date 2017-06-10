@@ -4,17 +4,22 @@ Input::Input(QWidget *parent):QObject(parent),
     m_ConnectionType(USBConnection),
     m_RowTransferStarted(),
     m_SingleDataRow(),
-    m_JointAngles(),
-    m_TensionSensorValues(),
-    m_AccelerometerValues(),
     m_PortName(),
     m_PortNumber(),
     m_Manufacturer()
 {
+    m_DataValues.m_JointAngles = QVector<float>(FINGER_COUNT*2,0);
+    m_DataValues.m_TensionSensorValues = QVector<int>(FINGER_COUNT,0);
+    m_DataValues.m_AccelerometerValues = QVector<float>(ROTATION_ANGLE_COUNT,0);
     SerialPort = new QSerialPort(this);
     connect(SerialPort, &QSerialPort::readyRead, this, &Input::ReadData);
     FindCOMport();
     ConfigureSPort();
+}
+
+Input::DataValues_t Input::getData()
+{
+    return m_DataValues;
 }
 
 void Input::ChangeConnectionType(Input::ConnectionType_t p_ConnecitonType)
@@ -79,6 +84,7 @@ void Input::ConfigureSPort()
 
 void Input::OpenCloseSPort()
 {
+    emit dataRecieved(); //do usuniecia
     if(SerialPort->isOpen())
         SerialPort->close();
     else
@@ -99,26 +105,22 @@ void Input::ReadData()
             {
                 JointAngle;
                 DataStream >> JointAngle;
-                m_JointAngles.push_back(JointAngle);
+                m_DataValues.m_JointAngles[i]=JointAngle;
             }
             for(int i=0; i<FINGER_COUNT && !DataStream.atEnd();++i)
             {
                 TensionValue;
                 DataStream >> TensionValue;
-                m_TensionSensorValues.push_back(TensionValue);
+                m_DataValues.m_TensionSensorValues[i]=TensionValue;
             }
             for(int i=0; i<ROTATION_ANGLE_COUNT && !DataStream.atEnd();++i)
             {
                 RotationAngle;
                 DataStream >> RotationAngle;
-                m_AccelerometerValues.push_back(RotationAngle);
+                m_DataValues.m_AccelerometerValues[i]=RotationAngle;
             }
             m_SingleDataRow.clear();
-            for(float var: m_JointAngles)
-                std::cout<<var<<' ';
-            std::cout<<std::endl;
             m_RowTransferStarted=false;
-            //*******************************                  otutaj robi emit       *********
             emit dataRecieved();
         }
         else

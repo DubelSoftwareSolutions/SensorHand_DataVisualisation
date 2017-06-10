@@ -10,9 +10,6 @@ MainWindow::MainWindow(QWidget *parent) :
     this->setMinimumHeight(ui->ConfigurationWidget->height() + ui->MeasurementWidget->height()
                            +ui->GyroTable->height() + MARGIN*3);
     this->setMinimumWidth(ui->GyroTable->width()+ui->FingersTab->width()+MARGIN*3);
-
-    //**************   ERROR   ***************************************************************************  ERROR
-    //connect(InputData, SIGNAL( dataRecieved() ), this, SLOT( updateRecievedValues() ) );
 }
 
 MainWindow::~MainWindow()
@@ -37,7 +34,8 @@ void MainWindow::AddWidgetToGlove3DLayout(QWidget *widget)
 void MainWindow::InitInputData(Input * data)
 {
     InputData = data;
-    connect(ui->StartStopButton, &QPushButton::clicked,InputData, &Input::OpenCloseSPort);
+    connect(ui->StartStopButton, &QPushButton::clicked, InputData, &Input::OpenCloseSPort);
+    connect(InputData, &Input::dataRecieved, this, &MainWindow::updateRecievedValues );
 }
 // ********************************************************************
 // ***************************   private    ***************************   private
@@ -131,8 +129,8 @@ void MainWindow::on_GloveZoomLineEdit_editingFinished()
 
 void MainWindow::updateRecievedValues()
 {
-    ui->GyroTable->item(0,0)->setText(QString::number(InputData->m_AccelerometerValues[0]));
-    //ui->GyroTable->item(0,1)->setText(QString::number(InputData->m_AccelerometerValues[1]));
-    //ui->GyroTable->item(0,2)->setText(QString::number(InputData->m_AccelerometerValues[2]));
+    //ui->GyroTable->item(0,0)->setText(QString::number(InputData->getData().m_AccelerometerValues[0]));
+    //ui->GyroTable->item(0,1)->setText(QString::number(InputData->getData().m_AccelerometerValues[1]));
+    //ui->GyroTable->item(0,2)->setText(QString::number(InputData->getData().m_AccelerometerValues[2]));
     //TODO
 }

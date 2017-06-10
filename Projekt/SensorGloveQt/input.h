@@ -41,10 +41,14 @@ class Input: public QObject
 {
     Q_OBJECT
 private:
-
-public:
-
     enum ConnectionType_t {BluetoothConnection, UARTConnection, USBConnection};
+
+    struct DataValues_t
+    {
+        QVector<float> m_JointAngles;
+        QVector<int> m_TensionSensorValues;
+        QVector<float> m_AccelerometerValues;
+    };
 
     QSerialPort *SerialPort;
 
@@ -55,13 +59,12 @@ public:
     bool m_RowTransferStarted;
     QByteArray m_SingleDataRow;
 
-    QVector<float> m_JointAngles;
-    QVector<int> m_TensionSensorValues;
-    QVector<float> m_AccelerometerValues;
+    DataValues_t m_DataValues;
     ConnectionType_t m_ConnectionType;
-   //public
+public:
     explicit Input(QWidget *parent = nullptr);
 
+    DataValues_t getData();
     void ChangeConnectionType(ConnectionType_t p_ConnecitonType);
     QSerialPort* getSerialPort() const;
 private:
