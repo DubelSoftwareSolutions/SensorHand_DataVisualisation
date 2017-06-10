@@ -16,7 +16,7 @@
 
 #define BLUETOOTH_MANUFACTURER ""
 #define UART_MANUFACTURER "Prolific"
-#define USB_MANUFACTURER "STMicroelectornics."
+#define USB_MANUFACTURER "STMicroelectronics."
 
 #define BLUETOOTH_BAUDRATE QSerialPort::Baud9600
 #define UART_BAUDRATE QSerialPort::Baud115200
@@ -50,8 +50,6 @@ private:
         QVector<float> m_AccelerometerValues;
     };
 
-    QSerialPort *SerialPort;
-
     QString m_PortName;
     QString m_PortNumber;
     QString m_Manufacturer;
@@ -62,16 +60,18 @@ private:
     DataValues_t m_DataValues;
     ConnectionType_t m_ConnectionType;
 public:
-    explicit Input(QWidget *parent = nullptr);
+    QSerialPort *SerialPort;
 
+    explicit Input(QWidget *parent = nullptr);
+    QString getPortName();
     DataValues_t getData();
     void ChangeConnectionType(ConnectionType_t p_ConnecitonType);
-    QSerialPort* getSerialPort() const;
+    bool OpenSerialPort();
+    void CloseSerialPort();
 private:
     void FindCOMport();
     void ConfigureSPort();
 public slots:
-    void OpenCloseSPort();
     void ReadData();
 signals:
     void dataRecieved();

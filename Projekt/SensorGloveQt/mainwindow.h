@@ -13,6 +13,7 @@
 
 #include <QMainWindow>
 #include <QtCharts/qchartview.h>
+#include <QLabel>
 #include <cmath>
 #include "scene.h"
 #include "input.h"
@@ -63,12 +64,13 @@ private:
     Ui::MainWindow *ui;
     Input *InputData;
     Scene *scene3D;
+    QLabel *m_statusLabel;
     bool Glove3DLayoutWidgetIsSet = false;
 //signals:
 
 public slots:
     void updateRecievedValues();
-
+    void SerialPortErrorHandler(QSerialPort::SerialPortError error);
 };
 
 #endif // MAINWINDOW_H

@@ -30,6 +30,8 @@
 #include <QtSerialPort>
 
 #include <QGuiApplication>
+#include <QMessageBox>
+#include <QLabel>
 
 #include <Qt3DCore/qentity.h>
 #include <Qt3DRender/qcamera.h>

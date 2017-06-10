@@ -10,6 +10,9 @@ MainWindow::MainWindow(QWidget *parent) :
     this->setMinimumHeight(ui->ConfigurationWidget->height() + ui->MeasurementWidget->height()
                            +ui->GyroTable->height() + MARGIN*3);
     this->setMinimumWidth(ui->GyroTable->width()+ui->FingersTab->width()+MARGIN*3);
+
+    m_statusLabel = new QLabel;
+    ui->statusBar->addWidget(m_statusLabel);
 }
 
 MainWindow::~MainWindow()
@@ -34,8 +37,10 @@ void MainWindow::AddWidgetToGlove3DLayout(QWidget *widget)
 void MainWindow::InitInputData(Input * data)
 {
     InputData = data;
-    connect(ui->StartStopButton, &QPushButton::clicked, InputData, &Input::OpenCloseSPort);
     connect(InputData, &Input::dataRecieved, this, &MainWindow::updateRecievedValues );
+    connect(InputData->SerialPort, static_cast<void (QSerialPort::*)(QSerialPort::SerialPortError)>(&QSerialPort::error),
+            this, &MainWindow::SerialPortErrorHandler);
+    m_statusLabel->setText("Serial Closed");
 }
 // ********************************************************************
 // ***************************   private    ***************************   private
@@ -61,13 +66,26 @@ void MainWindow::on_StartStopButton_clicked()
 {
     if(ui->StartStopButton->text() == "Start")
     {
-        ui->StartStopButton->setText("Stop");
-        ui->StartStopButton->setStyleSheet("background-color: rgb(240,125,70)");
+        if(InputData->OpenSerialPort())
+        {
+            ui->StartStopButton->setText("Stop");
+            ui->StartStopButton->setStyleSheet("background-color: rgb(240,125,70)");
+            m_statusLabel->setText("Serial Open: "+InputData->getPortName());
+            ui->actionConfiguration->setDisabled(true);
+        }
+        else
+        {
+            QMessageBox::critical(this,"Serial Port Error", InputData->SerialPort->errorString());
+            m_statusLabel->setText("Serial Error");
+        }
     }
     else
     {
+        InputData->CloseSerialPort();
         ui->StartStopButton->setText("Start");
         ui->StartStopButton->setStyleSheet("background-color: rgb(225,240,80)");
+        m_statusLabel->setText("Serial Closed");
+        ui->actionConfiguration->setEnabled(true);
     }
 }
 
@@ -129,8 +147,24 @@ void MainWindow::on_GloveZoomLineEdit_editingFinished()
 
 void MainWindow::updateRecievedValues()
 {
-    //ui->GyroTable->item(0,0)->setText(QString::number(InputData->getData().m_AccelerometerValues[0]));
+    ui->Angle1ValLabel->setText(QString::number(InputData->getData().m_JointAngles[0]));
+    ui->PressureValLabel->setText(QString::number(InputData->getData().m_TensionSensorValues[0]));
+    ui->GyroTable->item(0,0)->setText(QString::number(InputData->getData().m_AccelerometerValues[0]));
     //ui->GyroTable->item(0,1)->setText(QString::number(InputData->getData().m_AccelerometerValues[1]));
     //ui->GyroTable->item(0,2)->setText(QString::number(InputData->getData().m_AccelerometerValues[2]));
     //TODO
 }
+
+void MainWindow::SerialPortErrorHandler(QSerialPort::SerialPortError error)
+{
+    if(error == QSerialPort::ResourceError)
+    {
+        QMessageBox::critical(this, "Serial Port Critical Error", InputData->SerialPort->errorString() );
+        InputData->SerialPort->close();
+        ui->StartStopButton->setText("Start");
+        ui->StartStopButton->setStyleSheet("background-color: rgb(225,240,80)");
+        m_statusLabel->setText("Serial Closed");
+        ui->actionConfiguration->setEnabled(true);
+    }
+}
+

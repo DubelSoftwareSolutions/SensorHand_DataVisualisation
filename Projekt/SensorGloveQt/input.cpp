@@ -1,7 +1,7 @@
 #include "includes.h"
 
 Input::Input(QWidget *parent):QObject(parent),
-    m_ConnectionType(USBConnection),
+    m_ConnectionType(UARTConnection),
     m_RowTransferStarted(),
     m_SingleDataRow(),
     m_PortName(),
@@ -17,6 +17,11 @@ Input::Input(QWidget *parent):QObject(parent),
     ConfigureSPort();
 }
 
+QString Input::getPortName()
+{
+    return m_PortName;
+}
+
 Input::DataValues_t Input::getData()
 {
     return m_DataValues;
@@ -26,12 +31,8 @@ void Input::ChangeConnectionType(Input::ConnectionType_t p_ConnecitonType)
 {
     m_ConnectionType=p_ConnecitonType;
     FindCOMport();
+    ConfigureSPort();
     emit connectionTypeChanged();
-}
-
-QSerialPort* Input::getSerialPort() const
-{
-    return SerialPort;
 }
 
 void Input::FindCOMport()
@@ -78,17 +79,19 @@ void Input::ConfigureSPort()
     SerialPort->setPortName(m_PortName);
     SerialPort->setDataBits(QSerialPort::Data8);
     SerialPort->setParity(QSerialPort::NoParity);
-    SerialPort->setStopBits(QSerialPort::OneAndHalfStop);
+    SerialPort->setStopBits(QSerialPort::OneStop);
     SerialPort->setFlowControl(QSerialPort::NoFlowControl);
 }
 
-void Input::OpenCloseSPort()
+bool Input::OpenSerialPort()
 {
-    emit dataRecieved(); //do usuniecia
+    return SerialPort->open(QIODevice::ReadOnly);
+}
+
+void Input::CloseSerialPort()
+{
     if(SerialPort->isOpen())
         SerialPort->close();
-    else
-        SerialPort->open(QIODevice::ReadOnly);
 }
 
 void Input::ReadData()
