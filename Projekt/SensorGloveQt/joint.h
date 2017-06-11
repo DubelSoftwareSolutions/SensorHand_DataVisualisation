@@ -48,6 +48,7 @@ public:
 
     float length() const;
     float angle() const;
+    void setRotation(float p_rotation);
     QMatrix4x4 TransformMatrix() const;
     void TransformAngle(float p_newAngle, Joint *p_PrevJoint=nullptr);
 

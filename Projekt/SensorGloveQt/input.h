@@ -14,7 +14,7 @@
 #include <QtSerialPort>
 #include "errorhandler.h"
 
-#define BLUETOOTH_MANUFACTURER "Unknown"
+#define BLUETOOTH_MANUFACTURER "Prolific"
 #define UART_MANUFACTURER "Prolific"
 #define USB_MANUFACTURER "STMicroelectronics."
 
@@ -53,6 +53,7 @@ private:
     QString m_PortName;
     QString m_PortNumber;
     QString m_Manufacturer;
+    int m_iterator;
 
     bool m_RowTransferStarted;
     QByteArray m_SingleDataRow;

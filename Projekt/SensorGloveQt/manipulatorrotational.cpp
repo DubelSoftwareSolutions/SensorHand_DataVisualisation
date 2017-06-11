@@ -17,6 +17,7 @@ ManipulatorRotational::ManipulatorRotational(const ManipulatorRotational &p_mani
 void ManipulatorRotational::TransformJointAngles(QVector<float> p_jointAngles)
 {
     int i;
+    m_joints[0]->TransformAngle(m_joints[0]->angle());
     for(i=1; i<m_joints.size() && i-1<p_jointAngles.size(); ++i)
         m_joints[i]->TransformAngle(p_jointAngles[i-1],m_joints[i-1]);
     for(;i<m_joints.size();++i)
@@ -26,4 +27,10 @@ void ManipulatorRotational::TransformJointAngles(QVector<float> p_jointAngles)
 Joint *ManipulatorRotational::getLastJoint()
 {
     return m_joints.last();
+}
+
+void ManipulatorRotational::setRotation(float p_rotation)
+{
+    m_rotation = p_rotation;
+    m_joints[0]->setRotation(p_rotation);
 }

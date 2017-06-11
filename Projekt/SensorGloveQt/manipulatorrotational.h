@@ -37,6 +37,7 @@ public:
 
     void TransformJointAngles(QVector<float> p_jointAngles);
     Joint *getLastJoint();
+    void setRotation(float p_rotation);
 };
 
 #endif // MANIPULATORROTATIONAL_H

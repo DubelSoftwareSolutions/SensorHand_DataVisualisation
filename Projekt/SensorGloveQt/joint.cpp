@@ -65,6 +65,11 @@ float Joint::angle() const
     return m_angle;
 }
 
+void Joint::setRotation(float p_rotation)
+{
+    m_rotation=p_rotation;
+}
+
 QMatrix4x4 Joint::TransformMatrix() const
 {
     return m_TransformMatrix;

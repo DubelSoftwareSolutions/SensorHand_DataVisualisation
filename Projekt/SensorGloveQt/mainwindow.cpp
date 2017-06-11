@@ -163,6 +163,30 @@ void MainWindow::on_CommunicationBox_currentIndexChanged(int index)
 
 void MainWindow::updateRecievedValues()
 {
+    QVector<float> ThumbAngles(INDEX_JOINT_COUNT,0);
+    for(int i=0; i<INDEX_JOINT_COUNT;++i)
+        ThumbAngles[i] = InputData->getData().m_JointAngles[i];
+    QVector<float> IndexAngles(INDEX_JOINT_COUNT,0);
+    for(int i=0; i<INDEX_JOINT_COUNT;++i)
+        IndexAngles[i] = InputData->getData().m_JointAngles[i+INDEX_JOINT_COUNT*1];
+    QVector<float> MiddleAngles(INDEX_JOINT_COUNT,0);
+    for(int i=0; i<INDEX_JOINT_COUNT;++i)
+        MiddleAngles[i] = InputData->getData().m_JointAngles[i+INDEX_JOINT_COUNT*2];
+    QVector<float> RingAngles(INDEX_JOINT_COUNT,0);
+    for(int i=0; i<INDEX_JOINT_COUNT;++i)
+        RingAngles[i] = InputData->getData().m_JointAngles[i+INDEX_JOINT_COUNT*3];
+    QVector<float> PinkyAngles(INDEX_JOINT_COUNT,0);
+    for(int i=0; i<INDEX_JOINT_COUNT;++i)
+        PinkyAngles[i] = InputData->getData().m_JointAngles[i+INDEX_JOINT_COUNT*4];
+    QVector<QVector<float>> HandJointAngles;
+    HandJointAngles.push_back(ThumbAngles);
+    HandJointAngles.push_back(IndexAngles);
+    HandJointAngles.push_back(MiddleAngles);
+    HandJointAngles.push_back(RingAngles);
+    HandJointAngles.push_back(PinkyAngles);
+
+    scene3D->SetHandTransformation(HandJointAngles);
+    scene3D->SetHandFingertipValues(InputData->getData().m_TensionSensorValues);
     ui->Angle1ValLabel->setText(QString::number(InputData->getData().m_JointAngles[0]));
     ui->PressureValLabel->setText(QString::number(InputData->getData().m_TensionSensorValues[0]));
     ui->GyroTable->item(0,0)->setText(QString::number(InputData->getData().m_AccelerometerValues[0]));

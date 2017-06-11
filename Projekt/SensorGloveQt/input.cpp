@@ -6,9 +6,10 @@ Input::Input(QWidget *parent):QObject(parent),
     m_SingleDataRow(),
     m_PortName(),
     m_PortNumber(),
-    m_Manufacturer()
+    m_Manufacturer(),
+    m_iterator()
 {
-    m_DataValues.m_JointAngles = QVector<float>(FINGER_COUNT*2,0);
+    m_DataValues.m_JointAngles = QVector<float>(FINGER_COUNT*3,0);
     m_DataValues.m_TensionSensorValues = QVector<int>(FINGER_COUNT,0);
     m_DataValues.m_AccelerometerValues = QVector<float>(ROTATION_ANGLE_COUNT,0);
     SerialPort = new QSerialPort(this);
@@ -38,6 +39,7 @@ void Input::ChangeConnectionType(Input::ConnectionType_t p_ConnecitonType)
 void Input::FindCOMport()
 {
     QString DesiredManufacturer;
+    bool COMportFound = false;
     switch(m_ConnectionType)
     {
     case BluetoothConnection:
@@ -58,8 +60,15 @@ void Input::FindCOMport()
             m_Manufacturer = information.manufacturer();
             m_PortNumber = information.serialNumber();
             m_PortName = information.portName();
+            COMportFound = true;
             break;
         }
+    }
+    if(!COMportFound)
+    {
+        m_Manufacturer = QString();
+        m_PortName = QString();
+        m_PortNumber = QString();
     }
 }
 
@@ -100,11 +109,12 @@ void Input::ReadData()
     float JointAngle;
     int TensionValue;
     float RotationAngle;
+
     if(m_RowTransferStarted)
         if(ReceivedData.at(0)=='R')
         {
             QTextStream DataStream(m_SingleDataRow);
-            for(int i=0; i<(FINGER_COUNT*2) && !DataStream.atEnd();++i)
+            for(int i=0; i<(FINGER_COUNT*3) && !DataStream.atEnd();++i)
             {
                 JointAngle;
                 DataStream >> JointAngle;
@@ -124,6 +134,8 @@ void Input::ReadData()
             }
             m_SingleDataRow.clear();
             m_RowTransferStarted=false;
+
+            SerialPort->clear();
             emit dataRecieved();
         }
         else

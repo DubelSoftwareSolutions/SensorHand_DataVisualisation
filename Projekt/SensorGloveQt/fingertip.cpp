@@ -32,7 +32,7 @@ Fingertip::Fingertip(Qt3DCore::QEntity *p_rootEntity,
 void Fingertip::TransformFingertip(Joint *p_prevJoint)
 {
     m_TransformMatrix = p_prevJoint->TransformMatrix();
-    m_TransformMatrix.translate(QVector3D(0,p_prevJoint->length()/2+m_fingertipValue/2,0));
+    m_TransformMatrix.translate(QVector3D(0,p_prevJoint->length()/2+SPHERE_RADIUS/2,0));
     m_sphereTransform->setMatrix(m_TransformMatrix);
 }
 

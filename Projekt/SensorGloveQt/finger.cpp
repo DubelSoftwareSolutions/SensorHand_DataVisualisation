@@ -100,11 +100,15 @@ void Finger::TransformJointAngles(QVector<float> p_angles)
     switch(m_fingerType)
     {
     case Thumb:
+    {
         FingerJointCount = THUMB_JOINT_COUNT;
-        break;
+        m_manipulator->setRotation(-p_angles[0]);
+        p_angles.erase(p_angles.begin());
+    } break;
     default:
+    {
         FingerJointCount = INDEX_JOINT_COUNT;
-        break;
+    } break;
     }
     m_manipulator->TransformJointAngles(p_angles);
     m_fingertip->TransformFingertip(m_manipulator->getLastJoint());
