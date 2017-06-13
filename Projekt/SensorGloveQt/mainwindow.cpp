@@ -81,10 +81,13 @@ void MainWindow::on_StartStopButton_clicked()
             ui->StartStopButton->setStyleSheet("background-color: rgb(240,125,70)");
             m_statusLabel->setText("Serial Open: "+InputData->getPortName());
             ui->CommunicationBox->setDisabled(true);
-            ui->CameraOrientationSlider->setDisabled(true);
-            ui->CameraOrientationSlider_2->setDisabled(true);
-            ui->CameraOrientationSlider_3->setDisabled(true);
-            ui->RotationResetButton->setDisabled(true);
+            if(ui->AccelerometerCheckBox->isChecked())
+            {
+                ui->CameraOrientationSlider->setDisabled(true);
+                ui->CameraOrientationSlider_2->setDisabled(true);
+                ui->CameraOrientationSlider_3->setDisabled(true);
+                ui->RotationResetButton->setDisabled(true);
+            }
         }
         else
         {
@@ -209,14 +212,15 @@ void MainWindow::updateRecievedValues()
 
     scene3D->SetHandTransformation(HandJointAngles);
     scene3D->SetHandFingertipValues(InputData->getData().m_TensionSensorValues);
-    scene3D->SetHandRotation(InputData->getData().m_RPYangles[0],
-                             InputData->getData().m_RPYangles[1],
-                             InputData->getData().m_RPYangles[2]);
-
-    ui->CameraOrientationSlider->setValue((int)InputData->getData().m_RPYangles[0]);
-    ui->CameraOrientationSlider_2->setValue((int)InputData->getData().m_RPYangles[1]);
-    ui->CameraOrientationSlider_3->setValue((int)InputData->getData().m_RPYangles[2]);
-
+    if(ui->AccelerometerCheckBox->isChecked())
+    {
+        scene3D->SetHandRotation(InputData->getData().m_RPYangles[0],
+                                 InputData->getData().m_RPYangles[1],
+                                 InputData->getData().m_RPYangles[2]);
+        ui->CameraOrientationSlider->setValue((int)InputData->getData().m_RPYangles[0]);
+        ui->CameraOrientationSlider_2->setValue((int)InputData->getData().m_RPYangles[1]);
+        ui->CameraOrientationSlider_3->setValue((int)InputData->getData().m_RPYangles[2]);
+    }
     ui->Angle1ValLabel->setText(QString::number(InputData->getData().m_JointAngles[0]));
     int fingersTabIndex = ui->FingersTab->currentIndex();
     //if (fingersTabIndex > FINGER_COUNT-1) fingersTabIndex = FINGER_COUNT-1; //na wypadek zmiany liczby palcow
@@ -225,21 +229,43 @@ void MainWindow::updateRecievedValues()
     ui->Angle1ValLabel->setText(QString::number(InputData->getData().m_JointAngles[fingersTabIndex*3]));
     ui->Angle2ValLabel->setText(QString::number(InputData->getData().m_JointAngles[fingersTabIndex*3 + 1]));
     ui->Angle3ValLabel->setText(QString::number(InputData->getData().m_JointAngles[fingersTabIndex*3 + 2]));
-    ui->StrainGauge1ValLabel->setText(QString::number(InputData->getData().m_TensionSensorValues[fingersTabIndex*2]));
-    ui->StrainGauge2ValLabel->setText(QString::number(InputData->getData().m_TensionSensorValues[fingersTabIndex*2 + 1]));
+    ui->StrainGauge1ValLabel->setText(QString::number(InputData->getData().m_FlexSensorValues[fingersTabIndex*2]));
+    ui->StrainGauge2ValLabel->setText(QString::number(InputData->getData().m_FlexSensorValues[fingersTabIndex*2 + 1]));
     ui->PressureValLabel->setText(QString::number(InputData->getData().m_TensionSensorValues[fingersTabIndex]));
 
     //Accelerometer
     ui->AccTable->item(0,0)->setText(QString::number(InputData->getData().m_AccelerometerValues[0]));
-    ui->AccTable->item(0,1)->setText(QString::number(InputData->getData().m_AccelerometerValues[1]));
-    ui->AccTable->item(0,2)->setText(QString::number(InputData->getData().m_AccelerometerValues[2]));
+    //ui->AccTable->item(0,1)->setText(QString::number(InputData->getData().m_AccelerometerValues[1])); /*Tutaj debugger wywala blad*/
+    //ui->AccTable->item(0,2)->setText(QString::number(InputData->getData().m_AccelerometerValues[2])); /*!!!*/
 
 
 }
 
 void MainWindow::on_FingersTab_currentChanged(int index)
 {
-   // ui->Angle1ValLabel->setText(QString::number(index));
+    // ui->Angle1ValLabel->setText(QString::number(index));
+}
+
+void MainWindow::on_AccelerometerCheckBox_toggled(bool checked)
+{
+    if(InputData->SerialPort->isOpen())
+        if(checked)
+        {
+            ui->CameraOrientationSlider->setDisabled(true);
+            ui->CameraOrientationSlider_2->setDisabled(true);
+            ui->CameraOrientationSlider_3->setDisabled(true);
+            ui->RotationResetButton->setDisabled(true);
+        }
+        else
+        {
+            ui->CameraOrientationSlider->setEnabled(true);
+            ui->CameraOrientationSlider_2->setEnabled(true);
+            ui->CameraOrientationSlider_3->setEnabled(true);
+            ui->RotationResetButton->setEnabled(true);
+            ui->CameraOrientationSlider->setValue(0);
+            ui->CameraOrientationSlider_2->setValue(0);
+            ui->CameraOrientationSlider_3->setValue(0);
+        }
 }
 
 void MainWindow::SerialPortErrorHandler(QSerialPort::SerialPortError error)
