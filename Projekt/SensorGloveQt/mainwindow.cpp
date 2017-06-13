@@ -123,10 +123,13 @@ void MainWindow::on_GloveZoomSlider_valueChanged(int value)
 {
     ui->GloveZoomLineEdit->setText(QString::number(value));
 
+    float fvalue = M_PI * (float)ui->CameraOrientationSlider->value()/ 180;
+    float fvalue2 = M_PI * (float)ui->CameraOrientationSlider_2->value()/ 180;
+    float fvalue3 = M_PI * (float)ui->CameraOrientationSlider_3->value()/ 180;
     scene3D->setCameraDistance((float)value);
-    scene3D->SetHandRotation(InputData->getData().m_AccelerometerValues[0],
-                             InputData->getData().m_AccelerometerValues[1],
-                             InputData->getData().m_AccelerometerValues[2]);
+    scene3D->SetHandRotation(fvalue,
+                             fvalue2,
+                             fvalue3);
 }
 
 void MainWindow::on_GloveZoomLineEdit_textEdited(const QString &arg1)
@@ -160,6 +163,13 @@ void MainWindow::on_CommunicationBox_currentIndexChanged(int index)
         InputData->ChangeConnectionType(Input::ConnectionType_t::BluetoothConnection);
         break;
     }
+}
+
+void MainWindow::on_RotationResetButton_clicked()
+{
+    ui->CameraOrientationSlider->setValue(0);
+    ui->CameraOrientationSlider_2->setValue(0);
+    ui->CameraOrientationSlider_3->setValue(0);
 }
 
 void MainWindow::updateRecievedValues()

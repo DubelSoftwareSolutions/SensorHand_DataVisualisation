@@ -75,6 +75,7 @@ void Scene::SetHandRotation(float Roll, float Pitch, float Yaw)
 
     cameraEntity->setUpVector(QVector3D(sin(Yaw),cos(Yaw),0));
     cameraEntity->setPosition(QVector3D(x,y,z));
+    cameraEntity->setViewCenter(QVector3D(0,m_CameraHeight,0));
 
     lightTransform->setTranslation(QVector3D(x,y,z));
     lightTransform2->setTranslation(QVector3D(-x,-y,-z));
