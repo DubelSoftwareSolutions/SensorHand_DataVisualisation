@@ -187,6 +187,10 @@ void MainWindow::updateRecievedValues()
 
     scene3D->SetHandTransformation(HandJointAngles);
     scene3D->SetHandFingertipValues(InputData->getData().m_TensionSensorValues);
+    scene3D->SetHandRotation(InputData->getData().m_AccelerometerValues[0],
+                             InputData->getData().m_AccelerometerValues[1],
+                             InputData->getData().m_AccelerometerValues[2]);
+
     ui->Angle1ValLabel->setText(QString::number(InputData->getData().m_JointAngles[0]));
     ui->PressureValLabel->setText(QString::number(InputData->getData().m_TensionSensorValues[0]));
     ui->GyroTable->item(0,0)->setText(QString::number(InputData->getData().m_AccelerometerValues[0]));
