@@ -968,7 +968,7 @@
     <property name="geometry">
      <rect>
       <x>620</x>
-      <y>120</y>
+      <y>200</y>
       <width>191</width>
       <height>211</height>
      </rect>
@@ -1080,7 +1080,7 @@
       <x>620</x>
       <y>10</y>
       <width>191</width>
-      <height>104</height>
+      <height>181</height>
      </rect>
     </property>
     <layout class="QFormLayout" name="ConfigurationLayout">
@@ -1100,13 +1100,20 @@
         </size>
        </property>
        <property name="text">
-        <string>50</string>
+        <string>30</string>
        </property>
        <property name="maxLength">
         <number>3</number>
        </property>
        <property name="cursorMoveStyle">
         <enum>Qt::LogicalMoveStyle</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="CameraOrientationLabel">
+       <property name="text">
+        <string>Hand Rotation:</string>
        </property>
       </widget>
      </item>
@@ -1126,36 +1133,51 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="CameraOrientationLabel">
-       <property name="text">
-        <string>Camera orientation:</string>
+     <item row="4" column="0" colspan="2">
+      <widget class="QSlider" name="CameraOrientationSlider_2">
+       <property name="minimum">
+        <number>-180</number>
+       </property>
+       <property name="maximum">
+        <number>180</number>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
        </property>
       </widget>
      </item>
-     <item row="2" column="1">
-      <widget class="QLineEdit" name="CameraOrientationLineEdit">
-       <property name="maximumSize">
-        <size>
-         <width>30</width>
-         <height>16777215</height>
-        </size>
+     <item row="5" column="0" colspan="2">
+      <widget class="QSlider" name="CameraOrientationSlider_3">
+       <property name="minimum">
+        <number>-180</number>
        </property>
-       <property name="text">
-        <string>180</string>
+       <property name="maximum">
+        <number>180</number>
        </property>
-       <property name="maxLength">
-        <number>3</number>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
        </property>
       </widget>
      </item>
      <item row="3" column="0" colspan="2">
       <widget class="QSlider" name="CameraOrientationSlider">
+       <property name="minimum">
+        <number>-180</number>
+       </property>
        <property name="maximum">
-        <number>360</number>
+        <number>180</number>
+       </property>
+       <property name="pageStep">
+        <number>10</number>
        </property>
        <property name="value">
-        <number>180</number>
+        <number>0</number>
        </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>

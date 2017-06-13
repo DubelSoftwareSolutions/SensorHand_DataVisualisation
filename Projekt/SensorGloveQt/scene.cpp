@@ -62,11 +62,16 @@ Scene::~Scene()
 
 }
 
-void Scene::SetHandRotation(float p_Roll, float p_Pitch, float p_Yaw)
+void Scene::setCameraDistance(float p_Distance)
 {
-    float CameraPositionX = m_CameraHeight*(-cos(Roll)*sin(Yaw)+sin(Roll)*sin(Pitch)*cos(Yaw)) + m_CameraDistance*sin(Roll)*cos(Pitch);   //h*sin(Roll)*sin(Pitch) + R*sin(Roll)*cos(Pitch);
-    float CameraPositionY = m_CameraHeight*cos(Pitch)*cos(Yaw) - m_CameraDistance*sin(Pitch);                                             //h*cos(Pitch) - R*sin(Pitch);
-    float CameraPositionZ = m_CameraHeight*(sin(Roll)*sin(Yaw)+cos(Roll)*sin(Pitch)*cos(Yaw)) + m_CameraDistance*cos(Roll)*cos(Pitch);    //h*cos(Roll)*sin(Pitch) + R*cos(Roll)*cos(Pitch);
+    m_CameraDistance = p_Distance;
+}
+
+void Scene::SetHandRotation(float Roll, float Pitch, float Yaw)
+{
+    float x = m_CameraHeight*(-cos(Roll)*sin(Yaw)+sin(Roll)*sin(Pitch)*cos(Yaw)) + m_CameraDistance*sin(Roll)*cos(Pitch);   //h*sin(Roll)*sin(Pitch) + R*sin(Roll)*cos(Pitch);
+    float y = m_CameraHeight*cos(Pitch)*cos(Yaw) - m_CameraDistance*sin(Pitch);                                             //h*cos(Pitch) - R*sin(Pitch);
+    float z = m_CameraHeight*(sin(Roll)*sin(Yaw)+cos(Roll)*sin(Pitch)*cos(Yaw)) + m_CameraDistance*cos(Roll)*cos(Pitch);    //h*cos(Roll)*sin(Pitch) + R*cos(Roll)*cos(Pitch);
 
     cameraEntity->setUpVector(QVector3D(sin(Yaw),cos(Yaw),0));
     cameraEntity->setPosition(QVector3D(x,y,z));

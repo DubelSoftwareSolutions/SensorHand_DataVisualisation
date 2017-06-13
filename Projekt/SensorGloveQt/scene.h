@@ -60,7 +60,9 @@ public:
     explicit Scene(Qt3DCore::QEntity *rootEntity);
     ~Scene();
 
-    void SetHandRotation(float p_Roll, float p_Pitch, float p_Yaw);
+    void setCameraDistance(float p_Distance);
+
+    void SetHandRotation(float Roll, float Pitch, float Yaw);
     void SetHandTransformation(QVector<QVector<float>> p_FingerAngles);
     void SetHandFingertipValues(QVector<int> p_NewValues);
 signals:

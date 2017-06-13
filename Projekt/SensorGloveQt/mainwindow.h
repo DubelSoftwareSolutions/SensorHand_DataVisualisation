@@ -53,8 +53,8 @@ void resizeEvent(QResizeEvent *event);
 void on_StartStopButton_clicked();
 
 void on_CameraOrientationSlider_valueChanged(int value);
-void on_CameraOrientationLineEdit_textEdited(const QString &arg1);
-void on_CameraOrientationLineEdit_editingFinished();
+void on_CameraOrientationSlider_2_valueChanged(int value);
+void on_CameraOrientationSlider_3_valueChanged(int value);
 
 void on_GloveZoomSlider_valueChanged(int value);
 void on_GloveZoomLineEdit_textEdited(const QString &arg1);
