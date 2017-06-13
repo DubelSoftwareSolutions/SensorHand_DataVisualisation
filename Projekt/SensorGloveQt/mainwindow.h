@@ -65,6 +65,8 @@ void on_CommunicationBox_currentIndexChanged(int index);
 void on_RotationResetButton_clicked();
 void on_FingersTab_currentChanged(int index);
 
+void on_AccelerometerCheckBox_toggled(bool checked);
+
 private:
     Ui::MainWindow *ui;
     Input *InputData;
