@@ -8,8 +8,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->StartStopButton->setStyleSheet("background-color: rgb(225,240,80)");
     this->setWindowTitle("Sensor Glove Visualization");
     this->setMinimumHeight(ui->ConfigurationWidget->height() + ui->MeasurementWidget->height()
-                           +ui->GyroTable->height() + MARGIN*3);
-    this->setMinimumWidth(ui->GyroTable->width()+ui->FingersTab->width()+MARGIN*3);
+                           +ui->AccTable->height() + MARGIN*3);
+    this->setMinimumWidth(ui->AccTable->width()+ui->FingersTab->width()+MARGIN*3);
 
     m_statusLabel = new QLabel;
     ui->statusBar->addWidget(m_statusLabel);
@@ -49,14 +49,14 @@ void MainWindow::resizeEvent(QResizeEvent *event)
 {
     QMainWindow::resizeEvent(event);
     int width = ui->centralWidget->width() - ui->MeasurementLayout->geometry().width();
-    int height = ui->centralWidget->height() - ui->GyroTable->height();
-    ui->GyroTable->item(0,0)->setText(QString::number(width));
+    int height = ui->centralWidget->height() - ui->AccTable->height();
     if (Glove3DLayoutWidgetIsSet)
     {
         scene3D->widget->resize(width, height);
         ui->MeasurementLayout->geometry().setLeft(width);
-        ui->GyroTable->move(MARGIN, height);
-        ui->FingersTab->move(ui->GyroTable->width() + MARGIN, height);
+        ui->AccTable->move(MARGIN, height);
+        ui->FingersTab->move(ui->AccTable->width() + MARGIN, height);
+        ui->FingersTabFrame->move(ui->AccTable->width() + MARGIN, height+MARGIN*3);
         ui->ConfigurationWidget->move(width, MARGIN);
         ui->MeasurementWidget->move(width, MARGIN*2 + ui->ConfigurationWidget->height());
     }
@@ -209,11 +209,28 @@ void MainWindow::updateRecievedValues()
     ui->CameraOrientationSlider_3->setValue((int)InputData->getData().m_RPYangles[2]);
 
     ui->Angle1ValLabel->setText(QString::number(InputData->getData().m_JointAngles[0]));
-    ui->PressureValLabel->setText(QString::number(InputData->getData().m_TensionSensorValues[0]));
-    ui->GyroTable->item(0,0)->setText(QString::number(InputData->getData().m_AccelerometerValues[0]));
-    //ui->GyroTable->item(0,1)->setText(QString::number(InputData->getData().m_AccelerometerValues[1]));
-    //ui->GyroTable->item(0,2)->setText(QString::number(InputData->getData().m_AccelerometerValues[2]));
-    //TODO
+    int fingersTabIndex = ui->FingersTab->currentIndex();
+    //if (fingersTabIndex > FINGER_COUNT-1) fingersTabIndex = FINGER_COUNT-1; //na wypadek zmiany liczby palcow
+
+    ui->PressureValLabel->setText(QString::number(InputData->getData().m_TensionSensorValues[fingersTabIndex]));
+    ui->Angle1ValLabel->setText(QString::number(InputData->getData().m_JointAngles[fingersTabIndex*3]));
+    ui->Angle2ValLabel->setText(QString::number(InputData->getData().m_JointAngles[fingersTabIndex*3 + 1]));
+    ui->Angle3ValLabel->setText(QString::number(InputData->getData().m_JointAngles[fingersTabIndex*3 + 2]));
+    ui->StrainGauge1ValLabel->setText(QString::number(InputData->getData().m_TensionSensorValues[fingersTabIndex*2]));
+    ui->StrainGauge2ValLabel->setText(QString::number(InputData->getData().m_TensionSensorValues[fingersTabIndex*2 + 1]));
+    ui->PressureValLabel->setText(QString::number(InputData->getData().m_TensionSensorValues[fingersTabIndex]));
+
+    //Accelerometer
+    ui->AccTable->item(0,0)->setText(QString::number(InputData->getData().m_AccelerometerValues[0]));
+    ui->AccTable->item(0,1)->setText(QString::number(InputData->getData().m_AccelerometerValues[1]));
+    ui->AccTable->item(0,2)->setText(QString::number(InputData->getData().m_AccelerometerValues[2]));
+
+
+}
+
+void MainWindow::on_FingersTab_currentChanged(int index)
+{
+   // ui->Angle1ValLabel->setText(QString::number(index));
 }
 
 void MainWindow::SerialPortErrorHandler(QSerialPort::SerialPortError error)

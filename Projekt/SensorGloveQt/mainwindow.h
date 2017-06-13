@@ -63,6 +63,7 @@ void on_GloveZoomLineEdit_editingFinished();
 void on_CommunicationBox_currentIndexChanged(int index);
 
 void on_RotationResetButton_clicked();
+void on_FingersTab_currentChanged(int index);
 
 private:
     Ui::MainWindow *ui;
