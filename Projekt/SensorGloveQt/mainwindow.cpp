@@ -13,6 +13,15 @@ MainWindow::MainWindow(QWidget *parent) :
 
     m_statusLabel = new QLabel;
     ui->statusBar->addWidget(m_statusLabel);
+
+    //wykres
+    //chart = new Chart;
+    //chart->setTitle("Wykres dynamiczny");
+    //chart->legend()->hide();
+    //chart->setAnimationOptions(QChart::AllAnimations);
+    //QChartView chartView(chart);
+    //chartView.setRenderHint(QPainter::Antialiasing);
+    //ui->chartLayout->
 }
 
 MainWindow::~MainWindow()

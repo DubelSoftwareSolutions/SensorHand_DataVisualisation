@@ -37,7 +37,8 @@ SOURCES += main.cpp\
     hand.cpp \
     input.cpp \
     scene.cpp \
-    fingertip.cpp
+    fingertip.cpp \
+    chart.cpp
 
 HEADERS  += mainwindow.h \
     includes.h \
@@ -48,6 +49,7 @@ HEADERS  += mainwindow.h \
     hand.h \
     input.h \
     scene.h \
-    fingertip.h
+    fingertip.h \
+    chart.h
 
 FORMS    += mainwindow.ui

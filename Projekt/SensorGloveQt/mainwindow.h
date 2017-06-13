@@ -12,12 +12,18 @@
  */
 
 #include <QMainWindow>
-#include <QtCharts/qchartview.h>
 #include <QLabel>
 #include <cmath>
+
+#include <QtCharts/QChartView>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QMainWindow>
+
+//#include <QtCharts/QChartView>
+
 #include "scene.h"
 #include "input.h"
-
+#include "chart.h"
 
 
 namespace Ui {
@@ -70,6 +76,7 @@ private:
     Input *InputData;
     Scene *scene3D;
     QLabel *m_statusLabel;
+    //Chart *chart;
     bool Glove3DLayoutWidgetIsSet = false;
 //signals:
 

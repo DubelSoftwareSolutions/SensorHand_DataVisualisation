@@ -60,6 +60,8 @@
 #include <Qt3DExtras/QCylinderMesh>
 #include <Qt3DExtras/QSphereMesh>
 
+#include <QtCharts/QChartView>
+
 #include "errorhandler.h"
 #include "joint.h"
 #include "manipulatorrotational.h"
@@ -68,6 +70,7 @@
 #include "hand.h"
 #include "scene.h"
 #include "input.h"
+#include "chart.h"
 #include "mainwindow.h"
 
 #endif // INCLUDES_H

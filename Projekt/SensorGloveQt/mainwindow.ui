@@ -607,6 +607,15 @@
      </property>
     </widget>
    </widget>
+   <zorder>verticalLayoutWidget</zorder>
+   <zorder>AccTable</zorder>
+   <zorder>FingersTab</zorder>
+   <zorder>MeasurementWidget</zorder>
+   <zorder>ConfigurationWidget</zorder>
+   <zorder>chartLayout</zorder>
+   <zorder>FingersTabFrame</zorder>
+   <zorder>label_17</zorder>
+   <zorder>label_17</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
