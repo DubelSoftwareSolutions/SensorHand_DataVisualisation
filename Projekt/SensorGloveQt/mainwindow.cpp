@@ -72,6 +72,9 @@ void MainWindow::on_StartStopButton_clicked()
             ui->StartStopButton->setStyleSheet("background-color: rgb(240,125,70)");
             m_statusLabel->setText("Serial Open: "+InputData->getPortName());
             ui->CommunicationBox->setDisabled(true);
+            ui->CameraOrientationSlider->setDisabled(true);
+            ui->CameraOrientationSlider_2->setDisabled(true);
+            ui->CameraOrientationSlider_3->setDisabled(true);
         }
         else
         {
@@ -86,46 +89,44 @@ void MainWindow::on_StartStopButton_clicked()
         ui->StartStopButton->setStyleSheet("background-color: rgb(225,240,80)");
         m_statusLabel->setText("Serial Closed");
         ui->CommunicationBox->setEnabled(true);
+        ui->CameraOrientationSlider->setEnabled(true);
+        ui->CameraOrientationSlider_2->setEnabled(true);
+        ui->CameraOrientationSlider_3->setEnabled(true);
     }
 }
 
 void MainWindow::on_CameraOrientationSlider_valueChanged(int value)
 {
-    ui->CameraOrientationLineEdit->setText(QString::number(value));
-
-    int r = 50*ui->GloveZoomSlider->value() / 100 + 10;
-    scene3D->cameraEntity->setPosition(QVector3D(-sin(M_PI*value/180)*r, 10, -cos(M_PI*value/180)*r));
-
-    scene3D->camController->setCamera(scene3D->cameraEntity);
-
+    float fvalue = M_PI * (float)value / 180;
+    float fvalue2 = M_PI * (float)ui->CameraOrientationSlider_2->value()/ 180;
+    float fvalue3 = M_PI * (float)ui->CameraOrientationSlider_3->value()/ 180;
+    scene3D->SetHandRotation(fvalue, fvalue2, fvalue3);
 }
 
-void MainWindow::on_CameraOrientationLineEdit_textEdited(const QString &arg1)
+void MainWindow::on_CameraOrientationSlider_2_valueChanged(int value)
 {
-    bool isDgt = true;
-    for (int i = 0; i < arg1.length(); ++i) {
-
-        isDgt = arg1.at(i).isDigit() && isDgt;
-    }
-    if (!isDgt)
-        ui->CameraOrientationLineEdit->setText(QString::number(ui->CameraOrientationSlider->value()));
+    float fvalue = M_PI * (float)ui->CameraOrientationSlider->value()/ 180;
+    float fvalue2 = M_PI * (float)value / 180;
+    float fvalue3 = M_PI * (float)ui->CameraOrientationSlider_3->value()/ 180;
+    scene3D->SetHandRotation(fvalue, fvalue2, fvalue3);
 }
 
-void MainWindow::on_CameraOrientationLineEdit_editingFinished()
+void MainWindow::on_CameraOrientationSlider_3_valueChanged(int value)
 {
-    QString arg = ui->CameraOrientationLineEdit->text();
-    ui->CameraOrientationSlider->setValue(arg.toInt());
+    float fvalue = M_PI * (float)ui->CameraOrientationSlider->value()/ 180;
+    float fvalue2 = M_PI * (float)ui->CameraOrientationSlider_2->value()/ 180;
+    float fvalue3 = M_PI * (float)value / 180;
+    scene3D->SetHandRotation(fvalue, fvalue2, fvalue3);
 }
 
 void MainWindow::on_GloveZoomSlider_valueChanged(int value)
 {
     ui->GloveZoomLineEdit->setText(QString::number(value));
 
-    int r = 50*value / 100 + 10;
-    int angle = ui->CameraOrientationSlider->value();
-    scene3D->cameraEntity->setPosition(QVector3D(-sin(M_PI*angle/180)*r, 10, -cos(M_PI*angle/180)*r));
-
-    scene3D->camController->setCamera(scene3D->cameraEntity);
+    scene3D->setCameraDistance((float)value);
+    scene3D->SetHandRotation(InputData->getData().m_AccelerometerValues[0],
+                             InputData->getData().m_AccelerometerValues[1],
+                             InputData->getData().m_AccelerometerValues[2]);
 }
 
 void MainWindow::on_GloveZoomLineEdit_textEdited(const QString &arg1)
@@ -187,6 +188,14 @@ void MainWindow::updateRecievedValues()
 
     scene3D->SetHandTransformation(HandJointAngles);
     scene3D->SetHandFingertipValues(InputData->getData().m_TensionSensorValues);
+    scene3D->SetHandRotation(InputData->getData().m_AccelerometerValues[0],
+                             InputData->getData().m_AccelerometerValues[1],
+                             InputData->getData().m_AccelerometerValues[2]);
+
+    ui->CameraOrientationSlider->setValue((int)InputData->getData().m_AccelerometerValues[0]);
+    ui->CameraOrientationSlider_2->setValue((int)InputData->getData().m_AccelerometerValues[1]);
+    ui->CameraOrientationSlider_3->setValue((int)InputData->getData().m_AccelerometerValues[2]);
+
     ui->Angle1ValLabel->setText(QString::number(InputData->getData().m_JointAngles[0]));
     int fingersTabIndex = ui->FingersTab->currentIndex();
     //if (fingersTabIndex > FINGER_COUNT-1) fingersTabIndex = FINGER_COUNT-1; //na wypadek zmiany liczby palcow

@@ -37,6 +37,9 @@ public:
     Qt3DCore::QEntity *m_rootEntity;
     Hand m_Hand3DModel;
 
+    float m_CameraHeight;
+    float m_CameraDistance;
+
     Qt3DExtras::Qt3DWindow *view;
     QWidget *container;
     QSize screenSize;
@@ -57,6 +60,9 @@ public:
     explicit Scene(Qt3DCore::QEntity *rootEntity);
     ~Scene();
 
+    void setCameraDistance(float p_Distance);
+
+    void SetHandRotation(float Roll, float Pitch, float Yaw);
     void SetHandTransformation(QVector<QVector<float>> p_FingerAngles);
     void SetHandFingertipValues(QVector<int> p_NewValues);
 signals:
