@@ -1184,6 +1184,13 @@
        </property>
       </widget>
      </item>
+     <item row="6" column="1">
+      <widget class="QPushButton" name="RotationResetButton">
+       <property name="text">
+        <string>Reset</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
    <widget class="QWidget" name="chartLayout" native="true">

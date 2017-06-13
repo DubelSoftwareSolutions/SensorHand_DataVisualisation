@@ -62,6 +62,8 @@ void on_GloveZoomLineEdit_editingFinished();
 
 void on_CommunicationBox_currentIndexChanged(int index);
 
+void on_RotationResetButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     Input *InputData;

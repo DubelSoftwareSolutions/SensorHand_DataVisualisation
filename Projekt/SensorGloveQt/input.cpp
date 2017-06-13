@@ -10,8 +10,10 @@ Input::Input(QWidget *parent):QObject(parent),
     m_iterator()
 {
     m_DataValues.m_JointAngles = QVector<float>(FINGER_COUNT*3,0);
+    m_DataValues.m_FlexSensorValues = QVector<float>(FINGER_COUNT*2,0);
     m_DataValues.m_TensionSensorValues = QVector<int>(FINGER_COUNT,0);
     m_DataValues.m_AccelerometerValues = QVector<float>(ROTATION_ANGLE_COUNT,0);
+    m_DataValues.m_RPYangles = QVector<float>(ROTATION_ANGLE_COUNT,0);
     SerialPort = new QSerialPort(this);
     connect(SerialPort, &QSerialPort::readyRead, this, &Input::ReadData);
     FindCOMport();
@@ -107,7 +109,9 @@ void Input::ReadData()
 {
     QByteArray ReceivedData = SerialPort->read(1);
     float JointAngle;
+    float FlexValue;
     int TensionValue;
+    float AccValue;
     float RotationAngle;
 
     if(m_RowTransferStarted)
@@ -116,21 +120,28 @@ void Input::ReadData()
             QTextStream DataStream(m_SingleDataRow);
             for(int i=0; i<(FINGER_COUNT*3) && !DataStream.atEnd();++i)
             {
-                JointAngle;
                 DataStream >> JointAngle;
                 m_DataValues.m_JointAngles[i]=JointAngle;
             }
             for(int i=0; i<FINGER_COUNT && !DataStream.atEnd();++i)
             {
-                TensionValue;
                 DataStream >> TensionValue;
                 m_DataValues.m_TensionSensorValues[i]=TensionValue;
             }
             for(int i=0; i<ROTATION_ANGLE_COUNT && !DataStream.atEnd();++i)
             {
-                RotationAngle;
                 DataStream >> RotationAngle;
-                m_DataValues.m_AccelerometerValues[i]=RotationAngle;
+                m_DataValues.m_RPYangles[i]=RotationAngle;
+            }
+            for(int i=0; i<ROTATION_ANGLE_COUNT && !DataStream.atEnd();++i)
+            {
+                DataStream >> AccValue;
+                m_DataValues.m_AccelerometerValues[i]=AccValue;
+            }
+            for(int i=0; i<(FINGER_COUNT*2) && !DataStream.atEnd();++i)
+            {
+                DataStream >> FlexValue;
+                m_DataValues.m_FlexSensorValues[i]=FlexValue;
             }
             m_SingleDataRow.clear();
             m_RowTransferStarted=false;

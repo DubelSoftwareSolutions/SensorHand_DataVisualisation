@@ -46,8 +46,10 @@ private:
     struct DataValues_t
     {
         QVector<float> m_JointAngles;
+        QVector<float> m_FlexSensorValues;
         QVector<int> m_TensionSensorValues;
         QVector<float> m_AccelerometerValues;
+        QVector<float> m_RPYangles;
     };
 
     QString m_PortName;

@@ -75,6 +75,7 @@ void MainWindow::on_StartStopButton_clicked()
             ui->CameraOrientationSlider->setDisabled(true);
             ui->CameraOrientationSlider_2->setDisabled(true);
             ui->CameraOrientationSlider_3->setDisabled(true);
+            ui->RotationResetButton->setDisabled(true);
         }
         else
         {
@@ -92,6 +93,7 @@ void MainWindow::on_StartStopButton_clicked()
         ui->CameraOrientationSlider->setEnabled(true);
         ui->CameraOrientationSlider_2->setEnabled(true);
         ui->CameraOrientationSlider_3->setEnabled(true);
+        ui->RotationResetButton->setEnabled(true);
     }
 }
 
@@ -198,13 +200,13 @@ void MainWindow::updateRecievedValues()
 
     scene3D->SetHandTransformation(HandJointAngles);
     scene3D->SetHandFingertipValues(InputData->getData().m_TensionSensorValues);
-    scene3D->SetHandRotation(InputData->getData().m_AccelerometerValues[0],
-                             InputData->getData().m_AccelerometerValues[1],
-                             InputData->getData().m_AccelerometerValues[2]);
+    scene3D->SetHandRotation(InputData->getData().m_RPYangles[0],
+                             InputData->getData().m_RPYangles[1],
+                             InputData->getData().m_RPYangles[2]);
 
-    ui->CameraOrientationSlider->setValue((int)InputData->getData().m_AccelerometerValues[0]);
-    ui->CameraOrientationSlider_2->setValue((int)InputData->getData().m_AccelerometerValues[1]);
-    ui->CameraOrientationSlider_3->setValue((int)InputData->getData().m_AccelerometerValues[2]);
+    ui->CameraOrientationSlider->setValue((int)InputData->getData().m_RPYangles[0]);
+    ui->CameraOrientationSlider_2->setValue((int)InputData->getData().m_RPYangles[1]);
+    ui->CameraOrientationSlider_3->setValue((int)InputData->getData().m_RPYangles[2]);
 
     ui->Angle1ValLabel->setText(QString::number(InputData->getData().m_JointAngles[0]));
     ui->PressureValLabel->setText(QString::number(InputData->getData().m_TensionSensorValues[0]));
