@@ -151,7 +151,7 @@
      <rect>
       <x>130</x>
       <y>460</y>
-      <width>481</width>
+      <width>471</width>
       <height>111</height>
      </rect>
     </property>
@@ -420,7 +420,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="chartLayout" native="true">
+   <widget class="QWidget" name="chartLayout2" native="true">
     <property name="geometry">
      <rect>
       <x>630</x>
@@ -447,7 +447,7 @@
      <rect>
       <x>130</x>
       <y>490</y>
-      <width>481</width>
+      <width>461</width>
       <height>81</height>
      </rect>
     </property>
@@ -614,15 +614,34 @@
      </property>
     </widget>
    </widget>
-   <zorder>verticalLayoutWidget</zorder>
-   <zorder>AccTable</zorder>
-   <zorder>FingersTab</zorder>
-   <zorder>MeasurementWidget</zorder>
-   <zorder>ConfigurationWidget</zorder>
-   <zorder>chartLayout</zorder>
-   <zorder>FingersTabFrame</zorder>
-   <zorder>label_17</zorder>
-   <zorder>label_17</zorder>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>370</y>
+      <width>221</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="chartLayout">
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushSzatan">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>440</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Push Szatan!</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -630,7 +649,7 @@
      <x>0</x>
      <y>0</y>
      <width>821</width>
-     <height>20</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

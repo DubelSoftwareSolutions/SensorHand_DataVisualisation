@@ -16,20 +16,23 @@ class Chart: public QChart
 {
     Q_OBJECT
 public:
-    Chart(QGraphicsItem *parent = 0, Qt::WindowFlags wFlags = 0);
+    //Chart(QGraphicsItem *parent = 0, Qt::WindowFlags wFlags = 0);
+    Chart(QChart *p_chart);
     virtual ~Chart();
+    void addValue(float p_value);
 
 public slots:
-    //void handleTimeout();
+    void handleTimeout();
 
 private:
+    QChart *m_chart;
     QTimer m_timer;
     QSplineSeries *m_series;
     QStringList m_titles;
     QValueAxis *m_axis;
-    qreal m_step;
-    qreal m_x;
-    qreal m_y;
+    float m_step;
+    float m_x;
+    float m_y;
 };
 //![1]
 

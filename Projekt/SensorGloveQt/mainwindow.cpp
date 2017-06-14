@@ -14,14 +14,8 @@ MainWindow::MainWindow(QWidget *parent) :
     m_statusLabel = new QLabel;
     ui->statusBar->addWidget(m_statusLabel);
 
-    //wykres
-    //chart = new Chart;
-    //chart->setTitle("Wykres dynamiczny");
-    //chart->legend()->hide();
-    //chart->setAnimationOptions(QChart::AllAnimations);
-    //QChartView chartView(chart);
-    //chartView.setRenderHint(QPainter::Antialiasing);
-    //ui->chartLayout->
+    AddChartToChartLayout(new QChart());
+
 }
 
 MainWindow::~MainWindow()
@@ -29,11 +23,24 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::AddChartToChartLayout(QChart *p_chart)
+{
+    p_chart->setTitle("Wykres dynamiczny");
+    p_chart->legend()->hide();
+    p_chart->setAnimationOptions(QChart::AllAnimations);
+    chartView = new QChartView(p_chart);
+    chartView->setRenderHint(QPainter::Antialiasing);
+    ui->chartLayout->addWidget(chartView);
+    chart = new Chart(chartView->chart());
+
+}
+
 void MainWindow::getScene(Scene *p_scene)
 {
     scene3D = p_scene;
     AddWidgetToGlove3DLayout(scene3D->widget);
 }
+
 
 void MainWindow::AddWidgetToGlove3DLayout(QWidget *widget)
  {
@@ -68,7 +75,8 @@ void MainWindow::resizeEvent(QResizeEvent *event)
         ui->FingersTabFrame->move(ui->AccTable->width() + MARGIN, height+MARGIN*3);
         ui->ConfigurationWidget->move(width, MARGIN);
         ui->MeasurementWidget->move(width, MARGIN*2 + ui->ConfigurationWidget->height());
-    }
+
+    } 
 }
 
 void MainWindow::on_StartStopButton_clicked()
@@ -115,6 +123,7 @@ void MainWindow::on_CameraOrientationSlider_valueChanged(int value)
     float fvalue2 = M_PI * (float)ui->CameraOrientationSlider_2->value()/ 180;
     float fvalue3 = M_PI * (float)ui->CameraOrientationSlider_3->value()/ 180;
     scene3D->SetHandRotation(fvalue, fvalue2, fvalue3);
+
 }
 
 void MainWindow::on_CameraOrientationSlider_2_valueChanged(int value)
@@ -144,6 +153,7 @@ void MainWindow::on_GloveZoomSlider_valueChanged(int value)
     scene3D->SetHandRotation(fvalue,
                              fvalue2,
                              fvalue3);
+
 }
 
 void MainWindow::on_GloveZoomLineEdit_textEdited(const QString &arg1)
@@ -184,6 +194,11 @@ void MainWindow::on_RotationResetButton_clicked()
     ui->CameraOrientationSlider->setValue(0);
     ui->CameraOrientationSlider_2->setValue(0);
     ui->CameraOrientationSlider_3->setValue(0);
+
+}
+void MainWindow::on_pushSzatan_clicked()
+{
+        chart->addValue(666);
 }
 
 void MainWindow::updateRecievedValues()

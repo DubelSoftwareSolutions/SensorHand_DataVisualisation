@@ -50,35 +50,39 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-void AddWidgetToGlove3DLayout(QWidget *widget);
-void getScene(Scene *p_scene);
-void InitInputData(Input *data);
+    void AddChartToChartLayout(QChart *p_chart);
+    void AddWidgetToGlove3DLayout(QWidget *widget);
+    void getScene(Scene *p_scene);
+    void InitInputData(Input *data);
 
 private slots:
-void resizeEvent(QResizeEvent *event);
-void on_StartStopButton_clicked();
+    void resizeEvent(QResizeEvent *event);
+    void on_StartStopButton_clicked();
 
-void on_CameraOrientationSlider_valueChanged(int value);
-void on_CameraOrientationSlider_2_valueChanged(int value);
-void on_CameraOrientationSlider_3_valueChanged(int value);
+    void on_CameraOrientationSlider_valueChanged(int value);
+    void on_CameraOrientationSlider_2_valueChanged(int value);
+    void on_CameraOrientationSlider_3_valueChanged(int value);
 
-void on_GloveZoomSlider_valueChanged(int value);
-void on_GloveZoomLineEdit_textEdited(const QString &arg1);
-void on_GloveZoomLineEdit_editingFinished();
+    void on_GloveZoomSlider_valueChanged(int value);
+    void on_GloveZoomLineEdit_textEdited(const QString &arg1);
+    void on_GloveZoomLineEdit_editingFinished();
 
-void on_CommunicationBox_currentIndexChanged(int index);
+    void on_CommunicationBox_currentIndexChanged(int index);
 
-void on_RotationResetButton_clicked();
-void on_FingersTab_currentChanged(int index);
+    void on_RotationResetButton_clicked();
+    void on_FingersTab_currentChanged(int index);
 
-void on_AccelerometerCheckBox_toggled(bool checked);
+    void on_AccelerometerCheckBox_toggled(bool checked);
+
+    void on_pushSzatan_clicked();
 
 private:
     Ui::MainWindow *ui;
     Input *InputData;
     Scene *scene3D;
     QLabel *m_statusLabel;
-    //Chart *chart;
+    Chart *chart;
+    QChartView *chartView;
     bool Glove3DLayoutWidgetIsSet = false;
 //signals:
 

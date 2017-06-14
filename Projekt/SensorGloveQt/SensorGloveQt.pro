@@ -10,6 +10,8 @@ QT       += 3dcore 3drender 3dinput 3dextras
 QT       += datavisualization
 QT       += bluetooth
 QT       += serialport
+QT       += charts
+
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
