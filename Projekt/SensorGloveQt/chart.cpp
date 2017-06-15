@@ -61,10 +61,10 @@ Chart::Chart(QChart *p_chart):
     m_chart->createDefaultAxes();
     m_chart->setAxisX(m_axis, m_series);
     m_axis->setTickCount(5);
-    m_chart->axisX()->setRange(0, 10);
-    m_chart->axisY()->setRange(-5, 666);
+    m_chart->axisX()->setRange(0, 100);
+    m_chart->axisY()->setRange(0, 255);
 
-    m_timer.start();
+    //m_timer.start();
 }
 
 Chart::~Chart()
