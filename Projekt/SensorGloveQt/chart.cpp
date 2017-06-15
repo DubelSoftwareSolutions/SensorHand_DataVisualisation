@@ -44,7 +44,10 @@ Chart::Chart(QChart *p_chart):
     m_axis(new QValueAxis),
     m_step(0),
     m_x(5),
-    m_y(1)
+    m_y(1),
+    m_axisXminRange(0),
+    m_axisXmaxRange(500)
+
 {
     qsrand((uint) QTime::currentTime().msec());
 
@@ -61,8 +64,8 @@ Chart::Chart(QChart *p_chart):
     m_chart->createDefaultAxes();
     m_chart->setAxisX(m_axis, m_series);
     m_axis->setTickCount(5);
-    m_chart->axisX()->setRange(0, 10);
-    m_chart->axisY()->setRange(-5, 666);
+    m_chart->axisX()->setRange(m_axisXminRange, m_axisXmaxRange);
+    m_chart->axisY()->setRange(0, 500);
 
     m_timer.start();
 }
@@ -79,7 +82,21 @@ void Chart::addValue(float p_value)
     m_y = p_value;
     m_series->append(m_x, m_y);
     m_chart->scroll(x, 0);
+    if (m_series->count() > m_axis->tickCount());
 }
+
+void Chart::setRangeX(float p_min, float p_max)
+{
+    m_axisXminRange = p_min;
+    m_axisXmaxRange = p_max;
+    m_chart->axisX()->setRange(p_min, p_max);
+}
+
+void Chart::setRangeY(float p_min, float p_max)
+{
+    m_chart->axisY()->setRange(p_min, p_max);
+}
+
 
 void Chart::handleTimeout()
 {
