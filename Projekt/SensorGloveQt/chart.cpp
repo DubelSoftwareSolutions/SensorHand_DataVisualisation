@@ -64,10 +64,11 @@ Chart::Chart(QChart *p_chart):
     m_chart->createDefaultAxes();
     m_chart->setAxisX(m_axis, m_series);
     m_axis->setTickCount(5);
+
     m_chart->axisX()->setRange(m_axisXminRange, m_axisXmaxRange);
     m_chart->axisY()->setRange(0, 500);
 
-    m_timer.start();
+    //m_timer.start();
 }
 
 Chart::~Chart()
