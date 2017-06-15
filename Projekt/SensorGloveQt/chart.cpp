@@ -52,7 +52,7 @@ Chart::Chart(QChart *p_chart):
     qsrand((uint) QTime::currentTime().msec());
 
     QObject::connect(&m_timer, SIGNAL(timeout()), this, SLOT(handleTimeout()));
-    m_timer.setInterval(1000);
+    m_timer.setInterval(100);
     m_chart = p_chart;
     m_series = new QSplineSeries(this);
     QPen green(Qt::red);
@@ -86,7 +86,7 @@ void Chart::addValue(float p_value)
 
     if (m_series->count() > (m_axis->max() - m_axis->min()))
     {
-m_chart->scroll(x, 0);
+        m_chart->scroll(x, 0);
         m_series->remove(0);
     }
 }

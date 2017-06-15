@@ -78,6 +78,7 @@ public slots:
     void ReadData();
 signals:
     void dataRecieved();
+    void dataRecievedChart();
     void connectionTypeChanged();
 };
 

@@ -241,11 +241,6 @@ void MainWindow::updateRecievedValues()
     //ui->AccTable->item(0,2)->setText(QString::number(InputData->getData().m_AccelerometerValues[2])); /*!!!*/
 }
 
-void MainWindow::on_FingersTab_currentChanged(int index)
-{
-    // ui->Angle1ValLabel->setText(QString::number(index));
-}
-
 void MainWindow::on_AccelerometerCheckBox_toggled(bool checked)
 {
     if(InputData->SerialPort->isOpen())

@@ -18,7 +18,7 @@ public:
     ~chartWindow();
     void InitInputData(Input *data);
     void AddChartToChartLayout(QChart *p_chart);
-private slots:
+public slots:
     void updateRecievedValues();
 private:
     Ui::chartWindow *ui;

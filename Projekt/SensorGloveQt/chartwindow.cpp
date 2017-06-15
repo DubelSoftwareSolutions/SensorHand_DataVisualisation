@@ -8,7 +8,6 @@ chartWindow::chartWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     AddChartToChartLayout(new QChart());
-    connect(InputData, &Input::dataRecieved, this, &chartWindow::updateRecievedValues);
 }
 
 chartWindow::~chartWindow()
@@ -19,6 +18,7 @@ chartWindow::~chartWindow()
 void chartWindow::InitInputData(Input *data)
 {
     InputData = data;
+    connect(InputData, &Input::dataRecievedChart, this, &chartWindow::updateRecievedValues);
 }
 
 void chartWindow::AddChartToChartLayout(QChart *p_chart)
@@ -35,5 +35,6 @@ void chartWindow::AddChartToChartLayout(QChart *p_chart)
 
 void chartWindow::updateRecievedValues()
 {
-    m_chart->addValue(InputData->getData().m_TensionSensorValues[ui->chartFingerSelect->currentIndex()]);
+    if(this->isVisible())
+        m_chart->addValue(InputData->getData().m_TensionSensorValues[ui->chartFingerSelect->currentIndex()]);
 }

@@ -148,6 +148,10 @@ void Input::ReadData()
 
             SerialPort->clear();
             emit dataRecieved();
+            ++m_iterator;
+            m_iterator %= 10;
+            if(m_iterator == 0)
+                emit dataRecievedChart();
         }
         else
             m_SingleDataRow.append(ReceivedData);
