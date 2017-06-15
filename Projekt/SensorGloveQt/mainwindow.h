@@ -19,12 +19,11 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QMainWindow>
 
-//#include <QtCharts/QChartView>
 
 #include "scene.h"
 #include "input.h"
 #include "chart.h"
-
+#include "chartwindow.h"
 
 namespace Ui {
 class MainWindow;
@@ -70,11 +69,10 @@ private slots:
     void on_CommunicationBox_currentIndexChanged(int index);
 
     void on_RotationResetButton_clicked();
-    void on_FingersTab_currentChanged(int index);
 
     void on_AccelerometerCheckBox_toggled(bool checked);
 
-    void on_pushSzatan_clicked();
+    void on_pressureChartButton_clicked();
 
 private:
     Ui::MainWindow *ui;
@@ -83,6 +81,7 @@ private:
     QLabel *m_statusLabel;
     Chart *chart;
     QChartView *chartView;
+    chartWindow m_chartWindow;
     bool Glove3DLayoutWidgetIsSet = false;
 //signals:
 

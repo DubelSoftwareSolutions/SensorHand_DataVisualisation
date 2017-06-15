@@ -36,6 +36,7 @@ private:
     float m_y;
     float m_axisXminRange;
     float m_axisXmaxRange;
+
 };
 //![1]
 

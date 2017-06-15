@@ -14,25 +14,11 @@ MainWindow::MainWindow(QWidget *parent) :
     m_statusLabel = new QLabel;
     ui->statusBar->addWidget(m_statusLabel);
 
-    AddChartToChartLayout(new QChart());
-
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
-}
-
-void MainWindow::AddChartToChartLayout(QChart *p_chart)
-{
-    p_chart->setTitle("Wykres dynamiczny");
-    p_chart->legend()->hide();
-    p_chart->setAnimationOptions(QChart::AllAnimations);
-    chartView = new QChartView(p_chart);
-    chartView->setRenderHint(QPainter::Antialiasing);
-    ui->chartLayout->addWidget(chartView);
-    chart = new Chart(chartView->chart());
-
 }
 
 void MainWindow::getScene(Scene *p_scene)
@@ -53,6 +39,7 @@ void MainWindow::AddWidgetToGlove3DLayout(QWidget *widget)
 void MainWindow::InitInputData(Input * data)
 {
     InputData = data;
+    m_chartWindow.InitInputData(data);
     connect(InputData, &Input::dataRecieved, this, &MainWindow::updateRecievedValues );
     connect(InputData->SerialPort, static_cast<void (QSerialPort::*)(QSerialPort::SerialPortError)>(&QSerialPort::error),
             this, &MainWindow::SerialPortErrorHandler);
@@ -196,9 +183,9 @@ void MainWindow::on_RotationResetButton_clicked()
     ui->CameraOrientationSlider_3->setValue(0);
 
 }
-void MainWindow::on_pushSzatan_clicked()
+void MainWindow::on_pressureChartButton_clicked()
 {
-        chart->addValue(666);
+        m_chartWindow.show();
 }
 
 void MainWindow::updateRecievedValues()
@@ -253,12 +240,6 @@ void MainWindow::updateRecievedValues()
     //ui->AccTable->item(0,1)->setText(QString::number(InputData->getData().m_AccelerometerValues[1])); /*Tutaj debugger wywala blad*/
     //ui->AccTable->item(0,2)->setText(QString::number(InputData->getData().m_AccelerometerValues[2])); /*!!!*/
 
-    chart->addValue(InputData->getData().m_TensionSensorValues[0]);
-}
-
-void MainWindow::on_FingersTab_currentChanged(int index)
-{
-    // ui->Angle1ValLabel->setText(QString::number(index));
 }
 
 void MainWindow::on_AccelerometerCheckBox_toggled(bool checked)
