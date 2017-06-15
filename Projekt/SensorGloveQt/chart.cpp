@@ -40,7 +40,7 @@ Chart::Chart(QChart *p_chart):
     m_chart->axisX()->setRange(m_axisXminRange, m_axisXmaxRange);
     m_chart->axisY()->setRange(0, 20);
 
-    m_timer.start();
+    //m_timer.start();
 }
 
 Chart::~Chart()
