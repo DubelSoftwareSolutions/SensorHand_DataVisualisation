@@ -103,6 +103,12 @@ void Chart::setRangeY(float p_min, float p_max)
     m_chart->axisY()->setRange(p_min, p_max);
 }
 
+void Chart::clearChart()
+{
+    m_chart->scroll(0,0);
+    m_series->clear();
+}
+
 
 void Chart::handleTimeout()
 {

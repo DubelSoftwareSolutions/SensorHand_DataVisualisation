@@ -32,6 +32,11 @@ void chartWindow::AddChartToChartLayout(QChart *p_chart)
     m_chart = new Chart(m_chartView->chart());
 }
 
+void chartWindow::clearChart()
+{
+    m_chart->clearChart();
+}
+
 
 void chartWindow::updateRecievedValues()
 {
