@@ -7,9 +7,16 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     ui->StartStopButton->setStyleSheet("background-color: rgb(225,240,80)");
     this->setWindowTitle("Sensor Glove Visualization");
-    this->setMinimumHeight(ui->ConfigurationWidget->height() + ui->MeasurementWidget->height()
-                           +ui->AccTable->height() + MARGIN*3);
-    this->setMinimumWidth(ui->AccTable->width()+ui->FingersTab->width()+MARGIN*3);
+
+    this->setMinimumHeight(ui->ConfigurationWidget->height() +
+                           ui->MeasurementWidget->height() +
+                           ui->AccTable->height() +
+                           ui->chartLayout->height() +
+                           MARGIN*3);
+    this->setMinimumWidth(ui->AccTable->width() +
+                          ui->FingersTab->width() +
+                          ui->chartLayout->width() +
+                          MARGIN*4);
 
     m_statusLabel = new QLabel;
     ui->statusBar->addWidget(m_statusLabel);
@@ -62,7 +69,7 @@ void MainWindow::resizeEvent(QResizeEvent *event)
         ui->FingersTabFrame->move(ui->AccTable->width() + MARGIN, height+MARGIN*3);
         ui->ConfigurationWidget->move(width, MARGIN);
         ui->MeasurementWidget->move(width, MARGIN*2 + ui->ConfigurationWidget->height());
-
+        ui->chartLayout->move(width, ui->MeasurementWidget->height() + ui->ConfigurationWidget->height() + MARGIN*3);
     } 
 }
 

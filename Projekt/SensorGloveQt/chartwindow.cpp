@@ -8,7 +8,7 @@ chartWindow::chartWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     AddChartToChartLayout(new QChart());
-    connect(InputData, &Input::dataRecieved, this, &chartWindow::updateRecievedValues);
+    this->setWindowTitle("Tension sensor chart");
 }
 
 chartWindow::~chartWindow()
@@ -37,3 +37,22 @@ void chartWindow::updateRecievedValues()
 {
     m_chart->addValue(InputData->getData().m_TensionSensorValues[ui->chartFingerSelect->currentIndex()]);
 }
+
+
+void chartWindow::on_chartScaleLine_textEdited(const QString &arg1)
+{
+    bool isDgt = true;
+    for (int i = 0; i < arg1.length(); ++i) {
+
+        isDgt = arg1.at(i).isDigit() && isDgt;
+    }
+    if (!isDgt)
+        ui->chartScaleLine->setText(QString::number((m_chart->getRangeX())[1]));
+}
+
+void chartWindow::on_chartScaleLine_editingFinished()
+{
+    QString arg = ui->chartScaleLine->text();
+    m_chart->setRangeX(0,arg.toInt());
+}
+

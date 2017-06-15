@@ -20,6 +20,10 @@ public:
     void AddChartToChartLayout(QChart *p_chart);
 private slots:
     void updateRecievedValues();
+
+    void on_chartScaleLine_editingFinished();
+    void on_chartScaleLine_textEdited(const QString &arg1);
+
 private:
     Ui::chartWindow *ui;
     Input *InputData;

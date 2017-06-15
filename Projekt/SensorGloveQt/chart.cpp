@@ -103,6 +103,14 @@ void Chart::setRangeY(float p_min, float p_max)
     m_chart->axisY()->setRange(p_min, p_max);
 }
 
+QVector<float> Chart::getRangeX()
+{
+    QVector<float> range;
+    range.push_back(m_axisXminRange);
+    range.push_back(m_axisXmaxRange);
+    return range;
+}
+
 
 void Chart::handleTimeout()
 {

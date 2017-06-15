@@ -63,7 +63,7 @@
       <x>0</x>
       <y>0</y>
       <width>611</width>
-      <height>421</height>
+      <height>451</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="Glove3DLayout">
@@ -420,13 +420,13 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="chartLayout2" native="true">
+   <widget class="QWidget" name="chartLayout" native="true">
     <property name="geometry">
      <rect>
       <x>630</x>
       <y>420</y>
       <width>171</width>
-      <height>141</height>
+      <height>111</height>
      </rect>
     </property>
     <layout class="QFormLayout" name="formLayout">
