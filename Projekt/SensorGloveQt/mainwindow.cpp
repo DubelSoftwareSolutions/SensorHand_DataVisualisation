@@ -194,7 +194,7 @@ void MainWindow::on_RotationResetButton_clicked()
 void MainWindow::on_pressureChartButton_clicked()
 {
     m_chartWindow.show();
-    m_chartWindow.clearChart();
+   // m_chartWindow.clearChart(); to psuło pierwzy pomiar
 }
 
 void MainWindow::updateRecievedValues()

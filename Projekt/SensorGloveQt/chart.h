@@ -24,6 +24,7 @@ public:
     void setRangeY(float p_min, float p_max);   
     QVector<float> getRangeX();
     void clearChart();
+    float getMaxX(void);
 
 public slots:
     void handleTimeout();
@@ -39,6 +40,7 @@ private:
     float m_y;
     float m_axisXminRange;
     float m_axisXmaxRange;
+    float m_scrollSum;
 
 };
 //![1]

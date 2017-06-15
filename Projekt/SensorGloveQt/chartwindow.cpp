@@ -61,7 +61,15 @@ void chartWindow::on_chartScaleLine_textEdited(const QString &arg1)
 void chartWindow::on_chartScaleLine_editingFinished()
 {
     QString arg = ui->chartScaleLine->text();
-    m_chart->setRangeX(0,arg.toInt());
+    float curRange = m_chart->getRangeX()[1];
+    if (arg.toInt() == curRange);
+
+    else if(arg.toInt() < curRange)
+        m_chart->setRangeX( curRange - arg.toInt(), m_chart->getMaxX());
+    else if (arg.toInt() < m_chart->getMaxX())
+        m_chart->setRangeX(m_chart->getMaxX() - arg.toInt(), m_chart->getMaxX());
+    else
+        m_chart->setRangeX(0,arg.toInt());
 }
 
 
