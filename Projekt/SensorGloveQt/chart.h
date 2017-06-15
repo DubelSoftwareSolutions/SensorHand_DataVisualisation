@@ -12,7 +12,7 @@ QT_CHARTS_END_NAMESPACE
 QT_CHARTS_USE_NAMESPACE
 
 //![1]
-class Chart: public QChart
+class Chart: QObject
 {
     Q_OBJECT
 public:
@@ -21,8 +21,10 @@ public:
     virtual ~Chart();
     void addValue(float p_value);
     void setRangeX(float p_min, float p_max);
-    void setRangeY(float p_min, float p_max);
+    void setRangeY(float p_min, float p_max);   
     QVector<float> getRangeX();
+    void clearChart();
+
 public slots:
     void handleTimeout();
 

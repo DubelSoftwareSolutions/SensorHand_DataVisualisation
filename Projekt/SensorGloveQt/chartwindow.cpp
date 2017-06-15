@@ -19,6 +19,7 @@ chartWindow::~chartWindow()
 void chartWindow::InitInputData(Input *data)
 {
     InputData = data;
+    connect(InputData, &Input::dataRecievedChart, this, &chartWindow::updateRecievedValues);
 }
 
 void chartWindow::AddChartToChartLayout(QChart *p_chart)
@@ -30,12 +31,19 @@ void chartWindow::AddChartToChartLayout(QChart *p_chart)
     m_chartView->setRenderHint(QPainter::Antialiasing);
     ui->chartLayout->addWidget(m_chartView);
     m_chart = new Chart(m_chartView->chart());
+    ui->chartScaleLine->setText(QString::number(m_chart->getRangeX()[1]));
+}
+
+void chartWindow::clearChart()
+{
+    m_chart->clearChart();
 }
 
 
 void chartWindow::updateRecievedValues()
 {
-    m_chart->addValue(InputData->getData().m_TensionSensorValues[ui->chartFingerSelect->currentIndex()]);
+    if(this->isVisible())
+        m_chart->addValue(InputData->getData().m_TensionSensorValues[ui->chartFingerSelect->currentIndex()]);
 }
 
 

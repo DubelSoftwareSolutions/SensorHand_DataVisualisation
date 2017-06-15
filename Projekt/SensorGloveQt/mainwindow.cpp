@@ -192,7 +192,8 @@ void MainWindow::on_RotationResetButton_clicked()
 }
 void MainWindow::on_pressureChartButton_clicked()
 {
-        m_chartWindow.show();
+    m_chartWindow.show();
+    m_chartWindow.clearChart();
 }
 
 void MainWindow::updateRecievedValues()
@@ -246,7 +247,6 @@ void MainWindow::updateRecievedValues()
     ui->AccTable->item(0,0)->setText(QString::number(InputData->getData().m_AccelerometerValues[0]));
     //ui->AccTable->item(0,1)->setText(QString::number(InputData->getData().m_AccelerometerValues[1])); /*Tutaj debugger wywala blad*/
     //ui->AccTable->item(0,2)->setText(QString::number(InputData->getData().m_AccelerometerValues[2])); /*!!!*/
-
 }
 
 void MainWindow::on_AccelerometerCheckBox_toggled(bool checked)
