@@ -64,3 +64,8 @@ void chartWindow::on_chartScaleLine_editingFinished()
     m_chart->setRangeX(0,arg.toInt());
 }
 
+
+void chartWindow::on_chartFingerSelect_currentIndexChanged(int index)
+{
+    clearChart();
+}

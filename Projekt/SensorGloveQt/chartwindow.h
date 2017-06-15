@@ -25,6 +25,9 @@ public slots:
     void on_chartScaleLine_editingFinished();
     void on_chartScaleLine_textEdited(const QString &arg1);
 
+private slots:
+    void on_chartFingerSelect_currentIndexChanged(int index);
+
 private:
     Ui::chartWindow *ui;
     Input *InputData;

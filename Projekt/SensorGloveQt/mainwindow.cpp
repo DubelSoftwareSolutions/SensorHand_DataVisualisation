@@ -77,6 +77,7 @@ void MainWindow::on_StartStopButton_clicked()
 {
     if(ui->StartStopButton->text() == "Start")
     {
+        m_chartWindow.clearChart();
         if(InputData->OpenSerialPort())
         {
             ui->StartStopButton->setText("Stop");

@@ -114,6 +114,7 @@ void Chart::clearChart()
 {
     m_chart->scroll(0,0);
     m_series->clear();
+    m_x = 0;
 }
 
 
