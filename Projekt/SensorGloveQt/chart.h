@@ -20,7 +20,8 @@ public:
     Chart(QChart *p_chart);
     virtual ~Chart();
     void addValue(float p_value);
-
+    void setRangeX(float p_min, float p_max);
+    void setRangeY(float p_min, float p_max);
 public slots:
     void handleTimeout();
 
@@ -33,6 +34,9 @@ private:
     float m_step;
     float m_x;
     float m_y;
+    float m_axisXminRange;
+    float m_axisXmaxRange;
+
 };
 //![1]
 

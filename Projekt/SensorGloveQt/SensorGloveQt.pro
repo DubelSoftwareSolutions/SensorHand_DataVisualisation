@@ -40,7 +40,8 @@ SOURCES += main.cpp\
     input.cpp \
     scene.cpp \
     fingertip.cpp \
-    chart.cpp
+    chart.cpp \
+    chartwindow.cpp
 
 HEADERS  += mainwindow.h \
     includes.h \
@@ -52,6 +53,8 @@ HEADERS  += mainwindow.h \
     input.h \
     scene.h \
     fingertip.h \
-    chart.h
+    chart.h \
+    chartwindow.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    chartwindow.ui
