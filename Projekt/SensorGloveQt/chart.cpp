@@ -3,6 +3,7 @@
 #include "chart.h"
 #include <QtCharts/QAbstractAxis>
 #include <QtCharts/QSplineSeries>
+#include <QtCharts/QLineSeries>
 #include <QtCharts/QValueAxis>
 #include <QtCore/QTime>
 #include <QtCore/QDebug>
@@ -24,7 +25,6 @@ Chart::Chart(QChart *p_chart):
     qsrand((uint) QTime::currentTime().msec());
 
     QObject::connect(&m_timer, SIGNAL(timeout()), this, SLOT(handleTimeout()));
-    m_timer.setInterval(1000);
     m_chart = p_chart;
     m_series = new QSplineSeries(this);
     QPen green(Qt::red);
@@ -38,9 +38,12 @@ Chart::Chart(QChart *p_chart):
     m_axis->setTickCount(1);
 
     m_chart->axisX()->setRange(m_axisXminRange, m_axisXmaxRange);
-    m_chart->axisY()->setRange(0, 20);
+    m_chart->axisY()->setRange(0, 260);
 
-    //m_timer.start();
+    m_chart->setAnimationDuration(80);
+    m_series->setPointLabelsVisible();
+    m_series->setPointsVisible();
+    m_series->setPointLabelsFormat("(@yPoint)");
 }
 
 Chart::~Chart()
@@ -60,6 +63,10 @@ void Chart::addValue(float p_value)
         m_scrollSum += x;
         m_chart->scroll(x, 0);
     }
+    QColor newColor;
+    newColor.setHsv(p_value,255,255);
+    QPen ChartPen(newColor);
+    m_series->setPen(ChartPen);
 }
 
 void Chart::setRangeX(float p_min, float p_max)
