@@ -246,8 +246,8 @@ void MainWindow::updateRecievedValues()
 
     //Accelerometer
     ui->AccTable->item(0,0)->setText(QString::number(InputData->getData().m_AccelerometerValues[0]));
-    //ui->AccTable->item(0,1)->setText(QString::number(InputData->getData().m_AccelerometerValues[1])); /*Tutaj debugger wywala blad*/
-    //ui->AccTable->item(0,2)->setText(QString::number(InputData->getData().m_AccelerometerValues[2])); /*!!!*/
+    ui->AccTable->item(1,0)->setText(QString::number(InputData->getData().m_AccelerometerValues[1])); /*Tutaj debugger wywala blad*/
+    ui->AccTable->item(2,0)->setText(QString::number(InputData->getData().m_AccelerometerValues[2])); /*!!!*/
 }
 
 void MainWindow::on_AccelerometerCheckBox_toggled(bool checked)

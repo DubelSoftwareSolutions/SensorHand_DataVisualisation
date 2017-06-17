@@ -2,6 +2,8 @@
 #define CHART_H
 
 #include <QtCharts/QChart>
+#include <QtCharts/QSplineSeries>
+#include <QtCharts/QLineSeries>
 #include <QtCore/QTimer>
 
 QT_CHARTS_BEGIN_NAMESPACE
