@@ -2,7 +2,7 @@
 
 //Scene::Scene(Qt3DCore::QEntity *rootEntity,MainWindow& p_mainWindow):
 Scene::Scene(Qt3DCore::QEntity *rootEntity):
-    m_rootEntity(rootEntity), m_Hand3DModel(rootEntity), m_CameraHeight(8), m_CameraDistance(30)
+    m_rootEntity(rootEntity), m_Hand3DModel(rootEntity), m_CameraHeight(9), m_CameraDistance(30)
 {
     view = new Qt3DExtras::Qt3DWindow();
     view->defaultFrameGraph()->setClearColor(QColor(175,175,175));

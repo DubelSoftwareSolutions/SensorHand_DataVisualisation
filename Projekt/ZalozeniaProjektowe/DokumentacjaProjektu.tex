@@ -49,14 +49,15 @@ Projekt zostanie połączony z innym realizowanym w ramach kursu Roboty Mobilne 
 Zostanie stworzona aplikacja okienkowa do wizualizacji napisana w języku C++ z użyciem biblioteki Qt.\\
 \begin{itemize}
 \item Wizualizacja poruszania modelem dłoni na podstawie odczytów z czujników i akcelerometru.
-\item Wybór opcji połączenia z rękawicą sensoryczną (Bluetooth, USB)
+\item Wybór opcji połączenia z rękawicą sensoryczną (Bluetooth, USB, UART)
 \item Uruchomienie i zatrzymanie pomiarów, wykonanie pojedynczego pomiaru.
-\item Skalowanie modelu dłoni poprzez wpisanie rozmiarów przegubów oraz suwaki.
+\item Skalowanie modelu dłoni poprzez wpisanie rozmiarów oraz suwak.
 \item Zmiana położenia i orientacji kamery z poziomu interfejsu graficznego.
+\item Zmiana rotacji modelu dłoni (RPY) poprzez suwaki interfejsu graficznego.
 \item Wyświetlanie liczbowo wyników pomiarów i możliwość zapisania ich do pliku.
-\item Wyświetlenie wykresu odczytu nacisku wybranego palca w czasie.
+\item Wyświetlenie dynamicznego wykresu odczytu nacisku wybranego palca w czasie.
 \end{itemize}
-Żadna z funkcjonalności nie została jeszcze dokończona.
+Wszystkie funkcjonalności zostały zaimplementowane. Zrezygnowano z połączenia przez Bluetooth z powodu braku działającego modułu Bluetooth na komputerze oraz niezadowalającej prędkości przesyłania.
 
 \newpage
 \subsection{Interfejs graficzny}
@@ -66,11 +67,17 @@ Schematyczny szkic interfejsu graficznego został przedstawiony na rysunku \ref{
 \includegraphics[width=0.9\textwidth]{./WDS_schemat_ideowy_okna_programu.png}
 \caption{Planowany interfejs graficzny aplikacji\label{fig:interface}}
 \end{figure}\\
-Aktualny wygląd interfejsu graficznego został przedstawiony na rysunku \ref{fig:currentInt}.
+\newpage
+Aktualny interfejs graficzny został przedstawiony na rysunkach \ref{fig:currentInt} i \ref{fig:currentIntChart}.
 \begin{figure}[!htb]
 \centering
 \includegraphics[width=0.9\textwidth]{./AktualnyInterfejsGraficzny.png}
 \caption{Aktualny wygląd interfejsu graficznego aplikacji\label{fig:currentInt}}
+\end{figure}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\textwidth]{./AktualnyInterfejsGraficznyChart.png}
+\caption{Aktualny wygląd interfejsu graficznego aplikacji (wykresy)\label{fig:currentIntChart}}
 \end{figure}
 
 \newpage
@@ -90,6 +97,72 @@ Diagram klas przetwarzających dane i obliczeniowych w aplikacji, przedstawiony 
 \end{figure}
 
 \newpage
+\subsection{Wyniki eksperymentów}
+Przeprowadzono eksperymenty z użyciem dłoni sensorycznej i aplikacji napisanej w ramach tego projektu, polegające na wizualizacji kilku prostych gestów i określeniu sposobu ich identyfikacji. Wyniki eksperymentów zostały przedstawione na rysunkach (\ref{fig:Fist}, \ref{fig:Palm}, \ref{fig:OK}, \ref{fig:Peace}, \ref{fig:Point}).\\
+\begin{figure}[!htb]
+\centering
+    \subfloat
+    {
+      \includegraphics[width=0.48\textwidth]{./Fist.jpg}
+    }
+    \subfloat
+    {
+      \includegraphics[width=0.48\textwidth]{./FistQt.png}
+    }
+    \caption{Gest -- zaciśnięta pięść \label{fig:Fist}}
+\end{figure}
+\begin{figure}[!htb]
+\centering
+    \subfloat
+    {
+      \includegraphics[width=0.48\textwidth]{./Palm.jpg}
+    }
+    \subfloat
+    {
+      \includegraphics[width=0.48\textwidth]{./PalmQt.png}
+    }
+    \caption{Gest -- otwarta dłoń \label{fig:Palm}}
+\end{figure}
+\begin{figure}[!htb]
+\centering
+    \subfloat
+    {
+      \includegraphics[width=0.48\textwidth]{./OK.jpg}
+    }
+    \subfloat
+    {
+      \includegraphics[width=0.48\textwidth]{./OKQt.png}
+    }
+    \caption{Gest -- OK \label{fig:OK}}
+\end{figure}
+\begin{figure}[!htb]
+\centering
+    \subfloat
+    {
+      \includegraphics[width=0.48\textwidth]{./Peace.jpg}
+    }
+    \subfloat
+    {
+      \includegraphics[width=0.48\textwidth]{./PeaceQt.png}
+    }
+    \caption{Gest -- pacyfka\label{fig:Peace}}
+\end{figure}
+\begin{figure}[!htb]
+\centering
+    \subfloat
+    {
+      \includegraphics[width=0.48\textwidth]{./Point.jpg}
+    }
+    \subfloat
+    {
+      \includegraphics[width=0.48\textwidth]{./PointQt.png}
+    }
+    \caption{Gest -- wskazywanie palcem \label{fig:Point}}
+\end{figure}
+Wykrywanie tego typu gestów sprowadza się do ustawienia odpowiednich progów na niektórych czujnikach ugięcia i nacisku, po których przekroczeniu sygnalizuje się wykrycie gestu.\\
+Takie gesty mogą posłużyć sterowaniu robotem lub systemem automatyki (np. budynkowej). Przyporządkowanie gestu do wykonywanej czynności daje możliwość kontroli systemu.
+
+\newpage
 \section{Specyfikacja urządzenia}
 
 \subsection{Opis ogólny}
@@ -100,15 +173,17 @@ Diagram klas przetwarzających dane i obliczeniowych w aplikacji, przedstawiony 
 \item Powyższe elementy nie zapewniają precyzyjnych pomiarów, ale zostały wybrane ze względu na cenę i charakter projektu, w którym zostaną zastosowane.
 \item Jako urządzenie nadawcze Bluetooth posłuży moduł HC--06 z interfejsem UART podłączony do płytki Discovery.
 \end{itemize}
-Rękawica sensoryczna tworzona w ramach projektu Roboty Mobilne nie została jeszcze zbudowana.
+Rękawica sensoryczna tworzona w ramach projektu Roboty Mobilne została zbudowana.
 
 \subsection{Funkcjonalności urządzenia}
 \begin{itemize}
 \item Pobieranie danych o nacisku opuszków palców na powierzchnię.
 \item Pobieranie danych o zgięciu palców dłoni.
 \item Pobieranie danych o orientacji względem wektora grawitacji.
-\item Agregacja danych oraz wysyłanie ich za pomocą Bluetooth i USB.
-\item Wizualizacja nacisku opuszków palców na powierzchnię za pomocą LEDów RGB.
+\item Agregacja danych do odpowiednich jednostek.
+\item Aproksymacja danych w celu określenia kątów ugięcia oraz kątów rotacji (RPY).
+\item Wysyłanie danych przez USB, UART, Bluetooth.
+\item Wizualizacja nacisku opuszków palców na powierzchnię za pomocą LEDów RGB. (niezrealizowane)
 \end{itemize}
 
 \newpage
@@ -120,7 +195,7 @@ Ideowy schemat połączeń urządzenia pomiarowego, współpracującego z aplika
 \includegraphics[width=0.9\textwidth]{./SchematIdeowy.png}
 \caption{Ideowy schemat połączeń rękawicy sensorycznej\label{fig:ideascheme}}
 \end{figure}
-Schematy elektroniki głównej płytki z mikrokontrolerem urządzenia pomiarowego można znaleźć na stronie producenta. Rysunek ułożenia elementów na płytce został ukazany na rysunku \ref{fig:layout}
+Schematy elektroniki głównej płytki z mikrokontrolerem urządzenia pomiarowego można znaleźć na stronie producenta. Rysunek ułożenia elementów na płytce został ukazany na rysunku \ref{fig:layout}.
 \begin{figure}[!htb]
 \centering
 \subfloat
@@ -162,24 +237,28 @@ Schematy elektroniki głównej płytki z mikrokontrolerem urządzenia pomiaroweg
 \begin{itemize}
 \item Protokół komunikacyjny: $I^2C$
 \item Ilość osi: 3
-\item Maksymalne przeciążenie: 16g
+\item Maksymalne przeciążenie: $\pm$16g
 \item Dokładność pomiaru: 16 bitów 
 \end{itemize}
 
 \subsection{Opis protokołu komunikacji}
-Wykorzystano dwa sposoby komunikacji z urządzeniem pomiarowym. Możliwość przełączania między urządzeniami została przewidziana w aplikacji. Część danych odbieranych z rękawicy zostanie wstępnie przetworzona przez urządzenie pomiarowe.\\
+Wykorzystano trzy sposoby komunikacji z urządzeniem pomiarowym. Możliwość przełączania między urządzeniami została przewidziana w aplikacji. Dane odbierane z rękawicy zostaną wstępnie przetworzone przez urządzenie pomiarowe.\\
 \subsection{Ramka danych}
 \begin{itemize}
 \item Typ danych: float
-\item Sposób odbierania danych: COM Port
+\item Sposób odbierania danych: COM Port (QSerialPort)
 \item Sposób kodowania wiadomości: ANSI
 \item Suma kontrolna: brak
-\item Struktura wiadomości: 7 linii danych
+\item Struktura wiadomości: 1 linia danych
 \begin{itemize}
-\item Linie 1 -- 5: 3x float -- kąty obrotu przegubów palca (0,0 - 100,0 $^\circ$)
-\item Linia 6: 5x int -- dane z czujników nacisku (0 - 4095)
-\item Linia 7: 3x float -- dane z akcelerometru (zagregowane do $m/s^2$)
-\item Każda linia zakończona znakami \textbackslash r \textbackslash n
+\item Znak początku 'S'
+\item 15x float -- kąty obrotu przegubów palców $(\pm 180,0 ^\circ$)
+\item 5x int -- dane z czujników nacisku (0 -- 255)
+\item 3x float -- kąty obrotu parametryzacji Roll Pitch Yaw $(\pm 180,0^\circ$)
+\item 3x float -- przyśpieszenie w trzech osiach XYZ $(\pm 18 \frac{m}{s^2})$
+\item 10x float -- odczyty czujników ugięcia (0,0 -- 3,3 V)
+\item Znak końca 'R'
+\item Linia zakończona znakami \textbackslash r \textbackslash n
 \end{itemize}
 \item Zrezygnowano ze szczegółowego opisu niskopoziomowego ramki danych, gdyż jest on obsługiwany przez dostępne biblioteki
 \end{itemize}
@@ -216,18 +295,29 @@ Wykorzystano dwa sposoby komunikacji z urządzeniem pomiarowym. Możliwość prz
 \item (14.05.2017) \textbf{(Wykonane)} Stworzenie elementów wizualizacji nacisku.
 \item (18.05.2017) \textbf{(Wykonane)} Zmiana koloru i/lub wielkości sfer na podstawie odczytów z czujników nacisku.
 %Rezultaty prawie końcowe
-\item (26.05.2017) Komunikacja przez Bluetooth.
-\item (26.05.2017) Komunikacja przez USB.
-\item (01.06.2017) \textbf{(Rozpoczęte)} Stworzenie okna programu.
-\item (01.06.2017) Wczytywanie i dekodowanie danych z rękawicy sensorycznej.
-\item (05.06.2017) \textbf{(Rozpoczęte)} Poruszanie przegubami na podstawie odczytów z tensorów.
-\item (05.06.2017) Obrót modelu na podstawie akcelerometru.
-\item (11.06.2017) Testy aplikacji.
-\item (15.06.2017) Naprawianie błędów.
-\item (15.06.2017) Poprawianie funkcjonalności i optymalizacja kodu.
+\item (26.05.2017) \textbf{(Zrezygnowano)} Komunikacja przez Bluetooth.
+\item (26.05.2017) \textbf{(Wykonane)} Komunikacja przez USB.
+\item (01.06.2017) \textbf{(Wykonane)} Stworzenie okna programu.
+\item (01.06.2017) \textbf{(Wykonane)} Wczytywanie i dekodowanie danych z rękawicy sensorycznej.
+\item (05.06.2017) \textbf{(Wykonane)} Poruszanie przegubami na podstawie odczytów z tensorów.
+\item (05.06.2017) \textbf{(Wykonane)} Obrót modelu na podstawie akcelerometru.
+\item (11.06.2017) \textbf{(Wykonane)} Testy aplikacji.
+\item (15.06.2017) \textbf{(Wykonane)} Naprawianie błędów.
+\item (15.06.2017) \textbf{(Częściowo wykonane)} Poprawianie funkcjonalności i optymalizacja kodu.
 %Rezultaty końcowe
 \end{itemize}
 
 \includepdf[pages={-},angle=90]{Gantt.pdf}
+
+\section{Podsumowanie}
+\begin{itemize}
+\item Niedokładne odwzorowanie ruchu ręki spowodowane jest trudnościami w przeprowadzeniu dokładnych pomiarów oraz aproksymacji.
+\item Pomiary obarczone są dużym błędem z powodu niestabilnej konstrukcji (czujniki przesuwają się) oraz problemu w wyborze metody pomiarowej.
+\item Z powodu braku miejsca i zbyt dużej ilości przewodów zrezygnowano z LEDów RGB na rękawicy.
+\item Z powodu błędnego funkcjonowania modułu Bluetooth komputera oraz niezadowalającej szybkości przesyłu, zrezygnowano z połączenia rękawicy.
+\item Przygotowana aplikacja umożliwia wizualizację danych rękawicy oraz analizę danych pod względem wykrywania gestów.
+\item Zrezygnowano z parametryzacji odczytów akcelerometru do kątów RPY (ograniczono się do kąta Pitch) z powodu dużych błędów w obliczaniu kątów oraz niestabilności danych z akcelerometru.
+\item Zrezygnowano z części interfejsu użytkownika z powodu ograniczeń czasowych lub zbytniego skomplikowania założonej funkcji. Najważniejsze funkcje zostały zaimplementowane zgodnie z założeniami projektu.
+\end{itemize}
 
 \end{document}
