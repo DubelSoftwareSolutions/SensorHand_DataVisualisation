@@ -1,5 +1,7 @@
 var annotated_dup =
 [
+    [ "Chart", "class_chart.html", "class_chart" ],
+    [ "chartWindow", "classchart_window.html", "classchart_window" ],
     [ "ErrorHandler", "class_error_handler.html", "class_error_handler" ],
     [ "Finger", "class_finger.html", "class_finger" ],
     [ "Fingertip", "class_fingertip.html", "class_fingertip" ],

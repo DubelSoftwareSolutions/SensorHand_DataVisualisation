@@ -1,8 +1,10 @@
 var class_scene =
 [
-    [ "Scene", "class_scene.html#aa138923bf1d204f6cadbefbe7398d599", null ],
+    [ "Scene", "class_scene.html#ae7977c11ac28fa465cedd4889e7cfd58", null ],
     [ "~Scene", "class_scene.html#a3b8cec2e32546713915f8c6303c951f1", null ],
+    [ "setCameraDistance", "class_scene.html#a53a7f1676ecb6d9b7312e275b3c8256e", null ],
     [ "SetHandFingertipValues", "class_scene.html#a4dcd24690f433927c6ca75e9980afd53", null ],
+    [ "SetHandRotation", "class_scene.html#a85cdeb1563e84f148579f834808aa527", null ],
     [ "SetHandTransformation", "class_scene.html#ae58cf344ad78420d37acde7984c9a4e8", null ],
     [ "camController", "class_scene.html#a55d0f4c21e5ac40b4ad53a67bf851ff7", null ],
     [ "cameraEntity", "class_scene.html#aed08c4ba793fa5d32104d47c9cfd2c5c", null ],
@@ -15,6 +17,8 @@ var class_scene =
     [ "lightEntity2", "class_scene.html#a9ad241dc981470f63bb5d7a5bd25888e", null ],
     [ "lightTransform", "class_scene.html#a24f2698364e45c011a80c51747a62bae", null ],
     [ "lightTransform2", "class_scene.html#af5b3d0a98c256da599ddd8973016b10b", null ],
+    [ "m_CameraDistance", "class_scene.html#a8f666aa1574fd1a1ecae97fa55ad2be8", null ],
+    [ "m_CameraHeight", "class_scene.html#af3aa76a49254de3b2ee5991677942ba3", null ],
     [ "m_Hand3DModel", "class_scene.html#adf272488e380e731a1c20fa5cd208490", null ],
     [ "m_rootEntity", "class_scene.html#a1ef7f61aed73e150dfb7ef7ffc47f7c2", null ],
     [ "screenSize", "class_scene.html#a2bb58c1253bd4d64781a2b9e25604060", null ],

@@ -7,12 +7,104 @@ Definicja klasy \hyperlink{class_input}{Input}.
 
 {\ttfamily \#include $<$Qt\+Bluetooth$>$}\newline
 {\ttfamily \#include $<$Qt\+Serial\+Port$>$}\newline
+{\ttfamily \#include \char`\"{}errorhandler.\+h\char`\"{}}\newline
 \subsection*{Komponenty}
 \begin{DoxyCompactItemize}
 \item 
 class \hyperlink{class_input}{Input}
-\begin{DoxyCompactList}\small\item\em Klasa jest narzędziem do pobierania danych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Klasa jest narzędziem do pobierania danych. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_input_1_1_data_values__t}{Input\+::\+Data\+Values\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struktura służąca do przechowywania danych wejściowych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Definicje}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{input_8h_a9d30833ef1806ac4199f6ae6f4e337d4}{B\+L\+U\+E\+T\+O\+O\+T\+H\+\_\+\+M\+A\+N\+U\+F\+A\+C\+T\+U\+R\+ER}~\char`\"{}Prolific\char`\"{}
+\item 
+\#define \hyperlink{input_8h_a36630f14131cb7a11724ab07c2c9393a}{U\+A\+R\+T\+\_\+\+M\+A\+N\+U\+F\+A\+C\+T\+U\+R\+ER}~\char`\"{}Prolific\char`\"{}
+\item 
+\#define \hyperlink{input_8h_a64bf0dbc8ae404f2e769fd2b273241a3}{U\+S\+B\+\_\+\+M\+A\+N\+U\+F\+A\+C\+T\+U\+R\+ER}~\char`\"{}S\+T\+Microelectronics.\char`\"{}
+\item 
+\#define \hyperlink{input_8h_a800ec9bb77245339c6a2b770432e0232}{B\+L\+U\+E\+T\+O\+O\+T\+H\+\_\+\+B\+A\+U\+D\+R\+A\+TE}~Q\+Serial\+Port\+::\+Baud9600
+\item 
+\#define \hyperlink{input_8h_a2c7ed0283bd6f2f9d791860d6254ef4f}{U\+A\+R\+T\+\_\+\+B\+A\+U\+D\+R\+A\+TE}~Q\+Serial\+Port\+::\+Baud115200
+\item 
+\#define \hyperlink{input_8h_a8a21c90bcee6662d65b5c096403483fc}{U\+S\+B\+\_\+\+B\+A\+U\+D\+R\+A\+TE}~Q\+Serial\+Port\+::\+Baud115200
+\item 
+\#define \hyperlink{input_8h_a56399b3459de6d85f0c5ff2d27676c69}{R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+N\+G\+L\+E\+\_\+\+C\+O\+U\+NT}~3
+\end{DoxyCompactItemize}
 
 
 \subsection{Opis szczegółowy}
 Plik zwiera definicję klasy \hyperlink{class_input}{Input}, jest klasą pochodną klas Q\+Bluetooth\+Transfer\+Manager oraz Q\+Serial\+Port 
+
+\subsection{Dokumentacja definicji}
+\mbox{\Hypertarget{input_8h_a800ec9bb77245339c6a2b770432e0232}\label{input_8h_a800ec9bb77245339c6a2b770432e0232}} 
+\index{input.\+h@{input.\+h}!B\+L\+U\+E\+T\+O\+O\+T\+H\+\_\+\+B\+A\+U\+D\+R\+A\+TE@{B\+L\+U\+E\+T\+O\+O\+T\+H\+\_\+\+B\+A\+U\+D\+R\+A\+TE}}
+\index{B\+L\+U\+E\+T\+O\+O\+T\+H\+\_\+\+B\+A\+U\+D\+R\+A\+TE@{B\+L\+U\+E\+T\+O\+O\+T\+H\+\_\+\+B\+A\+U\+D\+R\+A\+TE}!input.\+h@{input.\+h}}
+\subsubsection{\texorpdfstring{B\+L\+U\+E\+T\+O\+O\+T\+H\+\_\+\+B\+A\+U\+D\+R\+A\+TE}{BLUETOOTH\_BAUDRATE}}
+{\footnotesize\ttfamily \#define B\+L\+U\+E\+T\+O\+O\+T\+H\+\_\+\+B\+A\+U\+D\+R\+A\+TE~Q\+Serial\+Port\+::\+Baud9600}
+
+
+
+Definicja w linii 21 pliku input.\+h.
+
+\mbox{\Hypertarget{input_8h_a9d30833ef1806ac4199f6ae6f4e337d4}\label{input_8h_a9d30833ef1806ac4199f6ae6f4e337d4}} 
+\index{input.\+h@{input.\+h}!B\+L\+U\+E\+T\+O\+O\+T\+H\+\_\+\+M\+A\+N\+U\+F\+A\+C\+T\+U\+R\+ER@{B\+L\+U\+E\+T\+O\+O\+T\+H\+\_\+\+M\+A\+N\+U\+F\+A\+C\+T\+U\+R\+ER}}
+\index{B\+L\+U\+E\+T\+O\+O\+T\+H\+\_\+\+M\+A\+N\+U\+F\+A\+C\+T\+U\+R\+ER@{B\+L\+U\+E\+T\+O\+O\+T\+H\+\_\+\+M\+A\+N\+U\+F\+A\+C\+T\+U\+R\+ER}!input.\+h@{input.\+h}}
+\subsubsection{\texorpdfstring{B\+L\+U\+E\+T\+O\+O\+T\+H\+\_\+\+M\+A\+N\+U\+F\+A\+C\+T\+U\+R\+ER}{BLUETOOTH\_MANUFACTURER}}
+{\footnotesize\ttfamily \#define B\+L\+U\+E\+T\+O\+O\+T\+H\+\_\+\+M\+A\+N\+U\+F\+A\+C\+T\+U\+R\+ER~\char`\"{}Prolific\char`\"{}}
+
+
+
+Definicja w linii 17 pliku input.\+h.
+
+\mbox{\Hypertarget{input_8h_a56399b3459de6d85f0c5ff2d27676c69}\label{input_8h_a56399b3459de6d85f0c5ff2d27676c69}} 
+\index{input.\+h@{input.\+h}!R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+N\+G\+L\+E\+\_\+\+C\+O\+U\+NT@{R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+N\+G\+L\+E\+\_\+\+C\+O\+U\+NT}}
+\index{R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+N\+G\+L\+E\+\_\+\+C\+O\+U\+NT@{R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+N\+G\+L\+E\+\_\+\+C\+O\+U\+NT}!input.\+h@{input.\+h}}
+\subsubsection{\texorpdfstring{R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+N\+G\+L\+E\+\_\+\+C\+O\+U\+NT}{ROTATION\_ANGLE\_COUNT}}
+{\footnotesize\ttfamily \#define R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+A\+N\+G\+L\+E\+\_\+\+C\+O\+U\+NT~3}
+
+
+
+Definicja w linii 25 pliku input.\+h.
+
+\mbox{\Hypertarget{input_8h_a2c7ed0283bd6f2f9d791860d6254ef4f}\label{input_8h_a2c7ed0283bd6f2f9d791860d6254ef4f}} 
+\index{input.\+h@{input.\+h}!U\+A\+R\+T\+\_\+\+B\+A\+U\+D\+R\+A\+TE@{U\+A\+R\+T\+\_\+\+B\+A\+U\+D\+R\+A\+TE}}
+\index{U\+A\+R\+T\+\_\+\+B\+A\+U\+D\+R\+A\+TE@{U\+A\+R\+T\+\_\+\+B\+A\+U\+D\+R\+A\+TE}!input.\+h@{input.\+h}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T\+\_\+\+B\+A\+U\+D\+R\+A\+TE}{UART\_BAUDRATE}}
+{\footnotesize\ttfamily \#define U\+A\+R\+T\+\_\+\+B\+A\+U\+D\+R\+A\+TE~Q\+Serial\+Port\+::\+Baud115200}
+
+
+
+Definicja w linii 22 pliku input.\+h.
+
+\mbox{\Hypertarget{input_8h_a36630f14131cb7a11724ab07c2c9393a}\label{input_8h_a36630f14131cb7a11724ab07c2c9393a}} 
+\index{input.\+h@{input.\+h}!U\+A\+R\+T\+\_\+\+M\+A\+N\+U\+F\+A\+C\+T\+U\+R\+ER@{U\+A\+R\+T\+\_\+\+M\+A\+N\+U\+F\+A\+C\+T\+U\+R\+ER}}
+\index{U\+A\+R\+T\+\_\+\+M\+A\+N\+U\+F\+A\+C\+T\+U\+R\+ER@{U\+A\+R\+T\+\_\+\+M\+A\+N\+U\+F\+A\+C\+T\+U\+R\+ER}!input.\+h@{input.\+h}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T\+\_\+\+M\+A\+N\+U\+F\+A\+C\+T\+U\+R\+ER}{UART\_MANUFACTURER}}
+{\footnotesize\ttfamily \#define U\+A\+R\+T\+\_\+\+M\+A\+N\+U\+F\+A\+C\+T\+U\+R\+ER~\char`\"{}Prolific\char`\"{}}
+
+
+
+Definicja w linii 18 pliku input.\+h.
+
+\mbox{\Hypertarget{input_8h_a8a21c90bcee6662d65b5c096403483fc}\label{input_8h_a8a21c90bcee6662d65b5c096403483fc}} 
+\index{input.\+h@{input.\+h}!U\+S\+B\+\_\+\+B\+A\+U\+D\+R\+A\+TE@{U\+S\+B\+\_\+\+B\+A\+U\+D\+R\+A\+TE}}
+\index{U\+S\+B\+\_\+\+B\+A\+U\+D\+R\+A\+TE@{U\+S\+B\+\_\+\+B\+A\+U\+D\+R\+A\+TE}!input.\+h@{input.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+B\+A\+U\+D\+R\+A\+TE}{USB\_BAUDRATE}}
+{\footnotesize\ttfamily \#define U\+S\+B\+\_\+\+B\+A\+U\+D\+R\+A\+TE~Q\+Serial\+Port\+::\+Baud115200}
+
+
+
+Definicja w linii 23 pliku input.\+h.
+
+\mbox{\Hypertarget{input_8h_a64bf0dbc8ae404f2e769fd2b273241a3}\label{input_8h_a64bf0dbc8ae404f2e769fd2b273241a3}} 
+\index{input.\+h@{input.\+h}!U\+S\+B\+\_\+\+M\+A\+N\+U\+F\+A\+C\+T\+U\+R\+ER@{U\+S\+B\+\_\+\+M\+A\+N\+U\+F\+A\+C\+T\+U\+R\+ER}}
+\index{U\+S\+B\+\_\+\+M\+A\+N\+U\+F\+A\+C\+T\+U\+R\+ER@{U\+S\+B\+\_\+\+M\+A\+N\+U\+F\+A\+C\+T\+U\+R\+ER}!input.\+h@{input.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+\_\+\+M\+A\+N\+U\+F\+A\+C\+T\+U\+R\+ER}{USB\_MANUFACTURER}}
+{\footnotesize\ttfamily \#define U\+S\+B\+\_\+\+M\+A\+N\+U\+F\+A\+C\+T\+U\+R\+ER~\char`\"{}S\+T\+Microelectronics.\char`\"{}}
+
+
+
+Definicja w linii 19 pliku input.\+h.
+

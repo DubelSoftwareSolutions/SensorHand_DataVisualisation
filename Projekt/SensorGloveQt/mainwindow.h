@@ -38,7 +38,7 @@ class MainWindow;
  * dłoni typy Hand i na ich podstawie wyświetla aktualne informacje dotyczące
  * położenia stawów, nacisku i wskazania akcelerometru.
  * Pozwala na zmianę perspektywy widoku na model trójwymiarowy,
- * uruchomienie i zatrzymanie pomiarów
+ * uruchomienie i zatrzymanie pomiarów.
  *
  */
 

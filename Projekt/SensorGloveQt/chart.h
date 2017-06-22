@@ -1,6 +1,14 @@
 #ifndef CHART_H
 #define CHART_H
 
+/*!
+ * \file
+ * \brief Definicja klasy Chart
+ *
+ * Plik zawiera definicję klasy Chart, która
+ * jest klasą pochodną klasy QObject
+ */
+
 #include <QtCharts/QChart>
 #include <QtCharts/QSplineSeries>
 #include <QtCharts/QLineSeries>
@@ -13,7 +21,15 @@ QT_CHARTS_END_NAMESPACE
 
 QT_CHARTS_USE_NAMESPACE
 
-//![1]
+/*!
+ * \brief Modeluje pojęcie wykresu dynamicznego
+ *
+ * Inicjalizuje obiekt wykresu dynamicznego, który służy
+ * do wyświetlania danych w kartezjańskim układzie współrzędnych.
+ * Umożliwia dynamiczną modyfikację wykresu poprzez dodawanie
+ * kolejnych waktości na koniec serii danych.
+ */
+
 class Chart: QObject
 {
     Q_OBJECT

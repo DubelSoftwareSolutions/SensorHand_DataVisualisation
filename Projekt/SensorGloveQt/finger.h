@@ -3,7 +3,7 @@
 
 /*!
  * \file
- * \brief Definicja klasy kwadrat
+ * \brief Definicja klasy Finger
  *
  * Plik zawiera definicję klasy finger, która
  * jest klasą pochodną klasy QObject

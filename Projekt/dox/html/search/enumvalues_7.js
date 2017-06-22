@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['usbconnection',['USBConnection',['../class_input.html#a3be20be9b454515798ecd3370f4e36fdaf2a909e54a7c789666bc3bebb2a67370',1,'Input']]]
+  ['thumb',['Thumb',['../class_finger.html#a365e6bba2e4877decf3c7641d29838c3a4abadc231544b00c5b998e2e836f530c',1,'Finger']]]
 ];

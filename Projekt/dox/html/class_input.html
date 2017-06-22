@@ -81,8 +81,13 @@ $(document).ready(function(){initNavTree('class_input.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Komponenty</a> &#124;
+<a href="#pub-types">Typy publiczne</a> &#124;
+<a href="#pub-slots">Sloty publiczne</a> &#124;
+<a href="#signals">Sygnały</a> &#124;
 <a href="#pub-methods">Metody publiczne</a> &#124;
-<a href="#pri-types">Typy prywatne</a> &#124;
+<a href="#pub-attribs">Atrybuty publiczne</a> &#124;
+<a href="#pri-methods">Metody prywatne</a> &#124;
 <a href="#pri-attribs">Atrybuty prywatne</a> &#124;
 <a href="class_input-members.html">Lista wszystkich składowych</a>  </div>
   <div class="headertitle">
@@ -103,40 +108,109 @@ Diagram dziedziczenia dla Input</div>
 </map>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Metody publiczne</h2></td></tr>
-<tr class="memitem:abae3f379d3f157cf42dc857309832dba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#abae3f379d3f157cf42dc857309832dba">Input</a> ()</td></tr>
-<tr class="separator:abae3f379d3f157cf42dc857309832dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76cacaeadb1ceed7f3f9585220e906c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#a76cacaeadb1ceed7f3f9585220e906c8">ChangeConnectionType</a> (<a class="el" href="class_input.html#a3be20be9b454515798ecd3370f4e36fd">ConnectionType_t</a> p_ConnecitonType)</td></tr>
-<tr class="separator:a76cacaeadb1ceed7f3f9585220e906c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f95fd4a76826d4a28b25e32e6c7244c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#a7f95fd4a76826d4a28b25e32e6c7244c">ConfigureInput</a> ()</td></tr>
-<tr class="separator:a7f95fd4a76826d4a28b25e32e6c7244c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Komponenty</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_input_1_1_data_values__t.html">DataValues_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struktura służąca do przechowywania danych wejściowych.  <a href="struct_input_1_1_data_values__t.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
-Typy prywatne</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Typy publiczne</h2></td></tr>
 <tr class="memitem:a3be20be9b454515798ecd3370f4e36fd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#a3be20be9b454515798ecd3370f4e36fd">ConnectionType_t</a> { <a class="el" href="class_input.html#a3be20be9b454515798ecd3370f4e36fda6046a4f4c91eb7a02b26c594c36b9374">BluetoothConnection</a>, 
+<a class="el" href="class_input.html#a3be20be9b454515798ecd3370f4e36fdad2b7655a556514e7611474e4aafb75b8">UARTConnection</a>, 
 <a class="el" href="class_input.html#a3be20be9b454515798ecd3370f4e36fdaf2a909e54a7c789666bc3bebb2a67370">USBConnection</a>
  }</td></tr>
 <tr class="separator:a3be20be9b454515798ecd3370f4e36fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
+Sloty publiczne</h2></td></tr>
+<tr class="memitem:a7da95e48dbde1c10a727545166dac288"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#a7da95e48dbde1c10a727545166dac288">ReadData</a> ()</td></tr>
+<tr class="separator:a7da95e48dbde1c10a727545166dac288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Sygnały</h2></td></tr>
+<tr class="memitem:af152badf99b8ffc0f9f9b0718f334d79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#af152badf99b8ffc0f9f9b0718f334d79">dataRecieved</a> ()</td></tr>
+<tr class="separator:af152badf99b8ffc0f9f9b0718f334d79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cd92c513cfe42bd68e871bcf475e910"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#a1cd92c513cfe42bd68e871bcf475e910">dataRecievedChart</a> ()</td></tr>
+<tr class="separator:a1cd92c513cfe42bd68e871bcf475e910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5ff0e97818e34f8ab33f00ebd953720"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#ab5ff0e97818e34f8ab33f00ebd953720">connectionTypeChanged</a> ()</td></tr>
+<tr class="separator:ab5ff0e97818e34f8ab33f00ebd953720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a167cd1dea1af062f99897a20c597aed8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#a167cd1dea1af062f99897a20c597aed8">Input</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="separator:a167cd1dea1af062f99897a20c597aed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ea13b2215e1ab16b7d7312d7060eca"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#ae7ea13b2215e1ab16b7d7312d7060eca">getPortName</a> ()</td></tr>
+<tr class="separator:ae7ea13b2215e1ab16b7d7312d7060eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7e79c0b9fc11cf350044031dbd92c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_input_1_1_data_values__t.html">DataValues_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#a3e7e79c0b9fc11cf350044031dbd92c9">getData</a> ()</td></tr>
+<tr class="separator:a3e7e79c0b9fc11cf350044031dbd92c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76cacaeadb1ceed7f3f9585220e906c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#a76cacaeadb1ceed7f3f9585220e906c8">ChangeConnectionType</a> (<a class="el" href="class_input.html#a3be20be9b454515798ecd3370f4e36fd">ConnectionType_t</a> p_ConnecitonType)</td></tr>
+<tr class="separator:a76cacaeadb1ceed7f3f9585220e906c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94465b0d69352fd533585256ff0bfea1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#a94465b0d69352fd533585256ff0bfea1">OpenSerialPort</a> ()</td></tr>
+<tr class="separator:a94465b0d69352fd533585256ff0bfea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af60c2b300eadd2a25f47bb0c38c8bb2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#af60c2b300eadd2a25f47bb0c38c8bb2e">CloseSerialPort</a> ()</td></tr>
+<tr class="separator:af60c2b300eadd2a25f47bb0c38c8bb2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Atrybuty publiczne</h2></td></tr>
+<tr class="memitem:af21e5ac2542fa5ef2b9b9c8be740901d"><td class="memItemLeft" align="right" valign="top">QSerialPort *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#af21e5ac2542fa5ef2b9b9c8be740901d">SerialPort</a></td></tr>
+<tr class="separator:af21e5ac2542fa5ef2b9b9c8be740901d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:a2ae2fdceec929c159c5ee055b331714c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#a2ae2fdceec929c159c5ee055b331714c">FindCOMport</a> ()</td></tr>
+<tr class="separator:a2ae2fdceec929c159c5ee055b331714c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1910fc2fed3b2f7055fa17f85529cce7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#a1910fc2fed3b2f7055fa17f85529cce7">ConfigureSPort</a> ()</td></tr>
+<tr class="separator:a1910fc2fed3b2f7055fa17f85529cce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Atrybuty prywatne</h2></td></tr>
-<tr class="memitem:a5d17336e82b13b4a5416ea0bf197c5ba"><td class="memItemLeft" align="right" valign="top">QVector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#a5d17336e82b13b4a5416ea0bf197c5ba">m_JointAngles</a></td></tr>
-<tr class="separator:a5d17336e82b13b4a5416ea0bf197c5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ce9ef99c48ee1e7adee67ecadd161c6"><td class="memItemLeft" align="right" valign="top">QVector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#a1ce9ef99c48ee1e7adee67ecadd161c6">m_TensionSensorValues</a></td></tr>
-<tr class="separator:a1ce9ef99c48ee1e7adee67ecadd161c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2572d4f32d4a82f4023277b24a4b0a4"><td class="memItemLeft" align="right" valign="top">QVector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#ab2572d4f32d4a82f4023277b24a4b0a4">m_AccelerometerValues</a></td></tr>
-<tr class="separator:ab2572d4f32d4a82f4023277b24a4b0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24dc520caff7c7c0d195acfa47342e28"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#a24dc520caff7c7c0d195acfa47342e28">m_PortName</a></td></tr>
+<tr class="separator:a24dc520caff7c7c0d195acfa47342e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d51aa2c3b8e7341eb5723421574472b"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#a2d51aa2c3b8e7341eb5723421574472b">m_PortNumber</a></td></tr>
+<tr class="separator:a2d51aa2c3b8e7341eb5723421574472b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cdd2c6b1ed685b395a333ecd90441df"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#a8cdd2c6b1ed685b395a333ecd90441df">m_Manufacturer</a></td></tr>
+<tr class="separator:a8cdd2c6b1ed685b395a333ecd90441df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11e501a6d4eb1a595430b5c77e71d1c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#aa11e501a6d4eb1a595430b5c77e71d1c">m_iterator</a></td></tr>
+<tr class="separator:aa11e501a6d4eb1a595430b5c77e71d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad80b752afa4bb13b0b042cecb36563ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#ad80b752afa4bb13b0b042cecb36563ea">m_RowTransferStarted</a></td></tr>
+<tr class="separator:ad80b752afa4bb13b0b042cecb36563ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50f1308ea6cf70d790cef25d0ac3004f"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#a50f1308ea6cf70d790cef25d0ac3004f">m_SingleDataRow</a></td></tr>
+<tr class="separator:a50f1308ea6cf70d790cef25d0ac3004f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b404eeed83bc5943f5f5a71a111926a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_input_1_1_data_values__t.html">DataValues_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#a8b404eeed83bc5943f5f5a71a111926a">m_DataValues</a></td></tr>
+<tr class="separator:a8b404eeed83bc5943f5f5a71a111926a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeccfe44263c5985405f94c5feb0ed0aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_input.html#a3be20be9b454515798ecd3370f4e36fd">ConnectionType_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_input.html#aeccfe44263c5985405f94c5feb0ed0aa">m_ConnectionType</a></td></tr>
 <tr class="separator:aeccfe44263c5985405f94c5feb0ed0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
 <div class="textblock"><p>Inicjalizuje kąty między stawami, wskazania czujników tensometrycznych, wskazania akcelerometru i typ połączenia z rękawicą sensoryczną </p>
 
-<p class="definition">Definicja w linii <a class="el" href="input_8h_source.html#l00029">29</a> pliku <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="input_8h_source.html#l00040">40</a> pliku <a class="el" href="input_8h_source.html">input.h</a>.</p>
 </div><h2 class="groupheader">Dokumentacja składowych wyliczanych</h2>
 <a id="a3be20be9b454515798ecd3370f4e36fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3be20be9b454515798ecd3370f4e36fd">&#9670;&nbsp;</a></span>ConnectionType_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_input.html#a3be20be9b454515798ecd3370f4e36fd">Input::ConnectionType_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Wartości wyliczeń</th></tr><tr><td class="fieldname"><a id="a3be20be9b454515798ecd3370f4e36fda6046a4f4c91eb7a02b26c594c36b9374"></a>BluetoothConnection&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3be20be9b454515798ecd3370f4e36fdad2b7655a556514e7611474e4aafb75b8"></a>UARTConnection&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3be20be9b454515798ecd3370f4e36fdaf2a909e54a7c789666bc3bebb2a67370"></a>USBConnection&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definicja w linii <a class="el" href="input_8h_source.html#l00044">44</a> pliku <a class="el" href="input_8h_source.html">input.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a167cd1dea1af062f99897a20c597aed8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a167cd1dea1af062f99897a20c597aed8">&#9670;&nbsp;</a></span>Input()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,38 +219,18 @@ Atrybuty prywatne</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="class_input.html#a3be20be9b454515798ecd3370f4e36fd">Input::ConnectionType_t</a></td>
+          <td class="memname">Input::Input </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Wartości wyliczeń</th></tr><tr><td class="fieldname"><a id="a3be20be9b454515798ecd3370f4e36fda6046a4f4c91eb7a02b26c594c36b9374"></a>BluetoothConnection&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3be20be9b454515798ecd3370f4e36fdaf2a909e54a7c789666bc3bebb2a67370"></a>USBConnection&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-<p class="definition">Definicja w linii <a class="el" href="input_8h_source.html#l00031">31</a> pliku <a class="el" href="input_8h_source.html">input.h</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
-<a id="abae3f379d3f157cf42dc857309832dba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abae3f379d3f157cf42dc857309832dba">&#9670;&nbsp;</a></span>Input()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Input::Input </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
 </div><div class="memdoc">
 
 <p class="definition">Definicja w linii <a class="el" href="input_8cpp_source.html#l00003">3</a> pliku <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
@@ -200,18 +254,18 @@ Atrybuty prywatne</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="input_8cpp_source.html#l00008">8</a> pliku <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="input_8cpp_source.html#l00033">33</a> pliku <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
 
 </div>
 </div>
-<a id="a7f95fd4a76826d4a28b25e32e6c7244c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f95fd4a76826d4a28b25e32e6c7244c">&#9670;&nbsp;</a></span>ConfigureInput()</h2>
+<a id="af60c2b300eadd2a25f47bb0c38c8bb2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af60c2b300eadd2a25f47bb0c38c8bb2e">&#9670;&nbsp;</a></span>CloseSerialPort()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Input::ConfigureInput </td>
+          <td class="memname">void Input::CloseSerialPort </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -219,11 +273,12 @@ Atrybuty prywatne</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definicja w linii <a class="el" href="input_8cpp_source.html#l00102">102</a> pliku <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+
 </div>
 </div>
-<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
-<a id="ab2572d4f32d4a82f4023277b24a4b0a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2572d4f32d4a82f4023277b24a4b0a4">&#9670;&nbsp;</a></span>m_AccelerometerValues</h2>
+<a id="a1910fc2fed3b2f7055fa17f85529cce7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1910fc2fed3b2f7055fa17f85529cce7">&#9670;&nbsp;</a></span>ConfigureSPort()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,7 +287,10 @@ Atrybuty prywatne</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QVector&lt;float&gt; Input::m_AccelerometerValues</td>
+          <td class="memname">void Input::ConfigureSPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -242,10 +300,197 @@ Atrybuty prywatne</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="input_8h_source.html#l00035">35</a> pliku <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="input_8cpp_source.html#l00077">77</a> pliku <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
 
 </div>
 </div>
+<a id="ab5ff0e97818e34f8ab33f00ebd953720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5ff0e97818e34f8ab33f00ebd953720">&#9670;&nbsp;</a></span>connectionTypeChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Input::connectionTypeChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af152badf99b8ffc0f9f9b0718f334d79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af152badf99b8ffc0f9f9b0718f334d79">&#9670;&nbsp;</a></span>dataRecieved</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Input::dataRecieved </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1cd92c513cfe42bd68e871bcf475e910"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cd92c513cfe42bd68e871bcf475e910">&#9670;&nbsp;</a></span>dataRecievedChart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Input::dataRecievedChart </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2ae2fdceec929c159c5ee055b331714c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ae2fdceec929c159c5ee055b331714c">&#9670;&nbsp;</a></span>FindCOMport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Input::FindCOMport </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="input_8cpp_source.html#l00041">41</a> pliku <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3e7e79c0b9fc11cf350044031dbd92c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e7e79c0b9fc11cf350044031dbd92c9">&#9670;&nbsp;</a></span>getData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_input_1_1_data_values__t.html">Input::DataValues_t</a> Input::getData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="input_8cpp_source.html#l00028">28</a> pliku <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae7ea13b2215e1ab16b7d7312d7060eca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7ea13b2215e1ab16b7d7312d7060eca">&#9670;&nbsp;</a></span>getPortName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Input::getPortName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="input_8cpp_source.html#l00023">23</a> pliku <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a94465b0d69352fd533585256ff0bfea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94465b0d69352fd533585256ff0bfea1">&#9670;&nbsp;</a></span>OpenSerialPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Input::OpenSerialPort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="input_8cpp_source.html#l00097">97</a> pliku <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7da95e48dbde1c10a727545166dac288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7da95e48dbde1c10a727545166dac288">&#9670;&nbsp;</a></span>ReadData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Input::ReadData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="input_8cpp_source.html#l00108">108</a> pliku <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
 <a id="aeccfe44263c5985405f94c5feb0ed0aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeccfe44263c5985405f94c5feb0ed0aa">&#9670;&nbsp;</a></span>m_ConnectionType</h2>
 
@@ -266,12 +511,12 @@ Atrybuty prywatne</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="input_8h_source.html#l00036">36</a> pliku <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="input_8h_source.html#l00068">68</a> pliku <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
 </div>
 </div>
-<a id="a5d17336e82b13b4a5416ea0bf197c5ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d17336e82b13b4a5416ea0bf197c5ba">&#9670;&nbsp;</a></span>m_JointAngles</h2>
+<a id="a8b404eeed83bc5943f5f5a71a111926a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b404eeed83bc5943f5f5a71a111926a">&#9670;&nbsp;</a></span>m_DataValues</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -280,7 +525,7 @@ Atrybuty prywatne</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QVector&lt;float&gt; Input::m_JointAngles</td>
+          <td class="memname"><a class="el" href="struct_input_1_1_data_values__t.html">DataValues_t</a> Input::m_DataValues</td>
         </tr>
       </table>
   </td>
@@ -290,12 +535,12 @@ Atrybuty prywatne</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="input_8h_source.html#l00033">33</a> pliku <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="input_8h_source.html#l00067">67</a> pliku <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
 </div>
 </div>
-<a id="a1ce9ef99c48ee1e7adee67ecadd161c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ce9ef99c48ee1e7adee67ecadd161c6">&#9670;&nbsp;</a></span>m_TensionSensorValues</h2>
+<a id="aa11e501a6d4eb1a595430b5c77e71d1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa11e501a6d4eb1a595430b5c77e71d1c">&#9670;&nbsp;</a></span>m_iterator</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -304,7 +549,7 @@ Atrybuty prywatne</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QVector&lt;int&gt; Input::m_TensionSensorValues</td>
+          <td class="memname">int Input::m_iterator</td>
         </tr>
       </table>
   </td>
@@ -314,7 +559,143 @@ Atrybuty prywatne</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="input_8h_source.html#l00034">34</a> pliku <a class="el" href="input_8h_source.html">input.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="input_8h_source.html#l00062">62</a> pliku <a class="el" href="input_8h_source.html">input.h</a>.</p>
+
+</div>
+</div>
+<a id="a8cdd2c6b1ed685b395a333ecd90441df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cdd2c6b1ed685b395a333ecd90441df">&#9670;&nbsp;</a></span>m_Manufacturer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Input::m_Manufacturer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="input_8h_source.html#l00061">61</a> pliku <a class="el" href="input_8h_source.html">input.h</a>.</p>
+
+</div>
+</div>
+<a id="a24dc520caff7c7c0d195acfa47342e28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24dc520caff7c7c0d195acfa47342e28">&#9670;&nbsp;</a></span>m_PortName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Input::m_PortName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="input_8h_source.html#l00059">59</a> pliku <a class="el" href="input_8h_source.html">input.h</a>.</p>
+
+</div>
+</div>
+<a id="a2d51aa2c3b8e7341eb5723421574472b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d51aa2c3b8e7341eb5723421574472b">&#9670;&nbsp;</a></span>m_PortNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Input::m_PortNumber</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="input_8h_source.html#l00060">60</a> pliku <a class="el" href="input_8h_source.html">input.h</a>.</p>
+
+</div>
+</div>
+<a id="ad80b752afa4bb13b0b042cecb36563ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad80b752afa4bb13b0b042cecb36563ea">&#9670;&nbsp;</a></span>m_RowTransferStarted</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Input::m_RowTransferStarted</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="input_8h_source.html#l00064">64</a> pliku <a class="el" href="input_8h_source.html">input.h</a>.</p>
+
+</div>
+</div>
+<a id="a50f1308ea6cf70d790cef25d0ac3004f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50f1308ea6cf70d790cef25d0ac3004f">&#9670;&nbsp;</a></span>m_SingleDataRow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray Input::m_SingleDataRow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="input_8h_source.html#l00065">65</a> pliku <a class="el" href="input_8h_source.html">input.h</a>.</p>
+
+</div>
+</div>
+<a id="af21e5ac2542fa5ef2b9b9c8be740901d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af21e5ac2542fa5ef2b9b9c8be740901d">&#9670;&nbsp;</a></span>SerialPort</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSerialPort* Input::SerialPort</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="input_8h_source.html#l00070">70</a> pliku <a class="el" href="input_8h_source.html">input.h</a>.</p>
 
 </div>
 </div>

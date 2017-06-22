@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['joint',['Joint',['../class_joint.html',1,'']]]
+  ['hand',['Hand',['../class_hand.html',1,'']]]
 ];

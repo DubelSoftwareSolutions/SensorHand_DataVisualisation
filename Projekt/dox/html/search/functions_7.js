@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['joint',['Joint',['../class_joint.html#a0a60e63cceeb93ef8a308ebf2eaa8d68',1,'Joint::Joint(Qt3DCore::QEntity *p_rootEntity=nullptr, float p_radius=1, float p_length=1, float p_angle=0, float p_tilt=0, float p_rotation=0, QVector3D p_position=QVector3D(), Joint *p_PrevJoint=nullptr, QColor p_color=QColor(255, 173, 96))'],['../class_joint.html#a9652fa723eed6fe31e1ab4adccbb9c44',1,'Joint::Joint(const Joint &amp;p_joint)']]]
+  ['initinputdata',['InitInputData',['../classchart_window.html#ab574e80c2d8edcc06f6d0f0d7e843168',1,'chartWindow::InitInputData()'],['../class_main_window.html#abd0772bfb398165834c0693627603b0f',1,'MainWindow::InitInputData()']]],
+  ['input',['Input',['../class_input.html#a167cd1dea1af062f99897a20c597aed8',1,'Input']]]
 ];

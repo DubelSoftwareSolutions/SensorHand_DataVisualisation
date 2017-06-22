@@ -1,6 +1,14 @@
 #ifndef CHARTWINDOW_H
 #define CHARTWINDOW_H
 
+/*!
+ * \file
+ * \brief Definicja klasy chartWindow
+ *
+ * Plik zwiera definicję klasy chartWindow, która
+ * jest klasą pochodną klasy QMainWindow
+ */
+
 #include <QDialog>
 #include <QtCharts/QChartView>
 #include "input.h"
@@ -8,6 +16,17 @@
 namespace Ui {
 class chartWindow;
 }
+
+/*!
+ * \brief Pośredniczy w wyświetlaniu wykresów dynamicznych
+ *
+ * Inicjalizuje okno z widgetem wykresu dynamicznego oraz
+ * widgetami wykorzystywanymi do konfiguracji danych wejściowych
+ * i zakresu wyświetlanego wykresu. Klasa pobiera dane z obiektu
+ * typu Input co ustalony kwant czasu, a następnie przeprowadza
+ * wizualizajcę danych w układzie kartezjańskim.
+ *
+ */
 
 class chartWindow : public QDialog
 {

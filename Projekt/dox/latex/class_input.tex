@@ -15,30 +15,76 @@ Diagram dziedziczenia dla Input\begin{figure}[H]
 \includegraphics[height=2.000000cm]{class_input}
 \end{center}
 \end{figure}
-\subsection*{Metody publiczne}
+\subsection*{Komponenty}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_input_abae3f379d3f157cf42dc857309832dba}{Input} ()
-\item 
-void \hyperlink{class_input_a76cacaeadb1ceed7f3f9585220e906c8}{Change\+Connection\+Type} (\hyperlink{class_input_a3be20be9b454515798ecd3370f4e36fd}{Connection\+Type\+\_\+t} p\+\_\+\+Conneciton\+Type)
-\item 
-void \hyperlink{class_input_a7f95fd4a76826d4a28b25e32e6c7244c}{Configure\+Input} ()
-\end{DoxyCompactItemize}
-\subsection*{Typy prywatne}
+struct \hyperlink{struct_input_1_1_data_values__t}{Data\+Values\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Struktura służąca do przechowywania danych wejściowych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typy publiczne}
 \begin{DoxyCompactItemize}
 \item 
 enum \hyperlink{class_input_a3be20be9b454515798ecd3370f4e36fd}{Connection\+Type\+\_\+t} \{ \hyperlink{class_input_a3be20be9b454515798ecd3370f4e36fda6046a4f4c91eb7a02b26c594c36b9374}{Bluetooth\+Connection}, 
+\hyperlink{class_input_a3be20be9b454515798ecd3370f4e36fdad2b7655a556514e7611474e4aafb75b8}{U\+A\+R\+T\+Connection}, 
 \hyperlink{class_input_a3be20be9b454515798ecd3370f4e36fdaf2a909e54a7c789666bc3bebb2a67370}{U\+S\+B\+Connection}
  \}
+\end{DoxyCompactItemize}
+\subsection*{Sloty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_input_a7da95e48dbde1c10a727545166dac288}{Read\+Data} ()
+\end{DoxyCompactItemize}
+\subsection*{Sygnały}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_input_af152badf99b8ffc0f9f9b0718f334d79}{data\+Recieved} ()
+\item 
+void \hyperlink{class_input_a1cd92c513cfe42bd68e871bcf475e910}{data\+Recieved\+Chart} ()
+\item 
+void \hyperlink{class_input_ab5ff0e97818e34f8ab33f00ebd953720}{connection\+Type\+Changed} ()
+\end{DoxyCompactItemize}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_input_a167cd1dea1af062f99897a20c597aed8}{Input} (Q\+Widget $\ast$parent=nullptr)
+\item 
+Q\+String \hyperlink{class_input_ae7ea13b2215e1ab16b7d7312d7060eca}{get\+Port\+Name} ()
+\item 
+\hyperlink{struct_input_1_1_data_values__t}{Data\+Values\+\_\+t} \hyperlink{class_input_a3e7e79c0b9fc11cf350044031dbd92c9}{get\+Data} ()
+\item 
+void \hyperlink{class_input_a76cacaeadb1ceed7f3f9585220e906c8}{Change\+Connection\+Type} (\hyperlink{class_input_a3be20be9b454515798ecd3370f4e36fd}{Connection\+Type\+\_\+t} p\+\_\+\+Conneciton\+Type)
+\item 
+bool \hyperlink{class_input_a94465b0d69352fd533585256ff0bfea1}{Open\+Serial\+Port} ()
+\item 
+void \hyperlink{class_input_af60c2b300eadd2a25f47bb0c38c8bb2e}{Close\+Serial\+Port} ()
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Serial\+Port $\ast$ \hyperlink{class_input_af21e5ac2542fa5ef2b9b9c8be740901d}{Serial\+Port}
+\end{DoxyCompactItemize}
+\subsection*{Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_input_a2ae2fdceec929c159c5ee055b331714c}{Find\+C\+O\+Mport} ()
+\item 
+void \hyperlink{class_input_a1910fc2fed3b2f7055fa17f85529cce7}{Configure\+S\+Port} ()
 \end{DoxyCompactItemize}
 \subsection*{Atrybuty prywatne}
 \begin{DoxyCompactItemize}
 \item 
-Q\+Vector$<$ float $>$ \hyperlink{class_input_a5d17336e82b13b4a5416ea0bf197c5ba}{m\+\_\+\+Joint\+Angles}
+Q\+String \hyperlink{class_input_a24dc520caff7c7c0d195acfa47342e28}{m\+\_\+\+Port\+Name}
 \item 
-Q\+Vector$<$ int $>$ \hyperlink{class_input_a1ce9ef99c48ee1e7adee67ecadd161c6}{m\+\_\+\+Tension\+Sensor\+Values}
+Q\+String \hyperlink{class_input_a2d51aa2c3b8e7341eb5723421574472b}{m\+\_\+\+Port\+Number}
 \item 
-Q\+Vector$<$ float $>$ \hyperlink{class_input_ab2572d4f32d4a82f4023277b24a4b0a4}{m\+\_\+\+Accelerometer\+Values}
+Q\+String \hyperlink{class_input_a8cdd2c6b1ed685b395a333ecd90441df}{m\+\_\+\+Manufacturer}
+\item 
+int \hyperlink{class_input_aa11e501a6d4eb1a595430b5c77e71d1c}{m\+\_\+iterator}
+\item 
+bool \hyperlink{class_input_ad80b752afa4bb13b0b042cecb36563ea}{m\+\_\+\+Row\+Transfer\+Started}
+\item 
+Q\+Byte\+Array \hyperlink{class_input_a50f1308ea6cf70d790cef25d0ac3004f}{m\+\_\+\+Single\+Data\+Row}
+\item 
+\hyperlink{struct_input_1_1_data_values__t}{Data\+Values\+\_\+t} \hyperlink{class_input_a8b404eeed83bc5943f5f5a71a111926a}{m\+\_\+\+Data\+Values}
 \item 
 \hyperlink{class_input_a3be20be9b454515798ecd3370f4e36fd}{Connection\+Type\+\_\+t} \hyperlink{class_input_aeccfe44263c5985405f94c5feb0ed0aa}{m\+\_\+\+Connection\+Type}
 \end{DoxyCompactItemize}
@@ -47,7 +93,7 @@ Q\+Vector$<$ float $>$ \hyperlink{class_input_ab2572d4f32d4a82f4023277b24a4b0a4}
 \subsection{Opis szczegółowy}
 Inicjalizuje kąty między stawami, wskazania czujników tensometrycznych, wskazania akcelerometru i typ połączenia z rękawicą sensoryczną 
 
-Definicja w linii 29 pliku input.\+h.
+Definicja w linii 40 pliku input.\+h.
 
 
 
@@ -56,11 +102,15 @@ Definicja w linii 29 pliku input.\+h.
 \index{Input@{Input}!Connection\+Type\+\_\+t@{Connection\+Type\+\_\+t}}
 \index{Connection\+Type\+\_\+t@{Connection\+Type\+\_\+t}!Input@{Input}}
 \subsubsection{\texorpdfstring{Connection\+Type\+\_\+t}{ConnectionType\_t}}
-{\footnotesize\ttfamily enum \hyperlink{class_input_a3be20be9b454515798ecd3370f4e36fd}{Input\+::\+Connection\+Type\+\_\+t}\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily enum \hyperlink{class_input_a3be20be9b454515798ecd3370f4e36fd}{Input\+::\+Connection\+Type\+\_\+t}}
 
 \begin{DoxyEnumFields}{Wartości wyliczeń}
 \raisebox{\heightof{T}}[0pt][0pt]{\index{Bluetooth\+Connection@{Bluetooth\+Connection}!Input@{Input}}\index{Input@{Input}!Bluetooth\+Connection@{Bluetooth\+Connection}}}\mbox{\Hypertarget{class_input_a3be20be9b454515798ecd3370f4e36fda6046a4f4c91eb7a02b26c594c36b9374}\label{class_input_a3be20be9b454515798ecd3370f4e36fda6046a4f4c91eb7a02b26c594c36b9374}} 
 Bluetooth\+Connection&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{U\+A\+R\+T\+Connection@{U\+A\+R\+T\+Connection}!Input@{Input}}\index{Input@{Input}!U\+A\+R\+T\+Connection@{U\+A\+R\+T\+Connection}}}\mbox{\Hypertarget{class_input_a3be20be9b454515798ecd3370f4e36fdad2b7655a556514e7611474e4aafb75b8}\label{class_input_a3be20be9b454515798ecd3370f4e36fdad2b7655a556514e7611474e4aafb75b8}} 
+U\+A\+R\+T\+Connection&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{U\+S\+B\+Connection@{U\+S\+B\+Connection}!Input@{Input}}\index{Input@{Input}!U\+S\+B\+Connection@{U\+S\+B\+Connection}}}\mbox{\Hypertarget{class_input_a3be20be9b454515798ecd3370f4e36fdaf2a909e54a7c789666bc3bebb2a67370}\label{class_input_a3be20be9b454515798ecd3370f4e36fdaf2a909e54a7c789666bc3bebb2a67370}} 
@@ -70,16 +120,16 @@ U\+S\+B\+Connection&\\
 \end{DoxyEnumFields}
 
 
-Definicja w linii 31 pliku input.\+h.
+Definicja w linii 44 pliku input.\+h.
 
 
 
 \subsection{Dokumentacja konstruktora i destruktora}
-\mbox{\Hypertarget{class_input_abae3f379d3f157cf42dc857309832dba}\label{class_input_abae3f379d3f157cf42dc857309832dba}} 
+\mbox{\Hypertarget{class_input_a167cd1dea1af062f99897a20c597aed8}\label{class_input_a167cd1dea1af062f99897a20c597aed8}} 
 \index{Input@{Input}!Input@{Input}}
 \index{Input@{Input}!Input@{Input}}
 \subsubsection{\texorpdfstring{Input()}{Input()}}
-{\footnotesize\ttfamily Input\+::\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Input\+::\+Input (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
@@ -96,27 +146,99 @@ Definicja w linii 3 pliku input.\+cpp.
 
 
 
-Definicja w linii 8 pliku input.\+cpp.
+Definicja w linii 33 pliku input.\+cpp.
 
-\mbox{\Hypertarget{class_input_a7f95fd4a76826d4a28b25e32e6c7244c}\label{class_input_a7f95fd4a76826d4a28b25e32e6c7244c}} 
-\index{Input@{Input}!Configure\+Input@{Configure\+Input}}
-\index{Configure\+Input@{Configure\+Input}!Input@{Input}}
-\subsubsection{\texorpdfstring{Configure\+Input()}{ConfigureInput()}}
-{\footnotesize\ttfamily void Input\+::\+Configure\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_input_af60c2b300eadd2a25f47bb0c38c8bb2e}\label{class_input_af60c2b300eadd2a25f47bb0c38c8bb2e}} 
+\index{Input@{Input}!Close\+Serial\+Port@{Close\+Serial\+Port}}
+\index{Close\+Serial\+Port@{Close\+Serial\+Port}!Input@{Input}}
+\subsubsection{\texorpdfstring{Close\+Serial\+Port()}{CloseSerialPort()}}
+{\footnotesize\ttfamily void Input\+::\+Close\+Serial\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 102 pliku input.\+cpp.
+
+\mbox{\Hypertarget{class_input_a1910fc2fed3b2f7055fa17f85529cce7}\label{class_input_a1910fc2fed3b2f7055fa17f85529cce7}} 
+\index{Input@{Input}!Configure\+S\+Port@{Configure\+S\+Port}}
+\index{Configure\+S\+Port@{Configure\+S\+Port}!Input@{Input}}
+\subsubsection{\texorpdfstring{Configure\+S\+Port()}{ConfigureSPort()}}
+{\footnotesize\ttfamily void Input\+::\+Configure\+S\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 77 pliku input.\+cpp.
+
+\mbox{\Hypertarget{class_input_ab5ff0e97818e34f8ab33f00ebd953720}\label{class_input_ab5ff0e97818e34f8ab33f00ebd953720}} 
+\index{Input@{Input}!connection\+Type\+Changed@{connection\+Type\+Changed}}
+\index{connection\+Type\+Changed@{connection\+Type\+Changed}!Input@{Input}}
+\subsubsection{\texorpdfstring{connection\+Type\+Changed}{connectionTypeChanged}}
+{\footnotesize\ttfamily void Input\+::connection\+Type\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_input_af152badf99b8ffc0f9f9b0718f334d79}\label{class_input_af152badf99b8ffc0f9f9b0718f334d79}} 
+\index{Input@{Input}!data\+Recieved@{data\+Recieved}}
+\index{data\+Recieved@{data\+Recieved}!Input@{Input}}
+\subsubsection{\texorpdfstring{data\+Recieved}{dataRecieved}}
+{\footnotesize\ttfamily void Input\+::data\+Recieved (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_input_a1cd92c513cfe42bd68e871bcf475e910}\label{class_input_a1cd92c513cfe42bd68e871bcf475e910}} 
+\index{Input@{Input}!data\+Recieved\+Chart@{data\+Recieved\+Chart}}
+\index{data\+Recieved\+Chart@{data\+Recieved\+Chart}!Input@{Input}}
+\subsubsection{\texorpdfstring{data\+Recieved\+Chart}{dataRecievedChart}}
+{\footnotesize\ttfamily void Input\+::data\+Recieved\+Chart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+\mbox{\Hypertarget{class_input_a2ae2fdceec929c159c5ee055b331714c}\label{class_input_a2ae2fdceec929c159c5ee055b331714c}} 
+\index{Input@{Input}!Find\+C\+O\+Mport@{Find\+C\+O\+Mport}}
+\index{Find\+C\+O\+Mport@{Find\+C\+O\+Mport}!Input@{Input}}
+\subsubsection{\texorpdfstring{Find\+C\+O\+Mport()}{FindCOMport()}}
+{\footnotesize\ttfamily void Input\+::\+Find\+C\+O\+Mport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 41 pliku input.\+cpp.
+
+\mbox{\Hypertarget{class_input_a3e7e79c0b9fc11cf350044031dbd92c9}\label{class_input_a3e7e79c0b9fc11cf350044031dbd92c9}} 
+\index{Input@{Input}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!Input@{Input}}
+\subsubsection{\texorpdfstring{get\+Data()}{getData()}}
+{\footnotesize\ttfamily \hyperlink{struct_input_1_1_data_values__t}{Input\+::\+Data\+Values\+\_\+t} Input\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 28 pliku input.\+cpp.
+
+\mbox{\Hypertarget{class_input_ae7ea13b2215e1ab16b7d7312d7060eca}\label{class_input_ae7ea13b2215e1ab16b7d7312d7060eca}} 
+\index{Input@{Input}!get\+Port\+Name@{get\+Port\+Name}}
+\index{get\+Port\+Name@{get\+Port\+Name}!Input@{Input}}
+\subsubsection{\texorpdfstring{get\+Port\+Name()}{getPortName()}}
+{\footnotesize\ttfamily Q\+String Input\+::get\+Port\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 23 pliku input.\+cpp.
+
+\mbox{\Hypertarget{class_input_a94465b0d69352fd533585256ff0bfea1}\label{class_input_a94465b0d69352fd533585256ff0bfea1}} 
+\index{Input@{Input}!Open\+Serial\+Port@{Open\+Serial\+Port}}
+\index{Open\+Serial\+Port@{Open\+Serial\+Port}!Input@{Input}}
+\subsubsection{\texorpdfstring{Open\+Serial\+Port()}{OpenSerialPort()}}
+{\footnotesize\ttfamily bool Input\+::\+Open\+Serial\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 97 pliku input.\+cpp.
+
+\mbox{\Hypertarget{class_input_a7da95e48dbde1c10a727545166dac288}\label{class_input_a7da95e48dbde1c10a727545166dac288}} 
+\index{Input@{Input}!Read\+Data@{Read\+Data}}
+\index{Read\+Data@{Read\+Data}!Input@{Input}}
+\subsubsection{\texorpdfstring{Read\+Data}{ReadData}}
+{\footnotesize\ttfamily void Input\+::\+Read\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Definicja w linii 108 pliku input.\+cpp.
 
 
 
 \subsection{Dokumentacja atrybutów składowych}
-\mbox{\Hypertarget{class_input_ab2572d4f32d4a82f4023277b24a4b0a4}\label{class_input_ab2572d4f32d4a82f4023277b24a4b0a4}} 
-\index{Input@{Input}!m\+\_\+\+Accelerometer\+Values@{m\+\_\+\+Accelerometer\+Values}}
-\index{m\+\_\+\+Accelerometer\+Values@{m\+\_\+\+Accelerometer\+Values}!Input@{Input}}
-\subsubsection{\texorpdfstring{m\+\_\+\+Accelerometer\+Values}{m\_AccelerometerValues}}
-{\footnotesize\ttfamily Q\+Vector$<$float$>$ Input\+::m\+\_\+\+Accelerometer\+Values\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definicja w linii 35 pliku input.\+h.
-
 \mbox{\Hypertarget{class_input_aeccfe44263c5985405f94c5feb0ed0aa}\label{class_input_aeccfe44263c5985405f94c5feb0ed0aa}} 
 \index{Input@{Input}!m\+\_\+\+Connection\+Type@{m\+\_\+\+Connection\+Type}}
 \index{m\+\_\+\+Connection\+Type@{m\+\_\+\+Connection\+Type}!Input@{Input}}
@@ -125,27 +247,87 @@ Definicja w linii 35 pliku input.\+h.
 
 
 
-Definicja w linii 36 pliku input.\+h.
+Definicja w linii 68 pliku input.\+h.
 
-\mbox{\Hypertarget{class_input_a5d17336e82b13b4a5416ea0bf197c5ba}\label{class_input_a5d17336e82b13b4a5416ea0bf197c5ba}} 
-\index{Input@{Input}!m\+\_\+\+Joint\+Angles@{m\+\_\+\+Joint\+Angles}}
-\index{m\+\_\+\+Joint\+Angles@{m\+\_\+\+Joint\+Angles}!Input@{Input}}
-\subsubsection{\texorpdfstring{m\+\_\+\+Joint\+Angles}{m\_JointAngles}}
-{\footnotesize\ttfamily Q\+Vector$<$float$>$ Input\+::m\+\_\+\+Joint\+Angles\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definicja w linii 33 pliku input.\+h.
-
-\mbox{\Hypertarget{class_input_a1ce9ef99c48ee1e7adee67ecadd161c6}\label{class_input_a1ce9ef99c48ee1e7adee67ecadd161c6}} 
-\index{Input@{Input}!m\+\_\+\+Tension\+Sensor\+Values@{m\+\_\+\+Tension\+Sensor\+Values}}
-\index{m\+\_\+\+Tension\+Sensor\+Values@{m\+\_\+\+Tension\+Sensor\+Values}!Input@{Input}}
-\subsubsection{\texorpdfstring{m\+\_\+\+Tension\+Sensor\+Values}{m\_TensionSensorValues}}
-{\footnotesize\ttfamily Q\+Vector$<$int$>$ Input\+::m\+\_\+\+Tension\+Sensor\+Values\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{class_input_a8b404eeed83bc5943f5f5a71a111926a}\label{class_input_a8b404eeed83bc5943f5f5a71a111926a}} 
+\index{Input@{Input}!m\+\_\+\+Data\+Values@{m\+\_\+\+Data\+Values}}
+\index{m\+\_\+\+Data\+Values@{m\+\_\+\+Data\+Values}!Input@{Input}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Data\+Values}{m\_DataValues}}
+{\footnotesize\ttfamily \hyperlink{struct_input_1_1_data_values__t}{Data\+Values\+\_\+t} Input\+::m\+\_\+\+Data\+Values\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-Definicja w linii 34 pliku input.\+h.
+Definicja w linii 67 pliku input.\+h.
+
+\mbox{\Hypertarget{class_input_aa11e501a6d4eb1a595430b5c77e71d1c}\label{class_input_aa11e501a6d4eb1a595430b5c77e71d1c}} 
+\index{Input@{Input}!m\+\_\+iterator@{m\+\_\+iterator}}
+\index{m\+\_\+iterator@{m\+\_\+iterator}!Input@{Input}}
+\subsubsection{\texorpdfstring{m\+\_\+iterator}{m\_iterator}}
+{\footnotesize\ttfamily int Input\+::m\+\_\+iterator\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 62 pliku input.\+h.
+
+\mbox{\Hypertarget{class_input_a8cdd2c6b1ed685b395a333ecd90441df}\label{class_input_a8cdd2c6b1ed685b395a333ecd90441df}} 
+\index{Input@{Input}!m\+\_\+\+Manufacturer@{m\+\_\+\+Manufacturer}}
+\index{m\+\_\+\+Manufacturer@{m\+\_\+\+Manufacturer}!Input@{Input}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Manufacturer}{m\_Manufacturer}}
+{\footnotesize\ttfamily Q\+String Input\+::m\+\_\+\+Manufacturer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 61 pliku input.\+h.
+
+\mbox{\Hypertarget{class_input_a24dc520caff7c7c0d195acfa47342e28}\label{class_input_a24dc520caff7c7c0d195acfa47342e28}} 
+\index{Input@{Input}!m\+\_\+\+Port\+Name@{m\+\_\+\+Port\+Name}}
+\index{m\+\_\+\+Port\+Name@{m\+\_\+\+Port\+Name}!Input@{Input}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Port\+Name}{m\_PortName}}
+{\footnotesize\ttfamily Q\+String Input\+::m\+\_\+\+Port\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 59 pliku input.\+h.
+
+\mbox{\Hypertarget{class_input_a2d51aa2c3b8e7341eb5723421574472b}\label{class_input_a2d51aa2c3b8e7341eb5723421574472b}} 
+\index{Input@{Input}!m\+\_\+\+Port\+Number@{m\+\_\+\+Port\+Number}}
+\index{m\+\_\+\+Port\+Number@{m\+\_\+\+Port\+Number}!Input@{Input}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Port\+Number}{m\_PortNumber}}
+{\footnotesize\ttfamily Q\+String Input\+::m\+\_\+\+Port\+Number\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 60 pliku input.\+h.
+
+\mbox{\Hypertarget{class_input_ad80b752afa4bb13b0b042cecb36563ea}\label{class_input_ad80b752afa4bb13b0b042cecb36563ea}} 
+\index{Input@{Input}!m\+\_\+\+Row\+Transfer\+Started@{m\+\_\+\+Row\+Transfer\+Started}}
+\index{m\+\_\+\+Row\+Transfer\+Started@{m\+\_\+\+Row\+Transfer\+Started}!Input@{Input}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Row\+Transfer\+Started}{m\_RowTransferStarted}}
+{\footnotesize\ttfamily bool Input\+::m\+\_\+\+Row\+Transfer\+Started\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 64 pliku input.\+h.
+
+\mbox{\Hypertarget{class_input_a50f1308ea6cf70d790cef25d0ac3004f}\label{class_input_a50f1308ea6cf70d790cef25d0ac3004f}} 
+\index{Input@{Input}!m\+\_\+\+Single\+Data\+Row@{m\+\_\+\+Single\+Data\+Row}}
+\index{m\+\_\+\+Single\+Data\+Row@{m\+\_\+\+Single\+Data\+Row}!Input@{Input}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Single\+Data\+Row}{m\_SingleDataRow}}
+{\footnotesize\ttfamily Q\+Byte\+Array Input\+::m\+\_\+\+Single\+Data\+Row\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 65 pliku input.\+h.
+
+\mbox{\Hypertarget{class_input_af21e5ac2542fa5ef2b9b9c8be740901d}\label{class_input_af21e5ac2542fa5ef2b9b9c8be740901d}} 
+\index{Input@{Input}!Serial\+Port@{Serial\+Port}}
+\index{Serial\+Port@{Serial\+Port}!Input@{Input}}
+\subsubsection{\texorpdfstring{Serial\+Port}{SerialPort}}
+{\footnotesize\ttfamily Q\+Serial\+Port$\ast$ Input\+::\+Serial\+Port}
+
+
+
+Definicja w linii 70 pliku input.\+h.
 
 
 

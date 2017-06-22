@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['finger_5fcount',['FINGER_COUNT',['../hand_8h.html#acc11b84e9aa32ceb64b9339032d9ae2e',1,'hand.h']]],
-  ['finger_5fjoints_5fcount',['FINGER_JOINTS_COUNT',['../finger_8h.html#a885bf63c93171052fae8cb96bb3c4d78',1,'finger.h']]],
-  ['finger_5fradius',['FINGER_RADIUS',['../finger_8h.html#a2b2006272771cc32df872c49ba12a43f',1,'finger.h']]]
+  ['cylinder_5frings_5fcount',['CYLINDER_RINGS_COUNT',['../joint_8h.html#a71e12a141d3a2bd29b12a2a4ff9d6703',1,'joint.h']]],
+  ['cylinder_5fslices_5fcount',['CYLINDER_SLICES_COUNT',['../joint_8h.html#a161e1f9400d7410fe0e5ff0a96351955',1,'joint.h']]]
 ];

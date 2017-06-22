@@ -18,20 +18,28 @@ Diagram dziedziczenia dla Scene\begin{figure}[H]
 \subsection*{Metody publiczne}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_scene_aa138923bf1d204f6cadbefbe7398d599}{Scene} (Qt3\+D\+Core\+::\+Q\+Entity $\ast$root\+Entity, \hyperlink{class_main_window}{Main\+Window} \&p\+\_\+main\+Window)
+\hyperlink{class_scene_ae7977c11ac28fa465cedd4889e7cfd58}{Scene} (Qt3\+D\+Core\+::\+Q\+Entity $\ast$root\+Entity)
 \item 
 \hyperlink{class_scene_a3b8cec2e32546713915f8c6303c951f1}{$\sim$\+Scene} ()
+\item 
+void \hyperlink{class_scene_a53a7f1676ecb6d9b7312e275b3c8256e}{set\+Camera\+Distance} (float p\+\_\+\+Distance)
+\item 
+void \hyperlink{class_scene_a85cdeb1563e84f148579f834808aa527}{Set\+Hand\+Rotation} (float Roll, float Pitch, float Yaw)
 \item 
 void \hyperlink{class_scene_ae58cf344ad78420d37acde7984c9a4e8}{Set\+Hand\+Transformation} (Q\+Vector$<$ Q\+Vector$<$ float $>$$>$ p\+\_\+\+Finger\+Angles)
 \item 
 void \hyperlink{class_scene_a4dcd24690f433927c6ca75e9980afd53}{Set\+Hand\+Fingertip\+Values} (Q\+Vector$<$ int $>$ p\+\_\+\+New\+Values)
 \end{DoxyCompactItemize}
-\subsection*{Atrybuty prywatne}
+\subsection*{Atrybuty publiczne}
 \begin{DoxyCompactItemize}
 \item 
 Qt3\+D\+Core\+::\+Q\+Entity $\ast$ \hyperlink{class_scene_a1ef7f61aed73e150dfb7ef7ffc47f7c2}{m\+\_\+root\+Entity}
 \item 
 \hyperlink{class_hand}{Hand} \hyperlink{class_scene_adf272488e380e731a1c20fa5cd208490}{m\+\_\+\+Hand3\+D\+Model}
+\item 
+float \hyperlink{class_scene_af3aa76a49254de3b2ee5991677942ba3}{m\+\_\+\+Camera\+Height}
+\item 
+float \hyperlink{class_scene_a8f666aa1574fd1a1ecae97fa55ad2be8}{m\+\_\+\+Camera\+Distance}
 \item 
 Qt3\+D\+Extras\+::\+Qt3\+D\+Window $\ast$ \hyperlink{class_scene_a3b76fefe111a22aa56f066783fa76bc1}{view}
 \item 
@@ -73,15 +81,15 @@ Definicja w linii 30 pliku scene.\+h.
 
 
 \subsection{Dokumentacja konstruktora i destruktora}
-\mbox{\Hypertarget{class_scene_aa138923bf1d204f6cadbefbe7398d599}\label{class_scene_aa138923bf1d204f6cadbefbe7398d599}} 
+\mbox{\Hypertarget{class_scene_ae7977c11ac28fa465cedd4889e7cfd58}\label{class_scene_ae7977c11ac28fa465cedd4889e7cfd58}} 
 \index{Scene@{Scene}!Scene@{Scene}}
 \index{Scene@{Scene}!Scene@{Scene}}
 \subsubsection{\texorpdfstring{Scene()}{Scene()}}
-{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{Qt3\+D\+Core\+::\+Q\+Entity $\ast$}]{root\+Entity,  }\item[{\hyperlink{class_main_window}{Main\+Window} \&}]{p\+\_\+main\+Window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{Qt3\+D\+Core\+::\+Q\+Entity $\ast$}]{root\+Entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
-Definicja w linii 3 pliku scene.\+cpp.
+Definicja w linii 4 pliku scene.\+cpp.
 
 \mbox{\Hypertarget{class_scene_a3b8cec2e32546713915f8c6303c951f1}\label{class_scene_a3b8cec2e32546713915f8c6303c951f1}} 
 \index{Scene@{Scene}!````~Scene@{$\sim$\+Scene}}
@@ -91,11 +99,21 @@ Definicja w linii 3 pliku scene.\+cpp.
 
 
 
-Definicja w linii 59 pliku scene.\+cpp.
+Definicja w linii 60 pliku scene.\+cpp.
 
 
 
 \subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_scene_a53a7f1676ecb6d9b7312e275b3c8256e}\label{class_scene_a53a7f1676ecb6d9b7312e275b3c8256e}} 
+\index{Scene@{Scene}!set\+Camera\+Distance@{set\+Camera\+Distance}}
+\index{set\+Camera\+Distance@{set\+Camera\+Distance}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{set\+Camera\+Distance()}{setCameraDistance()}}
+{\footnotesize\ttfamily void Scene\+::set\+Camera\+Distance (\begin{DoxyParamCaption}\item[{float}]{p\+\_\+\+Distance }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 65 pliku scene.\+cpp.
+
 \mbox{\Hypertarget{class_scene_a4dcd24690f433927c6ca75e9980afd53}\label{class_scene_a4dcd24690f433927c6ca75e9980afd53}} 
 \index{Scene@{Scene}!Set\+Hand\+Fingertip\+Values@{Set\+Hand\+Fingertip\+Values}}
 \index{Set\+Hand\+Fingertip\+Values@{Set\+Hand\+Fingertip\+Values}!Scene@{Scene}}
@@ -104,7 +122,17 @@ Definicja w linii 59 pliku scene.\+cpp.
 
 
 
-Definicja w linii 69 pliku scene.\+cpp.
+Definicja w linii 89 pliku scene.\+cpp.
+
+\mbox{\Hypertarget{class_scene_a85cdeb1563e84f148579f834808aa527}\label{class_scene_a85cdeb1563e84f148579f834808aa527}} 
+\index{Scene@{Scene}!Set\+Hand\+Rotation@{Set\+Hand\+Rotation}}
+\index{Set\+Hand\+Rotation@{Set\+Hand\+Rotation}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{Set\+Hand\+Rotation()}{SetHandRotation()}}
+{\footnotesize\ttfamily void Scene\+::\+Set\+Hand\+Rotation (\begin{DoxyParamCaption}\item[{float}]{Roll,  }\item[{float}]{Pitch,  }\item[{float}]{Yaw }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 70 pliku scene.\+cpp.
 
 \mbox{\Hypertarget{class_scene_ae58cf344ad78420d37acde7984c9a4e8}\label{class_scene_ae58cf344ad78420d37acde7984c9a4e8}} 
 \index{Scene@{Scene}!Set\+Hand\+Transformation@{Set\+Hand\+Transformation}}
@@ -114,7 +142,7 @@ Definicja w linii 69 pliku scene.\+cpp.
 
 
 
-Definicja w linii 64 pliku scene.\+cpp.
+Definicja w linii 84 pliku scene.\+cpp.
 
 
 
@@ -123,171 +151,191 @@ Definicja w linii 64 pliku scene.\+cpp.
 \index{Scene@{Scene}!cam\+Controller@{cam\+Controller}}
 \index{cam\+Controller@{cam\+Controller}!Scene@{Scene}}
 \subsubsection{\texorpdfstring{cam\+Controller}{camController}}
-{\footnotesize\ttfamily Qt3\+D\+Extras\+::\+Q\+First\+Person\+Camera\+Controller$\ast$ Scene\+::cam\+Controller\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definicja w linii 45 pliku scene.\+h.
-
-\mbox{\Hypertarget{class_scene_aed08c4ba793fa5d32104d47c9cfd2c5c}\label{class_scene_aed08c4ba793fa5d32104d47c9cfd2c5c}} 
-\index{Scene@{Scene}!camera\+Entity@{camera\+Entity}}
-\index{camera\+Entity@{camera\+Entity}!Scene@{Scene}}
-\subsubsection{\texorpdfstring{camera\+Entity}{cameraEntity}}
-{\footnotesize\ttfamily Qt3\+D\+Render\+::\+Q\+Camera$\ast$ Scene\+::camera\+Entity\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definicja w linii 44 pliku scene.\+h.
-
-\mbox{\Hypertarget{class_scene_a10832d33619bdb86c51bb75377ea649d}\label{class_scene_a10832d33619bdb86c51bb75377ea649d}} 
-\index{Scene@{Scene}!container@{container}}
-\index{container@{container}!Scene@{Scene}}
-\subsubsection{\texorpdfstring{container}{container}}
-{\footnotesize\ttfamily Q\+Widget$\ast$ Scene\+::container\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definicja w linii 38 pliku scene.\+h.
-
-\mbox{\Hypertarget{class_scene_a285ea7ad07d9419d79fccbde3a9f8388}\label{class_scene_a285ea7ad07d9419d79fccbde3a9f8388}} 
-\index{Scene@{Scene}!h\+Layout@{h\+Layout}}
-\index{h\+Layout@{h\+Layout}!Scene@{Scene}}
-\subsubsection{\texorpdfstring{h\+Layout}{hLayout}}
-{\footnotesize\ttfamily Q\+H\+Box\+Layout$\ast$ Scene\+::h\+Layout\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definicja w linii 41 pliku scene.\+h.
-
-\mbox{\Hypertarget{class_scene_aa17e5d3b3393d6ea4cbbf7ab981b5b62}\label{class_scene_aa17e5d3b3393d6ea4cbbf7ab981b5b62}} 
-\index{Scene@{Scene}!input@{input}}
-\index{input@{input}!Scene@{Scene}}
-\subsubsection{\texorpdfstring{input}{input}}
-{\footnotesize\ttfamily Qt3\+D\+Input\+::\+Q\+Input\+Aspect$\ast$ Scene\+::input\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definicja w linii 43 pliku scene.\+h.
-
-\mbox{\Hypertarget{class_scene_ac2f294ceccf5b708d6dcdd540e51d787}\label{class_scene_ac2f294ceccf5b708d6dcdd540e51d787}} 
-\index{Scene@{Scene}!light@{light}}
-\index{light@{light}!Scene@{Scene}}
-\subsubsection{\texorpdfstring{light}{light}}
-{\footnotesize\ttfamily Qt3\+D\+Render\+::\+Q\+Point\+Light$\ast$ Scene\+::light\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definicja w linii 47 pliku scene.\+h.
-
-\mbox{\Hypertarget{class_scene_a7a9feb72cc710357f6166f5ec45369cd}\label{class_scene_a7a9feb72cc710357f6166f5ec45369cd}} 
-\index{Scene@{Scene}!light2@{light2}}
-\index{light2@{light2}!Scene@{Scene}}
-\subsubsection{\texorpdfstring{light2}{light2}}
-{\footnotesize\ttfamily Qt3\+D\+Render\+::\+Q\+Point\+Light$\ast$ Scene\+::light2\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definicja w linii 50 pliku scene.\+h.
-
-\mbox{\Hypertarget{class_scene_a932f32946da0283ac184a28cb13f4427}\label{class_scene_a932f32946da0283ac184a28cb13f4427}} 
-\index{Scene@{Scene}!light\+Entity@{light\+Entity}}
-\index{light\+Entity@{light\+Entity}!Scene@{Scene}}
-\subsubsection{\texorpdfstring{light\+Entity}{lightEntity}}
-{\footnotesize\ttfamily Qt3\+D\+Core\+::\+Q\+Entity$\ast$ Scene\+::light\+Entity\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definicja w linii 46 pliku scene.\+h.
-
-\mbox{\Hypertarget{class_scene_a9ad241dc981470f63bb5d7a5bd25888e}\label{class_scene_a9ad241dc981470f63bb5d7a5bd25888e}} 
-\index{Scene@{Scene}!light\+Entity2@{light\+Entity2}}
-\index{light\+Entity2@{light\+Entity2}!Scene@{Scene}}
-\subsubsection{\texorpdfstring{light\+Entity2}{lightEntity2}}
-{\footnotesize\ttfamily Qt3\+D\+Core\+::\+Q\+Entity$\ast$ Scene\+::light\+Entity2\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definicja w linii 49 pliku scene.\+h.
-
-\mbox{\Hypertarget{class_scene_a24f2698364e45c011a80c51747a62bae}\label{class_scene_a24f2698364e45c011a80c51747a62bae}} 
-\index{Scene@{Scene}!light\+Transform@{light\+Transform}}
-\index{light\+Transform@{light\+Transform}!Scene@{Scene}}
-\subsubsection{\texorpdfstring{light\+Transform}{lightTransform}}
-{\footnotesize\ttfamily Qt3\+D\+Core\+::\+Q\+Transform$\ast$ Scene\+::light\+Transform\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definicja w linii 48 pliku scene.\+h.
-
-\mbox{\Hypertarget{class_scene_af5b3d0a98c256da599ddd8973016b10b}\label{class_scene_af5b3d0a98c256da599ddd8973016b10b}} 
-\index{Scene@{Scene}!light\+Transform2@{light\+Transform2}}
-\index{light\+Transform2@{light\+Transform2}!Scene@{Scene}}
-\subsubsection{\texorpdfstring{light\+Transform2}{lightTransform2}}
-{\footnotesize\ttfamily Qt3\+D\+Core\+::\+Q\+Transform$\ast$ Scene\+::light\+Transform2\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily Qt3\+D\+Extras\+::\+Q\+First\+Person\+Camera\+Controller$\ast$ Scene\+::cam\+Controller}
 
 
 
 Definicja w linii 51 pliku scene.\+h.
 
+\mbox{\Hypertarget{class_scene_aed08c4ba793fa5d32104d47c9cfd2c5c}\label{class_scene_aed08c4ba793fa5d32104d47c9cfd2c5c}} 
+\index{Scene@{Scene}!camera\+Entity@{camera\+Entity}}
+\index{camera\+Entity@{camera\+Entity}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{camera\+Entity}{cameraEntity}}
+{\footnotesize\ttfamily Qt3\+D\+Render\+::\+Q\+Camera$\ast$ Scene\+::camera\+Entity}
+
+
+
+Definicja w linii 50 pliku scene.\+h.
+
+\mbox{\Hypertarget{class_scene_a10832d33619bdb86c51bb75377ea649d}\label{class_scene_a10832d33619bdb86c51bb75377ea649d}} 
+\index{Scene@{Scene}!container@{container}}
+\index{container@{container}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{container}{container}}
+{\footnotesize\ttfamily Q\+Widget$\ast$ Scene\+::container}
+
+
+
+Definicja w linii 44 pliku scene.\+h.
+
+\mbox{\Hypertarget{class_scene_a285ea7ad07d9419d79fccbde3a9f8388}\label{class_scene_a285ea7ad07d9419d79fccbde3a9f8388}} 
+\index{Scene@{Scene}!h\+Layout@{h\+Layout}}
+\index{h\+Layout@{h\+Layout}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{h\+Layout}{hLayout}}
+{\footnotesize\ttfamily Q\+H\+Box\+Layout$\ast$ Scene\+::h\+Layout}
+
+
+
+Definicja w linii 47 pliku scene.\+h.
+
+\mbox{\Hypertarget{class_scene_aa17e5d3b3393d6ea4cbbf7ab981b5b62}\label{class_scene_aa17e5d3b3393d6ea4cbbf7ab981b5b62}} 
+\index{Scene@{Scene}!input@{input}}
+\index{input@{input}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{input}{input}}
+{\footnotesize\ttfamily Qt3\+D\+Input\+::\+Q\+Input\+Aspect$\ast$ Scene\+::input}
+
+
+
+Definicja w linii 49 pliku scene.\+h.
+
+\mbox{\Hypertarget{class_scene_ac2f294ceccf5b708d6dcdd540e51d787}\label{class_scene_ac2f294ceccf5b708d6dcdd540e51d787}} 
+\index{Scene@{Scene}!light@{light}}
+\index{light@{light}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{light}{light}}
+{\footnotesize\ttfamily Qt3\+D\+Render\+::\+Q\+Point\+Light$\ast$ Scene\+::light}
+
+
+
+Definicja w linii 53 pliku scene.\+h.
+
+\mbox{\Hypertarget{class_scene_a7a9feb72cc710357f6166f5ec45369cd}\label{class_scene_a7a9feb72cc710357f6166f5ec45369cd}} 
+\index{Scene@{Scene}!light2@{light2}}
+\index{light2@{light2}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{light2}{light2}}
+{\footnotesize\ttfamily Qt3\+D\+Render\+::\+Q\+Point\+Light$\ast$ Scene\+::light2}
+
+
+
+Definicja w linii 56 pliku scene.\+h.
+
+\mbox{\Hypertarget{class_scene_a932f32946da0283ac184a28cb13f4427}\label{class_scene_a932f32946da0283ac184a28cb13f4427}} 
+\index{Scene@{Scene}!light\+Entity@{light\+Entity}}
+\index{light\+Entity@{light\+Entity}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{light\+Entity}{lightEntity}}
+{\footnotesize\ttfamily Qt3\+D\+Core\+::\+Q\+Entity$\ast$ Scene\+::light\+Entity}
+
+
+
+Definicja w linii 52 pliku scene.\+h.
+
+\mbox{\Hypertarget{class_scene_a9ad241dc981470f63bb5d7a5bd25888e}\label{class_scene_a9ad241dc981470f63bb5d7a5bd25888e}} 
+\index{Scene@{Scene}!light\+Entity2@{light\+Entity2}}
+\index{light\+Entity2@{light\+Entity2}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{light\+Entity2}{lightEntity2}}
+{\footnotesize\ttfamily Qt3\+D\+Core\+::\+Q\+Entity$\ast$ Scene\+::light\+Entity2}
+
+
+
+Definicja w linii 55 pliku scene.\+h.
+
+\mbox{\Hypertarget{class_scene_a24f2698364e45c011a80c51747a62bae}\label{class_scene_a24f2698364e45c011a80c51747a62bae}} 
+\index{Scene@{Scene}!light\+Transform@{light\+Transform}}
+\index{light\+Transform@{light\+Transform}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{light\+Transform}{lightTransform}}
+{\footnotesize\ttfamily Qt3\+D\+Core\+::\+Q\+Transform$\ast$ Scene\+::light\+Transform}
+
+
+
+Definicja w linii 54 pliku scene.\+h.
+
+\mbox{\Hypertarget{class_scene_af5b3d0a98c256da599ddd8973016b10b}\label{class_scene_af5b3d0a98c256da599ddd8973016b10b}} 
+\index{Scene@{Scene}!light\+Transform2@{light\+Transform2}}
+\index{light\+Transform2@{light\+Transform2}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{light\+Transform2}{lightTransform2}}
+{\footnotesize\ttfamily Qt3\+D\+Core\+::\+Q\+Transform$\ast$ Scene\+::light\+Transform2}
+
+
+
+Definicja w linii 57 pliku scene.\+h.
+
+\mbox{\Hypertarget{class_scene_a8f666aa1574fd1a1ecae97fa55ad2be8}\label{class_scene_a8f666aa1574fd1a1ecae97fa55ad2be8}} 
+\index{Scene@{Scene}!m\+\_\+\+Camera\+Distance@{m\+\_\+\+Camera\+Distance}}
+\index{m\+\_\+\+Camera\+Distance@{m\+\_\+\+Camera\+Distance}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Camera\+Distance}{m\_CameraDistance}}
+{\footnotesize\ttfamily float Scene\+::m\+\_\+\+Camera\+Distance}
+
+
+
+Definicja w linii 41 pliku scene.\+h.
+
+\mbox{\Hypertarget{class_scene_af3aa76a49254de3b2ee5991677942ba3}\label{class_scene_af3aa76a49254de3b2ee5991677942ba3}} 
+\index{Scene@{Scene}!m\+\_\+\+Camera\+Height@{m\+\_\+\+Camera\+Height}}
+\index{m\+\_\+\+Camera\+Height@{m\+\_\+\+Camera\+Height}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Camera\+Height}{m\_CameraHeight}}
+{\footnotesize\ttfamily float Scene\+::m\+\_\+\+Camera\+Height}
+
+
+
+Definicja w linii 40 pliku scene.\+h.
+
 \mbox{\Hypertarget{class_scene_adf272488e380e731a1c20fa5cd208490}\label{class_scene_adf272488e380e731a1c20fa5cd208490}} 
 \index{Scene@{Scene}!m\+\_\+\+Hand3\+D\+Model@{m\+\_\+\+Hand3\+D\+Model}}
 \index{m\+\_\+\+Hand3\+D\+Model@{m\+\_\+\+Hand3\+D\+Model}!Scene@{Scene}}
 \subsubsection{\texorpdfstring{m\+\_\+\+Hand3\+D\+Model}{m\_Hand3DModel}}
-{\footnotesize\ttfamily \hyperlink{class_hand}{Hand} Scene\+::m\+\_\+\+Hand3\+D\+Model\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \hyperlink{class_hand}{Hand} Scene\+::m\+\_\+\+Hand3\+D\+Model}
 
 
 
-Definicja w linii 35 pliku scene.\+h.
+Definicja w linii 38 pliku scene.\+h.
 
 \mbox{\Hypertarget{class_scene_a1ef7f61aed73e150dfb7ef7ffc47f7c2}\label{class_scene_a1ef7f61aed73e150dfb7ef7ffc47f7c2}} 
 \index{Scene@{Scene}!m\+\_\+root\+Entity@{m\+\_\+root\+Entity}}
 \index{m\+\_\+root\+Entity@{m\+\_\+root\+Entity}!Scene@{Scene}}
 \subsubsection{\texorpdfstring{m\+\_\+root\+Entity}{m\_rootEntity}}
-{\footnotesize\ttfamily Qt3\+D\+Core\+::\+Q\+Entity$\ast$ Scene\+::m\+\_\+root\+Entity\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definicja w linii 34 pliku scene.\+h.
-
-\mbox{\Hypertarget{class_scene_a2bb58c1253bd4d64781a2b9e25604060}\label{class_scene_a2bb58c1253bd4d64781a2b9e25604060}} 
-\index{Scene@{Scene}!screen\+Size@{screen\+Size}}
-\index{screen\+Size@{screen\+Size}!Scene@{Scene}}
-\subsubsection{\texorpdfstring{screen\+Size}{screenSize}}
-{\footnotesize\ttfamily Q\+Size Scene\+::screen\+Size\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Definicja w linii 39 pliku scene.\+h.
-
-\mbox{\Hypertarget{class_scene_a3b76fefe111a22aa56f066783fa76bc1}\label{class_scene_a3b76fefe111a22aa56f066783fa76bc1}} 
-\index{Scene@{Scene}!view@{view}}
-\index{view@{view}!Scene@{Scene}}
-\subsubsection{\texorpdfstring{view}{view}}
-{\footnotesize\ttfamily Qt3\+D\+Extras\+::\+Qt3\+D\+Window$\ast$ Scene\+::view\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily Qt3\+D\+Core\+::\+Q\+Entity$\ast$ Scene\+::m\+\_\+root\+Entity}
 
 
 
 Definicja w linii 37 pliku scene.\+h.
 
+\mbox{\Hypertarget{class_scene_a2bb58c1253bd4d64781a2b9e25604060}\label{class_scene_a2bb58c1253bd4d64781a2b9e25604060}} 
+\index{Scene@{Scene}!screen\+Size@{screen\+Size}}
+\index{screen\+Size@{screen\+Size}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{screen\+Size}{screenSize}}
+{\footnotesize\ttfamily Q\+Size Scene\+::screen\+Size}
+
+
+
+Definicja w linii 45 pliku scene.\+h.
+
+\mbox{\Hypertarget{class_scene_a3b76fefe111a22aa56f066783fa76bc1}\label{class_scene_a3b76fefe111a22aa56f066783fa76bc1}} 
+\index{Scene@{Scene}!view@{view}}
+\index{view@{view}!Scene@{Scene}}
+\subsubsection{\texorpdfstring{view}{view}}
+{\footnotesize\ttfamily Qt3\+D\+Extras\+::\+Qt3\+D\+Window$\ast$ Scene\+::view}
+
+
+
+Definicja w linii 43 pliku scene.\+h.
+
 \mbox{\Hypertarget{class_scene_adae30f81725ed3f2258bee8fe5e90c5d}\label{class_scene_adae30f81725ed3f2258bee8fe5e90c5d}} 
 \index{Scene@{Scene}!v\+Layout@{v\+Layout}}
 \index{v\+Layout@{v\+Layout}!Scene@{Scene}}
 \subsubsection{\texorpdfstring{v\+Layout}{vLayout}}
-{\footnotesize\ttfamily Q\+V\+Box\+Layout$\ast$ Scene\+::v\+Layout\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily Q\+V\+Box\+Layout$\ast$ Scene\+::v\+Layout}
 
 
 
-Definicja w linii 42 pliku scene.\+h.
+Definicja w linii 48 pliku scene.\+h.
 
 \mbox{\Hypertarget{class_scene_aa6f9d0915a83b6d5e5083c439627ff06}\label{class_scene_aa6f9d0915a83b6d5e5083c439627ff06}} 
 \index{Scene@{Scene}!widget@{widget}}
 \index{widget@{widget}!Scene@{Scene}}
 \subsubsection{\texorpdfstring{widget}{widget}}
-{\footnotesize\ttfamily Q\+Widget$\ast$ Scene\+::widget\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily Q\+Widget$\ast$ Scene\+::widget}
 
 
 
-Definicja w linii 40 pliku scene.\+h.
+Definicja w linii 46 pliku scene.\+h.
 
 
 

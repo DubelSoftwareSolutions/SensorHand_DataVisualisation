@@ -15,6 +15,13 @@ Diagram dziedziczenia dla Main\+Window\begin{figure}[H]
 \includegraphics[height=2.000000cm]{class_main_window}
 \end{center}
 \end{figure}
+\subsection*{Sloty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_window_a5aac21b5760e96b276d89fa73d20c279}{update\+Recieved\+Values} ()
+\item 
+void \hyperlink{class_main_window_a282b4cae4900448d6ce21598c50c58a8}{Serial\+Port\+Error\+Handler} (Q\+Serial\+Port\+::\+Serial\+Port\+Error error)
+\end{DoxyCompactItemize}
 \subsection*{Metody publiczne}
 \begin{DoxyCompactItemize}
 \item 
@@ -22,26 +29,40 @@ Diagram dziedziczenia dla Main\+Window\begin{figure}[H]
 \item 
 \hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window} ()
 \item 
+void \hyperlink{class_main_window_a28c931197fe41747312d4634b39ea786}{Add\+Chart\+To\+Chart\+Layout} (Q\+Chart $\ast$p\+\_\+chart)
+\item 
 void \hyperlink{class_main_window_ad1878f043e440b2917d12ed59caaca0c}{Add\+Widget\+To\+Glove3\+D\+Layout} (Q\+Widget $\ast$widget)
+\item 
+void \hyperlink{class_main_window_ab82b9864da7ab88d14388796c706b1d6}{get\+Scene} (\hyperlink{class_scene}{Scene} $\ast$p\+\_\+scene)
 \item 
 void \hyperlink{class_main_window_abd0772bfb398165834c0693627603b0f}{Init\+Input\+Data} (\hyperlink{class_input}{Input} $\ast$data)
 \end{DoxyCompactItemize}
 \subsection*{Sloty prywatne}
 \begin{DoxyCompactItemize}
 \item 
+void \hyperlink{class_main_window_ae12f8f63791595567b6250f8bb002bda}{resize\+Event} (Q\+Resize\+Event $\ast$event)
+\item 
 void \hyperlink{class_main_window_a0975a297069f8f0cbbd8e7acfc7d85ba}{on\+\_\+\+Start\+Stop\+Button\+\_\+clicked} ()
 \item 
 void \hyperlink{class_main_window_a08d7ab803fa7f4432ab79dd562547018}{on\+\_\+\+Camera\+Orientation\+Slider\+\_\+value\+Changed} (int value)
 \item 
-void \hyperlink{class_main_window_aab13b3768743e30605d2f7be38011d6b}{on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+text\+Edited} (const Q\+String \&arg1)
+void \hyperlink{class_main_window_aea18c864118db7f1c34def0502538ca0}{on\+\_\+\+Camera\+Orientation\+Slider\+\_\+2\+\_\+value\+Changed} (int value)
 \item 
-void \hyperlink{class_main_window_aeaf68d64561b179222fffc59bbd36e1e}{on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+editing\+Finished} ()
+void \hyperlink{class_main_window_a2568066391a65216742f35faa3669230}{on\+\_\+\+Camera\+Orientation\+Slider\+\_\+3\+\_\+value\+Changed} (int value)
 \item 
 void \hyperlink{class_main_window_a1d8082f8507bb23824db76cca6a047a3}{on\+\_\+\+Glove\+Zoom\+Slider\+\_\+value\+Changed} (int value)
 \item 
 void \hyperlink{class_main_window_a03fd5ea60139a3735a590af735e9d35f}{on\+\_\+\+Glove\+Zoom\+Line\+Edit\+\_\+text\+Edited} (const Q\+String \&arg1)
 \item 
 void \hyperlink{class_main_window_a128cb9982a50c3802c80acf388cf5916}{on\+\_\+\+Glove\+Zoom\+Line\+Edit\+\_\+editing\+Finished} ()
+\item 
+void \hyperlink{class_main_window_a7428e3d91cb9fd09d2cdd1870b69ed60}{on\+\_\+\+Communication\+Box\+\_\+current\+Index\+Changed} (int index)
+\item 
+void \hyperlink{class_main_window_aa010eef64c7e973afb2c2129538f6cc5}{on\+\_\+\+Rotation\+Reset\+Button\+\_\+clicked} ()
+\item 
+void \hyperlink{class_main_window_a6b65c205386627f76e10f7eccdcdd290}{on\+\_\+\+Accelerometer\+Check\+Box\+\_\+toggled} (bool checked)
+\item 
+void \hyperlink{class_main_window_a42c538f11724c7a0e0d86ef357199009}{on\+\_\+pressure\+Chart\+Button\+\_\+clicked} ()
 \end{DoxyCompactItemize}
 \subsection*{Atrybuty prywatne}
 \begin{DoxyCompactItemize}
@@ -49,13 +70,25 @@ void \hyperlink{class_main_window_a128cb9982a50c3802c80acf388cf5916}{on\+\_\+\+G
 Ui\+::\+Main\+Window $\ast$ \hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}
 \item 
 \hyperlink{class_input}{Input} $\ast$ \hyperlink{class_main_window_aa4484150b90e4d13bb42316d12c34650}{Input\+Data}
+\item 
+\hyperlink{class_scene}{Scene} $\ast$ \hyperlink{class_main_window_a3c6e8f3b032c72151f1e871e26d33fcb}{scene3D}
+\item 
+Q\+Label $\ast$ \hyperlink{class_main_window_ab9c6492b81f3117ca8fed55c7b97da44}{m\+\_\+status\+Label}
+\item 
+\hyperlink{class_chart}{Chart} $\ast$ \hyperlink{class_main_window_a49e608ed992fde7d85b3acc3ddbba6c2}{chart}
+\item 
+Q\+Chart\+View $\ast$ \hyperlink{class_main_window_a65fb64a7b9a722f77bfc022a9f4b5e8b}{chart\+View}
+\item 
+\hyperlink{classchart_window}{chart\+Window} \hyperlink{class_main_window_a9743425e4ce7d961c6b1a7c81a6e4da2}{m\+\_\+chart\+Window}
+\item 
+bool \hyperlink{class_main_window_a75523a2f7099a2101e18e0f5356934a9}{Glove3\+D\+Layout\+Widget\+Is\+Set} = false
 \end{DoxyCompactItemize}
 
 
 \subsection{Opis szczegółowy}
-Inicjalizuje głowne okno programu, jego elementy składowe w postaci wdgetów oraz wczytuje zewnętrzny widget trójwymiarowej wizualizacji dłoni. Klasa pobiera dane z obiektu typu \hyperlink{class_input}{Input}, aktualizeje dane w modelu dłoni typy \hyperlink{class_hand}{Hand} i na ich podstawie wyświetla aktualne informacje dotyczące położenia stawów, nacisku i wskazania akcelerometru. Pozwala na zmianę perspektywy widoku na model trójwymiarowy, uruchomienie i zatrzymanie pomiarów 
+Inicjalizuje głowne okno programu, jego elementy składowe w postaci wdgetów oraz wczytuje zewnętrzny widget trójwymiarowej wizualizacji dłoni. Klasa pobiera dane z obiektu typu \hyperlink{class_input}{Input}, aktualizeje dane w modelu dłoni typy \hyperlink{class_hand}{Hand} i na ich podstawie wyświetla aktualne informacje dotyczące położenia stawów, nacisku i wskazania akcelerometru. Pozwala na zmianę perspektywy widoku na model trójwymiarowy, uruchomienie i zatrzymanie pomiarów. 
 
-Definicja w linii 34 pliku mainwindow.\+h.
+Definicja w linii 45 pliku mainwindow.\+h.
 
 
 
@@ -78,11 +111,17 @@ Definicja w linii 3 pliku mainwindow.\+cpp.
 
 
 
-Definicja w linii 11 pliku mainwindow.\+cpp.
+Definicja w linii 26 pliku mainwindow.\+cpp.
 
 
 
 \subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_main_window_a28c931197fe41747312d4634b39ea786}\label{class_main_window_a28c931197fe41747312d4634b39ea786}} 
+\index{Main\+Window@{Main\+Window}!Add\+Chart\+To\+Chart\+Layout@{Add\+Chart\+To\+Chart\+Layout}}
+\index{Add\+Chart\+To\+Chart\+Layout@{Add\+Chart\+To\+Chart\+Layout}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Add\+Chart\+To\+Chart\+Layout()}{AddChartToChartLayout()}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Add\+Chart\+To\+Chart\+Layout (\begin{DoxyParamCaption}\item[{Q\+Chart $\ast$}]{p\+\_\+chart }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_main_window_ad1878f043e440b2917d12ed59caaca0c}\label{class_main_window_ad1878f043e440b2917d12ed59caaca0c}} 
 \index{Main\+Window@{Main\+Window}!Add\+Widget\+To\+Glove3\+D\+Layout@{Add\+Widget\+To\+Glove3\+D\+Layout}}
 \index{Add\+Widget\+To\+Glove3\+D\+Layout@{Add\+Widget\+To\+Glove3\+D\+Layout}!Main\+Window@{Main\+Window}}
@@ -91,7 +130,17 @@ Definicja w linii 11 pliku mainwindow.\+cpp.
 
 
 
-Definicja w linii 16 pliku mainwindow.\+cpp.
+Definicja w linii 38 pliku mainwindow.\+cpp.
+
+\mbox{\Hypertarget{class_main_window_ab82b9864da7ab88d14388796c706b1d6}\label{class_main_window_ab82b9864da7ab88d14388796c706b1d6}} 
+\index{Main\+Window@{Main\+Window}!get\+Scene@{get\+Scene}}
+\index{get\+Scene@{get\+Scene}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{get\+Scene()}{getScene()}}
+{\footnotesize\ttfamily void Main\+Window\+::get\+Scene (\begin{DoxyParamCaption}\item[{\hyperlink{class_scene}{Scene} $\ast$}]{p\+\_\+scene }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 31 pliku mainwindow.\+cpp.
 
 \mbox{\Hypertarget{class_main_window_abd0772bfb398165834c0693627603b0f}\label{class_main_window_abd0772bfb398165834c0693627603b0f}} 
 \index{Main\+Window@{Main\+Window}!Init\+Input\+Data@{Init\+Input\+Data}}
@@ -101,27 +150,37 @@ Definicja w linii 16 pliku mainwindow.\+cpp.
 
 
 
-Definicja w linii 23 pliku mainwindow.\+cpp.
+Definicja w linii 46 pliku mainwindow.\+cpp.
 
-\mbox{\Hypertarget{class_main_window_aeaf68d64561b179222fffc59bbd36e1e}\label{class_main_window_aeaf68d64561b179222fffc59bbd36e1e}} 
-\index{Main\+Window@{Main\+Window}!on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+editing\+Finished@{on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+editing\+Finished}}
-\index{on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+editing\+Finished@{on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+editing\+Finished}!Main\+Window@{Main\+Window}}
-\subsubsection{\texorpdfstring{on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+editing\+Finished}{on\_CameraOrientationLineEdit\_editingFinished}}
-{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+editing\+Finished (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
-
-
-
-Definicja w linii 59 pliku mainwindow.\+cpp.
-
-\mbox{\Hypertarget{class_main_window_aab13b3768743e30605d2f7be38011d6b}\label{class_main_window_aab13b3768743e30605d2f7be38011d6b}} 
-\index{Main\+Window@{Main\+Window}!on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+text\+Edited@{on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+text\+Edited}}
-\index{on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+text\+Edited@{on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+text\+Edited}!Main\+Window@{Main\+Window}}
-\subsubsection{\texorpdfstring{on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+text\+Edited}{on\_CameraOrientationLineEdit\_textEdited}}
-{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+\+Camera\+Orientation\+Line\+Edit\+\_\+text\+Edited (\begin{DoxyParamCaption}\item[{const Q\+String \&}]{arg1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+\mbox{\Hypertarget{class_main_window_a6b65c205386627f76e10f7eccdcdd290}\label{class_main_window_a6b65c205386627f76e10f7eccdcdd290}} 
+\index{Main\+Window@{Main\+Window}!on\+\_\+\+Accelerometer\+Check\+Box\+\_\+toggled@{on\+\_\+\+Accelerometer\+Check\+Box\+\_\+toggled}}
+\index{on\+\_\+\+Accelerometer\+Check\+Box\+\_\+toggled@{on\+\_\+\+Accelerometer\+Check\+Box\+\_\+toggled}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{on\+\_\+\+Accelerometer\+Check\+Box\+\_\+toggled}{on\_AccelerometerCheckBox\_toggled}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+\+Accelerometer\+Check\+Box\+\_\+toggled (\begin{DoxyParamCaption}\item[{bool}]{checked }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
 
 
 
-Definicja w linii 48 pliku mainwindow.\+cpp.
+Definicja w linii 253 pliku mainwindow.\+cpp.
+
+\mbox{\Hypertarget{class_main_window_aea18c864118db7f1c34def0502538ca0}\label{class_main_window_aea18c864118db7f1c34def0502538ca0}} 
+\index{Main\+Window@{Main\+Window}!on\+\_\+\+Camera\+Orientation\+Slider\+\_\+2\+\_\+value\+Changed@{on\+\_\+\+Camera\+Orientation\+Slider\+\_\+2\+\_\+value\+Changed}}
+\index{on\+\_\+\+Camera\+Orientation\+Slider\+\_\+2\+\_\+value\+Changed@{on\+\_\+\+Camera\+Orientation\+Slider\+\_\+2\+\_\+value\+Changed}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{on\+\_\+\+Camera\+Orientation\+Slider\+\_\+2\+\_\+value\+Changed}{on\_CameraOrientationSlider\_2\_valueChanged}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+\+Camera\+Orientation\+Slider\+\_\+2\+\_\+value\+Changed (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definicja w linii 124 pliku mainwindow.\+cpp.
+
+\mbox{\Hypertarget{class_main_window_a2568066391a65216742f35faa3669230}\label{class_main_window_a2568066391a65216742f35faa3669230}} 
+\index{Main\+Window@{Main\+Window}!on\+\_\+\+Camera\+Orientation\+Slider\+\_\+3\+\_\+value\+Changed@{on\+\_\+\+Camera\+Orientation\+Slider\+\_\+3\+\_\+value\+Changed}}
+\index{on\+\_\+\+Camera\+Orientation\+Slider\+\_\+3\+\_\+value\+Changed@{on\+\_\+\+Camera\+Orientation\+Slider\+\_\+3\+\_\+value\+Changed}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{on\+\_\+\+Camera\+Orientation\+Slider\+\_\+3\+\_\+value\+Changed}{on\_CameraOrientationSlider\_3\_valueChanged}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+\+Camera\+Orientation\+Slider\+\_\+3\+\_\+value\+Changed (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definicja w linii 132 pliku mainwindow.\+cpp.
 
 \mbox{\Hypertarget{class_main_window_a08d7ab803fa7f4432ab79dd562547018}\label{class_main_window_a08d7ab803fa7f4432ab79dd562547018}} 
 \index{Main\+Window@{Main\+Window}!on\+\_\+\+Camera\+Orientation\+Slider\+\_\+value\+Changed@{on\+\_\+\+Camera\+Orientation\+Slider\+\_\+value\+Changed}}
@@ -131,7 +190,17 @@ Definicja w linii 48 pliku mainwindow.\+cpp.
 
 
 
-Definicja w linii 43 pliku mainwindow.\+cpp.
+Definicja w linii 115 pliku mainwindow.\+cpp.
+
+\mbox{\Hypertarget{class_main_window_a7428e3d91cb9fd09d2cdd1870b69ed60}\label{class_main_window_a7428e3d91cb9fd09d2cdd1870b69ed60}} 
+\index{Main\+Window@{Main\+Window}!on\+\_\+\+Communication\+Box\+\_\+current\+Index\+Changed@{on\+\_\+\+Communication\+Box\+\_\+current\+Index\+Changed}}
+\index{on\+\_\+\+Communication\+Box\+\_\+current\+Index\+Changed@{on\+\_\+\+Communication\+Box\+\_\+current\+Index\+Changed}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{on\+\_\+\+Communication\+Box\+\_\+current\+Index\+Changed}{on\_CommunicationBox\_currentIndexChanged}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+\+Communication\+Box\+\_\+current\+Index\+Changed (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definicja w linii 171 pliku mainwindow.\+cpp.
 
 \mbox{\Hypertarget{class_main_window_a128cb9982a50c3802c80acf388cf5916}\label{class_main_window_a128cb9982a50c3802c80acf388cf5916}} 
 \index{Main\+Window@{Main\+Window}!on\+\_\+\+Glove\+Zoom\+Line\+Edit\+\_\+editing\+Finished@{on\+\_\+\+Glove\+Zoom\+Line\+Edit\+\_\+editing\+Finished}}
@@ -141,7 +210,7 @@ Definicja w linii 43 pliku mainwindow.\+cpp.
 
 
 
-Definicja w linii 81 pliku mainwindow.\+cpp.
+Definicja w linii 165 pliku mainwindow.\+cpp.
 
 \mbox{\Hypertarget{class_main_window_a03fd5ea60139a3735a590af735e9d35f}\label{class_main_window_a03fd5ea60139a3735a590af735e9d35f}} 
 \index{Main\+Window@{Main\+Window}!on\+\_\+\+Glove\+Zoom\+Line\+Edit\+\_\+text\+Edited@{on\+\_\+\+Glove\+Zoom\+Line\+Edit\+\_\+text\+Edited}}
@@ -151,7 +220,7 @@ Definicja w linii 81 pliku mainwindow.\+cpp.
 
 
 
-Definicja w linii 70 pliku mainwindow.\+cpp.
+Definicja w linii 154 pliku mainwindow.\+cpp.
 
 \mbox{\Hypertarget{class_main_window_a1d8082f8507bb23824db76cca6a047a3}\label{class_main_window_a1d8082f8507bb23824db76cca6a047a3}} 
 \index{Main\+Window@{Main\+Window}!on\+\_\+\+Glove\+Zoom\+Slider\+\_\+value\+Changed@{on\+\_\+\+Glove\+Zoom\+Slider\+\_\+value\+Changed}}
@@ -161,7 +230,27 @@ Definicja w linii 70 pliku mainwindow.\+cpp.
 
 
 
-Definicja w linii 65 pliku mainwindow.\+cpp.
+Definicja w linii 140 pliku mainwindow.\+cpp.
+
+\mbox{\Hypertarget{class_main_window_a42c538f11724c7a0e0d86ef357199009}\label{class_main_window_a42c538f11724c7a0e0d86ef357199009}} 
+\index{Main\+Window@{Main\+Window}!on\+\_\+pressure\+Chart\+Button\+\_\+clicked@{on\+\_\+pressure\+Chart\+Button\+\_\+clicked}}
+\index{on\+\_\+pressure\+Chart\+Button\+\_\+clicked@{on\+\_\+pressure\+Chart\+Button\+\_\+clicked}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{on\+\_\+pressure\+Chart\+Button\+\_\+clicked}{on\_pressureChartButton\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+pressure\+Chart\+Button\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definicja w linii 194 pliku mainwindow.\+cpp.
+
+\mbox{\Hypertarget{class_main_window_aa010eef64c7e973afb2c2129538f6cc5}\label{class_main_window_aa010eef64c7e973afb2c2129538f6cc5}} 
+\index{Main\+Window@{Main\+Window}!on\+\_\+\+Rotation\+Reset\+Button\+\_\+clicked@{on\+\_\+\+Rotation\+Reset\+Button\+\_\+clicked}}
+\index{on\+\_\+\+Rotation\+Reset\+Button\+\_\+clicked@{on\+\_\+\+Rotation\+Reset\+Button\+\_\+clicked}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{on\+\_\+\+Rotation\+Reset\+Button\+\_\+clicked}{on\_RotationResetButton\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+\+Rotation\+Reset\+Button\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definicja w linii 187 pliku mainwindow.\+cpp.
 
 \mbox{\Hypertarget{class_main_window_a0975a297069f8f0cbbd8e7acfc7d85ba}\label{class_main_window_a0975a297069f8f0cbbd8e7acfc7d85ba}} 
 \index{Main\+Window@{Main\+Window}!on\+\_\+\+Start\+Stop\+Button\+\_\+clicked@{on\+\_\+\+Start\+Stop\+Button\+\_\+clicked}}
@@ -171,11 +260,71 @@ Definicja w linii 65 pliku mainwindow.\+cpp.
 
 
 
-Definicja w linii 28 pliku mainwindow.\+cpp.
+Definicja w linii 76 pliku mainwindow.\+cpp.
+
+\mbox{\Hypertarget{class_main_window_ae12f8f63791595567b6250f8bb002bda}\label{class_main_window_ae12f8f63791595567b6250f8bb002bda}} 
+\index{Main\+Window@{Main\+Window}!resize\+Event@{resize\+Event}}
+\index{resize\+Event@{resize\+Event}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{resize\+Event}{resizeEvent}}
+{\footnotesize\ttfamily void Main\+Window\+::resize\+Event (\begin{DoxyParamCaption}\item[{Q\+Resize\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+Definicja w linii 58 pliku mainwindow.\+cpp.
+
+\mbox{\Hypertarget{class_main_window_a282b4cae4900448d6ce21598c50c58a8}\label{class_main_window_a282b4cae4900448d6ce21598c50c58a8}} 
+\index{Main\+Window@{Main\+Window}!Serial\+Port\+Error\+Handler@{Serial\+Port\+Error\+Handler}}
+\index{Serial\+Port\+Error\+Handler@{Serial\+Port\+Error\+Handler}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Serial\+Port\+Error\+Handler}{SerialPortErrorHandler}}
+{\footnotesize\ttfamily void Main\+Window\+::\+Serial\+Port\+Error\+Handler (\begin{DoxyParamCaption}\item[{Q\+Serial\+Port\+::\+Serial\+Port\+Error}]{error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Definicja w linii 275 pliku mainwindow.\+cpp.
+
+\mbox{\Hypertarget{class_main_window_a5aac21b5760e96b276d89fa73d20c279}\label{class_main_window_a5aac21b5760e96b276d89fa73d20c279}} 
+\index{Main\+Window@{Main\+Window}!update\+Recieved\+Values@{update\+Recieved\+Values}}
+\index{update\+Recieved\+Values@{update\+Recieved\+Values}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{update\+Recieved\+Values}{updateRecievedValues}}
+{\footnotesize\ttfamily void Main\+Window\+::update\+Recieved\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+!! 
+
+Definicja w linii 200 pliku mainwindow.\+cpp.
 
 
 
 \subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_main_window_a49e608ed992fde7d85b3acc3ddbba6c2}\label{class_main_window_a49e608ed992fde7d85b3acc3ddbba6c2}} 
+\index{Main\+Window@{Main\+Window}!chart@{chart}}
+\index{chart@{chart}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{chart}{chart}}
+{\footnotesize\ttfamily \hyperlink{class_chart}{Chart}$\ast$ Main\+Window\+::chart\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 82 pliku mainwindow.\+h.
+
+\mbox{\Hypertarget{class_main_window_a65fb64a7b9a722f77bfc022a9f4b5e8b}\label{class_main_window_a65fb64a7b9a722f77bfc022a9f4b5e8b}} 
+\index{Main\+Window@{Main\+Window}!chart\+View@{chart\+View}}
+\index{chart\+View@{chart\+View}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{chart\+View}{chartView}}
+{\footnotesize\ttfamily Q\+Chart\+View$\ast$ Main\+Window\+::chart\+View\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 83 pliku mainwindow.\+h.
+
+\mbox{\Hypertarget{class_main_window_a75523a2f7099a2101e18e0f5356934a9}\label{class_main_window_a75523a2f7099a2101e18e0f5356934a9}} 
+\index{Main\+Window@{Main\+Window}!Glove3\+D\+Layout\+Widget\+Is\+Set@{Glove3\+D\+Layout\+Widget\+Is\+Set}}
+\index{Glove3\+D\+Layout\+Widget\+Is\+Set@{Glove3\+D\+Layout\+Widget\+Is\+Set}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{Glove3\+D\+Layout\+Widget\+Is\+Set}{Glove3DLayoutWidgetIsSet}}
+{\footnotesize\ttfamily bool Main\+Window\+::\+Glove3\+D\+Layout\+Widget\+Is\+Set = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 85 pliku mainwindow.\+h.
+
 \mbox{\Hypertarget{class_main_window_aa4484150b90e4d13bb42316d12c34650}\label{class_main_window_aa4484150b90e4d13bb42316d12c34650}} 
 \index{Main\+Window@{Main\+Window}!Input\+Data@{Input\+Data}}
 \index{Input\+Data@{Input\+Data}!Main\+Window@{Main\+Window}}
@@ -184,7 +333,37 @@ Definicja w linii 28 pliku mainwindow.\+cpp.
 
 
 
-Definicja w linii 57 pliku mainwindow.\+h.
+Definicja w linii 79 pliku mainwindow.\+h.
+
+\mbox{\Hypertarget{class_main_window_a9743425e4ce7d961c6b1a7c81a6e4da2}\label{class_main_window_a9743425e4ce7d961c6b1a7c81a6e4da2}} 
+\index{Main\+Window@{Main\+Window}!m\+\_\+chart\+Window@{m\+\_\+chart\+Window}}
+\index{m\+\_\+chart\+Window@{m\+\_\+chart\+Window}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{m\+\_\+chart\+Window}{m\_chartWindow}}
+{\footnotesize\ttfamily \hyperlink{classchart_window}{chart\+Window} Main\+Window\+::m\+\_\+chart\+Window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 84 pliku mainwindow.\+h.
+
+\mbox{\Hypertarget{class_main_window_ab9c6492b81f3117ca8fed55c7b97da44}\label{class_main_window_ab9c6492b81f3117ca8fed55c7b97da44}} 
+\index{Main\+Window@{Main\+Window}!m\+\_\+status\+Label@{m\+\_\+status\+Label}}
+\index{m\+\_\+status\+Label@{m\+\_\+status\+Label}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{m\+\_\+status\+Label}{m\_statusLabel}}
+{\footnotesize\ttfamily Q\+Label$\ast$ Main\+Window\+::m\+\_\+status\+Label\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 81 pliku mainwindow.\+h.
+
+\mbox{\Hypertarget{class_main_window_a3c6e8f3b032c72151f1e871e26d33fcb}\label{class_main_window_a3c6e8f3b032c72151f1e871e26d33fcb}} 
+\index{Main\+Window@{Main\+Window}!scene3D@{scene3D}}
+\index{scene3D@{scene3D}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{scene3D}{scene3D}}
+{\footnotesize\ttfamily \hyperlink{class_scene}{Scene}$\ast$ Main\+Window\+::scene3D\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 80 pliku mainwindow.\+h.
 
 \mbox{\Hypertarget{class_main_window_a35466a70ed47252a0191168126a352a5}\label{class_main_window_a35466a70ed47252a0191168126a352a5}} 
 \index{Main\+Window@{Main\+Window}!ui@{ui}}
@@ -194,7 +373,7 @@ Definicja w linii 57 pliku mainwindow.\+h.
 
 
 
-Definicja w linii 56 pliku mainwindow.\+h.
+Definicja w linii 78 pliku mainwindow.\+h.
 
 
 

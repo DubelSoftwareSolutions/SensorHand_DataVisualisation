@@ -82,7 +82,7 @@ $(document).ready(function(){initNavTree('class_scene.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Metody publiczne</a> &#124;
-<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="#pub-attribs">Atrybuty publiczne</a> &#124;
 <a href="class_scene-members.html">Lista wszystkich składowych</a>  </div>
   <div class="headertitle">
 <div class="title">Dokumentacja klasy Scene</div>  </div>
@@ -104,21 +104,29 @@ Diagram dziedziczenia dla Scene</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
-<tr class="memitem:aa138923bf1d204f6cadbefbe7398d599"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#aa138923bf1d204f6cadbefbe7398d599">Scene</a> (Qt3DCore::QEntity *rootEntity, <a class="el" href="class_main_window.html">MainWindow</a> &amp;p_mainWindow)</td></tr>
-<tr class="separator:aa138923bf1d204f6cadbefbe7398d599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7977c11ac28fa465cedd4889e7cfd58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#ae7977c11ac28fa465cedd4889e7cfd58">Scene</a> (Qt3DCore::QEntity *rootEntity)</td></tr>
+<tr class="separator:ae7977c11ac28fa465cedd4889e7cfd58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b8cec2e32546713915f8c6303c951f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a3b8cec2e32546713915f8c6303c951f1">~Scene</a> ()</td></tr>
 <tr class="separator:a3b8cec2e32546713915f8c6303c951f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53a7f1676ecb6d9b7312e275b3c8256e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a53a7f1676ecb6d9b7312e275b3c8256e">setCameraDistance</a> (float p_Distance)</td></tr>
+<tr class="separator:a53a7f1676ecb6d9b7312e275b3c8256e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85cdeb1563e84f148579f834808aa527"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a85cdeb1563e84f148579f834808aa527">SetHandRotation</a> (float Roll, float Pitch, float Yaw)</td></tr>
+<tr class="separator:a85cdeb1563e84f148579f834808aa527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae58cf344ad78420d37acde7984c9a4e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#ae58cf344ad78420d37acde7984c9a4e8">SetHandTransformation</a> (QVector&lt; QVector&lt; float &gt;&gt; p_FingerAngles)</td></tr>
 <tr class="separator:ae58cf344ad78420d37acde7984c9a4e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dcd24690f433927c6ca75e9980afd53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a4dcd24690f433927c6ca75e9980afd53">SetHandFingertipValues</a> (QVector&lt; int &gt; p_NewValues)</td></tr>
 <tr class="separator:a4dcd24690f433927c6ca75e9980afd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Atrybuty prywatne</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Atrybuty publiczne</h2></td></tr>
 <tr class="memitem:a1ef7f61aed73e150dfb7ef7ffc47f7c2"><td class="memItemLeft" align="right" valign="top">Qt3DCore::QEntity *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a1ef7f61aed73e150dfb7ef7ffc47f7c2">m_rootEntity</a></td></tr>
 <tr class="separator:a1ef7f61aed73e150dfb7ef7ffc47f7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf272488e380e731a1c20fa5cd208490"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hand.html">Hand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#adf272488e380e731a1c20fa5cd208490">m_Hand3DModel</a></td></tr>
 <tr class="separator:adf272488e380e731a1c20fa5cd208490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3aa76a49254de3b2ee5991677942ba3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#af3aa76a49254de3b2ee5991677942ba3">m_CameraHeight</a></td></tr>
+<tr class="separator:af3aa76a49254de3b2ee5991677942ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f666aa1574fd1a1ecae97fa55ad2be8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a8f666aa1574fd1a1ecae97fa55ad2be8">m_CameraDistance</a></td></tr>
+<tr class="separator:a8f666aa1574fd1a1ecae97fa55ad2be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b76fefe111a22aa56f066783fa76bc1"><td class="memItemLeft" align="right" valign="top">Qt3DExtras::Qt3DWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a3b76fefe111a22aa56f066783fa76bc1">view</a></td></tr>
 <tr class="separator:a3b76fefe111a22aa56f066783fa76bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10832d33619bdb86c51bb75377ea649d"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scene.html#a10832d33619bdb86c51bb75377ea649d">container</a></td></tr>
@@ -155,8 +163,8 @@ Atrybuty prywatne</h2></td></tr>
 
 <p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00030">30</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
-<a id="aa138923bf1d204f6cadbefbe7398d599"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa138923bf1d204f6cadbefbe7398d599">&#9670;&nbsp;</a></span>Scene()</h2>
+<a id="ae7977c11ac28fa465cedd4889e7cfd58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7977c11ac28fa465cedd4889e7cfd58">&#9670;&nbsp;</a></span>Scene()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -168,18 +176,8 @@ Atrybuty prywatne</h2></td></tr>
           <td class="memname">Scene::Scene </td>
           <td>(</td>
           <td class="paramtype">Qt3DCore::QEntity *&#160;</td>
-          <td class="paramname"><em>rootEntity</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>rootEntity</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_main_window.html">MainWindow</a> &amp;&#160;</td>
-          <td class="paramname"><em>p_mainWindow</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -189,7 +187,7 @@ Atrybuty prywatne</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="scene_8cpp_source.html#l00003">3</a> pliku <a class="el" href="scene_8cpp_source.html">scene.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="scene_8cpp_source.html#l00004">4</a> pliku <a class="el" href="scene_8cpp_source.html">scene.cpp</a>.</p>
 
 </div>
 </div>
@@ -208,11 +206,31 @@ Atrybuty prywatne</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="scene_8cpp_source.html#l00059">59</a> pliku <a class="el" href="scene_8cpp_source.html">scene.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="scene_8cpp_source.html#l00060">60</a> pliku <a class="el" href="scene_8cpp_source.html">scene.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a53a7f1676ecb6d9b7312e275b3c8256e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53a7f1676ecb6d9b7312e275b3c8256e">&#9670;&nbsp;</a></span>setCameraDistance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scene::setCameraDistance </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>p_Distance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="scene_8cpp_source.html#l00065">65</a> pliku <a class="el" href="scene_8cpp_source.html">scene.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a4dcd24690f433927c6ca75e9980afd53"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4dcd24690f433927c6ca75e9980afd53">&#9670;&nbsp;</a></span>SetHandFingertipValues()</h2>
 
@@ -229,7 +247,43 @@ Atrybuty prywatne</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="scene_8cpp_source.html#l00069">69</a> pliku <a class="el" href="scene_8cpp_source.html">scene.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="scene_8cpp_source.html#l00089">89</a> pliku <a class="el" href="scene_8cpp_source.html">scene.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a85cdeb1563e84f148579f834808aa527"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85cdeb1563e84f148579f834808aa527">&#9670;&nbsp;</a></span>SetHandRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scene::SetHandRotation </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Roll</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Pitch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>Yaw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="scene_8cpp_source.html#l00070">70</a> pliku <a class="el" href="scene_8cpp_source.html">scene.cpp</a>.</p>
 
 </div>
 </div>
@@ -249,7 +303,7 @@ Atrybuty prywatne</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="scene_8cpp_source.html#l00064">64</a> pliku <a class="el" href="scene_8cpp_source.html">scene.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="scene_8cpp_source.html#l00084">84</a> pliku <a class="el" href="scene_8cpp_source.html">scene.cpp</a>.</p>
 
 </div>
 </div>
@@ -259,22 +313,14 @@ Atrybuty prywatne</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Qt3DExtras::QFirstPersonCameraController* Scene::camController</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00045">45</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00051">51</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -283,22 +329,14 @@ Atrybuty prywatne</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Qt3DRender::QCamera* Scene::cameraEntity</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00044">44</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00050">50</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -307,22 +345,14 @@ Atrybuty prywatne</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">QWidget* Scene::container</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00038">38</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00044">44</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -331,22 +361,14 @@ Atrybuty prywatne</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">QHBoxLayout* Scene::hLayout</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00041">41</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00047">47</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -355,22 +377,14 @@ Atrybuty prywatne</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Qt3DInput::QInputAspect* Scene::input</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00043">43</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00049">49</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -379,22 +393,14 @@ Atrybuty prywatne</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Qt3DRender::QPointLight* Scene::light</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00047">47</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00053">53</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -403,22 +409,14 @@ Atrybuty prywatne</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Qt3DRender::QPointLight* Scene::light2</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00050">50</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00056">56</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -427,22 +425,14 @@ Atrybuty prywatne</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Qt3DCore::QEntity* Scene::lightEntity</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00046">46</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00052">52</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -451,22 +441,14 @@ Atrybuty prywatne</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Qt3DCore::QEntity* Scene::lightEntity2</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00049">49</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00055">55</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -475,22 +457,14 @@ Atrybuty prywatne</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Qt3DCore::QTransform* Scene::lightTransform</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00048">48</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00054">54</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -499,22 +473,46 @@ Atrybuty prywatne</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Qt3DCore::QTransform* Scene::lightTransform2</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00051">51</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00057">57</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+
+</div>
+</div>
+<a id="a8f666aa1574fd1a1ecae97fa55ad2be8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f666aa1574fd1a1ecae97fa55ad2be8">&#9670;&nbsp;</a></span>m_CameraDistance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Scene::m_CameraDistance</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00041">41</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+
+</div>
+</div>
+<a id="af3aa76a49254de3b2ee5991677942ba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3aa76a49254de3b2ee5991677942ba3">&#9670;&nbsp;</a></span>m_CameraHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Scene::m_CameraHeight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00040">40</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -523,22 +521,14 @@ Atrybuty prywatne</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_hand.html">Hand</a> Scene::m_Hand3DModel</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00035">35</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00038">38</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -547,22 +537,14 @@ Atrybuty prywatne</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Qt3DCore::QEntity* Scene::m_rootEntity</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00034">34</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00037">37</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -571,22 +553,14 @@ Atrybuty prywatne</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">QSize Scene::screenSize</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00039">39</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00045">45</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -595,22 +569,14 @@ Atrybuty prywatne</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Qt3DExtras::Qt3DWindow* Scene::view</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00037">37</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00043">43</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -619,22 +585,14 @@ Atrybuty prywatne</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">QVBoxLayout* Scene::vLayout</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00042">42</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00048">48</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>
@@ -643,22 +601,14 @@ Atrybuty prywatne</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">QWidget* Scene::widget</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00040">40</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="scene_8h_source.html#l00046">46</a> pliku <a class="el" href="scene_8h_source.html">scene.h</a>.</p>
 
 </div>
 </div>

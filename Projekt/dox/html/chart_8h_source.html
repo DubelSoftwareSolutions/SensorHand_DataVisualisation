@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SensorGloveQt: Plik źródłowy chart.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SensorGloveQt
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('chart_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">chart.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="chart_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CHART_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CHART_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QtCharts/QChart&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QtCharts/QSplineSeries&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QtCharts/QLineSeries&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;QtCore/QTimer&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;QT_CHARTS_BEGIN_NAMESPACE</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>QSplineSeries;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>QValueAxis;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;QT_CHARTS_END_NAMESPACE</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;QT_CHARTS_USE_NAMESPACE</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_chart.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_chart.html">Chart</a>: QObject</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//Chart(QGraphicsItem *parent = 0, Qt::WindowFlags wFlags = 0);</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_chart.html#a2048aeb5666281b3e8feb4bef3ce9c11">Chart</a>(QChart *p_chart);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_chart.html#a8a593f9f79c94057718d1c4942e77f86">~Chart</a>();</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_chart.html#a3df426b79930e71f41f6177a0d08c3b2">addValue</a>(<span class="keywordtype">float</span> p_value);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_chart.html#ad7cb4c524b68425320c7724c6152d4fa">setRangeX</a>(<span class="keywordtype">float</span> p_min, <span class="keywordtype">float</span> p_max);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_chart.html#afa8b1c978f21659710aa09bbe4a5b828">setRangeY</a>(<span class="keywordtype">float</span> p_min, <span class="keywordtype">float</span> p_max);   </div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    QVector&lt;float&gt; <a class="code" href="class_chart.html#a741501f212ff1828286dbbe1bad94afd">getRangeX</a>();</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_chart.html#ab9504951fa7890ec4a2973e0cbf877d5">clearChart</a>();</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_chart.html#aad8f606404a17c00bba777753203be7c">getMaxX</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span> slots:</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_chart.html#aba07859ccb2630218a1e1d7b90c3f38c">handleTimeout</a>();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_chart.html#a69884a7924456327e2ab0148a133339e">   51</a></span>&#160;    QChart *<a class="code" href="class_chart.html#a69884a7924456327e2ab0148a133339e">m_chart</a>;</div><div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_chart.html#a0537ed43bfbba8ae3c90bd2fd01924e9">   52</a></span>&#160;    QTimer <a class="code" href="class_chart.html#a0537ed43bfbba8ae3c90bd2fd01924e9">m_timer</a>;</div><div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_chart.html#a6dcaf24ec43e6521ba3046a98545b9a6">   53</a></span>&#160;    QSplineSeries *<a class="code" href="class_chart.html#a6dcaf24ec43e6521ba3046a98545b9a6">m_series</a>;</div><div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_chart.html#a55c846b0e4068481081d061559efd155">   54</a></span>&#160;    QStringList <a class="code" href="class_chart.html#a55c846b0e4068481081d061559efd155">m_titles</a>;</div><div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_chart.html#aca1b02de1a6e6f3e68bbd1a9393a30de">   55</a></span>&#160;    QValueAxis *<a class="code" href="class_chart.html#aca1b02de1a6e6f3e68bbd1a9393a30de">m_axis</a>;</div><div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_chart.html#a1a75b604ca836461e0693e344419442b">   56</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_chart.html#a1a75b604ca836461e0693e344419442b">m_step</a>;</div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_chart.html#ac5211a2a9116f2853ae511417b9bca9e">   57</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_chart.html#ac5211a2a9116f2853ae511417b9bca9e">m_x</a>;</div><div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_chart.html#a1f3e3584c5d5d90d8ebaf1b6b98d3df5">   58</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_chart.html#a1f3e3584c5d5d90d8ebaf1b6b98d3df5">m_y</a>;</div><div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_chart.html#a7d700eba4e63460db9f01eb605ff87ca">   59</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_chart.html#a7d700eba4e63460db9f01eb605ff87ca">m_axisXminRange</a>;</div><div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_chart.html#a2b91048e821ac0bcc9097884d6fe3c1d">   60</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_chart.html#a2b91048e821ac0bcc9097884d6fe3c1d">m_axisXmaxRange</a>;</div><div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_chart.html#a0c95ab267312d1761d18fbe110d52697">   61</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_chart.html#a0c95ab267312d1761d18fbe110d52697">m_scrollSum</a>;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif // CHART_H</span></div><div class="ttc" id="class_chart_html_a8a593f9f79c94057718d1c4942e77f86"><div class="ttname"><a href="class_chart.html#a8a593f9f79c94057718d1c4942e77f86">Chart::~Chart</a></div><div class="ttdeci">virtual ~Chart()</div><div class="ttdef"><b>Definition:</b> <a href="chart_8cpp_source.html#l00049">chart.cpp:49</a></div></div>
+<div class="ttc" id="class_chart_html_ac5211a2a9116f2853ae511417b9bca9e"><div class="ttname"><a href="class_chart.html#ac5211a2a9116f2853ae511417b9bca9e">Chart::m_x</a></div><div class="ttdeci">float m_x</div><div class="ttdef"><b>Definition:</b> <a href="chart_8h_source.html#l00057">chart.h:57</a></div></div>
+<div class="ttc" id="class_chart_html_a0537ed43bfbba8ae3c90bd2fd01924e9"><div class="ttname"><a href="class_chart.html#a0537ed43bfbba8ae3c90bd2fd01924e9">Chart::m_timer</a></div><div class="ttdeci">QTimer m_timer</div><div class="ttdef"><b>Definition:</b> <a href="chart_8h_source.html#l00052">chart.h:52</a></div></div>
+<div class="ttc" id="class_chart_html_ad7cb4c524b68425320c7724c6152d4fa"><div class="ttname"><a href="class_chart.html#ad7cb4c524b68425320c7724c6152d4fa">Chart::setRangeX</a></div><div class="ttdeci">void setRangeX(float p_min, float p_max)</div><div class="ttdef"><b>Definition:</b> <a href="chart_8cpp_source.html#l00072">chart.cpp:72</a></div></div>
+<div class="ttc" id="class_chart_html_aba07859ccb2630218a1e1d7b90c3f38c"><div class="ttname"><a href="class_chart.html#aba07859ccb2630218a1e1d7b90c3f38c">Chart::handleTimeout</a></div><div class="ttdeci">void handleTimeout()</div><div class="ttdef"><b>Definition:</b> <a href="chart_8cpp_source.html#l00107">chart.cpp:107</a></div></div>
+<div class="ttc" id="class_chart_html_a69884a7924456327e2ab0148a133339e"><div class="ttname"><a href="class_chart.html#a69884a7924456327e2ab0148a133339e">Chart::m_chart</a></div><div class="ttdeci">QChart * m_chart</div><div class="ttdef"><b>Definition:</b> <a href="chart_8h_source.html#l00051">chart.h:51</a></div></div>
+<div class="ttc" id="class_chart_html_a741501f212ff1828286dbbe1bad94afd"><div class="ttname"><a href="class_chart.html#a741501f212ff1828286dbbe1bad94afd">Chart::getRangeX</a></div><div class="ttdeci">QVector&lt; float &gt; getRangeX()</div><div class="ttdef"><b>Definition:</b> <a href="chart_8cpp_source.html#l00085">chart.cpp:85</a></div></div>
+<div class="ttc" id="class_chart_html_aad8f606404a17c00bba777753203be7c"><div class="ttname"><a href="class_chart.html#aad8f606404a17c00bba777753203be7c">Chart::getMaxX</a></div><div class="ttdeci">float getMaxX(void)</div><div class="ttdef"><b>Definition:</b> <a href="chart_8cpp_source.html#l00101">chart.cpp:101</a></div></div>
+<div class="ttc" id="class_chart_html_a55c846b0e4068481081d061559efd155"><div class="ttname"><a href="class_chart.html#a55c846b0e4068481081d061559efd155">Chart::m_titles</a></div><div class="ttdeci">QStringList m_titles</div><div class="ttdef"><b>Definition:</b> <a href="chart_8h_source.html#l00054">chart.h:54</a></div></div>
+<div class="ttc" id="class_chart_html_a1f3e3584c5d5d90d8ebaf1b6b98d3df5"><div class="ttname"><a href="class_chart.html#a1f3e3584c5d5d90d8ebaf1b6b98d3df5">Chart::m_y</a></div><div class="ttdeci">float m_y</div><div class="ttdef"><b>Definition:</b> <a href="chart_8h_source.html#l00058">chart.h:58</a></div></div>
+<div class="ttc" id="class_chart_html_ab9504951fa7890ec4a2973e0cbf877d5"><div class="ttname"><a href="class_chart.html#ab9504951fa7890ec4a2973e0cbf877d5">Chart::clearChart</a></div><div class="ttdeci">void clearChart()</div><div class="ttdef"><b>Definition:</b> <a href="chart_8cpp_source.html#l00092">chart.cpp:92</a></div></div>
+<div class="ttc" id="class_chart_html_aca1b02de1a6e6f3e68bbd1a9393a30de"><div class="ttname"><a href="class_chart.html#aca1b02de1a6e6f3e68bbd1a9393a30de">Chart::m_axis</a></div><div class="ttdeci">QValueAxis * m_axis</div><div class="ttdef"><b>Definition:</b> <a href="chart_8h_source.html#l00055">chart.h:55</a></div></div>
+<div class="ttc" id="class_chart_html_a3df426b79930e71f41f6177a0d08c3b2"><div class="ttname"><a href="class_chart.html#a3df426b79930e71f41f6177a0d08c3b2">Chart::addValue</a></div><div class="ttdeci">void addValue(float p_value)</div><div class="ttdef"><b>Definition:</b> <a href="chart_8cpp_source.html#l00053">chart.cpp:53</a></div></div>
+<div class="ttc" id="class_chart_html"><div class="ttname"><a href="class_chart.html">Chart</a></div><div class="ttdoc">Modeluje pojęcie wykresu dynamicznego. </div><div class="ttdef"><b>Definition:</b> <a href="chart_8h_source.html#l00033">chart.h:33</a></div></div>
+<div class="ttc" id="class_chart_html_a0c95ab267312d1761d18fbe110d52697"><div class="ttname"><a href="class_chart.html#a0c95ab267312d1761d18fbe110d52697">Chart::m_scrollSum</a></div><div class="ttdeci">float m_scrollSum</div><div class="ttdef"><b>Definition:</b> <a href="chart_8h_source.html#l00061">chart.h:61</a></div></div>
+<div class="ttc" id="class_chart_html_afa8b1c978f21659710aa09bbe4a5b828"><div class="ttname"><a href="class_chart.html#afa8b1c978f21659710aa09bbe4a5b828">Chart::setRangeY</a></div><div class="ttdeci">void setRangeY(float p_min, float p_max)</div><div class="ttdef"><b>Definition:</b> <a href="chart_8cpp_source.html#l00080">chart.cpp:80</a></div></div>
+<div class="ttc" id="class_chart_html_a2b91048e821ac0bcc9097884d6fe3c1d"><div class="ttname"><a href="class_chart.html#a2b91048e821ac0bcc9097884d6fe3c1d">Chart::m_axisXmaxRange</a></div><div class="ttdeci">float m_axisXmaxRange</div><div class="ttdef"><b>Definition:</b> <a href="chart_8h_source.html#l00060">chart.h:60</a></div></div>
+<div class="ttc" id="class_chart_html_a6dcaf24ec43e6521ba3046a98545b9a6"><div class="ttname"><a href="class_chart.html#a6dcaf24ec43e6521ba3046a98545b9a6">Chart::m_series</a></div><div class="ttdeci">QSplineSeries * m_series</div><div class="ttdef"><b>Definition:</b> <a href="chart_8h_source.html#l00053">chart.h:53</a></div></div>
+<div class="ttc" id="class_chart_html_a7d700eba4e63460db9f01eb605ff87ca"><div class="ttname"><a href="class_chart.html#a7d700eba4e63460db9f01eb605ff87ca">Chart::m_axisXminRange</a></div><div class="ttdeci">float m_axisXminRange</div><div class="ttdef"><b>Definition:</b> <a href="chart_8h_source.html#l00059">chart.h:59</a></div></div>
+<div class="ttc" id="class_chart_html_a1a75b604ca836461e0693e344419442b"><div class="ttname"><a href="class_chart.html#a1a75b604ca836461e0693e344419442b">Chart::m_step</a></div><div class="ttdeci">float m_step</div><div class="ttdef"><b>Definition:</b> <a href="chart_8h_source.html#l00056">chart.h:56</a></div></div>
+<div class="ttc" id="class_chart_html_a2048aeb5666281b3e8feb4bef3ce9c11"><div class="ttname"><a href="class_chart.html#a2048aeb5666281b3e8feb4bef3ce9c11">Chart::Chart</a></div><div class="ttdeci">Chart(QChart *p_chart)</div><div class="ttdef"><b>Definition:</b> <a href="chart_8cpp_source.html#l00014">chart.cpp:14</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_0bd3749520e6828b2aa12bb97df2bee3.html">SensorGloveQt</a></li><li class="navelem"><a class="el" href="chart_8h.html">chart.h</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['view',['view',['../class_scene.html#a3b76fefe111a22aa56f066783fa76bc1',1,'Scene']]],
-  ['vlayout',['vLayout',['../class_scene.html#adae30f81725ed3f2258bee8fe5e90c5d',1,'Scene']]]
+  ['ui',['ui',['../classchart_window.html#a0efd4a0d018eaa19c813c9d69522c75e',1,'chartWindow::ui()'],['../class_main_window.html#a35466a70ed47252a0191168126a352a5',1,'MainWindow::ui()']]]
 ];

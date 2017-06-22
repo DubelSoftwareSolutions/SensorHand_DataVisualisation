@@ -1,6 +1,6 @@
 var class_fingertip =
 [
-    [ "Fingertip", "class_fingertip.html#a532cc6d9478ba3e1e0d8024ad7773141", null ],
+    [ "Fingertip", "class_fingertip.html#a06e4298ae73d30fb187a24d0830d230a", null ],
     [ "getFingertipValue", "class_fingertip.html#a3ec55016e28f9fbce847baa668c44868", null ],
     [ "setFingertipValue", "class_fingertip.html#aa2823945458eb8a97f9568934bfcc1d5", null ],
     [ "TransformFingertip", "class_fingertip.html#aeecbae45b84b2ab9840df15b6541a21d", null ],

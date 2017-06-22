@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['cylinder_5frings_5fcount',['CYLINDER_RINGS_COUNT',['../joint_8h.html#a71e12a141d3a2bd29b12a2a4ff9d6703',1,'joint.h']]],
-  ['cylinder_5fslices_5fcount',['CYLINDER_SLICES_COUNT',['../joint_8h.html#a161e1f9400d7410fe0e5ff0a96351955',1,'joint.h']]]
+  ['bluetooth_5fbaudrate',['BLUETOOTH_BAUDRATE',['../input_8h.html#a800ec9bb77245339c6a2b770432e0232',1,'input.h']]],
+  ['bluetooth_5fmanufacturer',['BLUETOOTH_MANUFACTURER',['../input_8h.html#a9d30833ef1806ac4199f6ae6f4e337d4',1,'input.h']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['thumb',['Thumb',['../class_finger.html#a365e6bba2e4877decf3c7641d29838c3a4abadc231544b00c5b998e2e836f530c',1,'Finger']]]
+  ['serialporterror',['SerialPortError',['../class_error_handler.html#aee61709d471d61ec7d1069369565b59aac9084d70b57995fc2e17dd81033c08b6',1,'ErrorHandler']]]
 ];

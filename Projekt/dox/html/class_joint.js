@@ -5,6 +5,7 @@ var class_joint =
     [ "angle", "class_joint.html#a305d99fa57d07d8ed3b478931e4e86e5", null ],
     [ "length", "class_joint.html#acf30d550f5ca1e0e5eb60dafdc83d202", null ],
     [ "operator=", "class_joint.html#a3cd9a9a2dc9226b2588c6ddab9659bed", null ],
+    [ "setRotation", "class_joint.html#aab387e3e09c94b9e87d3b4c0e8f974aa", null ],
     [ "TransformAngle", "class_joint.html#ad2529cc3d781c18ead369c0ea42b700b", null ],
     [ "TransformMatrix", "class_joint.html#a0bf632e9b7a8de79429be16f963e81f7", null ],
     [ "m_angle", "class_joint.html#a293274b0f6de50fb79f532f64af9a048", null ],

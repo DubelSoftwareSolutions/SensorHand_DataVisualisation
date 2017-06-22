@@ -1,0 +1,288 @@
+\hypertarget{class_chart}{}\section{Dokumentacja klasy Chart}
+\label{class_chart}\index{Chart@{Chart}}
+
+
+Modeluje pojęcie wykresu dynamicznego.  
+
+
+
+
+{\ttfamily \#include $<$chart.\+h$>$}
+
+Diagram dziedziczenia dla Chart\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_chart}
+\end{center}
+\end{figure}
+\subsection*{Sloty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_chart_aba07859ccb2630218a1e1d7b90c3f38c}{handle\+Timeout} ()
+\end{DoxyCompactItemize}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_chart_a2048aeb5666281b3e8feb4bef3ce9c11}{Chart} (Q\+Chart $\ast$p\+\_\+chart)
+\item 
+virtual \hyperlink{class_chart_a8a593f9f79c94057718d1c4942e77f86}{$\sim$\+Chart} ()
+\item 
+void \hyperlink{class_chart_a3df426b79930e71f41f6177a0d08c3b2}{add\+Value} (float p\+\_\+value)
+\item 
+void \hyperlink{class_chart_ad7cb4c524b68425320c7724c6152d4fa}{set\+RangeX} (float p\+\_\+min, float p\+\_\+max)
+\item 
+void \hyperlink{class_chart_afa8b1c978f21659710aa09bbe4a5b828}{set\+RangeY} (float p\+\_\+min, float p\+\_\+max)
+\item 
+Q\+Vector$<$ float $>$ \hyperlink{class_chart_a741501f212ff1828286dbbe1bad94afd}{get\+RangeX} ()
+\item 
+void \hyperlink{class_chart_ab9504951fa7890ec4a2973e0cbf877d5}{clear\+Chart} ()
+\item 
+float \hyperlink{class_chart_aad8f606404a17c00bba777753203be7c}{get\+MaxX} (void)
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Chart $\ast$ \hyperlink{class_chart_a69884a7924456327e2ab0148a133339e}{m\+\_\+chart}
+\item 
+Q\+Timer \hyperlink{class_chart_a0537ed43bfbba8ae3c90bd2fd01924e9}{m\+\_\+timer}
+\item 
+Q\+Spline\+Series $\ast$ \hyperlink{class_chart_a6dcaf24ec43e6521ba3046a98545b9a6}{m\+\_\+series}
+\item 
+Q\+String\+List \hyperlink{class_chart_a55c846b0e4068481081d061559efd155}{m\+\_\+titles}
+\item 
+Q\+Value\+Axis $\ast$ \hyperlink{class_chart_aca1b02de1a6e6f3e68bbd1a9393a30de}{m\+\_\+axis}
+\item 
+float \hyperlink{class_chart_a1a75b604ca836461e0693e344419442b}{m\+\_\+step}
+\item 
+float \hyperlink{class_chart_ac5211a2a9116f2853ae511417b9bca9e}{m\+\_\+x}
+\item 
+float \hyperlink{class_chart_a1f3e3584c5d5d90d8ebaf1b6b98d3df5}{m\+\_\+y}
+\item 
+float \hyperlink{class_chart_a7d700eba4e63460db9f01eb605ff87ca}{m\+\_\+axis\+Xmin\+Range}
+\item 
+float \hyperlink{class_chart_a2b91048e821ac0bcc9097884d6fe3c1d}{m\+\_\+axis\+Xmax\+Range}
+\item 
+float \hyperlink{class_chart_a0c95ab267312d1761d18fbe110d52697}{m\+\_\+scroll\+Sum}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Inicjalizuje obiekt wykresu dynamicznego, który służy do wyświetlania danych w kartezjańskim układzie współrzędnych. Umożliwia dynamiczną modyfikację wykresu poprzez dodawanie kolejnych waktości na koniec serii danych. 
+
+Definicja w linii 33 pliku chart.\+h.
+
+
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{class_chart_a2048aeb5666281b3e8feb4bef3ce9c11}\label{class_chart_a2048aeb5666281b3e8feb4bef3ce9c11}} 
+\index{Chart@{Chart}!Chart@{Chart}}
+\index{Chart@{Chart}!Chart@{Chart}}
+\subsubsection{\texorpdfstring{Chart()}{Chart()}}
+{\footnotesize\ttfamily Chart\+::\+Chart (\begin{DoxyParamCaption}\item[{Q\+Chart $\ast$}]{p\+\_\+chart }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 14 pliku chart.\+cpp.
+
+\mbox{\Hypertarget{class_chart_a8a593f9f79c94057718d1c4942e77f86}\label{class_chart_a8a593f9f79c94057718d1c4942e77f86}} 
+\index{Chart@{Chart}!````~Chart@{$\sim$\+Chart}}
+\index{````~Chart@{$\sim$\+Chart}!Chart@{Chart}}
+\subsubsection{\texorpdfstring{$\sim$\+Chart()}{~Chart()}}
+{\footnotesize\ttfamily Chart\+::$\sim$\+Chart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definicja w linii 49 pliku chart.\+cpp.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{class_chart_a3df426b79930e71f41f6177a0d08c3b2}\label{class_chart_a3df426b79930e71f41f6177a0d08c3b2}} 
+\index{Chart@{Chart}!add\+Value@{add\+Value}}
+\index{add\+Value@{add\+Value}!Chart@{Chart}}
+\subsubsection{\texorpdfstring{add\+Value()}{addValue()}}
+{\footnotesize\ttfamily void Chart\+::add\+Value (\begin{DoxyParamCaption}\item[{float}]{p\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 53 pliku chart.\+cpp.
+
+\mbox{\Hypertarget{class_chart_ab9504951fa7890ec4a2973e0cbf877d5}\label{class_chart_ab9504951fa7890ec4a2973e0cbf877d5}} 
+\index{Chart@{Chart}!clear\+Chart@{clear\+Chart}}
+\index{clear\+Chart@{clear\+Chart}!Chart@{Chart}}
+\subsubsection{\texorpdfstring{clear\+Chart()}{clearChart()}}
+{\footnotesize\ttfamily void Chart\+::clear\+Chart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 92 pliku chart.\+cpp.
+
+\mbox{\Hypertarget{class_chart_aad8f606404a17c00bba777753203be7c}\label{class_chart_aad8f606404a17c00bba777753203be7c}} 
+\index{Chart@{Chart}!get\+MaxX@{get\+MaxX}}
+\index{get\+MaxX@{get\+MaxX}!Chart@{Chart}}
+\subsubsection{\texorpdfstring{get\+Max\+X()}{getMaxX()}}
+{\footnotesize\ttfamily float Chart\+::get\+MaxX (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 101 pliku chart.\+cpp.
+
+\mbox{\Hypertarget{class_chart_a741501f212ff1828286dbbe1bad94afd}\label{class_chart_a741501f212ff1828286dbbe1bad94afd}} 
+\index{Chart@{Chart}!get\+RangeX@{get\+RangeX}}
+\index{get\+RangeX@{get\+RangeX}!Chart@{Chart}}
+\subsubsection{\texorpdfstring{get\+Range\+X()}{getRangeX()}}
+{\footnotesize\ttfamily Q\+Vector$<$ float $>$ Chart\+::get\+RangeX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 85 pliku chart.\+cpp.
+
+\mbox{\Hypertarget{class_chart_aba07859ccb2630218a1e1d7b90c3f38c}\label{class_chart_aba07859ccb2630218a1e1d7b90c3f38c}} 
+\index{Chart@{Chart}!handle\+Timeout@{handle\+Timeout}}
+\index{handle\+Timeout@{handle\+Timeout}!Chart@{Chart}}
+\subsubsection{\texorpdfstring{handle\+Timeout}{handleTimeout}}
+{\footnotesize\ttfamily void Chart\+::handle\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Definicja w linii 107 pliku chart.\+cpp.
+
+\mbox{\Hypertarget{class_chart_ad7cb4c524b68425320c7724c6152d4fa}\label{class_chart_ad7cb4c524b68425320c7724c6152d4fa}} 
+\index{Chart@{Chart}!set\+RangeX@{set\+RangeX}}
+\index{set\+RangeX@{set\+RangeX}!Chart@{Chart}}
+\subsubsection{\texorpdfstring{set\+Range\+X()}{setRangeX()}}
+{\footnotesize\ttfamily void Chart\+::set\+RangeX (\begin{DoxyParamCaption}\item[{float}]{p\+\_\+min,  }\item[{float}]{p\+\_\+max }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 72 pliku chart.\+cpp.
+
+\mbox{\Hypertarget{class_chart_afa8b1c978f21659710aa09bbe4a5b828}\label{class_chart_afa8b1c978f21659710aa09bbe4a5b828}} 
+\index{Chart@{Chart}!set\+RangeY@{set\+RangeY}}
+\index{set\+RangeY@{set\+RangeY}!Chart@{Chart}}
+\subsubsection{\texorpdfstring{set\+Range\+Y()}{setRangeY()}}
+{\footnotesize\ttfamily void Chart\+::set\+RangeY (\begin{DoxyParamCaption}\item[{float}]{p\+\_\+min,  }\item[{float}]{p\+\_\+max }\end{DoxyParamCaption})}
+
+
+
+Definicja w linii 80 pliku chart.\+cpp.
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{class_chart_aca1b02de1a6e6f3e68bbd1a9393a30de}\label{class_chart_aca1b02de1a6e6f3e68bbd1a9393a30de}} 
+\index{Chart@{Chart}!m\+\_\+axis@{m\+\_\+axis}}
+\index{m\+\_\+axis@{m\+\_\+axis}!Chart@{Chart}}
+\subsubsection{\texorpdfstring{m\+\_\+axis}{m\_axis}}
+{\footnotesize\ttfamily Q\+Value\+Axis$\ast$ Chart\+::m\+\_\+axis\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 55 pliku chart.\+h.
+
+\mbox{\Hypertarget{class_chart_a2b91048e821ac0bcc9097884d6fe3c1d}\label{class_chart_a2b91048e821ac0bcc9097884d6fe3c1d}} 
+\index{Chart@{Chart}!m\+\_\+axis\+Xmax\+Range@{m\+\_\+axis\+Xmax\+Range}}
+\index{m\+\_\+axis\+Xmax\+Range@{m\+\_\+axis\+Xmax\+Range}!Chart@{Chart}}
+\subsubsection{\texorpdfstring{m\+\_\+axis\+Xmax\+Range}{m\_axisXmaxRange}}
+{\footnotesize\ttfamily float Chart\+::m\+\_\+axis\+Xmax\+Range\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 60 pliku chart.\+h.
+
+\mbox{\Hypertarget{class_chart_a7d700eba4e63460db9f01eb605ff87ca}\label{class_chart_a7d700eba4e63460db9f01eb605ff87ca}} 
+\index{Chart@{Chart}!m\+\_\+axis\+Xmin\+Range@{m\+\_\+axis\+Xmin\+Range}}
+\index{m\+\_\+axis\+Xmin\+Range@{m\+\_\+axis\+Xmin\+Range}!Chart@{Chart}}
+\subsubsection{\texorpdfstring{m\+\_\+axis\+Xmin\+Range}{m\_axisXminRange}}
+{\footnotesize\ttfamily float Chart\+::m\+\_\+axis\+Xmin\+Range\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 59 pliku chart.\+h.
+
+\mbox{\Hypertarget{class_chart_a69884a7924456327e2ab0148a133339e}\label{class_chart_a69884a7924456327e2ab0148a133339e}} 
+\index{Chart@{Chart}!m\+\_\+chart@{m\+\_\+chart}}
+\index{m\+\_\+chart@{m\+\_\+chart}!Chart@{Chart}}
+\subsubsection{\texorpdfstring{m\+\_\+chart}{m\_chart}}
+{\footnotesize\ttfamily Q\+Chart$\ast$ Chart\+::m\+\_\+chart\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 51 pliku chart.\+h.
+
+\mbox{\Hypertarget{class_chart_a0c95ab267312d1761d18fbe110d52697}\label{class_chart_a0c95ab267312d1761d18fbe110d52697}} 
+\index{Chart@{Chart}!m\+\_\+scroll\+Sum@{m\+\_\+scroll\+Sum}}
+\index{m\+\_\+scroll\+Sum@{m\+\_\+scroll\+Sum}!Chart@{Chart}}
+\subsubsection{\texorpdfstring{m\+\_\+scroll\+Sum}{m\_scrollSum}}
+{\footnotesize\ttfamily float Chart\+::m\+\_\+scroll\+Sum\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 61 pliku chart.\+h.
+
+\mbox{\Hypertarget{class_chart_a6dcaf24ec43e6521ba3046a98545b9a6}\label{class_chart_a6dcaf24ec43e6521ba3046a98545b9a6}} 
+\index{Chart@{Chart}!m\+\_\+series@{m\+\_\+series}}
+\index{m\+\_\+series@{m\+\_\+series}!Chart@{Chart}}
+\subsubsection{\texorpdfstring{m\+\_\+series}{m\_series}}
+{\footnotesize\ttfamily Q\+Spline\+Series$\ast$ Chart\+::m\+\_\+series\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 53 pliku chart.\+h.
+
+\mbox{\Hypertarget{class_chart_a1a75b604ca836461e0693e344419442b}\label{class_chart_a1a75b604ca836461e0693e344419442b}} 
+\index{Chart@{Chart}!m\+\_\+step@{m\+\_\+step}}
+\index{m\+\_\+step@{m\+\_\+step}!Chart@{Chart}}
+\subsubsection{\texorpdfstring{m\+\_\+step}{m\_step}}
+{\footnotesize\ttfamily float Chart\+::m\+\_\+step\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 56 pliku chart.\+h.
+
+\mbox{\Hypertarget{class_chart_a0537ed43bfbba8ae3c90bd2fd01924e9}\label{class_chart_a0537ed43bfbba8ae3c90bd2fd01924e9}} 
+\index{Chart@{Chart}!m\+\_\+timer@{m\+\_\+timer}}
+\index{m\+\_\+timer@{m\+\_\+timer}!Chart@{Chart}}
+\subsubsection{\texorpdfstring{m\+\_\+timer}{m\_timer}}
+{\footnotesize\ttfamily Q\+Timer Chart\+::m\+\_\+timer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 52 pliku chart.\+h.
+
+\mbox{\Hypertarget{class_chart_a55c846b0e4068481081d061559efd155}\label{class_chart_a55c846b0e4068481081d061559efd155}} 
+\index{Chart@{Chart}!m\+\_\+titles@{m\+\_\+titles}}
+\index{m\+\_\+titles@{m\+\_\+titles}!Chart@{Chart}}
+\subsubsection{\texorpdfstring{m\+\_\+titles}{m\_titles}}
+{\footnotesize\ttfamily Q\+String\+List Chart\+::m\+\_\+titles\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 54 pliku chart.\+h.
+
+\mbox{\Hypertarget{class_chart_ac5211a2a9116f2853ae511417b9bca9e}\label{class_chart_ac5211a2a9116f2853ae511417b9bca9e}} 
+\index{Chart@{Chart}!m\+\_\+x@{m\+\_\+x}}
+\index{m\+\_\+x@{m\+\_\+x}!Chart@{Chart}}
+\subsubsection{\texorpdfstring{m\+\_\+x}{m\_x}}
+{\footnotesize\ttfamily float Chart\+::m\+\_\+x\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 57 pliku chart.\+h.
+
+\mbox{\Hypertarget{class_chart_a1f3e3584c5d5d90d8ebaf1b6b98d3df5}\label{class_chart_a1f3e3584c5d5d90d8ebaf1b6b98d3df5}} 
+\index{Chart@{Chart}!m\+\_\+y@{m\+\_\+y}}
+\index{m\+\_\+y@{m\+\_\+y}!Chart@{Chart}}
+\subsubsection{\texorpdfstring{m\+\_\+y}{m\_y}}
+{\footnotesize\ttfamily float Chart\+::m\+\_\+y\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definicja w linii 58 pliku chart.\+h.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{chart_8h}{chart.\+h}\item 
+\hyperlink{chart_8cpp}{chart.\+cpp}\end{DoxyCompactItemize}

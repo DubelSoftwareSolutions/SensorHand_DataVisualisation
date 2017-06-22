@@ -43,6 +43,10 @@ class Input: public QObject
 public:
     enum ConnectionType_t {BluetoothConnection, UARTConnection, USBConnection};
 private:
+
+    /*!
+     * \brief Struktura służąca do przechowywania danych wejściowych
+     */
     struct DataValues_t
     {
         QVector<float> m_JointAngles;
