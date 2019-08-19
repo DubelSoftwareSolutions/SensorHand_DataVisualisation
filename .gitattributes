@@ -2,3 +2,6 @@
 *.cpp linguist-vendored=false
 *.hpp linguist-vendored=false
 *.h linguist-vendored=false
+./Projekt/build* linguist-vendored
+./Projekt/dox/* linguist-vendored
+./Projekt/SensorGloveQt/* linguist-vendored=false
